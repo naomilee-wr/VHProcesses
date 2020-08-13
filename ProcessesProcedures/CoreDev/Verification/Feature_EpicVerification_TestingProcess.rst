@@ -103,7 +103,7 @@ The Technical Feature Owner is responsible for this process.
      - Analyze Test Results
      - Analyze the verification test results.
   
-       For test failures, determine if the failures are due to test code or product defect. Take steps to resolve the failure by either fixing the test code or filing a defect against the product. Defects are evaluated, resolved, or published as specified by the `Defect Management Process <../../../../Operations/DefectsManagement/DefectManagementProcess.html>`__.
+       For test failures, determine if the failures are due to test code or product defect. Take steps to resolve the failure by either fixing the test code or filing a defect against the product. Defects are evaluated, resolved, or published as specified by the `Defect Management Process <../../Operations/DefectManagement/DefectManagementProcess.html>`__.
 
    * - 9
      - Track All Issues to Closure
@@ -114,7 +114,7 @@ The Technical Feature Owner is responsible for this process.
 **Related Process Assets/Tools**
 --------------------------------
 
-- `Verification Validation Summary Flow Diagram <../../../../_static/CoreDev/Verification/VerificationValidation.jpg>`__
+- `Verification Validation Summary Flow Diagram <../../../_static/CoreDev/Verification/VerificationValidation.jpg>`__
 - Test Management system (e.g., LTAF) 
 - Requirements Management system (e.g., Jira Agile)
 - Defect Management system (e.g., Jira)
