@@ -1,0 +1,49 @@
+:orphan:
+|
+|
+|
+
+=======================
+ Validation Policy 
+=======================
+
+**Purpose**
+--------------
+
+The purpose of validation is to demonstrate that a product satisfies the committed Epics and the acceptance criteria. The Validator shall define a Validation Plan covering all validation activities for a release that is approved as adequate by the Key Stakeholders (e.g., Engineering Program Manager, Technical Feature Owner, Product Architects, SQA Lead). Approval of the validation results by the Product Line Manager and Product Architect is required.
+
+|
+
+**Validation Reporting**
+------------------------
+
+The following information shall be reported:
+
+#. List each committed Epic
+
+   -  ID / Summary
+
+   -  Acceptance Criteria
+
+   -  Relevant accepted Stories 
+
+   -  Not-accepted Stories with justification
+
+   -  Deviations
+
+#. Product Architect comments and sign-off
+
+#. Product Line Manager comments and sign-off
+
+|
+
+**Change Log**
+--------------
+
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 05/19/2020   | N/A                     | 0.1           | Shree Vidya Jayaraman   | Initial Draft                                                                                       |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+

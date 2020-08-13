@@ -1,0 +1,44 @@
+:orphan:
+
+=================================================
+**Product Manager - Jira Agile Responsibilities**
+=================================================
+
+**Purpose**
+-----------
+
+This document consolidates the various tasks and expectations fulfilled by Product Manager during the Feature/Epic Development Process.
+
+
+**Important Reference**
+-----------------------
+- `Feature Grooming and Workflow <./FeatureGrooming_Workflow.html>`__
+- `Monitoring Defect Metrics <./MonitoringDefectMetrics.html>`__
+
+**Responsibilities**
+--------------------
+
+- Product Manager is involved in the following states of a Feature (Epic) : **Backlog,  Accepted**
+
+  - **Backlog**
+        Epics are created here
+        Regularly reviews and prioritizes the list of Features/Epics in the Product Backlog
+        Promotes top priority Features for further investigation
+        Enters the desired release targeted for the Feature/Epic
+  - **Accepted**
+        Ensures that the Epics are meeting the Acceptance Criteria
+
+|
+
+**Change Log**
+--------------
+
++----------------+----------------+----------------+----------------+---------------------------------------+
+| **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
+|                | Request ID**   |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+| 05/22/2020     | N/A            | 0.1            | Shree Vidya    | Initial Draft                         |
+|                |                |                | Jayaraman      |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+|                |                |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+

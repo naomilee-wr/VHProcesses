@@ -1,0 +1,154 @@
+﻿:orphan:
+|
+|
+|
+
+=====================================
+Requirements Validation Procedure
+=====================================
+
+|
+
+This procedure describes how Epics are validate at the end of their development and test cycles. 
+
+The Product Architect, Product Manager, and EPM are responsible for executing this procedure.
+
+**Note:** The validation activities are performed throughout the product lifecycle and is complete when all the inputs identified in this process are satisfied.
+
+|
+
++--------------------------------------+------------------------------------------------------+
+| **Entry Criteria**                   |An Epic in "Done" status                              |
++--------------------------------------+------------------------------------------------------+
+| **Inputs**                           |The Epic record in the Requirements                   |
+|                                      |Management system (e.g., Jira Agile)                  |
++--------------------------------------+------------------------------------------------------+
+| **Exit Criteria**                    |The requirements validated and the Epic record        |
+|                                      |updated as appropriate                                |
++--------------------------------------+------------------------------------------------------+
+| **Outputs**                          |The Epic record update to one of the following status:|
+|                                      |                                                      |
+|                                      |- If not accepted, status changed to "In Progress" and|             
+|                                      |implementation gaps captured in software requirements |             
+|                                      |- If accepted, status changed to "Accepted"           | 
++--------------------------------------+------------------------------------------------------+
+
+|
+
+**Stakeholders** 
+-----------------	
+
++------------------------+-------------------------------------------------------------------------------+
+| **Role**               | **Responsibilities**                                                          |
++------------------------+-------------------------------------------------------------------------------+
+|Product Architect       |Responsible for validating that the implementation and testing of the Epic     |
+|                        |adheres to the Architectural vision and stated high-level designs.             |
++------------------------+-------------------------------------------------------------------------------+
+|Product Manager         |Responsible for validating that the implementation fulfills the request        |
+|                        |customer and/or market segment requirements.                                   |
+|                        | - Reviewing/Approving to ensure that the Epic meets the Acceptance Criteria   |
++------------------------+-------------------------------------------------------------------------------+
+|Engineering Program     |Responsible for validating that the Epic meets all FC Criteria related (e.g.,  |
+|Manager                 |test executing, pass rates, IP/Export disclosures done, etc.)                  |
++------------------------+-------------------------------------------------------------------------------+
+
+|
+
+**Activities**
+--------------
+
+.. list-table::
+   :widths: 10 30 120
+   :header-rows: 1   
+   
+   * - Step #
+     - Activity Name
+     - Description
+    
+   * - 1
+     - Architectural Validation
+     - When an Epic reaches the “Done” Status, the Scrum Team is expected to proactively reach out to their assigned architect for validation.  Only Epics which required Architectural oversight are subjected to this validation.
+  
+       Architect reviews the implementation and validate that the design, functionality, testing, etc. align with the required software requirements.  Architect may request to participate in a code review, or demo of specific functionality. The Architect’s approval is marked within the Epic.
+
+    
+   * - 2
+     - Product Validation
+     - Once an Epic has been validated by the assigned architect (if required), the Scrum Team should proactively reach out to their assigned Product Manager for validation.  The Product Manager reviews the functionality and ensures it meets the desired customer or market segment requirements.  The Product Manager may request to see a demo of the Epic, walkthrough workflows, or review documentation.  The Product Manager’s approval is marked by setting the Epic to “Accepted”.
+    
+   * - 3
+     - Final Release Validation
+     - After Product Manager acceptance, EPM will walk through the `Feature Complete (FC) criteria <../../../ProcessDocuments/Operations/ProgramManagement/FC_Criteria.xlsx>`__ checklist to ensure all artifacts have been delivered as per the stated program standards.  
+
+   * - 4
+     - Epic Rework
+     - If any of the validations have failed, the Scrum Team captures the gaps as new Stories in the Epic and work to close on the requirements before starting a new round of validation.
+ 
+|
+
+**Tool & Template Instructions**
+----------------------------------
+
+**Jira Agile - Epic Record Template:**
+
+.. list-table::
+   :widths: 30 120
+   :header-rows: 1   
+   
+   * - Field
+     - Description
+    
+   * - PA Owner
+     - Indicates the Product Architect assigned to the Epic
+
+   * - PA Tracking
+     - Indicates the level of oversight required by the Product Architect.  In the event “No Action” has been set, no subsequent validation is required.  A validated Epic will have its PA Tracking field set to “Accepted”.
+	 
+   * - Release/Feature Test Link
+     - Teams must provide a link to their test results as an artifact to demonstrate that testing was complete as per plan and meets FC criteria
+	 	 
+   * - Test Plan
+     - Teams must provide a link to their test plan as an artifact to demonstrate completeness of their Epic.
+	 
+
+**Power Point**   (Check with Doina and Rodger)
+
+.. list-table::
+   :widths: 30 120
+   :header-rows: 1   
+   
+   * - Field
+     - Description
+  
+   * - Power Point
+     - EPM records the Epic Validation in Power Point
+	 
+	 
+**Related Process Assets/Tools**
+---------------------------------
+
+- `Validation Test Summary Flow Diagram <../../../_static/CoreDev/Validation/Validation.jpg>`__
+- Test Management system (e.g., LTAF) 
+- Requirements system (e.g., Salesforce)
+- Engineering Requirements system (e.g., Jira Agile)
+- Defect Management system (e.g., Jira)
+
+|
+
+**References**
+-----------------
+- ?
+
+|
+
+**Change Log**
+--------------
+
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 06/12/2020   | N/A                     | 0.1           | Martin Cote             | Initial Draft                                                                                       |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+

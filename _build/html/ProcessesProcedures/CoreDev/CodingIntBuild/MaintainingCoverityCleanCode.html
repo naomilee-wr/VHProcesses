@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintaining Coverity “Clean” Code &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="maintaining-coverity-clean-code">
+<h1>Maintaining Coverity “Clean” Code<a class="headerlink" href="#maintaining-coverity-clean-code" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="purpose">
+<h2><strong>Purpose</strong><a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>This guideline describes all Coverity related information to help teams understand what kinds of Coverity checks are performed on VxWorks. This guideline document sets the expectations and how Coverity warnings should be handled.  <strong>Coverity goal is to have zero warnings!</strong></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="important-references">
+<h2><strong>Important References</strong><a class="headerlink" href="#important-references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://ctu-coverity-prod.wrs.com:8080/job/vx7_feature/">Coverity Jenkins job</a></p></li>
+<li><p><a class="reference external" href="http://ctu-coverity-prod.wrs.com/">Coverity Connect</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-81310">Helix Cert Coding Standard Violation Guide</a></p></li>
+<li><p><a class="reference external" href="./Targets.xlsx">Targets list</a> that Coverity covers</p></li>
+<li><p><a class="reference external" href="./CoverityUserGuide.docx">Coverity User Guide</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-71808">How to Run Coverity for VxWorks 7 Before Running CI Launcher</a></p></li>
+<li><p><a class="reference external" href="./CustomChecker.docx">How to build and run a custom checker</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-84298">Coverity ToDo List</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-84500">Coverity References Information Track</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-84661">Coverity Software Integrity Report</a></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="component-definition-coverage">
+<h2><strong>Component Definition &amp; Coverage</strong><a class="headerlink" href="#component-definition-coverage" title="Permalink to this headline">¶</a></h2>
+<p>The components definition for the latest Coverity version 2019.03 is here: <a class="reference external" href="./CoverityComponentsDefinition.xlsx">Coverity Components Definition</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="checker-list">
+<h2><strong>Checker list</strong><a class="headerlink" href="#checker-list" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://ctu-coverity-prod.wrs.com/doc/en/cov_checker_ref.html">Checker definition</a>
+For current Coverity 2019.03 scans, <a class="reference external" href="./Checkers_201903.xlsx">checker list</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="coverity-execution-and-report">
+<h2><strong>Coverity execution and report</strong><a class="headerlink" href="#coverity-execution-and-report" title="Permalink to this headline">¶</a></h2>
+<p>To have better support to new CI model, Coverity report strategy is defined as below:</p>
+<ol class="arabic simple">
+<li><p>Daily Coverity scan and report will be performed on CI branch.</p></li>
+<li><p>After release SPIN is ready, daily Coverity scan and report will be performed on Release SPIN.</p></li>
+<li><p>The two Coverity scan will be performed in parallel.</p></li>
+</ol>
+<p>Notes: For coverity scan on SPIN, the component as test can not be covered as SPIN only includes codes delivered to customers.</p>
+<p>The scan target: <a class="reference external" href="http://ctu-coverity-prod/source/xref/coverity-config/cov-script/launch_vx7-integration.sh#16">http://ctu-coverity-prod/source/xref/coverity-config/cov-script/launch_vx7-integration.sh#16</a></p>
+<ul class="simple">
+<li><p>the <a class="reference external" href="./Targets.xlsx">targets list</a> that Coverity covers</p></li>
+</ul>
+<p>The scan results:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://ctu-coverity-prod.wrs.com:8090/reports.htm#v10519/p10002">vx7-integration branch</a></p></li>
+<li><p><a class="reference external" href="http://ctu-coverity-prod.wrs.com:8090/reports.htm#v10519/p10005">SPIN</a></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="coverity-upgrade-strategy">
+<h2><strong>Coverity Upgrade Strategy</strong><a class="headerlink" href="#coverity-upgrade-strategy" title="Permalink to this headline">¶</a></h2>
+<p>The following table shows the map between Coverity version and VxWorks version:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 39%" />
+<col style="width: 43%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Coverity Version</strong></p></td>
+<td><p><strong>VxWorks Version</strong></p></td>
+<td><p><strong>Notes</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Coverity 6.6.2</p></td>
+<td><p>VxWorks 6.9 (till 6.9.4.12)/VxWorks 7 SR0530 and earlier VxWorks 7</p></td>
+<td><p>Not used for release after 6.9.4.12, See
+<a class="reference external" href="https://jive.windriver.com/docs/DOC-84487">Vx6.9 RCPL Coverity Process</a>
+Because Coverity 6.6.2 is end of life, VxWorks 6.9 is using the same
+Coverity version with VxWorks 7. Developers MUST clean up all Coverity
+warnings for newly added code.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Coverity 8.7.1</p></td>
+<td><p>VxWorks 7 SR0530</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Coverity 2018.03</p></td>
+<td><p>VxWorks 7 SR0540</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Coverity 2018.09</p></td>
+<td><p>VxWorks 7 SR0600</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Coverity 2019.03</p></td>
+<td><p>VxWorks 7 SR0610/SR0620/SR0630/SR0640/SR0650</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Coverity 2020.03</p></td>
+<td><p>In estimation if needs to be updated, suppose it can generate PDF
+format of report and not have too much new Coverity defects and
+warnings to SR0650</p></td>
+<td><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-84523">Upgrad Coverity to 2020.03</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="coverity-upgrade-flowchart">
+<h2><strong>Coverity Upgrade Flowchart</strong><a class="headerlink" href="#coverity-upgrade-flowchart" title="Permalink to this headline">¶</a></h2>
+<p><img alt="image0" src="ProcessesProcedures\CoreDev\CodingIntBuild\../../../_static/CoreDev/CodingIntBuild/MaintainingCoverityCleanCode_Image0.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="desktop-coverity-tool">
+<h2><strong>Desktop Coverity Tool</strong><a class="headerlink" href="#desktop-coverity-tool" title="Permalink to this headline">¶</a></h2>
+<p>The desktop Coverity tool can be found at:</p>
+<p>Alameda: /folk/common/cov-analysis-desktop/Prevent/prevent.pl</p>
+<p>Beijing: /folk/beijing/tools/cov-analysis/Prevent/prevent.pl</p>
+<p>Chengdu: /folk/chengdu/tools/cov-analysis/Prevent/prevent.pl</p>
+<p>The usage example:  /folk/chengdu/tools/cov-analysis/Prevent/prevent.pl yourMakeCommand</p>
+<p><strong>Note: The desktop Coverity is Coverity 2018.03. The desktop Coverity is no longer supported from Coverity 2018.09.</strong></p>
+<p>More information: <a class="reference external" href="https://jive.windriver.com/docs/DOC-71808">How to Run Coverity for VxWorks 7 Before Running CI Launcher</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="coverity-defect-suppression-using-annotation">
+<h2><strong>Coverity Defect Suppression using Annotation</strong><a class="headerlink" href="#coverity-defect-suppression-using-annotation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Developers encountering Coverity defests/warnings can potentially suppress them using the annotation “coverity[xxx]”, but this is the last thing to consider unless there’s enough evidence.</p></li>
+<li><p>When using this annotation, developers must provide justification in comments (immediately preceding the annotation)</p></li>
+<li><p>The justification is required so as to provide a rationale to customers as to why the suppression is required.</p></li>
+<li><p>Two types of annotation can be used: Intentional or False Positive.</p></li>
+</ul>
+<p><em>False Positive: Coverity[xx:FALSE]</em></p>
+<p>An annotation marking a Coverity finding as a “false positive” should only be used if Coverity is actually wrong.  For example, if a “forward_null” error is detected in some source code line, yet it’s impossible for a NULL pointer to be de-referenced in that source code line, then a “coverity[forward_null : FALSE]” annotation should be used to mark the Coverity finding as a “false positive”. The following specific example from pkgs/os/utils/unix/regex/regcomp.c provides a good description of why this particular NULL pointer de-reference is a “false positive”:</p>
+<p><img alt="image1" src="ProcessesProcedures\CoreDev\CodingIntBuild\../../../_static/CoreDev/CodingIntBuild/MaintainingCoverityCleanCode_Image1.jpg" /></p>
+<p><em>Intentional: Coverity[xx]</em></p>
+<p>An annotation marking a Coverity finding as “intentional” should be used when Coverity is actually correct, but it was concluded that the code is behaving as intended.  For example, a NULL pointer de-reference error detected by Coverity could be deemed “intentional” in cases where performance would suffer significantly if the pointer was checked for NULL.   In other words, the lack of checking for a NULL pointer was “intentional” to ensure good performance.   For example, in the following code:</p>
+<p><img alt="image2" src="ProcessesProcedures\CoreDev\CodingIntBuild\../../../_static/CoreDev/CodingIntBuild/MaintainingCoverityCleanCode_Image2.jpg" /></p>
+<p>The reference to the ‘tcb’ automatic variable would be flagged as a NULL pointer de-reference.  That would be a correct finding since taskTcb() returns a pointer value, and there is no code in the ipcom_vxworks_rtp_del_hook() function that ensures  a NULL value is never de-referenced (note the ip_assert() is typically a NOOP in standard builds).  However, Coverity doesn’t have a systems/OS view of VxWorks, and thus cannot “understand” that taskIdSelf() simply returns the value of ‘taskIdCurrent’ variable (which is a slot in the vxKernelVars[] array for SMP), and taskTcb() simply returns the input parameter.  So it’s pretty much impossible for ‘tcb’ to be a NULL pointer, and thus this finding would be categorized as “intentional”.</p>
+<p><em>Other Annotation Examples</em></p>
+<p>A code annotation always appears at the beginning of a C comment (/* coverity[…]… ) or a C++ comment (// coverity[…]… ) and applies to the first line of code after the comment that is neither empty (white space) nor a comment. Some samples are as following:</p>
+<p><img alt="image3" src="ProcessesProcedures\CoreDev\CodingIntBuild\../../../_static/CoreDev/CodingIntBuild/MaintainingCoverityCleanCode_Image3.jpg" /></p>
+<p>As with any other VxWorks related code change, the code review process needs to be followed regarding the addition of Coverity annotations to the source code.  The architect/PA-Owner responsible for the technology must be added as a “Reviewer” to the code review.  When the source code is checked-in, the commit text needs to indicate: (1) what annotation was added,  (2) a link to the code review, and (3) the name of the architect/PA-Owner.   The following git commit log serves as an example of the information required and the desired formatting:</p>
+<p><img alt="image4" src="ProcessesProcedures\CoreDev\CodingIntBuild\../../../_static/CoreDev/CodingIntBuild/MaintainingCoverityCleanCode_Image4.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 52%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>08/04/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Transferred content from Jive page: DOC-84297</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/CoreDev/CodingIntBuild/MaintainingCoverityCleanCode.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

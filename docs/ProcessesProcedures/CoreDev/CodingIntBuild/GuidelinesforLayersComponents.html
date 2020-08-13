@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidelines for Deprecating or (End Of Life) EOL’ing Layers and Components, or Releasing “Unsupported” Content, or Moving Functionality Between Layers &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="guidelines-for-deprecating-or-end-of-life-eol-ing-layers-and-components-or-releasing-unsupported-content-or-moving-functionality-between-layers">
+<h1>Guidelines for Deprecating or (End Of Life) EOL’ing Layers and Components, or Releasing “Unsupported” Content, or Moving Functionality Between Layers<a class="headerlink" href="#guidelines-for-deprecating-or-end-of-life-eol-ing-layers-and-components-or-releasing-unsupported-content-or-moving-functionality-between-layers" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="guidelines-for-layers">
+<h2><strong>Guidelines for Layers</strong><a class="headerlink" href="#guidelines-for-layers" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>The SYNOPSIS and HELP text must be updated to clearly indicate when a layer is deprecated or EOL’ed, or when any functionality is “moved” to another layer.</p>
+<ul class="simple">
+<li><p>The following example shows the updated SYNOPSIS and HELP text for the IPNET_CRYPTO layer when ALL the functionality from that layer is moved to the OPENSSL layer; the IPNET_CRYPTO layer effectively becomes EOL’ed</p></li>
+</ul>
+<p><img alt="image0" src="../../../_images/GuidelineLayer_image0.jpg" /></p>
+<ul class="simple">
+<li><p>The following example shows the updated SYNOPSIS and HLEP text when a layer is deprecated.  Note that deprecating is not equivalent to EOL’ing.   A layer is first deprecated, and after a certain amount of time, the layer is then EOL’ed:</p></li>
+</ul>
+<p><img alt="image1" src="../../../_images/GuidelineLayer_image1.jpg" /></p>
+<ul class="simple">
+<li><p>The following example shows the updated SYNOPSIS and HELP text when a layer is “End of Life’d” (EOL):</p></li>
+</ul>
+<p><img alt="image2" src="../../../_images/GuidelineLayer_image2.jpg" /></p>
+<ul class="simple">
+<li><p>The following example shows the SYNOPSIS and HELP text for layers (BSP, PSL, or device driver) that are shipped as part of a unsupported BSP. The unsupported BSP concept was introduced in SR0610:</p></li>
+</ul>
+<p><img alt="image3" src="../../../_images/GuidelineLayer_image3.jpg" /></p>
+</li>
+<li><p>The SYNOPSIS and HELP fields of ALL previous versions must be updated as outlined in Guideline#1 by using a RETROFIT statement.  This guideline is not necessary for the (“Unsupported”) prefix since unsupported BSPs should have this prefix applied from the first version of the layers.</p></li>
+<li><p>When transitioning a layer to deprecated, increment the 3’rd digit of the version.  When transitioning a layer from deprecated to EOL’ed, the 3’rd digit of the version should be incremented again.</p></li>
+<li><p>When transitioning a layer to EOL’ed, use a “VSB_REQUIRES LAYER_NOT_SUPPORTED” statement to only disable the latest version of the layer.</p>
+<ul class="simple">
+<li><p>The following is an example layer definition BEFORE the layer has been deprecated:</p></li>
+</ul>
+<p><img alt="image4" src="../../../_images/GuidelineLayer_image4.jpg" /></p>
+<ul class="simple">
+<li><p>The following is an example layer definition AFTER the layer has been deprecated:</p></li>
+</ul>
+<p><img alt="image5" src="../../../_images/GuidelineLayer_image5.jpg" /></p>
+<ul class="simple">
+<li><p>The following is the example layer definition AFTER the layer has been EOL’ed:</p></li>
+</ul>
+<p><img alt="image6" src="../../../_images/GuidelineLayer_image6.jpg" /></p>
+<p>NOTE: a LAYER_REQUIRES statement should be used instead of VSB_REQUIRES for bsp.vsbl files.</p>
+</li>
+<li><p>When deprecating or EOL’ing a layer, do NOT use a RETROFIT statement to “disable” older versions of the layer.</p>
+<ul class="simple">
+<li><p>The following illustrates how NOT to update the example layer definition AFTER the layer has been EOL’ed, i.e. do NOT add the following RETROFIT statement:</p></li>
+</ul>
+<p><img alt="image7" src="../../../_images/GuidelineLayer_image7.jpg" /></p>
+<p>The above RETROFIT statement will make all previous versions of the layer dependent on the non-existent LAYER_NOT_SUPPORTED layer; thus effectively “disabling” all of the    previous versions of the layer.  This is especially disruptive to customers with existing VSB projects where an old version of the layer was enabled in that project.</p>
+</li>
+<li><p>When all of the layers shipped in an RPM have become EOL’ed, the YUM repository should be updated to mark the RPM as “optional”.  A new Wind River Installer feature (Rally US52509) will use the “type” flag from the YUM group definition.  RPMs marked with type=”optional” will not be automatically downloaded/installed at a customers site.   This will prevent “new” and existing customers from automatically having the EOL’ed content installed. The “optional” type designation applies to all versions of the RPM.   Customers can explicitly download and install the EOL’ed content, but using the content will be “at their own risk” (since it’s not supported anymore).   The process for marking an RPM with type=”optional”  is T.B.D.   (current process is to send an e-mail to the relevant Tools team member).</p></li>
+<li><p>In certain situations, it is necessary to prevent older versions of a layer from being enabled when newer versions of some other layer are enabled.   A RETROFIT statement is used to enforce a mutual exclusion relationship between the layers.</p>
+<ul class="simple">
+<li><p>The following is an example of the IPNET_CRYPTO layer before the cryptographic functionality was moved to the OPENSSL layer:</p></li>
+</ul>
+<p><img alt="image8" src="../../../_images/GuidelineLayer_image8.jpg" /></p>
+<ul class="simple">
+<li><p>The following is an example update to the IPNET_CRYPTO layer meta-data to EOL the layer, and also make older versions of the layer mutually exclusive with new versions of the OPENSSL layer.  The newer versions of the OPENSSL layer provide the “CRYPTO” feature:</p></li>
+</ul>
+<p><img alt="image9" src="../../../_images/GuidelineLayer_image9.jpg" /></p>
+</li>
+</ol>
+<p>The  RETROFIT statement will cause all previous versions of the CRYPTO layer to be unusable (due to a “LAYER_REQUIRES LAYER_NOT_SUPPORTED”) if the new OPENSSL layer has been enabled.     Note: the “OPENSSL__OPENSSL_CRYPTO” is a “flag” used in the LAYER_REQUIRES conditional logic statement.  It’s comprised of the layer name (OPENSSL) + a double underscore + feature name (OPENSSL_CRYPTO).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="guidelines-for-components">
+<h2><strong>Guidelines for Components</strong><a class="headerlink" href="#guidelines-for-components" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>The SYNOPSIS and NAME text must be updated to clearly indicate when a component (CDF) is deprecated.  The following is an example of the INCLUDE_L3_CACHE_QOS component which has been deprecated in favour of the INCLUDE_CACHE_QOS component:</p>
+<p><img alt="image10" src="../../../_images/GuidelineComponent_image10.jpg" /></p>
+</li>
+</ol>
+<p>The above example has updated (actually added) the HELP field.  The text provided in this field is not presented anywhere within Workbench.</p>
+<ol class="arabic simple" start="2">
+<li><p>When EOL’ing a component, simply remove the definition from the .cdf file.</p></li>
+</ol>
+<p>Overall Note: In some situations, legal agreements/restrictions may require that layers/components be removed from the product “immediately” without following the formal deprecation and EOL’ process described in this guideline.  Check with the Product Manager responsible for the technology in question if a layer needs to be removed from the product “immediately” (due to some legal requirement).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 38%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change
+Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>06/17/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Transferred content from Policy for
+Deprcating… Jive page</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/CoreDev/CodingIntBuild/GuidelinesforLayersComponents.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

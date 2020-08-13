@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitting Code into the SR05xx Maintenance Branch (via Pull Request) &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="submitting-code-into-the-sr05xx-maintenance-branch-via-pull-request">
+<h1>Submitting Code into the SR05xx Maintenance Branch (via Pull Request)<a class="headerlink" href="#submitting-code-into-the-sr05xx-maintenance-branch-via-pull-request" title="Permalink to this headline">¶</a></h1>
+<p>As of SR0600, customers are losing backwards compatibility with the VxWorks product.  To help customers transitions, an SR05xx maintenance branch will be maintained for some time.</p>
+<p>The following process outlines the policies and the steps required to submit fixes into the SR05xx maintenance branch.</p>
+<p>Policy for Defect Fixes in SR05xx:
+- We will only fix in the SR05xx stream upon customer demand or in the case of a Security Flaw that we deem important enough to fix in supported streams
+- You must submit defect fixes in both the SR05xx maintenance branch and the vx7-integration branch</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="create-clone-of-the-defect-in-jira">
+<h2><strong>Create clone of the defect in Jira</strong><a class="headerlink" href="#create-clone-of-the-defect-in-jira" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Create a clone of the defect in the SR06xx stream to make sure the fix is carried forward</p>
+<p>Note:  If the fix is not needed in SR06xx (because the functionality has been deprecated), please close the cloned defect as “Won’t Fix” and state that the “Code/Functionality no longer in SR06xx”</p>
+</li>
+<li><p>Provide CSO with a source patch and attach the patch to the SR05xx defect</p></li>
+<li><p>Check the patch into the SR05xx maintenance branch (i.e. vx7-SR05x-patches)</p></li>
+<li><p>Mark the SR05xx defect as fixed in CR05xx</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="submit-pull-request">
+<h2><strong>Submit Pull Request</strong><a class="headerlink" href="#submit-pull-request" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Open a pull request against the SR05xx maintenance branch (i.e. vx7-SR05x-patches)</p>
+<p><em>Note</em>:  Your Pull Request comments should demonstrate completion of the <a class="reference external" href="../../Operations/ProgramManagement/StoryDoneDefinition.html">Story Definition of Done</a></p>
+</li>
+<li><dl class="simple">
+<dt>Run one of the following builds:</dt><dd><ul class="simple">
+<li><p>To build on your branch, no spin is generated: <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_proj_param_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_proj_param_launcher/</a></p></li>
+<li><p>To build on your branch, spin is generated: <a class="reference external" href="http://vxjenkins.wrs.com:8080/view/vx7%20SR05x%20/job/vx7_spin_launcher/">http://vxjenkins.wrs.com:8080/view/vx7%20SR05x%20/job/vx7_spin_launcher/</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Get one reviewer to approve your pull request</p></li>
+<li><p>When you have a successful stash checkmark you can merge your pull request</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="additional-notes">
+<h2><strong>Additional Notes</strong><a class="headerlink" href="#additional-notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>If you have host side changes please contact the Build &amp; Config Team (<a class="reference external" href="mailto:vx-osconfig&#37;&#52;&#48;list-int&#46;wrs&#46;com">vx-osconfig<span>&#64;</span>list-int<span>&#46;</span>wrs<span>&#46;</span>com</a>) to work out the logistics of your fix.</p></li>
+<li><p>There will be a daily build against vx7-SR05x-patches to make sure the branch remains sane.</p></li>
+<li><p>At the moment there is no SR05x based release scheduled so the daily spins will not be pushed to R1 and will not be available for testing</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 52%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>05/01/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Naomi Lee</p></td>
+<td><p>Transferred content from Submit Code Integration Branch Jive page</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/CoreDev/CodingIntBuild/SubmitCodeMaintenanceBranch_WI.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

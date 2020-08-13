@@ -1,0 +1,108 @@
+﻿====================
+Operations Processes
+====================
+
+Program Release Management 
+--------------------------
+
+The Program Release Management process describes the steps in managing release from planning (Plan Of Record (POR) milestone) to the actual release (General Availability (GA) milestone).
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   
+   ProgramManagement/ProgramManagementMain.rst
+   
+   
+Generic Release Profile   **TBD** 
+   
+ 
+
+Defect Management 
+------------------
+
+The Defect Management process describes the steps in managing defect reports from submission through resolution.
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   
+   DefectManagement/DefectManagementMain.rst 
+  
+
+Software Configuration Management 
+----------------------------------
+
+The configuration management process describes how to establish and maintain the integrity of program-related work products and baselines throughout the lifecycle and make them available to relevant stakeholders in time for their need. A Software Configuration Management (SCM) Plan is used to document and guide project stakeholders in the CM tools and methods used within the program release. 
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   
+   ConfigurationManagement/ConfigurationManagementMain.rst   
+   
+
+Generic Software Configuration Management Plan **TBD**    
+
+   
+Software Quality Assurance 
+---------------------------
+
+SQA provides visibility to management that the products and processes conform to the specified requirements and established plans. This process describes the planning and executing Software Quality Assurance (SQA) activities on a program release. SQA activities cover both compliance audits (e.g., Quality audit – lifecycle phase wise, QMS process audit, in-process audit, auditing the auditor/audit process by an external person) and quality reviews (e.g., in-process review, phase exit artifacts).
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   
+   SWQualityAssurance/SWQualityAssuranceMain.rst  
+   
+   
+Generic Software Quality Assurance Plan  **TBD**    
+   
+  
+Measurement **TBD**
+--------------------
+
+To guide the program release, the functional leads identify their measurement needs with an approach that will provide objective results that can be used in making informed decisions by taking appropriate corrective actions.  The Measurement process describes how the measurement goals will be established, collected, analyzed and communicated.
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   
+   Measurement/MeasurementMain.rst   
+   
+   
+Generic Measurement Plan **TBD** 
+   
+Training 
+--------
+
+This process describes how training is determined, planned, resourced, and recorded. The Engineering Manager/SQA Lead is responsible to see that this process is followed, that the Training Matrix and Records for their programs are kept up to date, and that their teams obtain the necessary training.
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   
+   Training/TrainingMain.rst   
+
+   
+Generic Training Plan **TBD** 
+
+
+Information Development (User Documentation)  
+-------------------------------------------- 
+
+The Information Development (InfoDev) group is responsible for writing the product technical publications and documentation for their customers. The user documentation content and delivery are described in the Documentation Plan.
+
+This process describes the activities for writing, testing, and publishing user documentation for the product release.
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   
+   InformationDevelopment/InformationDevelopmentMain.rst    
+
+
+
+Generic Documentation Plan  **TBD** 

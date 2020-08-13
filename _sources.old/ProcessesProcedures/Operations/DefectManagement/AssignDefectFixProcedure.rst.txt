@@ -1,0 +1,66 @@
+:orphan:
+
+===============================
+Assign Defect Fix Procedure
+===============================
+
+The Engineering Manager or scrum team assigns development of a defect fix to the defect fixer (Developer, Technical Publications Writer, etc.) for a specific release. In the case of a customer reported defect, it may be necessary for the Domain Lead (Component/Technical/Feature Lead) to assign a defect fix for a timely resolution.
+
++--------------------------------------+--------------------------------------+
+| **Entry Criteria**                   | -  Defects are in "Open" *Status*    |
+|                                      | -  The *Assignee* is the default     |
+|                                      |    assignee (e.g., Domain Lead)      |
++--------------------------------------+--------------------------------------+
+| **Inputs**                           | -  Defect records in the defect      |
+|                                      |    tracking system                   |
++--------------------------------------+--------------------------------------+
+| **Exit Criteria**                    | -  The defect fixer has been         |
+|                                      |    assigned to do the fix            |
++--------------------------------------+--------------------------------------+
+| **Outputs**                          | -  Defect assignment                 |
++--------------------------------------+--------------------------------------+
+
+|
+
+**Steps**
+---------
+
+#. Click on *Edit* to open the record for editing
+#. Change the assignee in the defect to the defect fixer
+
+|
+
+**Next Activity in Process**
+----------------------------
+
++----------------+----------------------------------------------------------------------+
+| **Role**       | **Activity**                                                         |
++----------------+----------------------------------------------------------------------+
+| Defect Fixer   | `Develop Defect Fix Procedure <./DevelopDefectFixProcedure.html>`__  |
++----------------+----------------------------------------------------------------------+
+
+|
+
+Related Process Assets/Tools
+----------------------------
+- Defect Management system (e.g., Jira)
+- `Defect Management Process <./DefectManagementProcess.html>`__
+    
+|
+
+References 
+-----------------
+   - ??
+
+|
+
+**Change Log**
+--------------
+
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 05/08/2020   | N/A                      | 0.1          | Martin Kote             | Initial Draft                                                                                       |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+

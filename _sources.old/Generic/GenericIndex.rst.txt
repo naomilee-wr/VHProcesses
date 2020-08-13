@@ -1,0 +1,36 @@
+=====================================
+Generic Plans and Other Documents
+=====================================
+
+|
+|
+
+Plans **TBD**
+--------------
+
+- Software Development Plan (SDP)
+- Software Configuration Management Plan (SCMP)
+- `Software Quality Assurance Plan(SQAP) <./WRGeneric_SQAP.docx>`_
+- Validation Plan (VP)
+- Training Plan (TP)
+- Documentation Plan (DP)
+- Release Profile/Plan
+
+  - VxWorks
+  - HVP
+
+|
+|
+
+Other Documents **WIP**
+------------------------
+
+- Overall Product Test Strategy (TBD)
+- `Wind_River VxWorks_HVP Software_Development Process Overview <./Wind_River_VxWorks_HVP_Software_Development_Process_Overview.docx>`_
+- `Roles and Responsibiliites <./WRGeneric_RR.docx>`_
+- Training Matrix
+- Tools and Environment 
+- Document Responsibility Matrix (TBD)
+
+ 
+ 

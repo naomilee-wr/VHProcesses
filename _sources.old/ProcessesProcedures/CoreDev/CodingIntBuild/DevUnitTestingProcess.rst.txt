@@ -1,0 +1,95 @@
+:orphan:
+
+======================================
+Development (Unit) Testing Process
+======================================
+
+This process ensures that unit tests are conducted/performed by the Developer to verify individual code changes.  Some code changes may not include unit tests, but will rely on system/integration tests to verify the change is appropriate????. Unit tests are test performed on a unit of change by the Developer before the code review.  
+
+The Developer is responsible for this process.
+
++--------------------------------------+--------------------------------------------------------------------------+
+| **Entry Criteria**                   | -  Static code anlysis completed on the code and issues fixed            |
++--------------------------------------+--------------------------------------------------------------------------+
+| **Inputs**                           | -  Developer code change is available for unit testing                   |
++--------------------------------------+--------------------------------------------------------------------------+
+| **Exit Criteria**                    | -  Execution of unit tests and issues fixed                              |
+|                                      | -  Results of the unit tests are captured and available for code review  |
++--------------------------------------+--------------------------------------------------------------------------+
+| **Outputs**                          | -  Code and unit test results are ready for peer review                  |
++--------------------------------------+--------------------------------------------------------------------------+
+
+**Activities**
+--------------
+
+|image0|
+
+
+.. list-table::
+   :widths: 10 30 120
+   :header-rows: 1   
+   
+   * - Step #
+     - Activity Name
+     - Description
+      
+   * - 1
+     - Develop unit tests based on the completion of development
+     - In parallel with the development tasks, the developer creates new unit tests or updates the existing unit tests for the initiating Story or defect. 
+
+       For complex Stories, the Technical Feature Owner or the Developer may define specific unit testing required as part of the Acceptance Criteria for Stories. 
+
+       Optionally, a parallel system or integration test Story may be created.  This type of testing is covered in the `Verification (testing) process <../Verification/VerificationProcess.html>`__.  In this case, the testing required will be coordinated the verification test team.
+	 
+       **Note**: The unit tests are documented and reviewed as part of Step 4.
+
+   * - 2
+     - Execute unit tests
+     - The Developer executes the unit tests. 
+
+   * - 3
+     - Analyze test unit results
+     - The Developer analyzes the unit test results. 
+
+       If the unit test identifies defects in the code change, development will be moved out of completed or a defect will be created in the Story. ???? Check with martin/kitty
+
+       If the unit test identifies defects unrelated to the code change, either a separate defect will be added to the Story or the defect will be entered in the Defect Management system.
+
+   * - 4
+     - Evaluate test procedure and results
+     - During the code review, the reviewers will evaluate the unit test procedure and unit test results.
+
+       If needed, the tester may use the unit tests as an input for verification test creation.
+
+       Once the code review is completed, the code goes through the Continuous Integration (CI) pipeline for sanity testing and other checks and then the Story can be marked completed.
+
+|
+
+Related Process Assets/Tools
+----------------------------
+
+- Engineering Requirements Management system (e.g., Jira Agile)
+- Configuration Management system (e.g., Git)
+- CI Launcher(e.g., Jenkins)
+   
+|
+
+References 
+-----------------
+   - ?
+   
+|
+
+
+**Change Log**
+--------------
+
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+| **Date**     | **Change Request ID**  | **Version**   | **Change By**           | **Description**                                                                     |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+| 05/01/2020   | N/A                    | 0.1           | Shree Vidya Jayaraman   | Initial Draft                                                                       |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+|              |                        |               |                         |                                                                                     |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+
+.. |image0| image:: /_static/CoreDev/CodingIntBuild/DevUnitTestProcess.jpg

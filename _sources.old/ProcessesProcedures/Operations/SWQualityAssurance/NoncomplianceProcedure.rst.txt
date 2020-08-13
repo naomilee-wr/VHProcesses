@@ -1,0 +1,115 @@
+:orphan:
+
+============================
+Noncompliance Procedure
+============================
+
+**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+
+This process describes how noncompliances resulting from internal audits are managed. 
+
+The Software Quality Assurance (SQA) and Configuration Management (CM) Lead is responsible for this process. The SQA/CM Lead may designate another person to perform the noncompliance process. 
+
+The Key Stakeholders (e.g., Engineering Managers/Director, Engineering Program Manager (EPM), Technical Lead, Test Lead, noncompliance owner) participate in this process.  Noncompliance owners can be anyone and the owners are responsible for resolving noncompliances.
+
++--------------------------------------+--------------------------------------+
+| **Entry Criteria**                   | An audit finds a noncompliance       |
++--------------------------------------+--------------------------------------+
+| **Inputs**                           | Audit Record in Audit Tool           |
++--------------------------------------+--------------------------------------+
+| **Exit Criteria**                    | The Noncompliance Record is closed.  |
+|                                      | The noncompliance was either fixed,  |
+|                                      | determined not to fix, withdrawn     |
+|                                      | because it was not valid.            |
++--------------------------------------+--------------------------------------+
+| **Outputs**                          | Noncompliance Records in Audit Tool  | 
+|                                      | and status is closed.                |
++--------------------------------------+--------------------------------------+
+
+**Activities**
+--------------
+
+|image0|
+
+.. list-table::
+   :widths: 10 30 120
+   :header-rows: 1   
+   
+   * - Step #
+     - Activity Name
+     - Description
+    
+   * - 1
+     - Submit Noncompliance Record
+     - In the Audit Tool, the Auditor creates a new Noncompliance Record.  Link the Noncompliance to the audit record.  Set the severity:  
+	 
+       -  Minor: The noncompliance minimally impacts the program and does not impact the quality of the product.
+	 
+       -  Major: The noncompliance could potentially have significant impact on the program or product quality. 
+
+       *Note:* Observations (opportunities for improvement) are evidence of weak practices (not of significant concern) which if not addressed could result in a future nonconformity.       
+    
+   * - 2
+     - Review Noncompliance Record
+     - Discuss the noncompliance with Key Stakeholders. Determine if it is a valid problem. 
+    
+   * - 3
+     - Noncompliance withdrawn
+     - If the noncompliance is not valid, set the resolution to withdrawn and provide an explanation in the Comments. 
+
+   * - 4
+     - Approve "won't fix"
+     - If the noncompliance is valid, but cannot address it, set the Resolution to Won't Fix. 
+
+       If the Key Stakeholders (e.g., Engineering Managers/Director, Engineering Program Manager (EPM), Technical Lead, Test Lead) approve not fixing the issue, provide an explanation in the comments and close the noncompliance.  
+
+       If the Key Stakeholders do not approve, then the noncompliance must be addressed. 
+
+   * - 5
+     - Assign owner
+     - The Key Stakeholders (e.g., Engineering Managers/Director, Engineering Program Manager (EPM), Technical Lead, Test Lead) discuss and assign an Owner to fix the noncompliance. 
+
+   * - 6
+     - Determine cause and identify corrective action
+     - If the noncompliance is valid and the Owner will fix it, discuss the corrective action with the Owner and describe the corrective action plan. Agree on a date for completion with the Owner and fill in the Due Date. 
+
+   * - 7
+     - Implement corrective action
+     - If the Owner completes the action, the Auditor verifies the fix. If the action is not completed, the Auditor/SQA or CM Lead decides to escalate the issue. 
+
+   * - 8
+     - Escalate noncompliance
+     - If the Owner fails to carry out the corrective action, the Auditor/SQA or CM Lead and Owner attempt to reach an agreement on when the action will be completed.  
+
+       If an agreement is reached, it is documented in the Noncompliance Record.  
+
+       If an agreement is not reached, the Auditor/SQA or CM Lead escalates the noncompliance to the Key Stakeholders (e.g., Engineering Manager, Engineering Program Manager (EPM), Technical Lead, Test Lead). 
+
+   * - 9
+     - Resolve escalation
+     - The Key Stakeholders (e.g., Engineering Manager, Engineering Program Manager (EPM), Technical Lead, Test Lead) work with the Owner or Owner's manager to resolve the escalation. 
+
+   * - 10
+     - Verify fix
+     - When the Owner completes the fix, the Auditor verifies the fix addresses the noncompliance. The Auditor enters what is done to verify the fix.  
+
+       If the action repairs the problem, the Auditor sets the Noncompliance resolution to fixed.  
+
+       If the fix does not fully address the noncompliance, the auditor and Owner revise the corrective action and the noncompliance remains open. 
+
+   * - 11
+     - Noncompliance closed
+     - The Auditor sets the status to closed when the resolution:
+	 
+       -  is withdrawn,  
+	 
+       -  is won't fix and the EPM has approved not fixing the issue, or 
+	 
+       -  is fixed. 
+
+   * - 12
+     - Report status
+     - Progress against noncompliances is reported periodically to the EPM.
+
+
+.. |image0| image:: /_static/Operations/SWQualityAssurance/NoncomplianceProcedure.jpg

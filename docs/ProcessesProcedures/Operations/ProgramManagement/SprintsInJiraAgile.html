@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprints in Jira Agile &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="sprints-in-jira-agile">
+<h1>Sprints in Jira Agile<a class="headerlink" href="#sprints-in-jira-agile" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="summary">
+<h2><strong>Summary</strong><a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>A Sprint in Jira is a planned timebox of work, usually lasting 1-2 weeks. Work is organized by scheduling issues in sprints, and progress toward completing the work can be monitored via sprint reports.</p>
+<p>This guideline details how to manage and report on Sprints using Jira Agile.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="managing-sprints">
+<h2><strong>Managing Sprints</strong><a class="headerlink" href="#managing-sprints" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-an-sprint">
+<h3><strong>Creating an Sprint</strong><a class="headerlink" href="#creating-an-sprint" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to the execution project.</p></li>
+<li><p>Go to the Scrum Backlog Board.</p></li>
+<li><p>Change the name of the sprint by moving the mouse over the sprint name and click the pencil icon.</p></li>
+<li><p>Add further description of the sprint’s purpose, select <strong>Add sprint goal</strong> from the ellipsis (…) menu in the upper right of the sprint panel.</p></li>
+</ol>
+<p>Once a sprint is created, issues can be assigned to it.
+Create and assign issues to as many sprints as you want, but a sprint must be activated in order to work on it. Only one sprint can be active at a time, so sprints within in a given project do not overlap in time.
+Dates and timespan for a sprint cannot be entered until the sprint is activated.</p>
+</div>
+<div class="section" id="assigning-work">
+<h3><strong>Assigning Work</strong><a class="headerlink" href="#assigning-work" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to the execution project</p></li>
+<li><p>Go to the scrum backlog board</p></li>
+<li><p>Drag Stories, Defects/Bugs, and other work items out of the Backlog to the desired Drop each issue into its position in priority order within the sprint.</p></li>
+</ol>
+<p>Adjust the relative priorities of issues within a sprint by dragging and dropping them within the sprint.</p>
+<p>Drag issues out of one sprint and drop them into another sprint or into the Backlog. If moving issues from an active sprint, Jira prompts to confirm the move.</p>
+<p>Refer to <a class="reference external" href="./BacklogManagementinJiraAgile.html">Backlog Management in Jira Agile</a> for more details.</p>
+</div>
+<div class="section" id="activatiing-a-sprint">
+<h3><strong>Activatiing a Sprint</strong><a class="headerlink" href="#activatiing-a-sprint" title="Permalink to this headline">¶</a></h3>
+<p>Activating a sprint means the team will be working on it. The sprint should have the issues in it that the team expects to complete in the timeframe represented by the sprint.</p>
+<p>To activate a sprint, use the agile scrum board associated with the project:</p>
+<ol class="arabic simple">
+<li><p>Navigate to the execution project.</p></li>
+<li><p>Go to the scrum backlog board.</p></li>
+<li><p>In the top sprint panel, click <strong>Start Sprint</strong>.</p></li>
+<li><p>In the <strong>Start Sprint</strong> dialog that appears, make any necessary adjustments to the sprint name, goal (description of the sprint’s purpose), duration, and start date.</p></li>
+<li><p>Click <strong>Start</strong>.</p></li>
+</ol>
+<p>Use the Active sprints page to change the states of Stories by dragging them from one column to another. This page is available throughout the Sprint.</p>
+</div>
+<div class="section" id="changing-a-sprint-s-contents">
+<h3><strong>Changing a Sprint’s Contents</strong><a class="headerlink" href="#changing-a-sprint-s-contents" title="Permalink to this headline">¶</a></h3>
+<p>Stories can be pulled into a sprint while it is active. This changes the scope of the Sprint, and so should be done only when the team is sure it can complete the existing work and the new work.</p>
+<p>To add a story to an active sprint:</p>
+<ol class="arabic simple">
+<li><p>Navigate to the execution project.</p></li>
+<li><p>Go to the Scrum Backlog Board.</p></li>
+<li><p>Drag the Story from the Backlog to the active sprint.</p></li>
+</ol>
+</div>
+<div class="section" id="closing-a-sprint">
+<h3><strong>Closing a Sprint</strong><a class="headerlink" href="#closing-a-sprint" title="Permalink to this headline">¶</a></h3>
+<p>Stories can be pulled into a sprint while it is active. This changes the scope of the Sprint, and so should be done only when the team is sure it can complete the existing work and the new work.</p>
+<p>To add a story to an active sprint:</p>
+<ol class="arabic simple">
+<li><p>Navigate to the execution project.</p></li>
+<li><p>Go to the Scrum Backlog Board.</p></li>
+<li><p>In the sidebar, select the <strong>Active Sprints</strong> page, which is indicated by a double column icon if the sidebar is collapsed.</p></li>
+<li><p>In the upper right corner of the main panel, click <strong>Complete Sprint</strong>.</p></li>
+<li><p>If any issues are incomplete, drag themto either a future sprint or the Backlog.</p></li>
+<li><p>Click <strong>Complete</strong> to close the sprint.</p></li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="reporting-and-assessment-of-progress">
+<h2><strong>Reporting and Assessment of Progress</strong><a class="headerlink" href="#reporting-and-assessment-of-progress" title="Permalink to this headline">¶</a></h2>
+<p>To perform the necessary reporting for a Sprint retrospective, or to assess the team’s progress during a Sprint, use the Scrum Backlog Board associated with your project. Several different types of reports are available.</p>
+<div class="section" id="sprint-report">
+<h3><strong>Sprint Report</strong><a class="headerlink" href="#sprint-report" title="Permalink to this headline">¶</a></h3>
+<p>For a quick overview of the progress of your sprint, use the <strong>Sprint Report</strong></p>
+<ol class="arabic simple">
+<li><p>Navigate to the execution project.</p></li>
+<li><p>Go to the Scrum Backlog Board.</p></li>
+<li><p>In the sidebar, select the <strong>Reports</strong> page, which is indicated by a bar chart icon if the sidebar is collapsed.</p></li>
+<li><p>Select <strong>Sprint Report</strong>.  If there is already a report on the page, choose <strong>Sprint Report</strong> from the <strong>Switch report</strong> drop-down menu next to the report title.</p></li>
+</ol>
+<p>The sprint report shows the burndown chart for the sprint as well as the completed and unfinished issues.</p>
+</div>
+<div class="section" id="burndown-chart">
+<h3><strong>Burndown Chart</strong><a class="headerlink" href="#burndown-chart" title="Permalink to this headline">¶</a></h3>
+<p>To see a larger version of the burndown chart shown on the sprint report, along with a daily breakdown of sprint activity, use the <strong>Burndown Chart</strong></p>
+<ol class="arabic simple">
+<li><p>Navigate to the execution project.</p></li>
+<li><p>Go to the Scrum Backlog Board.</p></li>
+<li><p>Drag the Story from the Backlog to the active sprint.</p></li>
+<li><p>In the sidebar, select the <strong>Reports</strong> page, which is indicated by a bar chart icon if the sidebar is collapsed.</p></li>
+<li><p>Select <strong>Burndown Chart</strong>.  If there is already a report on the page, choose <strong>Burndown Chart</strong> from the <strong>Switch report</strong> drop-down menu next to the report title.</p></li>
+</ol>
+</div>
+<div class="section" id="active-sprints-board">
+<h3><strong>Active Sprints Board</strong><a class="headerlink" href="#active-sprints-board" title="Permalink to this headline">¶</a></h3>
+<p>To see a visual representation of the status of the Stories, Defects/Bugs, and other work items in your sprint, use the <strong>Active Sprints</strong> page of the Scrum Backlog Board.</p>
+<ol class="arabic simple">
+<li><p>Navigate to the execution project.</p></li>
+<li><p>Go to the Scrum Backlog Board.</p></li>
+<li><p>In the sidebar, select the <strong>Active Sprints</strong> page, which is indicated by a double column icon if the sidebar is collapsed.</p></li>
+<li><p>Each column of the display shows which stories and Defects/Bugs are currently in that state. To change the state of a Story or Defect (bug), drag it to a different <strong>??  check with Doina</strong></p></li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 38%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change
+Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>07/30/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Doina Lepadat</p></td>
+<td><p>Initial Draft</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/Operations/ProgramManagement/SprintsInJiraAgile.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration Management Process &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="configuration-management-process">
+<h1>Configuration Management Process<a class="headerlink" href="#configuration-management-process" title="Permalink to this headline">¶</a></h1>
+<p>This process describes the steps in managing defect reports from submission through resolution. Defects are managed in the Defect Management System (e.g., Jira).</p>
+<p>The EPM is responsible for ensuring that this process is followed.
+The Bug Board is responsible for reviewing the defect record and deciding on the bug disposition.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 67%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Entry Criteria</strong></p></td>
+<td><ul class="simple">
+<li><p>A new program has been initiated/authorized and has begun planning</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Inputs</strong></p></td>
+<td><ul class="simple">
+<li><p>Program planning data and information</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Exit Criteria</strong></p></td>
+<td><ul class="simple">
+<li><p>The product is no longer in use and has been successfully and
+permanently archived</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Outputs</strong></p></td>
+<td><ul class="simple">
+<li><p>Documented plan for Configuration Management</p></li>
+<li><p>Controlled and released configuration items and baselines</p></li>
+<li><p>Configuration status (accurate information on the program work products</p></li>
+<li><p>Configuration audit reports (verification of configuration records)</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="activities">
+<h2><strong>Activities</strong><a class="headerlink" href="#activities" title="Permalink to this headline">¶</a></h2>
+<p><img alt="image0" src="../../../_images/SWConfigManagementProcess.jpg" /></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 19%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Step #</p></th>
+<th class="head"><p>Activity Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Develop and maintain plan for software configuration management</p></td>
+<td><p>The CM Lead develops the program’s SCM plan.  The plan is updated to reflect any major changes.  Key elements in the plan are:</p>
+<ul class="simple">
+<li><p>Roles and responsibilities</p></li>
+<li><p>Required resources, tools and repositories</p></li>
+<li><p>Identification of Configuration Items (CIs) to be controlled</p></li>
+<li><p>Strategy and methods for creating and releasing baselines, configuration control and configuration status accounting and auditing.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Identify project items for control</p></td>
+<td><p>The CM Lead, in conjunction with the Key Stakeholders (e.g., Engineering Manager, EPM, Technical Lead, and Test Lead) identify the CIs that have been documented in the SCM plan and assign unique identifiers to each item by following the document policy. These CIs compose the baselines at given points in the lifecycle.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Establish and maintain the CM system</p></td>
+<td><p>The CM Lead establishes the CM system(s) needed to manage multiple levels of control, per the SCM plan. The systems include the storage media, procedures and tools for accessing the system(s).</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Create and release baselines</p></td>
+<td><p>The CM Lead, supported by the Development and Test Managers and teams, establish and maintain baselines at designated points in the lifecycle, per the SCM plan. A baseline is a set of CIs that has been reviewed and agreed on, which thereafter serves as the basis for further development and which can be changed only by following the change control process and program change request procedure. Baselines can be internal or external and typically include functional (e.g., requirements), development (e.g., builds) and release (e.g., product deliveries) baselines.</p>
+<p>The CI descriptions that compose the baselines are kept up-to-date, including their decomposition into lower level components, who is responsible for each item and when it is placed under control. The history of each CI is recorded in sufficient detail to recover a previously baselined version, if needed.</p>
+<p>After their approval, the baselines are communicated to the project staff using various mechanisms (e.g., Team email).</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Track and control changes to baselined configuration items</p></td>
+<td><p>The CM Lead and Development and Test Managers and teams initiate and record defects to address changes to baselined requirements and development work products (e.g., design). Meeting with the Key Stakeholders is held to request, evaluate, approve, disapprove and implement changes to baselined CIs according to the <a class="reference external" href="./ChangeManagementProcedure.html">Change Management Procedure</a>. The changes encompass both error correction and enhancement.</p>
+<p>The degree of formality necessary for the change process, as well as the change mechanism used depends on the project baseline affected and the impact of the change within the configuration structure, as outlined in the change management process.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Control obsolete configuration items</p></td>
+<td><p>When a CI becomes obsolete, the obsolete CIs are handled as per the SCM plan in place.</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Perform configuration audits and reviews</p></td>
+<td><p>The CM Lead and SQA Lead conduct functional and physical configuration audits and reviews on a regular basis to ensure the following:</p>
+<ul class="simple">
+<li><p>CM practices are followed per plan.</p></li>
+<li><p>The product package contains all of the components it is supposed to contain.</p></li>
+<li><p>Baselines are correctly maintained, to ensure completeness, correctness and consistency.</p></li>
+</ul>
+<p>Audits are performed per the <a class="reference external" href="../SWQualityAssurance/InternalAuditProcess.html">Audit Process</a>.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Record and communicate status</p></td>
+<td><p>The CM Lead reports the configuration status to affected stakeholders on a need basis. Example reports include the current status of CIs (e.g., under work, checked in, tested, released), changes to CIs since the last baseline and various build views.</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>Control the storage and handling of baselined configuration items</p></td>
+<td><p>Backup (including disaster recovery), storage and handling of baselined CIs are performed by the Wind River Information Technology (IT) group.</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>Control the delivery of baselined configuration items</p></td>
+<td><p>The Release Operations team is responsible for the delivery of baselined CIs.</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>Monitor progress</p></td>
+<td><p>The Engineering Program Manager and Engineering Manager monitor CM progress and activities on a regular basis.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="related-process-assets-tools">
+<h2><strong>Related Process Assets/Tools</strong><a class="headerlink" href="#related-process-assets-tools" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>??</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="references">
+<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>??</p></li>
+</ul>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 56%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>05/01/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Naomi Lee</p></td>
+<td><p>Initial Draft</p></td>
+</tr>
+<tr class="row-odd"><td><p>07/20/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.2</p></td>
+<td><p>Shree Vidya Jayraman</p></td>
+<td><p>Updated the flow diagram and added link to step 5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/Operations/ConfigurationManagement/ConfigurationManagementProcess.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

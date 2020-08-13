@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test Generating Host BInaries Before Submitting Code (to produce new hostref) &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/cloudtheme/css/catalystcloud.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Submitting Code to Helix Guest Support" href="../SubmitCodeHelixGuest/SubmitCodeHelixGuestSupport_WI.html" />
+    <link rel="prev" title="Submitting Code in VxWorks 7 Host Tool Branch" href="SubmitCodeHostToolBranch_WI.html" /> 
+  </head><body>
+<div class="row">
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <a class="navbar-brand" href="http://docs.catalystcloud.io">
+      <img class="navbar-brand" src="_static/cloud-logo.png">
+    </a>
+
+  </div>
+  <ul class="nav navbar-nav">
+    <li><a class="nav-item nav-link active" href="../../index.html"><img class="navbar-brand" src="../../_static/WIND-Logo-Red-Screen-Md.png">
+     </a></li>
+  </ul>
+
+  <div class="collapse navbar-collapse nav-collapse">
+    
+      
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+    
+    <div class="mobile-nav visible-xs">
+       
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html">Core Development Processes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#lifecycle">Lifecycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#design">Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#coding-integration-and-build">Coding, Integration, and Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#verification">Verification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#validation">Validation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html">Operations Processes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#program-release-management">Program Release Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#defect-management">Defect Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#software-configuration-management">Software Configuration Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#software-quality-assurance">Software Quality Assurance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#measurement-tbd">Measurement <strong>TBD</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#training">Training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#information-development-user-documentation">Information Development (User Documentation)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../WorkInstructionsIndex.html">Work Instructions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#defect-escalation-and-enhancement-request-management-wip">Defect, Escalation, and Enhancement Request Management <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#development-wip">Development <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#test-wip">Test <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#feature-management-wip">Feature Management <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#user-story-management-wip">User Story Management <strong>WIP</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../WorkInstructionsIndex.html#submitting-code-to-host-side-wip">Submitting Code to Host Side <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#submitting-code-to-helix-guest-support-repository-wip">Submitting Code to Helix Guest Support Repository <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#other-process-related-content-wip">Other Process Related Content <strong>WIP</strong></a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Generic/GenericIndex.html">Generic Plans and Other Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Generic/GenericIndex.html#plans-tbd">Plans <strong>TBD</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Generic/GenericIndex.html#other-documents-wip">Other Documents <strong>WIP</strong></a></li>
+</ul>
+</li>
+</ul>
+
+        
+      
+    </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="xs-hidden col-sm-3 col-md-2 sidebar">
+      <div class="collapse navbar-collapse nav-collapse">
+           
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html">Core Development Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html">Operations Processes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../WorkInstructionsIndex.html">Work Instructions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#defect-escalation-and-enhancement-request-management-wip">Defect, Escalation, and Enhancement Request Management <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#development-wip">Development <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#test-wip">Test <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#feature-management-wip">Feature Management <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#user-story-management-wip">User Story Management <strong>WIP</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../WorkInstructionsIndex.html#submitting-code-to-host-side-wip">Submitting Code to Host Side <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#submitting-code-to-helix-guest-support-repository-wip">Submitting Code to Helix Guest Support Repository <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#other-process-related-content-wip">Other Process Related Content <strong>WIP</strong></a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Generic/GenericIndex.html">Generic Plans and Other Documents</a></li>
+</ul>
+
+          
+        
+        </div>
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div class="">
+      <div role="navigation" aria-label="breadcrumbs navigation">
+  <ol class="breadcrumb">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../WorkInstructionsIndex.html">Work Instructions</a> &raquo;</li>
+      
+    <li>Test Generating Host BInaries Before Submitting Code (to produce new hostref)</li>
+      <li class="breadcrumbs-aside">
+        
+          <a href="../../_sources/WorkInstructions/SubmitCodeHostSide/TestGeneratingHostBinariesBeforeSubmittingCode_WI.rst.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+</div>
+        
+  <div class="section" id="test-generating-host-binaries-before-submitting-code-to-produce-new-hostref">
+<h1>Test Generating Host BInaries Before Submitting Code (to produce new hostref)<a class="headerlink" href="#test-generating-host-binaries-before-submitting-code-to-produce-new-hostref" title="Permalink to this headline">¶</a></h1>
+<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
+<p>(Source: <a class="reference external" href="http://bitbucket.wrs.com/projects/VX7/repos/vx7_host/browse/README.TXT?at=refs%2Fheads%2Fvx7-host-SR0640-features">http://bitbucket.wrs.com/projects/VX7/repos/vx7_host/browse/README.TXT?at=refs%2Fheads%2Fvx7-host-SR0640-features</a>)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="to-build-linux-host-tools-32-bit">
+<h2><strong>To build Linux host tools 32-bit</strong><a class="headerlink" href="#to-build-linux-host-tools-32-bit" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># Install Redhat 6.6 as Software Development Workstation using DVD below
+
+http://yow-mirror.wrs.com/mirror/iso/RedHat/rhel-workstation-6.6-i386-dvd.iso
+
+git clone http://&lt;userid&gt;@vxgit.wrs.com/scm/vx7/vx7_host.git
+cd vx7_host
+export WIND_HOST=$(pwd)
+git checkout &lt;vx7-host-XXXXX&gt;
+git submodule update --init
+cd src
+make -f Makefile.r2 MODE=32 TARGET_HOST=LINUX
+
+# The host tools are created in $WIND_HOST/x86-linux2
+
+# To build Linux hvtools and vxsim 32-bit,
+
+cd $WIND_HOST/..
+git clone http://&lt;userid&gt;@vxgit.wrs.com/scm/vx7/vxworks.git
+cd vxworks
+git checkout vx7-integration
+cd ..
+ln -s vxworks/helix/guests/vxworks-7/pkgs_v2 .
+
+cd $WIND_HOST/src/hvtools
+make -f Makefile.r2 MODE=32 TARGET_HOST=LINUX
+
+cd $WIND_HOST/src/vxsim
+make -f Makefile.r2 MODE=32 TARGET_HOST=LINUX
+</pre></div>
+</div>
+</div>
+<div class="section" id="to-build-linux-host-tools-64-bit">
+<h2><strong>To build Linux host tools 64-bit</strong><a class="headerlink" href="#to-build-linux-host-tools-64-bit" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># Install Redhat 6.6 as Software Development Workstation using DVD below
+
+http://yow-mirror.wrs.com/mirror/iso/RedHat/rhel-workstation-6.6-x86_64-dvd.iso
+
+git clone http://&lt;userid&gt;@vxgit.wrs.com/scm/vx7/vx7_host.git
+cd vx7_host
+export WIND_HOST=$(pwd)
+git checkout &lt;vx7-host-XXXXX&gt;
+git submodule update --init
+cd src
+make -f Makefile.r2 MODE=64 TARGET_HOST=LINUX
+
+# The host tools are created in $WIND_HOST/x86_64-linux
+
+# To build Linux hvtools and vxsim 64-bit,
+
+cd $WIND_HOST/..
+git clone http://&lt;userid&gt;@vxgit.wrs.com/scm/vx7/vxworks.git
+cd vxworks
+git checkout vx7-integration
+cd ..
+ln -s vxworks/helix/guests/vxworks-7/pkgs_v2 .
+
+cd $WIND_HOST/src/hvtools
+make -f Makefile.r2 MODE=64 TARGET_HOST=LINUX
+
+cd $WIND_HOST/src/vxsim
+make -f Makefile.r2 MODE=64 TARGET_HOST=LINUX
+</pre></div>
+</div>
+</div>
+<div class="section" id="to-build-windows-host-tools-64-bit">
+<h2><strong>To build Windows host tools 64-bit</strong><a class="headerlink" href="#to-build-windows-host-tools-64-bit" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># Install Ubuntu 16.04 or Ubuntu 18.04 as Software Development Workstation
+
+sudo apt install git make cmake bison byacc flex pkg-config libtool-bin
+
+# For doxygen, install additional packages
+
+sudo apt install gcc-multilib g++-multilib
+
+git clone http://&lt;userid&gt;@vxgit.wrs.com/scm/vx7/vx7_host.git
+cd vx7_host
+export WIND_HOST=$(pwd)
+git checkout &lt;vx7-host-XXXXX&gt;
+git submodule update --init
+cd src
+make -f Makefile.r2 MODE=64 TARGET_HOST=WINDOWS
+
+# The host tools are created in $WIND_HOST/x86-win64
+
+# To build Windows hvtools 64-bit,
+
+cd $WIND_HOST/..
+git clone http://&lt;userid&gt;@vxgit.wrs.com/scm/vx7/vxworks.git
+cd vxworks
+git checkout vx7-integration
+cd ..
+ln -s vxworks/helix/guests/vxworks-7/pkgs_v2 .
+
+cd $WIND_HOST/src/hvtools
+make -f Makefile.r2 MODE=64 TARGET_HOST=WINDOWS
+</pre></div>
+</div>
+</div>
+<div class="section" id="to-build-linux-doxygen-32-bit-and-64-bit">
+<h2><strong>To build Linux doxygen 32-bit and 64-bit</strong><a class="headerlink" href="#to-build-linux-doxygen-32-bit-and-64-bit" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># Follow the steps to build Windows host tools 64-bit and then
+
+cd $WIND_HOST/src/doxygen
+make -f Makefile.r2 MODE=32 TARGET_HOST=LINUX
+make -f Makefile.r2 MODE=64 TARGET_HOST=LINUX
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+
+
+      </div>
+    </div>
+
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.2.1.<br/>
+    </p>
+  </div>
+</footer>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.catalyst-analytics.nz/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 81]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.catalyst-analytics.nz/piwik.php?idsite=81" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+  </body>
+</html>

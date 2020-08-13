@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualBox Tips and Techniques &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="virtualbox-tips-and-techniques">
+<h1>VirtualBox Tips and Techniques<a class="headerlink" href="#virtualbox-tips-and-techniques" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="getting-started">
+<h2><strong>Getting Started</strong><a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>This section covers steps needed to do to get the Virtual Machine (VM) up and running.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="creating-the-vm">
+<h2><strong>Creating the VM</strong><a class="headerlink" href="#creating-the-vm" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Be sure to give VM a large virtual disk! (It’s a real pain to have to increase the size of an existing disk later on, although it can be done.)</p>
+<ul>
+<li><p>Recommended size is 200 GB.</p></li>
+</ul>
+</li>
+<li><p>Give VM as many CPUs as it needs.</p>
+<ul>
+<li><p>In most cases, use most (or all) of the hosts CPUs for best performance.</p>
+<ul>
+<li><p>Example: For a quad-core host CPU that supports hyperthreading could give the VM 6, 7, or 8 CPUs.</p></li>
+<li><p>A warning may be about “too many CPUs” because VirtualBox doesn’t understand about hyperthreading and only counts the actual cores on the host. Ignore the warning.</p></li>
+</ul>
+</li>
+<li><p>Limit how much of host’s CPU time the VM can consume (to say 80% or 90%) to ensure the use of host for other things even if the VM is doing compute-intensive operations.</p></li>
+</ul>
+</li>
+<li><p>Give VM as much RAM as it needs.</p>
+<ul>
+<li><p>If the host has 16 or 32 GB RAM, then give the VM at least 8 GB.</p></li>
+</ul>
+</li>
+<li><p>Make the VM’s network adapter a “Bridged Adapter”.</p>
+<ul>
+<li><p>This ensures that the VM can access the network the same way the host itself does</p></li>
+<li><p>The default “NAT” type will allow the VM to access the network, but it may have problems accessing certain parts of the network (e.g. accessing certain areas under /folk or /net) because the Wind River network is set up to reject connections that don’t come from privileged ports (i.e. from port numbers &gt; 1024). Use NAT if required, but only if VirtualBox is used to configure the VM’s network interface to use a privileged port for NFS connections.</p></li>
+</ul>
+</li>
+<li><p>Enable shared clipboard and drag-and-drop features.</p>
+<ul>
+<li><p>Copying stuff from the VM to a Windows host seems to work OK.</p></li>
+<li><p>Problems copying stuff from Windows to VM (if VM is running with admin privileges) is because VirtualBox doesn’t allow to copy from an unprivileged environment to a privileged one.</p></li>
+</ul>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="booting-the-vm">
+<h2><strong>Booting the VM</strong><a class="headerlink" href="#booting-the-vm" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Mention where the OS installation disk lives</p>
+<ul>
+<li><p>Be sure to assign the VM a standard Wind River &lt;site&gt;-&lt;userid&gt;-&lt;identfier&gt; host name. (Example: yow-jdoe-v1)</p>
+<ul>
+<li><p><strong>Important:</strong> Ensure the host name does not exceed 15 characters, otherwise Windows-based computers won’t be able to reference it via DNS. (This is a Windows-specific limitation — Linux-based computers can handle host names that are 16 or more characters.) If Wind River userid is 8 characters long (which is true for many people), then the “identifier” portion of the host name can’t be more than 2 characters!</p></li>
+</ul>
+</li>
+<li><p>Be sure to create the userid using the same name as the Wind River userid.</p></li>
+</ul>
+</li>
+<li><p>Once the OS is up, install the VirtualBox guest additions.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="aligning-vm-userid-value">
+<h2><strong>Aligning VM userid value</strong><a class="headerlink" href="#aligning-vm-userid-value" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Ensure that the numeric value of the VM userid matches the numeric value of regular Wind River userid. Failing to do this can make it difficult to access other hosts, files, and services elsewhere in the Wind River network!</p>
+<ul>
+<li><p>Do this right away! The following procedure only changes the numeric values of the files in the VM home directory, so manually update the ownership of the files in other directories on the VM.</p></li>
+<li><p>To find out what the numeric userid (uid) currently is, just issue the command “id”.</p></li>
+</ul>
+</li>
+<li><p>Log in as an administrator that isn’t the userid being changed.</p>
+<ul>
+<li><p>If unable to log in as “root”.  create a new administrator account, use it to change the numeric userid value, then delete the new administrator account.</p></li>
+</ul>
+</li>
+<li><p>Change the numeric value of the userid.    <em>usermod -u &lt;value&gt; &lt;userid&gt;</em></p>
+<ul>
+<li><p>If unaware of the Wind River numeric value is, set up access to files on the network (see below), then display their ownership (eg. “ls -l “)</p></li>
+</ul>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="personalize-the-vm">
+<h2><strong>Personalize the VM</strong><a class="headerlink" href="#personalize-the-vm" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Configure the editor.</p>
+<ul>
+<li><p>May need to install the editor</p></li>
+<li><p>If emacs used, set up ~/.bash_aliases with “alias emacs=’emacs -nw’” to keep emacs from popping up a new window when trying to edit a file.</p></li>
+</ul>
+</li>
+<li><p>Configure the default terminal profile.</p>
+<ul>
+<li><p>Click on a terminal window, then select “Edit Profile Preferences” at top of screen.</p></li>
+<li><p>Suggestion: Use monospace 8 font, with black on white text.</p></li>
+</ul>
+</li>
+<li><p>Configure bash terminal prompt.</p>
+<ul>
+<li><p>Edit ~/.bashrc so that PS1 uses the color of choice.</p></li>
+<li><p>Suggestion: 00;36 is a pleasant teal color.</p></li>
+</ul>
+</li>
+<li><p>Disable auto-locking of the screen (since presumably locking the screen on the host).</p>
+<ul>
+<li><p>Set screen inactive to “never” and turn lock off.</p></li>
+</ul>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="configuring-the-vm-s-network-access">
+<h2><strong>Configuring the VM’s Network Access</strong><a class="headerlink" href="#configuring-the-vm-s-network-access" title="Permalink to this headline">¶</a></h2>
+<p>This section covers things needs to give VM access to the Wind River network.</p>
+<div class="section" id="configuring-the-network-interface">
+<h3><strong>Configuring the Network Interface</strong><a class="headerlink" href="#configuring-the-network-interface" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>VM can typically to obtain its IP address dynamically via DHCP.</p>
+<ul>
+<li><p>By default Ubuntu configures a new network interface to use DHCP</p></li>
+<li><p>IMPORTANT: If running a lot of VMs at the same time (rather than just one or two), contact the Ottawa IT folks first to ensure that set of DHCP-managed IP addresses are going to be depleted. (This has been a problem in the past!)</p></li>
+</ul>
+</li>
+<li><p>If VM requires a static IP address for some reason, contact the Ottawa IT folks first to obtain an authorized static IP address.</p></li>
+</ul>
+</div>
+<div class="section" id="configuring-dns">
+<h3><strong>Configuring DNS</strong><a class="headerlink" href="#configuring-dns" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Edit /etc/hosts</p>
+<ul>
+<li><p>If VM uses DHCP delete 127.0.1.1 line, if it exists (or comment it out with a leading “#”).</p></li>
+<li><p>If VM has a static IP address, change 127.0.1.1 vmname to staticaddress vmname.</p></li>
+<li><p>IMPORTANT: This step is needed to ensure the VLM Client tool refreshes its display properly after locking or unlocking a VLM-controlled target.</p></li>
+</ul>
+</li>
+<li><p>Edit the IPv4 network settings for the VM’s Ethernet interface. (It’s easiest to use GUI.)</p>
+<ul>
+<li><p>DNS servers: 128.224.144.130, 147.11.57.128</p></li>
+<li><p>If desired, add: 147.11.57.133, 147.11.161.33, 147.11.161.34</p></li>
+<li><p>Search domains: corp.ad.wrs.com, wrs.com</p>
+<ul>
+<li><p>Windows PCs supplied by Ottawa IT also use kk.wrs.com (as 3rd and last entry)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>After saving, activate new settings by using GUI to turn interface “off”, then “on”.</p>
+<ul>
+<li><p>Enter the following command to confirm the DNS servers were applied correctly:</p>
+<ul>
+<li><p>nmcli d list | grep DNS (Ubuntu 14.04)</p></li>
+<li><p>nmcli d show | grep DNS (Ubuntu 16.04)</p></li>
+</ul>
+</li>
+<li><p>Display /etc/resolv.conf to confirm the search domains were applied correctly.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="accessing-files-under-net">
+<h3><strong>Accessing files under/net</strong><a class="headerlink" href="#accessing-files-under-net" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Install the automount (“autofs”) package.</p></li>
+<li><p>Add (or enable) the following line to /etc/auto.master:</p>
+<ul>
+<li><p>/net -hosts</p></li>
+</ul>
+</li>
+<li><p>Add the following line to /etc/nsswitch.conf:</p>
+<ul>
+<li><p>automount: files nis</p></li>
+</ul>
+</li>
+<li><p>Restart automount services.</p>
+<ul>
+<li><p>sudo service autofs restart</p></li>
+</ul>
+</li>
+<li><p>Try displaying /net/yow-lxfs01/yow-lxfs0105/teams directory to verify access is working properly.</p></li>
+</ul>
+</div>
+<div class="section" id="configuring-nis">
+<h3><strong>Configuring NIS</strong><a class="headerlink" href="#configuring-nis" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Install the yellow pages (“nis”) package.</p>
+<ul>
+<li><p>Note: Ubuntu 11 tries to set up NIS, but the ypbind operation doesn’t succeed — just let it time out and fail …</p></li>
+</ul>
+</li>
+<li><p>Add the following lines to /etc/yp.conf.</p>
+<ul>
+<li><p>domain swamp server 128.224.195.20</p></li>
+<li><p>ypserver 128.224.195.21</p></li>
+</ul>
+</li>
+<li><p>Verify /etc/defaultdomain is set to the following (change it if necessary):</p>
+<ul>
+<li><p>swamp</p></li>
+</ul>
+</li>
+<li><p>[Ubuntu 16.04 workaround] Fix a problem with NIS not working after installation.</p>
+<ul>
+<li><p>sudo /bin/systemctl add-wants multi-user.target rpcbind.service</p>
+<ul>
+<li><p>Take a look at <a class="reference external" href="https://bugs.launchpad.net/ubuntu/+source/rpcbind/+bug/1558196">https://bugs.launchpad.net/ubuntu/+source/rpcbind/+bug/1558196</a>.</p></li>
+<li><p>Fix is to configure systemd to invoke rpcbind rather than allowing nis.service to do it.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Restart NIS service.</p>
+<ul>
+<li><p>sudo service nis restart [WARNING: this no longer seems to work — might need to reboot!]</p></li>
+</ul>
+</li>
+<li><p>Verify things are working properly.</p>
+<ul>
+<li><p>domainname (should return “swamp”)</p></li>
+<li><p>ypwhich (should return “yow-adnis1.wrs.com”, or something similar)</p></li>
+<li><p>ypcat auto.yow (should return list of home directory locations)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="accessing-files-under-folk">
+<h3><strong>Accessing files under /folk</strong><a class="headerlink" href="#accessing-files-under-folk" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>IMPORTANT: This step assumes “Accessing files under /net” step shown above has already been done</p></li>
+<li><p>Add the following lines to /etc/auto.master to allow access /folk (Ottawa) and /folk (Alameda) directories:</p>
+<ul>
+<li><p>/folk auto.yow</p></li>
+<li><p>/folk-ala auto.home</p></li>
+</ul>
+</li>
+<li><p>Restart automount services</p>
+<ul>
+<li><p>sudo service autofs restart</p></li>
+</ul>
+</li>
+<li><p>Try displaying /folk/ and /folk-ala/ to verify access is working properly.</p>
+<ul>
+<li><p>Some users have reported that access to /folk stuff doesn’t work properly after rebooting the VM; a workaround is to restart the automount services manually (see previous bullet).</p></li>
+<li><p>Another workaround is to specify “yp:auto.” instead of “auto.” in auto.master.</p></li>
+</ul>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="sharing-vm-folders-to-windows-host">
+<h2><strong>Sharing VM folders to Windows host</strong><a class="headerlink" href="#sharing-vm-folders-to-windows-host" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Install Samba packages on the VM (using sudo).</p>
+<ul>
+<li><p>apt-get install samba samba-common python-glade2 system-config-samba gksu</p></li>
+<li><p>touch /etc/libuser.conf</p></li>
+<li><p>The second command is a Ubuntu 16.04 workaround for a bug with system-config-samba.</p></li>
+</ul>
+</li>
+<li><p>Start Samba configuration tool</p>
+<ul>
+<li><p>gksudo system-config-samba</p></li>
+<li><p>Need to use gksudo since it uses a graphical interface.</p></li>
+</ul>
+</li>
+<li><p>Use Samba configuration tool to share folder(s) to see the host</p>
+<ul>
+<li><p>Default server security is “User”, which limits access to permitted users.</p></li>
+<li><p>Set Samba user info so that username and password are the same as for Windows PC (otherwise enter name/password when first trying to access folder from Windows, because the one Windows passes in won’t match what Samba expects).</p></li>
+<li><p>Set shared folder to be visible, writable, and accessible by Windows PC username.</p></li>
+</ul>
+</li>
+<li><p>On the host, map network drive to \VM’s_IP_addressfolder_name.</p></li>
+<li><p>To prevent Samba from turning on a file’s “execute bit” if to edit it from Windows:</p>
+<ul>
+<li><p>Edit /etc/samba/smb.conf (requires “sudo” access)</p></li>
+<li><p>Add the line “map archive = no” (add it under [“username”], but [global] might work too)</p></li>
+<li><p>Save file, then restart the VM to ensure Samba uses the new info.</p></li>
+<li><p>Note: Apparently the default behavior for Samba is to use the execute bit as the equivalent of the archive bit used by Windows file systems (which tells backup software that a file has been modified since the last archive and needs to be backed up).</p></li>
+</ul>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="maintaining-vm">
+<h2><strong>Maintaining VM</strong><a class="headerlink" href="#maintaining-vm" title="Permalink to this headline">¶</a></h2>
+<p>This section describes how to keep VM running smoothly.</p>
+<div class="section" id="cloning-a-vm">
+<h3><strong>Cloning a VM</strong><a class="headerlink" href="#cloning-a-vm" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>If cloning an existing VM, be sure to re-initialize the MAC addresses of its NICs inorder to be able to co-execute with the original VM (or other VMs).</p>
+<ul>
+<li><p>IMPORTANT: This creates a new network interface, so need to configure its type, IP address, and DNS info. It won’t inherit this from the existing network interface!</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="fixing-problems-with-virtualbox-guest-additions">
+<h3><strong>Fixing problems with VirtualBox guest additions</strong><a class="headerlink" href="#fixing-problems-with-virtualbox-guest-additions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Sometimes after updating Ubuntu VM software, the guest’s mouse and/or screen size functionality may not work.</p>
+<ul>
+<li><p>To correct this, try reinstalling VirtualBox’s guest additions.</p></li>
+</ul>
+</li>
+<li><p>If having trouble getting the mouse to point properly within the VM screen:</p>
+<ul>
+<li><p>Look under the VM’s “Input” menu and select “Mouse Integration” — this should give mouse control to the VM only.</p></li>
+<li><p>To give mouse control back to the PC enter the usual mouse control transfer key (usually Right Ctrl).</p></li>
+</ul>
+</li>
+<li><p>Be sure the guest additions CD is available to the VM.</p>
+<ul>
+<li><p>Look under the VM’s “Devices” menu. If necessary, eject what is already there and then select “Insert Guest Additions CD Image …”.
+- Alternatively, shut down the VM then open the VirtualBox app. Look at the “Storage” section for the VM-hopefully it says “VBoxGuestAdditions.iso”. If not, click on the disk name and then remove it from the VM. Restart the VM and try inserting the guest additions CD.</p></li>
+</ul>
+</li>
+<li><p>If the Guest Additions CD doesn’t run automatically, invoke it manually.</p>
+<ul>
+<li><p>sudo bash</p></li>
+<li><p>cd /media/&lt;username&gt;/VBOXADDITIONS_&lt;version&gt;</p></li>
+<li><p>sh autorun.sh</p></li>
+</ul>
+</li>
+<li><p>Once the guest additions have been reinstalled be sure to restart the VM.</p>
+<ul>
+<li><p>Things should now be working properly once again.</p></li>
+</ul>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="using-an-ottawa-it-supplied-vm">
+<h2><strong>Using an Ottawa IT-supplied VM</strong><a class="headerlink" href="#using-an-ottawa-it-supplied-vm" title="Permalink to this headline">¶</a></h2>
+<p>Check with Ottawa IT to create an Ubuntu 14.04 VM. They’ll create a machine named something like yow-&lt;username&gt;-lx and store it at yow-itcs/Images/VMs. It looks like they’ll create a root account (password is <a class="reference external" href="mailto:P&#37;&#52;&#48;ssw0rd">P<span>&#64;</span>ssw0rd</a>) as well as normal Wind River account (using current CORP password). Once Vm is copied to host and fired up, the VM will already have guest additions installed and will be able to access the Wind River network (including files under /folk and /net.</p>
+<ul class="simple">
+<li><p>IMPORTANT: By default, a VM hard disk size of 100 GB is givern — if a larger disk is required, specify this when submitting request to Ottawa IT. The Ottawa IT team will also only configure the VM with a single CPU, but can easily change this yourself once the VM is available.</p></li>
+</ul>
+<p><em>If in a hurry:</em></p>
+<p>If the Ottawa IT  is unavailable, clone an exisiting VM created for someone else and then adapt it. The steps involved are:</p>
+<ol class="arabic simple">
+<li><p>Open VirtualBox, then add one of the VMs found under yow-itcs/Images/VMs. (YOW-UBUNTUBASE-LX has a 100GB disk.) Don’t start this VM!</p></li>
+<li><p>Clone the VM added, being sure to change the MAC address of its network interface and to rename the VM.</p></li>
+<li><p>Remove the original VM from VirtualBox, but don’t delete its files!</p></li>
+<li><p>Change the new VM’s settings for preferences. (i.e. number of CPUs, amount of RAM, amount of video memory, etc.)</p></li>
+<li><p>Fire up the VM. (Mention in VirtualBox the host’s network adapters to be used for its network interface.)</p></li>
+<li><p>Log in as “root”, then create a userid (specifying normal Wind River userid and numeric id). Delete any other unwanted userids.</p></li>
+<li><p>Rename the VM to the name to use (such as yow-YOURNAME-lx) by editing /etc/hostname and /etc/hosts.</p></li>
+<li><p>Edit /etc/hosts as described in the first bullet of “Configuring DNS” above to ensure the VLM Client tool will work properly.</p></li>
+<li><p>Reboot the VM and log in using the userid.</p></li>
+<li><p>Verify the VM has the name specified and can access the network properly (including stuff under /folk and /net).</p></li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 38%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change
+Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>06/25/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Transferred content from VirtualBox
+Tips and Techniques Twiki page</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/CoreDev/CodingIntBuild/VirtualBoxTips_Techniques.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

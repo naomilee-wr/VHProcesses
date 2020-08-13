@@ -1,0 +1,175 @@
+:orphan:
+|
+|
+|
+
+==========================
+Internal Audit Process
+==========================
+
+|
+
+This process describes how internal audits are performed and recorded.  The Software Quality Assurance (SQA) Lead is responsible for assuring this process is performed. The SQA Lead may designate another person to perform the audit process. The Key Stakeholders (e.g., Engineering Managers/Director, Engineering Program Manager (EPM), Technical Lead, Test Lead) participates in this process.
+
+|
+
++--------------------------------------+--------------------------------------+
+| **Entry Criteria**                   | SQA activities (e.g. audits and      |
+|                                      | reviews) are defined in the SQA Plan |
++--------------------------------------+--------------------------------------+
+| **Inputs**                           | -  SQA Plan                          |
+|                                      | -  Items in the audit scope are      |
+|                                      |    available.                        |
++--------------------------------------+--------------------------------------+
+| **Exit Criteria**                    | The Audit Record is complete and the |
+|                                      | status is closed. Any noncompliance  |
+|                                      | is filed and closed.                 |
++--------------------------------------+--------------------------------------+
+| **Outputs**                          | -  Audit Record in the Audit Tracking|
+|                                      |    System (e.g. Trace) where status  |
+|                                      |    = closed.                         |
+|                                      | -  Audit checklist attached to audit |
+|                                      |    record.                           |
+|                                      | -  Noncompliance records in Trace    |
+|                                      |    where status = closed.            |
++--------------------------------------+--------------------------------------+
+
+|
+
+
+**Activities**
+--------------
+
+|image0|
+
+
+.. list-table::
+   :widths: 10 30 120
+   :header-rows: 1   
+   
+   * - Step #
+     - Activity Name
+     - Description
+    
+   * - 1
+     - Create Audit Record
+     - The auditor opens an Audit Plan/Record in the Audit Tracking System for each audit. The required fields (shown below in the Tools and Templates section) are filled in. 
+    
+   * - 2
+     - Schedule audit
+     - When the audit is scheduled, the auditor puts the planned start date in the Due Date field in the Audit Record. 
+    
+   * - 3
+     - Plan the audit strategy
+     - In the Strategy field in the Audit Record the auditor describes what will be done during the audit, including what artifacts will be examined, who will be interviewed, what activities and work products will be evaluated, and the SQA resources needed. 
+
+       An audit checklist is prepared listing the evaluation criteria for the audit.  `Audit checklist <../../../ProcessDocuments/Operations/SWQualityAssurance/QualityAuditChecklistTemplate.xlsx>`__ (*NL 8/12: I don't see this file anywhere*) is maintained in the process library. 	 
+
+   * - 4
+     - Conduct audit
+     - The auditor conducts the audit. The audit checklist is filled in showing pass or fail for each criteria, and notes as needed. The completed audit checklist is attached to the Audit Plan/Record.
+
+   * - 5
+     - Record findings
+     - The auditor records findings in the Audit Record. The Audit Result field is set to one of the following: 
+	 
+       -  *In Compliance*: No noncompliances found. 
+	 
+       -  *Minor Issues*: Noncompliances minimally impact the program and do not impact the quality of the product.
+	 
+       -  *Major Issues*: One or more noncompliances could potentially have significant impact on the program or product. 
+
+       If observations are found, action items are opened in Audit Tracking System and attached to the Audit Record.  Action items are reviewed and tracked to closure, according to the Action Item process. A justification of the result is recorded in the Findings field.
+
+       Observations (opportunities for improvement) are evidence of weak practices (not of significant concern) which if not addressed could result in a future nonconformity.
+
+   * - 6
+     - Resolve noncompliances
+     - If there are noncompliances found during the audit, then they are resolved using the `Noncompliance Process <./NoncomplianceProcess.html>`__.
+
+   * - 7
+     - Close Audit Record
+     - The auditor discusses the outcome with auditees. The Audit Record cannot be closed until all noncompliances are closed. If there are no noncompliances, the Audit Record Status is set to closed.
+
+   * - 8
+     - Report status
+     - The program Key Stakeholders (e.g., Engineering Manager, Engineering Program Manager (EPM), Technical Lead, Test Lead) participating in audits periodically receive status on audits, audit results, any analysis/trends from the auditor/SQA Lead.
+
+|
+
+**Tool & Template Instructions**
+--------------------------------
+
+Trace database:
+`https://trace3.windriver.com <https://trace3.windriver.com/>`__
+
+**Audit Record Template:**
+
+.. list-table::
+   :widths: 30 120
+   :header-rows: 1   
+   
+   * - Activity Name
+     - Description
+    
+   * - Program Release (Mandatory)
+     - One or more program releases the audit is performed on.
+    
+   * - Process area (Mandatory)
+     - The process area the audit is performed on (e.g., configuration management, testing, etc.).
+    
+   * - Audit scope (Mandatory)
+     - A list of processes, documents, or actions audited.
+	     
+   * - Auditor (Mandatory)
+     - The name of the auditor (could be the SQA Lead).
+    
+   * - Audit participants
+     - People who take part in the audit.
+
+   * - Due Date (Mandatory)
+     - When the audit is scheduled to begin.
+
+   * - Strategy
+     - What will be done.
+    
+   * - Date Completed
+     - Date the Audit Record is written and noncompliances are filed.
+    
+   * - Audit Result
+     - The outcome of the audit may be:
+	 
+       -  *In Compliance*:  No noncompliances found.
+	 
+       -  *Minor*:  Noncompliances minimally impacts the program and does not impact the quality of the product.
+	 
+       -  *Major*:  One or more noncompliances could potentially have significant impact on the program or product.
+    
+   * - Audit Findings
+     - A justification of the audit result.   
+ 
+   * - CC
+     - People who should be notified when record is updated. 
+
+   * - Status
+     - Open or closed. 
+	 
+   * - Related (Tab)
+     - Identify and provide links to records reviewed as part of the audit.	 
+
+|
+
+**Change Log**
+--------------
+
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------+
+| **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                           |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------+
+| 05/14/2020   | N/A                     | 0.1           | Shree Vidya Jayaraman   | Initial Draft                                             |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------+
+|              |                         |               |                         |                                                           |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------+
+
+
+
+.. |image0| image:: /_static/Operations/SWQualityAssurance/InternalAuditProcess.jpg

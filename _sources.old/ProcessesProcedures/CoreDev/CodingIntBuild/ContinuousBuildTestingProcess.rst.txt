@@ -1,0 +1,98 @@
+:orphan:
+
+====================================
+Continuous Build Testing Process
+====================================
+
+The goal of this process is to identify issues in the current product code repository on a daily basis against the build matrix of product feature selections, options, and hosts.  This is achieved through the nightly build tool (e.g., Jenkins).  On average each configuration is built at least once a day, and notifications of failures are sent to developers for analysis.
+
+The Build and Configuration team is responsible for this process.
+
+|
+
++--------------------------------------+--------------------------------------+
+| **Entry Criteria**                   | Code checked-in and ready for build  |
++--------------------------------------+--------------------------------------+
+| **Inputs**                           | The Development integration branch   |
++--------------------------------------+--------------------------------------+
+| **Exit Criteria**                    | Nightly build completes or fails     |
++--------------------------------------+--------------------------------------+
+| **Outputs**                          | -  Build Log of build artifacts      |
+|                                      | -  Nightly build warning report      |
+|                                      | -  Issues logged as defects          |
++--------------------------------------+--------------------------------------+
+
+|
+
+**Activities**
+--------------
+
+|image0| 
+
+
+.. list-table::
+   :widths: 10 30 120
+   :header-rows: 1   
+   
+   * - Step #
+     - Activity Name
+     - Description
+    
+   * - 1
+     - Build cluster idle resources available
+     - The system will continually check to see if idle resources in the build cluster are available.
+    
+   * - 2
+     - Select a matrix combination
+     - A matrix combination is selected at random from the test matrix.
+  
+       **Note:**  The test matrix is release specific and is stored as a file in the CM system.  
+	 
+   * - 3
+     - Schedule build
+     - The build is scheduled on a nightly basis.
+
+   * - 4
+     - Build complete
+     - If the build is successful, then then build statics are stored. 
+  
+       If the build fails with errors, then a nightly build warning report is generated from the integration branch and stored.  The report is sent out to development teams to review and analyze.
+
+   * - 5
+     - Analyze failures
+     - For failures, Development team members determine if the failures are due to simple infrastructure issues (e.g. disk full, configuration typo) or product defect.
+  
+       For infrastructure issues, take steps to address the issue directly.
+	   
+       For product defect, if the defect is not already known, file a defect as specified by the `Defect Management Process <../../../_static/Operations/DefectManagement/DefectManagementProcess.html>`__.
+	   
+|
+
+Related Process Assets/Tools
+----------------------------
+
+- Engineering Requirements Management system (e.g., Jira Agile)
+- Configuration Management system (e.g., Git)
+- CI Launcher/Build tool(e.g., Jenkins)
+   
+|
+
+References 
+-----------------
+- `Build Warning Guidelines of VxWorks 7 <https://jive.windriver.com/docs/DOC-72731>`__
+
+|
+
+**Change Log**
+--------------
+
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+| **Date**     | **Change Request ID**  | **Version**   | **Change By**           | **Description**                                                                     |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+| 05/01/2020   | N/A                    | 0.1           | Shree Vidya Jayaraman   | Initial Draft                                                                       |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+|              |                        |               |                         |                                                                                     |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+
+.. |image0| image:: /_static/CoreDev/CodingIntBuild/ContinuousBuildTestingProcess.jpg 
+

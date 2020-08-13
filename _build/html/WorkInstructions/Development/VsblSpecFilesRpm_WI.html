@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealing with VSBL, Spec Files and RPMs &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
+                <li><a href="../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="dealing-with-vsbl-spec-files-and-rpms">
+<h1>Dealing with VSBL, Spec Files and RPMs<a class="headerlink" href="#dealing-with-vsbl-spec-files-and-rpms" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In the course of VxWorks development, engineers will need to manipulate both layer VSBL files and RPM spec files.  These files contain important meta-data that instruct the build and manufacturing systems on how to configure and package code, respectively.  VSBL files are interpreted when manipulating VSBs, while spec files are interpreted during manufacturing.</p>
+<p>The following document provides information and simple tips on dealing with these files to avoid common mistakes done by developers.</p>
+<p>(Source: <a class="reference external" href="https://jive.windriver.com/docs/DOC-57146">https://jive.windriver.com/docs/DOC-57146</a>)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="creating-a-new-vsbl-or-spec-file">
+<h2><strong>Creating a new VSBL or Spec File</strong><a class="headerlink" href="#creating-a-new-vsbl-or-spec-file" title="Permalink to this headline">¶</a></h2>
+<p>When creating a new VSBL or spec file:</p>
+<ol class="arabic simple">
+<li><p>Start by copying an existing file from elsewhere in install tree.</p>
+<ul class="simple">
+<li><p>The following is a simple example taken from a VxWorks Graphics driver:</p>
+<ul>
+<li><p><a class="reference external" href="http://vxgit.wrs.com/projects/VX7/repos/vxworks/browse/vxworks-7/pkgs/ui/fbdev/fslipu/layer.vsbl">VSBL File</a></p></li>
+<li><p><a class="reference external" href="http://vxgit.wrs.com/projects/VX7/repos/vxworks/browse/vxworks-7/pkgs/ui/fbdev/fslipu/fslipu.spec">Spec File</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Contact your PLM to confirm what YUM Group the RPM belongs to.</p>
+<ul class="simple">
+<li><p>Check your associated Rally Feature, in most cases this information should be provided in the description (see picture below).  If it is not, please ensure it is updated either by PLM or TFO.</p></li>
+</ul>
+</li>
+<li><p>Ask the Release Operations Team or PLM to assign the new RPM into the appropriate YUM Group in the Delivery+ system.</p></li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="modifying-a-vsbl-or-spec-file">
+<h2><strong>Modifying a VSBL or Spec File</strong><a class="headerlink" href="#modifying-a-vsbl-or-spec-file" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl>
+<dt>Most code modifications will require layer and/or RPM version numbers to be updated</dt><dd><ul>
+<li><p>Note that code submissions into a release will automatically fail to merge if the affected RPM versions are not updated</p></li>
+<li><p>Guidelines on version numbers (and updating them) are provided in the VxWorks Coding Standard in the Reference section of Chapter 8 (see link above)</p>
+<p><strong>NOTE:  Developers should coordinate with their teams and RPM/layer owners to ensure that version numbers are correctly updated</strong></p>
+</li>
+<li><p>When updating a spec file version, you must also provide a new Change Log entry that describes what has changed.</p>
+<p>The guidelines for Change Log entries is not currently published in the VxWorks Coding Standard, but can be referenced <a class="reference external" href="https://jira.wrs.com:8443/projects/VXWCS/issues/VXWCS-21">here</a> (under Internal Description).</p>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Any other type of modification requires a more thorough understanding of the VxWorks Configuration system.  You are strongly encouraged to read the Layers HLD (see link above) and to include a Build &amp; Config representative in your code review.</p></li>
+<li><p>If updating an RPM’s name or YUM Group, you must first seek PLM approval.
+-  You must also uprev the RPM and its associated layer.</p></li>
+<li><p>Ask the Release Operations Team or PLM to assign the newly named RPM into the appropriate YUM Group in the Delivery+ system.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="appendix-common-mistakes">
+<h2><strong>Appendix:  Common Mistakes</strong><a class="headerlink" href="#appendix-common-mistakes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-new-or-renaming-rpms">
+<h3><strong>Creating New or Renaming RPMs</strong><a class="headerlink" href="#creating-new-or-renaming-rpms" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Failing to communicate the RPM name to the Release Operations Team will cause a load build failure on the main line!
+-  The build failure will lead to the following warning: “rpm package is unsorted”</p></li>
+<li><p>Failing to uprev the RPM version will lead the Installer to use the older RPM (even if it’s still in an older YUM Group).
+-  To ensure your newly name RPM is part of the correct YUM Group, you may access the R1 repository and check the groups.xml under dedicated profiles  (E.g. <a class="reference external" href="http://pek-cdftp/r1/vxworks/vxworks-7.0">http://pek-cdftp/r1/vxworks/vxworks-7.0</a>/&lt;SPIN_NAME&gt;/&lt;YUM_GROUP_NAME&gt;/repodata/groups.xml)</p></li>
+</ul>
+</div>
+<div class="section" id="defect-publication-mismatch">
+<h3><strong>Defect Publication Mismatch</strong><a class="headerlink" href="#defect-publication-mismatch" title="Permalink to this headline">¶</a></h3>
+<p>The spec file Change Log is also used as a means of verifying that the company is publishing the appropriate defects for customer reference.</p>
+<ul>
+<li><p>All JIRA defect numbers appearing in a spec file Change Log must be published</p>
+<p>Note: that when in doubt on whether a defect should be published or not, ask yourself: Can a customer ever encounter this defect?</p>
+</li>
+</ul>
+</div>
+<div class="section" id="version-mismatches">
+<h3><strong>Version mismatches</strong><a class="headerlink" href="#version-mismatches" title="Permalink to this headline">¶</a></h3>
+<p>When making changes to a layer’s content, you have to remember to upgrade the layer version and the version in the spec file that ships the code.</p>
+<ul class="simple">
+<li><p>If the spec file is in the same directory as the modified layer source and the layer.vsbl, then you just need to upgrade the version numbers in both those files
+- a/layer.vsbl
+- a/xxx.spec</p></li>
+<li><p>If the spec file is in a directory above, then you need to modify not only the layer.vsbl in the directory that you are changing but the layer.vsbl and the spec file in the directory that ships your new code.
+- a/b/layer.vsbl
+- a/layer.vsbl
+- a/xxx.spec</p></li>
+<li><p>If there are multiple spec files in the same directory they all need to have the same version number, (this happens in some areas to ship arch specific code, here is an example from the hypervisor code)
+- /pkgs/os/hv/hypervisor/hypervisor.spec
+- /pkgs/os/hv/hypervisor/hypervisor_arm.spec
+- /pkgs/os/hv/hypervisor/hypervisor_ia.spec</p></li>
+</ul>
+</div>
+<div class="section" id="wrong-layer-name-used-in-layer-requires-or-feature-requires-statements">
+<h3><strong>Wrong layer name used in LAYER_REQUIRES or FEATURE_REQUIRES statements</strong><a class="headerlink" href="#wrong-layer-name-used-in-layer-requires-or-feature-requires-statements" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>A common mistake is using the wrong layer name in the layer metadata, for example it would be incorrect to use PPP when you expected to create a dependency on the /pkgs/net/ipnet/linkproto/ppp layer.</p></li>
+<li><p>The easy way to get the correct name is to use the “vxprj vsb info PPP” or “vxprj vsb info IPNET_1_1_1_2_LINKPROTO_1_0_1_2_PPP_1_2_1_4” command and to select the “Target Name”.</p>
+<p>&gt;vxprj vsb info PPP</p>
+<p>Name:                     PPP</p>
+<p>VENDOR:                   Wind River</p>
+<p>VERSION:                  1.2.1.4</p>
+<p>FEATURE:                  NETWORKING</p>
+<p>TYPE:                     GENERIC</p>
+<p>Target Name:              IPNET_PPP</p>
+<p>Full Name:                IPNET_1_1_1_2_LINKPROTO_1_0_1_2_PPP_1_2_1_4</p>
+</li>
+</ul>
+</div>
+<div class="section" id="container-layer-version-changes">
+<h3><strong>Container layer version changes</strong><a class="headerlink" href="#container-layer-version-changes" title="Permalink to this headline">¶</a></h3>
+<p>Some layers, IPNET or USB for example, contain no source files and are not really meant to change.  We call these container layers.  In SR0450 these layers (and spec files) were altered such that they installed under a versioned directory name. If you have to change something that these spec files you will have to upgrade every layer under them. This is a bit of a pain but it is not expected to happen very often.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="./VSBLayerHLDv128.doc">Latest Layers HLD</a></p>
+<ul class="simple">
+<li><p>Developers are strongly encouraged to review the HLD prior to modifying any VSBL files.  The HLD contains comprehensive information on the format and language used in these files.</p></li>
+<li><p>The HLD also contains important information related to creating and modifying Makefiles for VxWorks layers.</p></li>
+</ul>
+<p><a class="reference external" href="./WindRiverVxWorksCodingStandard.pdf">Coding Standard</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 52%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>06/18/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Naomi Lee</p></td>
+<td><p>Transferred content from Dealing with VSBL, Spec Files and RPMs Jive page</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../_sources/WorkInstructions/Development/VsblSpecFilesRpm_WI.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

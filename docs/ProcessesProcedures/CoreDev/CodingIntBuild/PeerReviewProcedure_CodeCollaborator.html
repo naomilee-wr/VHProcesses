@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Review Procedure Using Code Collaborator Tool &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="peer-review-procedure-using-code-collaborator-tool">
+<h1>Peer Review Procedure Using Code Collaborator Tool<a class="headerlink" href="#peer-review-procedure-using-code-collaborator-tool" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Peer review is method for inspection of newly written or modified code for the purpose of discovering and fixing bugs before files are checked in.  Numerous studies have shown that use of peer reviews early in software development and test leads to significantly fewer defects found during stabilization phase and more importantly, significantly fewer defects found by customers.  The earlier in development/test cycle that a defect is found, the quicker it is to fix.
+By using an efficient tool such as Code Collaborator to conduct peer reviews, the cumulative time spent conducting code reviews and thus fixing defects early is far quicker than time required to find and fix these defects later.</p>
+<p>The peer review is required for the following but not limited to:</p>
+<ul class="simple">
+<li><p>High Level Designs (HLDs)</p></li>
+<li><p>Source code updates</p></li>
+<li><p>Documentation updates</p></li>
+<li><p>Defect fixes</p></li>
+<li><p>Test plans and test strategies</p></li>
+<li><p>Test code updates</p></li>
+</ul>
+<p>The author of the work products is responsible for the execution of the peer review procedure.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Entry Criteria/Inputs</strong></p></td>
+<td><ul class="simple">
+<li><p>Artifact/Work Product (e.g., source
+or test code, documentation, defect
+fixes) ready for review</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Exit Criteria/Outputs</strong></p></td>
+<td><ul class="simple">
+<li><p>All comments, issues raised in the
+review are resolved, either via a
+defect, or changes made in the
+artifact/work product reviewed</p></li>
+<li><p>CC review record in “completed”
+state and the author/developer is
+allowed to commit the code/document
+in to the CM system</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="roles">
+<h2><strong>Roles</strong><a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 74%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Reviewer</p></td>
+<td><p>A reviewer is a person responsible for finding and reporting bugs in newly
+implemented or modified sections of code. The reviewer is a second pair of eyes
+who must actively approve an artifact/work product or must file bugs within the
+Code Collaborator tool wherever a bug is identified. The review cannot be
+completed without express approval from all reviewers. The artifact/work product
+may not be checked in without a completed review.</p>
+<p>There must be at least one reviewer participating in a review. This person
+ideally would be someone who is familiar with the code or familiar with related
+code that fits into the same system. Usually the Domain lead is responsible to
+review all code within his or her domain.</p>
+<p>It would be wise to include more than one reviewer on the more complex reviews.
+The author should use his or her best discretion as to how many reviewers to
+include but in most cases more than a few reviewers would not be recommended.</p>
+<p>Preferred reviewer: Domain Leads, peer Developer who has the experience,
+InfoDev team for any customer facing content.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Observer</p></td>
+<td><p>An observer (e.g., Product Architect, Scrum Tester) is an optional participant
+in a review. No observer is required to do anything for a review. There are
+often many observers for any given code review.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="responsibilities">
+<h2><strong>Responsibilities</strong><a class="headerlink" href="#responsibilities" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 74%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Reviewer</p></td>
+<td><ul class="simple">
+<li><p>The reviewer must review all changes, to make sure the changes are relevant to
+either:</p>
+<ul>
+<li><p>For user story code reviews, the reviewer must read the story description
+in Jira to understand what is being developed.</p></li>
+<li><p>For defect fix code reviews, the reviewer must read the defect description
+in JIRA to understand what problem is being fixed.</p></li>
+</ul>
+</li>
+<li><p>The reviewer is additionally responsible to consider code that was not changed
+but should have been changed.</p></li>
+<li><p>Whenever any issue is identified, the reviewer must either comment or file
+bugs depending on different issue types [See File Subcriptions section below].</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Observer</p></td>
+<td><ul class="simple">
+<li><p>The observer may completely ignore a review by silently doing nothing.</p></li>
+<li><p>The observer may silently scan through the changes without commenting or
+filing bugs.</p></li>
+<li><p>The observer can participate in the review by adding comments or filing bugs,
+or even promote himself or herself to reviewer, but must assume the same
+responsibility as reviewer.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Author</p></td>
+<td><ul class="simple">
+<li><p>The author should take timely action on any comments or bugs.</p></li>
+<li><p>A review cannot be completed without approval from all reviewers.</p></li>
+<li><p>Code shall not be merged to release branch until the review is complete.</p></li>
+</ul>
+<p>Note: All comments must be read by all reviewers before a review can be
+completed, even if the comment was added by an observer.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="activities">
+<h2><strong>Activities</strong><a class="headerlink" href="#activities" title="Permalink to this headline">¶</a></h2>
+<p><img alt="image0" src="../../../_images/CodeReview_CC.jpg" /></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 19%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Step #</p></th>
+<th class="head"><p>Activity Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Upload files</p></td>
+<td><p>The author uploads the artifact or work product in to the Code Collaborator tool.</p>
+<p>The following information should be entered by the author:</p>
+<ul class="simple">
+<li><p>The Overview fields should provide details on what is changed, the reason for chance and tests performed to enable the reviewer to have ample information to help with the reviews.</p></li>
+<li><p>A template relevant to the product should be identified.</p></li>
+<li><p>Jira # or Story # should be indicated in the title of the review.</p></li>
+</ul>
+<p>A good description should:</p>
+<ul class="simple">
+<li><p>provide details on the issue</p></li>
+<li><p>provide details how the changes were done and any decision that was taken on the implementation</p></li>
+<li><p>provide info on any assumptions made, impact on other areas, etc</p></li>
+<li><p>Example:</p>
+<ul>
+<li><p><a class="reference external" href="http://codereview.wrs.com/ui#review:id=56304">http://codereview.wrs.com/ui#review:id=56304</a></p></li>
+<li><p><a class="reference external" href="http://codereview.wrs.com/ui#review:id=31955">http://codereview.wrs.com/ui#review:id=31955</a></p></li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Select reviewers</p></td>
+<td><p>The Author selects reviewers (e.g., domain experts) and observers for the review.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Perform review</p></td>
+<td><p>The Reviewer performs the review and documents the issues/defects in the CC tool.  When an issue is identified, the Reviewer enters a comment or files bug depending on different issue types [See File Subcriptions section below].</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Resolve comment/issue</p></td>
+<td><p>The Author reworks the artifact or work product to fix the issue/defect and responds to the review comments.</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Complete Review</p></td>
+<td><p>The Author marks the CC review record as “completed” when the Reviewer review status is in the “Approved” state.</p>
+<p>The review is complete when:</p>
+<ul class="simple">
+<li><p>all the code submitted in code review tool has been reviewed.</p></li>
+<li><p>reworked code has been re-loaded into Code Collaborator (CC).</p></li>
+<li><p>reviewers have read all comments</p></li>
+<li><p>reviewers who filed bugs have marked them “fixed”.</p></li>
+<li><p>reviewers have clicked the “Send to Completed” button.</p></li>
+</ul>
+<p>For better traceability, link the code review link to requirement and defect tracking systems, by:</p>
+<ul class="simple">
+<li><p>For user story, copy &amp; paste the link to the Jira user story “Comments” field (the format of the link should look something like this:  <a class="reference external" href="http://codereview.wrs.com/ui#review:id=XXXX">http://codereview.wrs.com/ui#review:id=XXXX</a> where “XXXX” is the Code Collaborator ID number for the review that was conducted)</p></li>
+<li><p>For defect, enter the JIRA number into Code Collaborator “Remote System Links” section.</p></li>
+</ul>
+<p><img alt="image1" src="../../../_images/CodeReviewProcedure_CCRToolExample.jpg" /></p>
+<p>Once the peer review is completed,</p>
+<ul class="simple">
+<li><p>the code goes through the Continuous Integration (CI) pipeline for sanity testing, other checks and, check-in using the <a class="reference external" href="./CheckinProcedure.html">Check-in procedure</a> and then the Story can be marked complete.</p></li>
+<li><p>the reviewed documents are placed under the CM system</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="comment-vs-bug">
+<h3><strong>Comment Vs. Bug</strong><a class="headerlink" href="#comment-vs-bug" title="Permalink to this headline">¶</a></h3>
+<p>The Code Collaborator tool provides the ability for reviewers to insert comment messages and to generate bugs. It is important to understand the distinction between adding a comment and creating a bug.</p>
+<p>A reviewer is more than welcome to enter comments to ask questions about the code or to ask for background information in order to help understand the code. Note: quite often if a reviewer is asking for clarification, this may bean indication that the code should be commented better, so a bug may be submitted with a description something like: “Add a comment for XXX”. Often the coder will so deeply understand the implementation and not realize the importance of well positioned comments.</p>
+<p>The definition of a bug is very simple: if there is something wrong with the code, no matter how trivial, this is a bug and needs to be recorded. Trivial typos in source code that do not affect operation are bugs as much as significant algorithm coding problems. It is important to track code issues as bugs and avoid using comments that can be missed and not tracked.</p>
+<p>Here are some examples of errors all of which should be entered as bugs:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 57%" />
+<col style="width: 17%" />
+<col style="width: 26%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Bug</strong></p></td>
+<td><p><strong>Severity</strong></p></td>
+<td><p><strong>Type</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Incorrect WRS copyright date</p></td>
+<td><p>Minor</p></td>
+<td><p>Coding Standard</p></td>
+</tr>
+<tr class="row-odd"><td><p>Incorrect modification history sequence due to merge</p></td>
+<td><p>Minor</p></td>
+<td><p>Coding Standard</p></td>
+</tr>
+<tr class="row-even"><td><p>Misspelled word/typos</p></td>
+<td><p>Minor</p></td>
+<td><p>Documentation</p></td>
+</tr>
+<tr class="row-odd"><td><p>Leading white space not aligned with previous line</p></td>
+<td><p>Minor</p></td>
+<td><p>Coding Standard</p></td>
+</tr>
+<tr class="row-even"><td><p>Unclear algorithm should be commented more clearly</p></td>
+<td><p>Minor</p></td>
+<td><p>Documentation</p></td>
+</tr>
+<tr class="row-odd"><td><p>Array out of bounds error</p></td>
+<td><p>Major</p></td>
+<td><p>Algorithm</p></td>
+</tr>
+<tr class="row-even"><td><p>Function arguments in incorrect order</p></td>
+<td><p>Major</p></td>
+<td><p>Algorithm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Footprint significantly increases</p></td>
+<td><p>Major</p></td>
+<td><p>Algorithm</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="appendices">
+<h2><strong>Appendices</strong><a class="headerlink" href="#appendices" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="appendix-a-file-subscriptions">
+<h3><strong>Appendix A - File Subscriptions</strong><a class="headerlink" href="#appendix-a-file-subscriptions" title="Permalink to this headline">¶</a></h3>
+<p>The Code Collaborator tool provides the ability for users to create file subscriptions that allow them to be automatically included in reviews where particular files of interest that match a predefined path pattern under       “Settings” -&gt; “File Subscriptions”.</p>
+<p>The usage of “File Subscriptions” can help domain owners to get involved to code reviews of any changes to a specific domain, but it could also lead to potential delayed completion of code reviews if not used wisely. Here are some guidelines:</p>
+<ul class="simple">
+<li><p>Recommend that the “File Subscriptions” should be setup with the “My Role” setting set to “Observer” (this applies to so-called Domain Leads/Owners and PA-Owner’s).</p></li>
+<li><p>When a Code Collaborator review is started that affects one of the subscribed source files, the subscriber will get an e-mail notification.  At this point, the subscriber can decide whether they feel it’s necessary to actively participate in the review (based on the scope of the changes, time commitment, etc.), and then manually change their role from “Observer” to “Reviewer”.</p></li>
+<li><p>To support primary and secondary reviewers, i.e. to handle the vacation scenario, more than one engineer can subscribe to a given set of files.</p></li>
+<li><p>An author of a Code Collaborator review should use the capability to switch the role of individual from “Reviewer” to “Observer” only in extreme situations, e.g. both the primary and secondary reviewers are sick, and the author has reached out to the respective managers and architects and it’s agreed that it’s okay to switch the individual from “Reviewer” to “Observer”.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="./CodeReviewChecklistGuidelines.html">Code Review Checklist Guideline</a></p></li>
+<li><p><a class="reference external" href="../../../ProcessDocuments/CoreDev/CodIntBuild/CodeReviewImprovements.pptx">VxWorks 7 Code Review Improvements (Best Practices)</a></p></li>
+<li><p>Code Collaborator: <a class="reference external" href="http://codereview.wrs.com/">http://codereview.wrs.com/</a> by SmartBear Software as the code review tool</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 38%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change
+Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>04/30/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Transferred content from Code review
+process (v0.7)</p></td>
+</tr>
+<tr class="row-odd"><td><p>06/19/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.2</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Updated based on Kitty’s comments</p></td>
+</tr>
+<tr class="row-even"><td><p>06/22/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.3</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Updated based on Kitty’s comments</p></td>
+</tr>
+<tr class="row-odd"><td><p>07/13/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.4</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Updated based on Kitty’s comments</p></td>
+</tr>
+<tr class="row-even"><td><p>07/22/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.5</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Updated based on Kitty’s comments</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/CoreDev/CodingIntBuild/PeerReviewProcedure_CodeCollaborator.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

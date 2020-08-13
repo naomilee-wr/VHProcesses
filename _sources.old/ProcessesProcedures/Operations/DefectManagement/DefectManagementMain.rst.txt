@@ -1,0 +1,94 @@
+:orphan:
+
+====================================
+Defect Management Main Page
+====================================
+
+`Defect Management Process Summary Flow Diagram <../../../_static/Operations/DefectManagement/DefectManagement.jpg>`__
+-----------------------------------------------------------------------------------------------------------------------
+
+Policies
+==========
+
+- `Bugboard Policy <./BugboardPolicy.html>`_
+- `Defect Fix Verification Policy <./DefectFixVerificationPolicy.html>`_
+- `Defect Publlication Policy <./DefectPublicationPolicy.html>`_
+
+*Note: The following are Procedures from Vx7 Jive page.  To be updated and reviewed for applicability*
+
+- `Monitoring Defect Metrics <https://jive.windriver.com/docs/DOC-60049>`_
+- `Handling Customer Defect Resolution Policy <https://jive.windriver.com/docs/DOC-78676>`_
+- `Handling Customer Escalation Policy <https://jive.windriver.com/docs/DOC-78677>`_
+- `Defect Publication Policy <https://jive.windriver.com/docs/DOC-78678>`_
+- `Defect Verification Policy <https://jive.windriver.com/docs/DOC-78679>`_
+
+|
+
+Processes & Procedures
+======================
+
+- `Defect Management Process <./DefectManagementProcess.html>`_
+- `Submit Defect procedure <./SubmitDefectProcedure.html>`_
+- `Prepare Defect for Publication Procedure <./PrepareDefectForPublicationProcedure.html>`_
+- `Triage Defect Procedure <./TriageDefectProcedure.html>`_
+- `Review Defect Procedure (Bug Board Review) <./BugBoardReviewProcedure.html>`_
+- `Assign Defect Fix Procedure <./AssignDefectFixProcedure.html>`_
+- `Develop Defect Fix Procedure <./DevelopDefectFixProcedure.html>`_
+- `Integrate Defect Fix Procedure <./IntegrateFixProcedure.html>`_
+- `Verify Defect Fix Procedure <./VerifyDefectFixProcedure.html>`_
+
+
+*Note: The following are Procedures from Vx7 Jive page.  To be updated and reviewed for applicability*
+
+- `Reporting, Transferring, Resolving and Verifying Defects <https://jive.windriver.com/docs/DOC-60058>`_
+- `Grooming Defects, Enhancement Requests and Managing CCB <https://jive.windriver.com/docs/DOC-60050>`_
+- `Publishing Defects <https://jive.windriver.com/docs/DOC-59801>`_
+- `Monitoring Defect Metrics <https://jive.windriver.com/docs/DOC-60049>`_
+- `Handling Customer Defects and Responding to Escalations <https://jive.windriver.com/docs/DOC-63643>`_
+- `Worldwide Escalation Process <https://jive.windriver.com/docs/DOC-34980>`_
+
+|
+
+Standards & Guidelines
+======================
+*Note: Team to identify additional Standards & Guidelines as applicable*
+
+- Defect publication standards?
+
+*Note: The following are Procedures from Vx7 Jive page.  To be updated and reviewed for applicability*
+
+- `Defect Creation and Publication Guidelines <https://jive.windriver.com/docs/DOC-70924>`_
+- `Defect Publication Guidelines <https://jive.windriver.com/docs/DOC-49197>`_
+- `Customer Defects and Escalations Guidelines <https://jive.windriver.com/docs/DOC-63643>`_
+
+|
+
+Tools & Templates
+=================
+
+*Note: Team to identify additional Tools & Templates as applicable*
+
++-------------------------------------+----------------------------------------------------------+----------------------------------------+
+| Tool Name                           | Description                                              | Tool in use                            |
++-------------------------------------+----------------------------------------------------------+----------------------------------------+
+| Defect Management System            |                                                          |                                        |
+|                                     |                                                          |                                        |
++-------------------------------------+----------------------------------------------------------+----------------------------------------+
+| Tool 2                              |                                                          |                                        |
+|                                     |                                                          |                                        |
++-------------------------------------+----------------------------------------------------------+----------------------------------------+
+
+Templates
+---------
+
+- `Defect Template <https://jive.windriver.com/docs/DOC-51833>`_
+
+References
+==========
+
+- `Defect Inventory <https://jive.windriver.com/external-link.jspa?url=http%3A%2F%2Fbos-jlavene-dl1.corp.ad.wrs.com%3A3005%2Fdashboard%2Fdb%2Fvx7-defect-inventory%3Fkiosk%3D1%26orgId%3D1>`_
+- `Work On Hand <https://jive.windriver.com/external-link.jspa?url=http%3A%2F%2Fbos-jlavene-dl1.corp.ad.wrs.com%3A3005%2Fdashboard%2Fdb%2Fvxworks-7-woh%3ForgId%3D1>`_
+
+
+|
+|

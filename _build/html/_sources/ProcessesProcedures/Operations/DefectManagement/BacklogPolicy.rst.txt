@@ -1,0 +1,41 @@
+:orphan:
+|
+|
+|
+
+=========================
+Defect Backlog Policy
+=========================
+
+|
+
+The purpose of the defect backlog policy is to keep the bug backlog from continuously growing from release to release.
+
+#. The defect backlog is defined as the set of **all unresolved
+   defects, except for current development defects**.
+
+   -  Development defects (those found internally during the current development lifecycle) become a part of the backlog when the product is released.
+   -  Specifically, the backlog *includes* defects that are *reported during the course of development* against previously released products. Thus, the backlog can increase during the course of the release.
+
+#. Each program shall develop a plan for managing the defect backlog for their program. The purpose of this requirement is to ensure that the backlog is managed as a part of the overall program planning process.
+#. Performance against this plan shall be tracked and reported throughout the project by the EPM.
+
+|
+
+**References**
+--------------
+
+- `Criteria for Defect Backlog Cleanup <https://jive.windriver.com/docs/DOC-81176>`_   --- Check with Martin & Kitty
+
+|
+
+**Change Log**
+--------------
+
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 05/08/2020   | N/A                     | 0.1           | Shree Vidya Jayaraman   | Initial Draft                                                                                       |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+

@@ -1,0 +1,21 @@
+:orphan:
+
+============================================
+Lifecycle Main page
+============================================
+ 
+|
+
+Lifecycle 
+========== 
+
+- `Agile <./AgileProgramLifecycle.docx>`__
+- Continuous Integration/Continuous Delivery cycle
+
+|
+
+Related References 
+-------------------
+- `Product Development Lifecycle (PDLC) <./WindRiverProductDevelopmentLifeCycle.docx>`__ 
+- `PMO PDLC Overview <./FY20PMOPDLCOverviewV6.pptx>`__ 
+- `Wind River VxWorks and HVP Software Development Lifecycle (SDLC) <./WindRiverVxWorksHVPSoftwareDevelopmentProcessOverview.docx>`__ 

@@ -1,0 +1,24 @@
+====================================
+VxWorks & HVP - Generic Documents
+====================================
+
+
+Plans
+-----
+- Wind River  Generic Software Development Plan
+- Wind River  Generic Software Configuration Management Plan
+- Wind River  Generic Software Quality Assurance Plan
+- Wind River  Generic Software Training Plan
+- Wind River  Generic Overall Product Test Strategy Plan
+- Wind River  Generic Validation Plan
+
+
+|
+
+Other Docs
+----------
+
+- `Team Roles and Responsibilities <./WRGeneric_RR.docx>`__
+
+|
+ 

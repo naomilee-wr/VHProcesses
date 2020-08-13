@@ -1,0 +1,70 @@
+:orphan:
+
+==========================================
+Configuration Management Policy
+==========================================
+
+**THIS PAGE IS CURRENTLY A WORK IN PROGRESS**
+
+(Source: https://jive.windriver.com/docs/DOC-84063)
+
+**Configuration Management**
+============================
+
+- All code is required to be kept in a Configuration Management System, as defined by the program and specified in the Software Configuration Management Plan  (SCMP)
+  - For example, VxWorks product code is kept in Git for for VxWorks 7 products
+
+- Baselines are created for each released
+
+  - RPM versions for VxWorks 7 release (?put this in SCPM?)
+  - The baselines are distinguished through use of GIT tags for each release
+   
+- Changes to all code (dev, test) are tracked via defects, features or user stories kept in the Defect Management System or Requirements Management System
+
+- After each new code is delivered, the Build Tool integrated with the Configuration Management System (e.g., Jenkins) is used to build the product at set intervals.  (For example, VxWorks builds nightly.)
+
+- Branching Models are described in the SCMP.  At minimum, the following branches should be defined:
+  - branch for continuous integration and development
+  - branch for releases
+  - branch for features (where features are tested before being delivered into integration)   - branch for development of defect fixes or small changes to be delivered to integration)
+
+- The integration branch is to be monitored through nightly activities, which include:
+  - nightly regression testing
+  - nightly manufacturing
+  - nightly warning reports
+  - nightly static analysis reports
+
+- Establish CI Pipeline used for committing code into the integration branch
+
+- Pull Requests are required for features and defects going into the planned release branch
+
+**Appendix** 
+==============
+
+**Continuous Integration Pipeline**
+-----------------------------------
+Uses Build Tool to perform various checks before submission of code
+
+Checks and balances in place:
+
+- Build Tool performs various checks before submission of code:
+- Must not introduce new static analysis issues
+- Must not have new build warnings
+- Must have code reviews
+- Sanity/Unit testing performed
+- Request for HLD, test result info
+- Verify states of defect ID, user story and features
+   
+**Pull Requests**
+-----------------
+Approval process in place
+
+Checks and balances in place:
+
+- Must pass build
+- Must not introduce new static analysis issues
+- Must not have new build warnings
+- Must have code reviews
+- Must pass sanity testing
+- status and state of defect is validated
+ 

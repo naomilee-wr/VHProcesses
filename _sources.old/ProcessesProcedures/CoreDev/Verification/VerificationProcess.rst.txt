@@ -1,0 +1,158 @@
+:orphan:
+
+==================================
+**Verification (Testing) Process**
+==================================
+
+The goal of this process is to confirm that the software meets the defined software requirements and is achieved through the execution of tests. This process ensures that verification tests are conducted to verify the requirements and that the integrated system complies with the software requirements.  
+
+The Test Lead is responsible for this process.
+
++--------------------------------------+--------------------------------------------------------------------------+
+| **Entry Criteria**                   | -  Epics & Stories/requirements are available                            |
+|                                      | -  Software design documents (HLDs), as needed, have been created        |
++--------------------------------------+--------------------------------------------------------------------------+
+| **Inputs**                           | -  Epics and/or Stories                                                  |
+|                                      | -  Design documents, as needed                                           |
+|                                      | -  Overall test strategy **?? PTS doc - Check with Kitty**               | 
++--------------------------------------+--------------------------------------------------------------------------+
+| **Exit Criteria**                    | -  Execution of tests                                                    |
+|                                      | -  Review and analysis of test results                                   |
++--------------------------------------+--------------------------------------------------------------------------+
+| **Outputs**                          | -  Feature Test Plan                                                     |
+|                                      | -  Release Test Strategy                                                 |
+|                                      | -  Test design specifications, as needed   **?? Check with Kitty**       |
+|                                      | -  Test code                                                             |
+|                                      | -  Test review artifacts, as needed                                      |
+|                                      | -  Test results (test logs and test status in the Test Management system)|
+|                                      | -  Test report                                                           |
+|                                      | -  Defect records in the Defect Management system                        |
++--------------------------------------+--------------------------------------------------------------------------+
+
+**Activities**
+--------------
+
+|image0|
+
+.. list-table::
+   :widths: 10 30 120
+   :header-rows: 1   
+   
+   * - Step #
+     - Activity Name
+     - Description
+    
+   * - 1
+     - Plan for verification
+     - Develop a strategy for verifying the integrated software taking into consideration the categorization (e.g., software, component, function and design) of the software requirements and the requirements of any standard(s), if applicable.  
+	   - For each new feature, a Feature Test Plan (FTP) is created using the `Feature Test Plan template <./FeatureTestPlanTemplate.doc>`__
+	   - For each release, a Release Test Strategy document is created using the `Release Test Strategy template <./ReleaseTestStrategyTemplate.doc>`__
+	   - For other testing guidance, refer to `Test Process Guideline <./TestProcessGuideline.html>`__
+	   
+       The test plan/startegy documents are reviewed by the Techical Feature Owner, Product Management, Scrum Team, EPM and other relevant stake holders using the Peer Review system (eg., Code Collaborator), as defined by the `Document Review process <../ConfigManagement/DocumentationReviewProcess.html>`__ and placed under Configuration Management system. 	      
+    	
+   * - 2
+     - Develop Tests
+     - The goal of the test specification development is to demonstrate compliance of the software to the requirements through verification tests.
+  
+       Design tests to verify the requirement by:
+	 
+       -  Reviewing and analyzing the requirements so that the requirements are clear enough for further verification
+	 
+       -  Create appropriate test methods and/or test codes for the verification of requirements
+	 
+       -  In the case a requirement cannot be verified by test, verify the requirement by analysis.  ??? Check with Kitty
+	   
+       Create new tests and/or update the existing tests as regression tests for re-testing the software when a change in the software items occur.
+    
+   * - 3
+     - Verify Traceability
+     - Using the Test Management system, consistency and bidirectional traceability are established between software requirements and test specification, including verification test cases. The traceability goals are defined in the Test Plan/Strategy documents.
+    
+   * - 4
+     - Review Tests
+     - Verification tests are reviewed and the reviewer examines the test code for defects. 
+  
+       In case of any findings, the Author and Reviewer mutually agree on the action.  The findings are resolved by repeating the above steps.  
+  
+       In the case that agreement cannot be reached, the issue is escalated to the Test Lead.
+
+   * - 5
+     - Verify Test Reviews (?? Check with Kitty)
+     - Individual test reviews are performed by the test team member. (?? Check with Kitty)
+
+       A small sample of test reviews performed to confirm that the Test Review Process is being performed.  The sample review is preformed by the Test Lead/Test Manager.(?? Check with Kitty)
+
+
+   * - 6
+     - Execute Tests
+     - Verify the software using test cases that the software fulfilled its intended use. Verification/Test is performed according to the test cases. 
+  
+       Document the test results.  Software Test results include the test logs and test status.
+
+
+   * - 7
+     - Analyze Test Results
+     - Analyze the verification test results.
+  
+       For test failures, determine if the failures are due to test code or product defect. Take steps to resolve the failure by either fixing the test code or filing a defect against the product. Defects are evaluated, resolved, or published as specified by the `Defect Management Process <../../../../../Operations/DefectsManagement/DefectManagementProcess.html>`__.
+
+   * - 8
+     - Track All Issues to Closure
+     - Once completed, the test code and review artifacts are delivered by checking them into the CM.
+  
+       Delivery includes:  Check with Kitty??
+	 
+       -  Test code for verification activity
+	 
+       -  Test review artifact for verification activity
+	 
+       -  Test results and logs for verification activity
+	 
+       -  Test summary report, including defects reported during testing
+	 
+       -  Requirements tested by analysis documents (if applicable) ???Check with Kitty??
+	   	
+       -  Justification of lack of code coverage (if applicable)
+	   	
+       -  Test documents dictated by standard(s) (if applicable)
+	   	    
+       Engineering Program Manager (EPM) tracks all issues to closure and manages project activities toward release.
+
+|
+
+Related Process Assets/Tools
+----------------------------
+- Verification Validation Test Summary Flow Diagram
+- Test Management system (e.g., LTAF) 
+- Requirements system (e.g., Salesforce)
+- Engineering Requirements system (e.g., Jira Agile)
+- Defect Management system (e.g., Jira)
+- `Test Process Guideline <./TestProcessGuideline.html>`__
+- `Feature Test Plan template <./FeatureTestPlanTemplate.doc>`__
+- `Release Test Strategy template <./ReleaseTestStrategyTemplate.doc>`__
+   
+|
+
+References 
+-----------------
+- `Verification Validation Summary Flow Diagram <../../../../../_static/CoreDev/Verification/VerificationValidation.jpg>`__
+- `working guide <https://jive.windriver.com/docs/DOC-80308>`__
+- `VxWorks Test Case Meta Data File (test_case.conf) Usage Guideline (recovered version) <https://jive.windriver.com/docs/DOC-80297>`__
+- `Uploading Manual test Results to LTAF <https://jive.windriver.com/docs/DOC-61193>`_ 
+- VxWorks 7 Regression Test Suite User Guide_SR3630 <./vxworks_7_regression_test_suite_users_guide_sr0630.pdf>`__
+
+|
+
+**Change Log**
+--------------
+
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 05/19/2020   | N/A                     | 0.1           | Shree Vidya Jayaraman   | Initial Draft                                                                                       |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+
+.. |image0| image:: ../../../_static/CoreDev/Verification/Verification.jpg

@@ -1,0 +1,399 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Defect Creation and Publication Guidelines &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/cloudtheme/css/catalystcloud.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Defect Template" href="DefectTemplate_WI.html" />
+    <link rel="prev" title="Customer Defects and Escalations Guidelines" href="CustomerDefectsAndEscalation_WI.html" /> 
+  </head><body>
+<div class="row">
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <a class="navbar-brand" href="http://docs.catalystcloud.io">
+      <img class="navbar-brand" src="_static/cloud-logo.png">
+    </a>
+
+  </div>
+  <ul class="nav navbar-nav">
+    <li><a class="nav-item nav-link active" href="../../index.html"><img class="navbar-brand" src="../../_static/WIND-Logo-Red-Screen-Md.png">
+     </a></li>
+  </ul>
+
+  <div class="collapse navbar-collapse nav-collapse">
+    
+      
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+    
+    <div class="mobile-nav visible-xs">
+       
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html">Core Development Processes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#lifecycle">Lifecycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#design">Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#coding-integration-and-build">Coding, Integration, and Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#verification">Verification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html#validation">Validation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html">Operations Processes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#program-release-management">Program Release Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#defect-management">Defect Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#software-configuration-management">Software Configuration Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#software-quality-assurance">Software Quality Assurance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#measurement-tbd">Measurement <strong>TBD</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#training">Training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html#information-development-user-documentation">Information Development (User Documentation)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../WorkInstructionsIndex.html">Work Instructions</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../WorkInstructionsIndex.html#defect-escalation-and-enhancement-request-management-wip">Defect, Escalation, and Enhancement Request Management <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#development-wip">Development <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#test-wip">Test <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#feature-management-wip">Feature Management <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#user-story-management-wip">User Story Management <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#submitting-code-to-host-side-wip">Submitting Code to Host Side <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#submitting-code-to-helix-guest-support-repository-wip">Submitting Code to Helix Guest Support Repository <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#other-process-related-content-wip">Other Process Related Content <strong>WIP</strong></a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Generic/GenericIndex.html">Generic Plans and Other Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Generic/GenericIndex.html#plans-tbd">Plans <strong>TBD</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Generic/GenericIndex.html#other-documents-wip">Other Documents <strong>WIP</strong></a></li>
+</ul>
+</li>
+</ul>
+
+        
+      
+    </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="xs-hidden col-sm-3 col-md-2 sidebar">
+      <div class="collapse navbar-collapse nav-collapse">
+           
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CoreDevIndex.html">Core Development Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/OperationsIndex.html">Operations Processes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../WorkInstructionsIndex.html">Work Instructions</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../WorkInstructionsIndex.html#defect-escalation-and-enhancement-request-management-wip">Defect, Escalation, and Enhancement Request Management <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#development-wip">Development <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#test-wip">Test <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#feature-management-wip">Feature Management <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#user-story-management-wip">User Story Management <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#submitting-code-to-host-side-wip">Submitting Code to Host Side <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#submitting-code-to-helix-guest-support-repository-wip">Submitting Code to Helix Guest Support Repository <strong>WIP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WorkInstructionsIndex.html#other-process-related-content-wip">Other Process Related Content <strong>WIP</strong></a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Generic/GenericIndex.html">Generic Plans and Other Documents</a></li>
+</ul>
+
+          
+        
+        </div>
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div class="">
+      <div role="navigation" aria-label="breadcrumbs navigation">
+  <ol class="breadcrumb">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../WorkInstructionsIndex.html">Work Instructions</a> &raquo;</li>
+      
+    <li>Defect Creation and Publication Guidelines</li>
+      <li class="breadcrumbs-aside">
+        
+          <a href="../../_sources/WorkInstructions/DefectEscalationEnhReqMgmt/DefectCreationAndPublication_WI.rst.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+</div>
+        
+  <div class="section" id="defect-creation-and-publication-guidelines">
+<h1>Defect Creation and Publication Guidelines<a class="headerlink" href="#defect-creation-and-publication-guidelines" title="Permalink to this headline">¶</a></h1>
+<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
+<p>(Source: <a class="reference external" href="https://jive.windriver.com/docs/DOC-70924">https://jive.windriver.com/docs/DOC-70924</a>)</p>
+<div class="section" id="procedure">
+<h2><strong>Procedure:</strong><a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="defect-creation-guidelines">
+<h3>Defect Creation Guidelines<a class="headerlink" href="#defect-creation-guidelines" title="Permalink to this headline">¶</a></h3>
+<p>When creating a defect, besides the mandatory Jira fields (marked with ” * “), below fields should be also filed in.</p>
+<p>These fields are queried to ensure the defect provides sufficient information that allows the investigation to start. Failure to fill in these fields could result in the defect being re-assigned to the reporter.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 26%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Jira Tab</strong></p></td>
+<td><p><strong>Jira Field</strong></p></td>
+<td><p><strong>Details</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Overview</p></td>
+<td><p>Description</p></td>
+<td><p>Provide a summary of the issue</p></td>
+</tr>
+<tr class="row-odd"><td><p>Overview</p></td>
+<td><p>Reproducibility</p></td>
+<td><p>Select from the pull down menu</p></td>
+</tr>
+<tr class="row-even"><td><p>Overview</p></td>
+<td><p>Steps to Reproduce</p></td>
+<td><p>This field should allow any user to reproduce the defect. It should also give a
+quick explanation on what the expected outcome should be in contrast to the actual
+result.</p>
+<p>Make sure to not use the following:</p>
+<ul class="simple">
+<li><p>Barcode</p></li>
+<li><p>Git info</p></li>
+<li><p>Repo</p></li>
+<li><p>Jenkins</p></li>
+<li><p>Spin name</p></li>
+<li><p>WASSP</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Environment</p></td>
+<td><p>Environment</p></td>
+<td><p>Provide details of the environment used</p></td>
+</tr>
+</tbody>
+</table>
+<p>Please note also the values to be entered for below fields:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 26%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Jira Tab</strong></p></td>
+<td><p><strong>Jira Field</strong></p></td>
+<td><p><strong>Details</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Overview</p></td>
+<td><p>Found in Versions</p></td>
+<td><p>Release name: “SRxxx” or “CRxxx”. Enter one value only: the release in which the
+defect was found.</p>
+<p>Mandatory Jira Field</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Overview</p></td>
+<td><p>Fix Version</p></td>
+<td><p>Release name:  “SRxxx” or “CRxxx”</p>
+<p>Mandatory Jira Field</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Overview</p></td>
+<td><p>Found in Release</p></td>
+<td><p>RPM version</p>
+<p>Optional Jira Field - recommendation to enter the RPM version</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Overview</p></td>
+<td><p>Fixed in Release</p></td>
+<td><p>RPM version</p>
+<p>Optional Jira Field - recommendation to enter the RPM version</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="defect-publication-guidelines">
+<h3>Defect Publication Guidelines<a class="headerlink" href="#defect-publication-guidelines" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>If “Found in Versions” = “Fixed Version” the defect is not published.</p></li>
+<li><p>The editable fields that get published on OLS are captured below.</p></li>
+<li><p>For more information on publication guidelines, see <a class="reference external" href="https://jive.windriver.com/docs/DOC-49197">Vx-7 Defect Publication Guidelines</a></p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 26%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Jira Tab</strong></p></td>
+<td><p><strong>Jira Field</strong></p></td>
+<td><p><strong>Guidelines</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Overview</p></td>
+<td><p>Severity</p></td>
+<td><p>Severity Definitions:</p>
+<ul class="simple">
+<li><p><em>Critical</em>: Product is not functionally usable.  System crash or major data loss.
+No workaround is available.</p></li>
+<li><p><em>Severe</em>: A feature is not meeting a defined specification. Major functionality
+is impacted. A workaround may be available.</p></li>
+<li><p><em>Standard</em>: A feature is not working well but meets defined specifications. No
+major functionality is impacted or a workaround is in place.</p></li>
+<li><p><em>Trivial</em>: Minor usability issue.  No functional impact to the customer.  Includes
+defects in documentation.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Overview</p></td>
+<td><p>Components</p></td>
+<td><p>Select right value from pull-down list.</p>
+<p>Component cannot be a “parent” (starts with “_” or “Unknown”.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Overview</p></td>
+<td><p>Found in Versions</p></td>
+<td><p>Release name: “SRxxx” or “CRxxx”</p></td>
+</tr>
+<tr class="row-odd"><td><p>Overview</p></td>
+<td><p>Fix Version</p></td>
+<td><p>Release name: “SRxxx” or “CRxxx”</p></td>
+</tr>
+<tr class="row-even"><td><p>Overview</p></td>
+<td><p>Steps to Reproduce</p></td>
+<td><p>This field should allow any user to reproduce the defect.  It should also give a
+quick explanation on what the expected outcome should be in contrast to the actual
+result.</p>
+<p>Make sure to not use the following:</p>
+<ul class="simple">
+<li><p>Barcode</p></li>
+<li><p>Git info</p></li>
+<li><p>Repo</p></li>
+<li><p>Jenkins</p></li>
+<li><p>Spin name</p></li>
+<li><p>WASSP</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Overview</p></td>
+<td><p>Workaround</p></td>
+<td><p>Fill in basic information, if a valid workaround has been identified.</p></td>
+</tr>
+<tr class="row-even"><td><p>Environment</p></td>
+<td><p>Host OS</p></td>
+<td><p>Fill  in this information if this is a host tool defect</p></td>
+</tr>
+<tr class="row-odd"><td><p>Environment</p></td>
+<td><p>Processor Architecture</p></td>
+<td><p>Fill  in this information if this is a run-time defect</p></td>
+</tr>
+<tr class="row-even"><td><p>Publishing</p></td>
+<td><p>Published Summary</p></td>
+<td><p>Brief description of the issue.</p>
+<p>Make sure to not use the following:</p>
+<ul class="simple">
+<li><p>Barcode</p></li>
+<li><p>Git info</p></li>
+<li><p>Repo</p></li>
+<li><p>Jenkins</p></li>
+<li><p>Spin name</p></li>
+<li><p>WASSP</p></li>
+<li><p>Do not reference attachments or URLs</p></li>
+</ul>
+<p>Mandatory field if published</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Publishing</p></td>
+<td><p>Published Description</p></td>
+<td><p>Ensure description is clear and concise.
+Use Specific board names.
+Describe specific device in details.</p>
+<p>Make sure to not use the following:</p>
+<ul class="simple">
+<li><p>Barcode</p></li>
+<li><p>Git info</p></li>
+<li><p>Repo</p></li>
+<li><p>Jenkins</p></li>
+<li><p>Spin name</p></li>
+<li><p>WASSP</p></li>
+<li><p>Do not reference attachments or URLs</p></li>
+</ul>
+<p>Mandatory field if published</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+      </div>
+    </div>
+
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.2.1.<br/>
+    </p>
+  </div>
+</footer>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.catalyst-analytics.nz/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 81]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.catalyst-analytics.nz/piwik.php?idsite=81" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+  </body>
+</html>

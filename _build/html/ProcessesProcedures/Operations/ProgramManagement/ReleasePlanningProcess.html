@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release Planning Process &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="release-planning-process">
+<h1>Release Planning Process<a class="headerlink" href="#release-planning-process" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This process describes the release planning process. The Engineering Program Manager is responsible for this process.</p>
+<p><strong>Note:</strong> In cases where program level documents already exist (such as SDP, SQAP, SCMP, etc.), the project may choose to use these existing documents instead of creating them anew for the release.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Entry Criteria</strong></p></td>
+<td><p>The Product team has market/product
+requirements for a product release.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Inputs</strong></p></td>
+<td><p>Market/Product requirements</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Exit Criteria</strong></p></td>
+<td><p>Top priority features are committed
+for release it will be completed in.
+The requirements are ready for
+implementation.
+Team, and necessary hardware/
+infrastructure are available, and key
+risks identified</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Outputs</strong></p></td>
+<td><ul class="simple">
+<li><p>Charter</p></li>
+<li><p>Roadmap</p></li>
+<li><p>Team</p></li>
+<li><p>Scheduled sprints(sprint calendar)</p></li>
+<li><p>Prioritized and estimated release
+backlog</p></li>
+<li><p>High level schedule</p></li>
+<li><p>Definition of Done/Acceptance
+Criteria</p></li>
+<li><p>Strategy for Requirements,
+Design, Development, Testing &amp;
+other areas</p></li>
+<li><p>Infrastructure set up</p></li>
+<li><p>Risks</p></li>
+<li><p>Commercial specifications</p></li>
+<li><p>Initial IP disclosure filed (if
+possible)</p></li>
+<li><p>Initial Export compliance filed
+(if possible)</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="stakeholders">
+<h2><strong>Stakeholders</strong><a class="headerlink" href="#stakeholders" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 61%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Roles</strong></p></td>
+<td><p><strong>Responsibilities</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Engineering Program Manager(EPM)</p></td>
+<td><p>Responsible for:</p>
+<ul class="simple">
+<li><p>facilitating collaboration between PM and Engineering
+leads in defining and agreeing on the plan scope and
+milestones for the release.</p></li>
+<li><p>identifying to processes and standards to be followed,
+align on key metrics for status reports, the required
+tools and infrastructure.</p></li>
+<li><p>creating and managing the release in the EPM tool
+(e.g., Panorama)</p></li>
+<li><p>identifying and agreeing on the quality criteria for
+the release.</p></li>
+<li><p>driving resolution of Program Change Requests (PCRs),
+Actions, Issues and Risks (PAIR) as they occur.</p></li>
+<li><p>ensuring there is a documented archival process.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Scrum team</p></td>
+<td><p>Scrum team includes Technical Lead, Engineering Manager
+(Dev &amp; Test), Dev Engineer, Test Engineer, Information
+Development Engineer</p>
+<p>Responsible for identifying and estimating the Epics,
+Stories for the release.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Product Manager(PM)</p></td>
+<td><p>Responsible for:</p>
+<ul class="simple">
+<li><p>entering and managing the Epics/Features in the product
+feature log.</p></li>
+<li><p>reviewing and prioritizing the list of features in the
+backlog.</p></li>
+<li><p>promoting the top priority features for technical
+analysis/investigation.</p></li>
+<li><p>entering the desired release targeted for the feature.</p></li>
+<li><p>reviewing/approving to ensure the Epic meets the
+acceptance criteria.</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="activities">
+<h2><strong>Activities</strong><a class="headerlink" href="#activities" title="Permalink to this headline">¶</a></h2>
+<p><img alt="image0" src="../../../_images/ReleasePlanningProcess.jpg" /></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 19%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Step #</p></th>
+<th class="head"><p>Activity Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Create charter</p></td>
+<td><p>The EPM, PM, and Engineering Management create a charter for the release/program. The purpose of creating a charter is to have a discussion up front as to why the team is doing this release/program. The charter gets stakeholders and the team on the same page. Throughout the program, it keeps the team focused on the goals negotiated at the beginning. It is a way of communicating within the team, to senior management, and to other groups in the company.   Note: The charter details are captured at the program release level in the Program Release Management system (a.k.a EPM tool, e.g., Panorama)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Create release roadmap</p></td>
+<td><p>The PM works with the EPM and Engineering Management to create a release roadmap for the product in the Program/Release Management system (a.k.a EPM tool, e.g., Panorama).  This is an ongoing task, reviewed on a regular basis.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Determine cutoff for release and high level schedule</p></td>
+<td><p>The release cadence is agreed with the key stakeholders.  Given the timeframe, the PM determines the Epics for the release.  The EPM and the Key Stakeholders (e.g., EPM, PM, Engineering Managers - Dev &amp; Test, Architects) determine the Milestones and Schedule.   Sprint calendar (Sprint dates may be captured and stored in the Communciation system e.g., Jive)</p>
+<p>The EPM creates a high level schedule in the Program Release Management system (a.k.a EPM tool, e.g., Panorama) with the expected milestones. The schedule contains at a minimum:</p>
+<ul class="simple">
+<li><p>Release start dates</p></li>
+<li><p>Early Access releases(EAR) (deliveries to external customers)</p></li>
+<li><p>Feature Complete(FC)(when all Epics identified as part of POR are completed.  Note: Test epics may be completed post FC milestone)</p></li>
+<li><p>Release to Operations(RTO) (all engineering activities are completed)</p></li>
+<li><p>General Availability(GA)</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Define team, get resources</p></td>
+<td><p>Engineering Management defines the team and obtains resources to do the program. In the best case, the team should have dedicated staff for essential technical and product functions (Developers, Testers, Writers, and Product Manager).</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Determine sprint length</p></td>
+<td><p>The sprint length is standardized by the Scrum Team documented in the Requirments Management system (e.g., Jira Agile). If a program/release has multiple teams and Scrum Masters, all teams should follow the EPM’s sprint schedule for coordination purposes.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Set up infrastructure</p></td>
+<td><p>The EPM oversees the infrastructure for the program.  Infrastructure includes the configuration management system, build system, agile program management, release notebook, program document repository, defect tracking, and automated test tools.</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Define acceptance criteria</p></td>
+<td><p>The PM, Scrum Masters and teams for the program release agree on the acceptance criteria for a feature/epic.</p>
+<p>The acceptance criteria for a feature/epic should, in the best case, include everything needed for a shippable product.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Develop Software Requirement</p></td>
+<td><p>The Architect/Technical Feature Owner/Scrum Team develop and manage the software requirements according to the software requirements process.</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>Define development, documentation and test strategy</p></td>
+<td><p>The Technical Lead describes the development strategy in the Software Development Plan.  The Architect/PM/Scrum Team identify the dependencies/impacts between Epics.</p>
+<p>The Technical Publications team determines the documentation strategy and is documented in the Documentation Plan.</p>
+<p>The team determines the verification (test) &amp; validation strategy. The strategy takes into account what types of testing the developer, tester, and writer will do, and what automation is expected. The test strategy is documented in the Software Test (Verification) Plan/Test Strategy and the validation strategy in the Validation Plan.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>Write Stories, identify dependencies and prioritize backlog</p></td>
+<td><p>This activity may take place much earlier, just after the charter and roadmap are available.</p>
+<p>Typically, the PM and product architect will write Epics that cover the product definition, and non functional requirements such as usability, quality, or performance. The PM and product architect prioritizes these stories and presents them to the team.</p>
+<p>The team begins to decompose the Epics into smaller Stories and fill in missing Stories. Stories may be written individually.  Many stories will not be written until the backlog grooming session for the sprint takes place.   Note: The Engineering team may decompose larger Epics into set of smaller Epics and schedule a rollout of capabilities over number of releases.</p>
+<p>Stories contain acceptance criteria which describe the desired functionality to be demonstrated in order to accept the user story. Stories need to be small enough to fit in one sprint.</p>
+<p>The EPM, PM, and Scrum team identify dependencies on other teams for Stories.</p>
+<p>The PM prioritizes the release backlog.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>Estimate Epics - Stories</p></td>
+<td><p>The team works together to estimate the Stories in the release backlog according to the guidance provided by the Requirements Management System.</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>Identify program risks, issues and actions</p></td>
+<td><p>Risks, issues and actions are captured in the Program Release Management system (a.k.a EPM tool, e.g., Panorama) and managed according to the corresponding process guidelines.   The EPM, PM, Scrum team identify risks and mitigations. The EPM and Scrum team work together to assure risks and mitigation plans are captured.</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>Define initial comm spec</p></td>
+<td><p>The PM defines the initial commercial specifications including product codes (accessed via EPM tool) and delivers it to the Release team.</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>Initial IP disclosure and export classification activities</p></td>
+<td><p>The EPM determines the strategy for keeping IP and export up to date for the program. One strategy is to disclose all expected IP and file export classification during planning, then compelte IP and export as part of the FC milestone criteria.</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>Plan for configuration management</p></td>
+<td><p>The Technical Lead/CM Lead creates the Software Configuration Management plan (SCM plan) according to the <a class="reference external" href="../ConfigurationManagement/ConfigurationManagementProcess.html">Configuration Management Process</a>. The plan may include:</p>
+<ul class="simple">
+<li><p>configuration items - program deliverables, Tools, Software, Hardware, etc.</p></li>
+<li><p>environment, repository, roles and responsibilities</p></li>
+<li><p>documentation system</p></li>
+<li><p>activities - identification, documentation system, naming/numbering conventions, baseline, release procedures, etc.</p></li>
+<li><p>build process</p></li>
+<li><p>change control process</p></li>
+<li><p>physical and functional audits</p></li>
+<li><p>status accounting and reporting</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>Plan for Software quality management</p></td>
+<td><p>The SQA Lead creates the Software Quality Assurance Plan (SQA Plan) according to the <a class="reference external" href="../SWQualityAssurance/SWQualityAssuranceProcess.html">Software Quality Assurance Process</a>.  The plan may include:</p>
+<ul class="simple">
+<li><p>roles, responsibilities and competencies</p></li>
+<li><p>goal/objective</p></li>
+<li><p>quality system documentation</p></li>
+<li><p>documentation standards/work flow, types</p></li>
+<li><p>quality/supplier audits</p></li>
+<li><p>management reviews</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>Plan for training</p></td>
+<td><p>The Engineering Manager creates the Training Plan (TP) according to the <a class="reference external" href="../Training/TrainingProcess.html">Training Process</a>.  The training plan activities may include:</p>
+<ul class="simple">
+<li><p>roles and responsibilities</p></li>
+<li><p>strategy</p></li>
+<li><p>approach (types of training provided)</p></li>
+<li><p>tools</p></li>
+<li><p>training on security and safety requirements</p></li>
+<li><p>track team training</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p>Plan for program management</p></td>
+<td><p>The EPM documents the program management activities.  The plan may include:</p>
+<ul class="simple">
+<li><p>internal and external (subcontractor/supplier) interfaces</p></li>
+<li><p>tools and techniques</p></li>
+<li><p>managing schedule</p></li>
+<li><p>risk management</p></li>
+<li><p>issues and action items tracking</p></li>
+<li><p>communication</p></li>
+<li><p>stakeholder involvement</p></li>
+<li><p>management reporting</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>Team commits to program release</p></td>
+<td><p>Given the scope, schedule, and resources, the team commits to the program release.  Plan of Record is reached when the release planning activities are complete and the team has committed.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="reference">
+<h2><strong>Reference</strong><a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="./ReleasePlanningGuidelines.html">Release Planning Guidelines</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-76370">Jira Agile at Wind River How-To</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-76381">Jira Agile Documentation Index</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-76362">Releases in Jira Agile</a></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 56%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>05/05/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Initial Draft</p></td>
+</tr>
+<tr class="row-odd"><td><p>06/02/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.2</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updated based on Doina &amp; Roger’s feedback</p></td>
+</tr>
+<tr class="row-even"><td><p>06/08/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.3</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updated based on Doina &amp; Roger’s feedback</p></td>
+</tr>
+<tr class="row-odd"><td><p>06/15/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.4</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updated based on Roger’s feedback</p></td>
+</tr>
+<tr class="row-even"><td><p>06/18/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.5</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updated based on Roger and Doina’s feedback</p></td>
+</tr>
+<tr class="row-odd"><td><p>06/22/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.6</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updated based on Doina’s feedback</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/Operations/ProgramManagement/ReleasePlanningProcess.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+:orphan:
+
+====================================
+Program Release Management Main Page 
+==================================== 
+
+`Release Management Process Summary Flow Diagram <../../../_static/Operations/ProgramManagement/ProgramReleaseManagement.jpg>`__
+------------------------------------------------------------------------------------------------------------------------------------
+
+Policies
+==========
+
+- `Program Management Policy <./ProgramReleaseManagementPolicy.html>`__
+ 
+
+Processes & Procedures
+======================
+
+- `Release Planning Process <./ReleasePlanningProcess.html>`__
+- `Sprint Planning Process <./SprintPlanningProcess.html>`__
+- `Estimate Stories Process <./EstimateStoriesProcess.html>`__
+- `Story Process <./StoryProcess.html>`__
+- `Daily Sprint Process <./DailySprintProcess.html>`__
+- `Sprint Review Process <./SprintReviewProcess.html>`__
+- `Sprint Retrospective Process <./SprintRetrospectiveProcess.html>`__
+- `Release Reporting Process <./ReleaseReportingProcess.html>`__
+- `Risk Management Process <./RiskManagementProcess.html>`__
+- `Action Issue Management Process <./ActionIssueProcess.html>`__
+- `Managing Stories Procedure <./ManagingStoryProcedure.html>`__
+- `Program Change Management Procedure using Jira <./ProgramChangeManagementProcedure_Jira.html>`__
+- `Release Process <./ReleaseProcess.html>`__
+
+*Note: Team to identify additional Standards & Guidelines as applicable*
+
+
+Standards & Guidelines
+======================
+
+- `Agile Program Life cycle <../../CoreDev/Lifecycle/AgileProgramLifecycle.docx>`__
+- `Release Planning Guidelines <./ReleasePlanningGuidelines>`__
+- `Program Status Color Standard <./ProgramStatusColorStandard.html>`__
+- `Checklist and Guideline for Story Preparation <./Checklist_GuidelineStoryPreparation.docx>`__
+- `Feature Grooming and Workflow <./FeatureGrooming_Workflow.html>`__
+- `Definition of Done for Features/Epics <./FeatureDoneDefinition.html>`__
+- `Definition of Done for Stories <./StoryDoneDefinition.html>`__
+- `Product Manager - Jira Agile Responsibilities <./ProductManager_JiraAgileResponsibilities.html>`__
+- `Product Architect - Jira Agile Responsibilities <./ProductArchitect_JiraAgileResponsibilities.html>`__
+- `Technical Feature Owner - Jira Agile Responsibilities <./TechnicalFeatureOwner_JiraAgileResponsibilities.html>`__
+- `Engineering Manager - Jira Agile Responsibilities <./EngineeringManager_JiraAgileResponsibilities.html>`__
+- `Technical Feature Lead Owner Cheat Sheet (Jira Agile Tool Guideline) <./TechnicalFeatureOwner_CheatSheet.html>`__
+- `Monitor Defect Metrics <./MonitoringDefectMetricsGuidelines.html>`__
+- `Plan Of Record(POR) Criteria <./POR_Criteria.xlsx>`__
+- `Feature Complete Criteria <./FC_Criteria.xlsx>`__
+- `Release Criteria <./ReleaseCriteria.xlsx>`__
+- `Delivering Features Spawning Mutiple Releases <FeaturesSpawningMutipleReleases.html>`__
+
+*Note: Team to identify additional Standards & Guidelines as applicable*
+
+
+Tools & Templates
+=================
+
+*Note: Team to identify additional Tools & Templates as applicable*
+
++-------------------------------------+----------------------------------------------------------+----------------------------------------+
+| Tool Name                           | Description                                              | Tool in use                            |
++-------------------------------------+----------------------------------------------------------+----------------------------------------+
+| Engineering Program Management      |                                                          | `Panorama <http://panorama.wrs.com/>`__|
+|                                     |                                                          |                                        |
++-------------------------------------+----------------------------------------------------------+----------------------------------------+
+| Requirements Management System      |                                                          | `Jira Agile <https://jira.wrs.com/>`__ |
+|                                     |                                                          |                                        |
++-------------------------------------+----------------------------------------------------------+----------------------------------------+
+| Defect Management System            |                                                          | `Jira Agile <https://jira.wrs.com/>`__ |
+|                                     |                                                          |                                        |
++-------------------------------------+----------------------------------------------------------+----------------------------------------+
+
+Templates
+---------
+
+- ?
+
+*Note: Team to identify additional References as applicable*
+
+
+References
+==========
+
+- `Program Management Presentation <Project_Management.pptx>`__
+- `Release Management Presentation <Release_Management.pptx>`__
+
+*Note: Team to identify additional References as applicable*
+
+|
+
