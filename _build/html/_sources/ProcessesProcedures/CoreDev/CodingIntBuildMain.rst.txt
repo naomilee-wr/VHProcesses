@@ -103,7 +103,7 @@ Tools & Templates
 Templates
 --------------
 
-- `VxWorks Pull Request Submission Template <../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx>`__
+- `VxWorks Pull Request Submission Template <../../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx>`__
 
 |
 

@@ -3,8 +3,8 @@
 |
 |
 
-**VxWorks 7 and Helix Virtualization Profile (HVP) Process Definitions** 
-=========================================================================
+**VxWorks 7 and Helix Virtualization Profile (HVP) Process Definitions** (August 2020 Layout) 
+==============================================================================================
 
 This is the top level of the VxWorks 7 and Helix Virtualization Profile (HVP) Process Definitions in place.
 
