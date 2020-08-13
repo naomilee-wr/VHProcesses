@@ -51,7 +51,7 @@ The Technical Feature Owner is responsible for this process.
      - Create Feature/Epic Test Plan
      - Develop a plan for verifying the integrated software taking into consideration the categorization (e.g., software, component, function and design) of the software requirements and the requirements of any standard(s), if applicable.
   
-       For each new feature/epic, a Feature/Epic Test Plan is created using the `Feature/Epic Test Plan template <../../../ProcessDocuments/CoreDev/Verification/FeatureTestPlanTemplate.docX>`__
+       For each new feature/epic, a Feature/Epic Test Plan is created using the `Feature/Epic Test Plan template <../../../ProcessDocuments/CoreDev/Verification/FeatureTestPlanTemplate.docx>`__
 
        The test plan outlines a combination of both functional and integration tests required for the feature/epic.  The plan must correlate with design documents and testable elements of the feature/epic's acceptance criteria.  
 	   
@@ -103,7 +103,7 @@ The Technical Feature Owner is responsible for this process.
      - Analyze Test Results
      - Analyze the verification test results.
   
-       For test failures, determine if the failures are due to test code or product defect. Take steps to resolve the failure by either fixing the test code or filing a defect against the product. Defects are evaluated, resolved, or published as specified by the `Defect Management Process <../../../../../Operations/DefectsManagement/DefectManagementProcess.html>`__.
+       For test failures, determine if the failures are due to test code or product defect. Take steps to resolve the failure by either fixing the test code or filing a defect against the product. Defects are evaluated, resolved, or published as specified by the `Defect Management Process <../../../../Operations/DefectsManagement/DefectManagementProcess.html>`__.
 
    * - 9
      - Track All Issues to Closure
@@ -114,7 +114,7 @@ The Technical Feature Owner is responsible for this process.
 **Related Process Assets/Tools**
 --------------------------------
 
-- `Verification Validation Summary Flow Diagram <../../../../../_static/CoreDev/Verification/VerificationValidation.jpg>`__
+- `Verification Validation Summary Flow Diagram <../../../../_static/CoreDev/Verification/VerificationValidation.jpg>`__
 - Test Management system (e.g., LTAF) 
 - Requirements Management system (e.g., Jira Agile)
 - Defect Management system (e.g., Jira)

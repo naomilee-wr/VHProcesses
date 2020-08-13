@@ -129,12 +129,12 @@ Some layers, IPNET or USB for example, contain no source files and are not reall
 
 **References**
 --------------
-`Latest Layers HLD <./VSBLayerHLDv1 28.doc>`_
+`Latest Layers HLD <../../../ProcessDocuments/CoreDev/CodingIntBuild/VSBLayerHLDv1 28.doc>`_
 
 - Developers are strongly encouraged to review the HLD prior to modifying any VSBL files.  The HLD contains comprehensive information on the format and language used in these files.
 - The HLD also contains important information related to creating and modifying Makefiles for VxWorks layers.
 
-`Coding Standard <./WindRiverVxWorksCodingStandard.pdf>`_
+`Coding Standard <../../../ProcessDocuments/CoreDev/CodingIntBuild/WindRiverVxWorksCodingStandard.pdf>`_
 
 
 |

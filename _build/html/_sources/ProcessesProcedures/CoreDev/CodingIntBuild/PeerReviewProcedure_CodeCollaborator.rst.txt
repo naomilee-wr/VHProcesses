@@ -234,7 +234,7 @@ The usage of “File Subscriptions” can help domain owners to get involved to 
 -----------------
 
 - `Code Review Checklist Guideline <./CodeReviewChecklistGuidelines.html>`_
-- `VxWorks 7 Code Review Improvements (Best Practices) <../../../ProcessDocuments/CoreDev/CodIntBuild/CodeReviewImprovements.pptx>`_
+- `VxWorks 7 Code Review Improvements (Best Practices) <../../../ProcessDocuments/CoreDev/CodingIntBuild/CodeReviewImprovements.pptx>`_
 - Code Collaborator: http://codereview.wrs.com/ by SmartBear Software as the code review tool
    
 |

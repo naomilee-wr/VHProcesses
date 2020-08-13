@@ -39,6 +39,8 @@ Processes & Procedures
 Standards & Guidelines
 ======================
 
+(*NL 8/12:  Replace the links to WorkInstructions folder*)
+
 - `VxWorks Coding Standard <http://bitbucket.wrs.com/projects/VX7/repos/codingstandard/browse>`__
 - `Coding Standards <../../ProcessDocuments/CoreDev/CodingIntBuild/WindRiverVxWorksCodingStandard.pdf>`__     **Draft version updated but not reviewed/approved**
 
@@ -69,7 +71,7 @@ Standards & Guidelines
   - `Code Review Checklist Guidelines <./CodingIntBuild/CodeReviewChecklistGuidelines.html>`__
   
 - `Responding to Nightly Validation <./CodingIntBuild/RespondingToNightlyValidation.html>`_
-- `How to Handle Build Issues <../../PRocessDocuments/CoreDev/CodingIntBuild/HowToHandleBuildIssues_Final.docx>`__
+- `How to Handle Build Issues <../../ProcessDocuments/CoreDev/CodingIntBuild/HowToHandleBuildIssues_Final.docx>`__
 - `Documenting a Feature/Epic <./CodingIntBuild/DocumentingFeature_Epic.html>`__
 - `Open Source BSP process <../../WorkInstructions/Development/OpenSourceBSPProcess_WI.html>`__
 - `Managing Third Party Libraries Located in WR GitHub <../../WorkInstructions/Development/ManagingThirdPartyLibrariesLocatedInWindRiverGitHub_WI.html>`__
@@ -110,7 +112,7 @@ Templates
 Related Process Assets 
 =======================
 
-- `Design Process <./DesignProcess.html>`__
+- `Design Process <./Design/DesignProcess.html>`__
 - Engineering Requirements Management system (e.g., Jira Agile)
 
 |

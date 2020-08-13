@@ -44,7 +44,7 @@ See Submitting Code into the Integration Branch  for the procedure on how to sub
 **Filling in the Pull Request Template**
 -----------------------------------------
 
-- In the "Description" window you must provide all the information described in the `VxWorks Pull Request Submission Template <./PullRequestChecklistTemplate_v5.xlsx>`_
+- In the "Description" window you must provide all the information described in the `VxWorks Pull Request Submission Template <../../../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx>`_
   
   *Note*:  The Jive document also provides instructions on how generate the appropriate development artifacts
   

@@ -92,7 +92,7 @@ The procedure describes the development of software requirements from customer r
      - Convert customer requirements to software requirements (i.e., development team stories and tasks)
      - The Product Architect reviews and refines the customer requirements and also identifies the security related requirements. Security related requirements are marked as TBD <Check with Martin/Kitty/Roger>
  
-       Customer requirements are converted into software requirements (including security related requirements) into the Requirements Management System as Stories including development, testing and documentation Stories. See `Story Process <../../../Operations/ProgramManagement/StoryProcess.html>`__.   
+       Customer requirements are converted into software requirements (including security related requirements) into the Requirements Management System as Stories including development, testing and documentation Stories. See `Story Process <../../Operations/ProgramManagement/StoryProcess.html>`__.   
 
        Note: The breakdown of requirements also occur iteratively throughout the development lifecycle of the Epic.  This activity may also occur as part of a Scrum Team's regular grooming activities.
    

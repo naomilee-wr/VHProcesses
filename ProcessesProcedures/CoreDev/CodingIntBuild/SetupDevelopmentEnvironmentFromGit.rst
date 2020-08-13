@@ -28,7 +28,7 @@ Set up Development Environment from Git
 
 |
 
-|image0|
+|image0| (*NL 8/12:  need to look for these image files*)
 
 |
 
@@ -64,13 +64,13 @@ Set up Development Environment from Git
 
     - **git status**
 
-|image1|
+|image1| (*NL 8/12:  need to look for these image files*)
 
 There's modified files for sub modules, so need to update them for latest references
 
 **git submodule update --recursive --init**
 
-|image2|
+|image2|  (*NL 8/12:  need to look for these image files*)
 
 **./setup-tools -clean**      //When host tool changed, it's necessary to update it again, this will be notified by SIT.   
 
@@ -80,7 +80,7 @@ There's modified files for sub modules, so need to update them for latest refere
 
 |
 
-`Access to wget.exe file <./wget.exe>`_
+`Access to wget.exe file <../../../ProcessDocuments/CoreDev/CodingIntBuild/wget.exe>`_
 
 
 |
