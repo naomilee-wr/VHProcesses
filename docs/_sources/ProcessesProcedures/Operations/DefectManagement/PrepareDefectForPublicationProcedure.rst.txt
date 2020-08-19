@@ -8,7 +8,7 @@ Prepare Defect for Publication Procedure
 ============================================
 
 |
-
+<EPMs to discuss this policy with Dev & CSO>
 Decide if defect is suitable to be published; record the decision, and if it is to be published, prepare and review the published information.  Customer-reported defects are published at submission by the Customer Support Engineer submitting the defect. Defects found by engineering are published by the Technical Lead.
 
 Which defects must be published and how quickly is defined in the `Defect Publication Policy <./DefectPublicationPolicy.html>`__.
@@ -197,8 +197,8 @@ Published fields must be reviewed and sanitized. In particular:
 
 |
 
-**References**
---------------
+**References (not created/maintained by Engineering)**
+--------------------------------------------------------
 - `Tools Group Defect Publication Criteria <https://jive.windriver.com/docs/DOC-75001>`__
 - `Posting Jira Defects for Publication <https://jive.windriver.com/docs/DOC-74237>`__
 - `Defect Publication Guidelines <https://jive.windriver.com/docs/DOC-49197>`__

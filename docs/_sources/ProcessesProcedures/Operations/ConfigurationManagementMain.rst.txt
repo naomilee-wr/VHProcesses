@@ -40,11 +40,11 @@ Processes & Procedures
 Standards & Guidelines
 ======================
 
-- `Dealing with VSBL, Spec Files, and RPMs <../../WorkInstructions/Development/VsblSpecFilesRpm_WI.html>`_ 
-- `Submitting Code into the Integration Branch <../../WorkInstructions/Development/SubmitCodeIntegrationBranch_WI.html>`_
-- `Submitting Code into a Release Branch (via Pull Request) <../../WorkInstructions/Development/SubmitCodeReleaseBranch_WI.html>`_
-- `Submitting Code into the SR05xx Maintenance Branch (via Pull Request) <../../WorkInstructions/Development/SubmitCodeMaintenanceBranch_WI.html>`_
-- `Submitting Code in VxWorks 7 Host Tool Branch <../../WorkInstructions/SubmitCodeHostSide/SubmitCodeHostToolBranch_WI.html>`_
+- `Dealing with VSBL, Spec Files, and RPMs <../../SupplementaryGuidelines/Development/VsblSpecFilesRpm_SG.html>`_ 
+- `Submitting Code into the Integration Branch <../../SupplementaryGuidelines/Development/SubmitCodeIntegrationBranch_SG.html>`_
+- `Submitting Code into a Release Branch (via Pull Request) <../../SupplementaryGuidelines/Development/SubmitCodeReleaseBranch_SG.html>`_
+- `Submitting Code into the SR05xx Maintenance Branch (via Pull Request) <../../SupplementaryGuidelines/Development/SubmitCodeMaintenanceBranch_SG.html>`_
+- `Submitting Code in VxWorks 7 Host Tool Branch <../../SupplementaryGuidelines/SubmitCodeHostSide/SubmitCodeHostToolBranch_SG.html>`_
 
 *Note: The following are Standards & Guidelines from Vx7 Jive page.  To be updated and reviewed for applicability*
 

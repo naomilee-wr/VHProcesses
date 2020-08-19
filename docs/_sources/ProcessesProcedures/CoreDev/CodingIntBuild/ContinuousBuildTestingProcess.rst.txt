@@ -64,7 +64,7 @@ The Architect/Domain Leads are responsible to identify the configurations and te
 
    * - 3
      - Analyze execution and test failures  
-     - For failures, the engineering team determine if the failures are due to simple infrastructure issues (e.g. disk full, configuration typo) or product defect. The engineering team responds according to the `Responding to Nightly Validation Procedure <./RespondingToNightlyValidation.html>`_  
+     - For failures, the engineering team determine if the failures are due to simple infrastructure issues (e.g. disk full, configuration typo) or product defect. The engineering team responds according to the `Responding to Nightly Validation Procedure <../../../SupplementaryGuidelines/Development/RespondingToNightlyValidation_SG.html>`_  
 	 
        For infrastructure issues, take steps to address the issue directly.	   
 
@@ -74,9 +74,9 @@ The Architect/Domain Leads are responsible to identify the configurations and te
 ---------------------------------
 
 - `Release Build process <./ReleaseBuildProcess.html>`__ 
-- `Responding to Nightly Validation <./RespondingToNightlyValidation.html>`_
+- `Responding to Nightly Validation <../../../SupplementaryGuidelines/Development/RespondingToNightlyValidation_SG.html>`_
 - `How to Handle Build Issues <../../../ProcessDocuments/CoreDev/CodingIntBuild/HowToHandleBuildIssues_Final.docx>`__
-- `Build Warning Guidelines of VxWorks 7 <./GuidelinesBuildWarning.html>`__
+- `Build Warning Guidelines of VxWorks 7 <../../../SupplementaryGuidelines/Development/GuidelinesBuildWarning_SG.html>`__
 - `Feature/Epic verification (Testing) Process <../Verification/Feature_EpicVerification_TestingProcess.html>`__
 - Engineering Requirements Management system (e.g., Jira Agile)
 - Configuration Management system (e.g., Git)

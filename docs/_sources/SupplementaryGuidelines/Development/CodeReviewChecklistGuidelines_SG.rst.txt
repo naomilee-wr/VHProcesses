@@ -1,0 +1,114 @@
+﻿:orphan:
+|
+|
+|
+
+================================= 
+CodeReviewChecklistGuidelines
+=================================
+
+**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+
+**Purpose:** As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.
+
+(Source:
+
+**Documentation**
+------------------
+
+- **Spelling check before review and at the final stage of review, you may use word or outlook(F5)**
+- There's no target.ref for BSP now, please submit defect to infoDev team to update README.md and BSP supplement guide: `VxWorks BSP Documentation Update Process (from SR0610) <https://jive.windriver.com/docs/DOC-75523>`__ 
+- For drivers, add "DOC_FILES += xxx.c" out of the "ifdef _WRS_CONFIG_FDT" so that driver API can be automatically produced, `references <http://opengrok.wrs.com/source/xref/vx7-integration/helix/guests/vxworks-7/pkgs_v2/os/psl/renesas/renesas_rz/src/vxbFdtRsRzn1Timer.mk#20>`__
+ 
+
+**Coverity & Warnings**
+-----------------------
+
+- Make sure there's no Coverity issues before integration, see: `How to Run Coverity for VxWorks 7 Before Running CI Launcher <https://jive.windriver.com/docs/DOC-71808>`_ 
+- Make sure there's no new compile warnings generated. The CI Launcher result will see if there are warnings: <http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/ 
+ 
+
+**Modification History and Change Log**
+----------------------------------------
+
+- copyright year: any of the following entries are considered valid: “1997”, “1992-2003”, “2012-2013” “1997, 2001”, or “1997, 2002-2005”.
+- 13mar17,npc fixed calculation of fifo len for errata: AR#61664 (V7PRO-3645)    //<past tense>, no Period, Defect number or Epic number
+- “add a modification history entry for each and every change to a .spec file that describes the specific changes to the file itself”, that means, each time when you updating spec files due to changelog, please also add a modhis.
+- Whenever any file is updated in an RPM (layer), please check if the spec/layer version needs updated, methods: `How to check if an RPM version needs to be updated when code check in? <https://jive.windriver.com/docs/DOC-74083>`__ 
+- If a defect needs publish, please add changelog items with defect number, else, please do not add defect number, buy you may still need to add modhis or changelog.
+- For code committed to git, commit messages should always contain a reference to the defect ID, feature ID or user story ID as well, and "git squash" and/or "git rebase" should be used to minimize the number of commits where possible, see: `Vx7 Git Check-in Process <https://jive.windriver.com/docs/DOC-72793>`__
+- For .spec files, in order to prevent redundant entries pertaining to “%changelog” (see section 3.2.4.2) related updates, a single modification history entry can be used to summarize the various additions to the “changelog” for a given release. The date for the modification history entry shall be the date of the last addition to the %changelog section, and the trigram shall be of the engineer that made the last addition to the %changelog.
+
+|image0|
+
+- New entries go at the top, i.e. changelog should grow up (just like the “Modification history” section
+
+
+**Generic Issues**
+-------------------
+
+- File is UNIX format
+- Do not put more than one declaration on a line. Each variable and function argument must be declared on a separate line. 
+- Do not use comma-separated lists to declare multiple identifiers.
+
+|image1|
+
+|image2|
+
+|image3|
+
+|image4|
+
+|image5|
+
+
+**BSP and Driver**
+--------------------
+
+- The driver component name must be DRV_TYPE_FDT_VENDOR_(IPNAME maybe optional)_(PROCESSORNAME optional)
+
+  - Example: DRV_TIMER_FDT_KINETIS, DRV_DMA_FDT_FSL_EDMA, DRV_PINMUX_FDT_RZN1 
+  
+- The driver name must be vxbFdtVendorProcessorType
+
+  - Example: vxbFdtRsRzn1Rtc, vxbFdtFslImxClk, vxbFdtFslImxEcspi, vxbFdtZynqI2c
+  
+- The driver compatible must be "vendor,processor-type" or "vendor,processor-ipname-type" 
+
+  - Example: "fsl,imx-gpio", "fsl,p2020-booke-timer"; "xlnx,nwl-pcie"; "snps,designware-gpio";
+  
+- The driver vxbus name in VXB_DRV must use similar of the compatible name, except the "vendor," so that vxbDevShow will have consistent output:
+
+  - "rzn1-rtc", "imx-gpio"
+  
+- `DTS name <https://jive.windriver.com/docs/DOC-72547>`__
+
+
+
+**References**
+-------------------
+
+- http://opengrok.wrs.com/source/xref/vx7-integration/helix/guests/vxworks-7/pkgs_v2/os/psl/freescale/fsl_imx/src/vxbFdtFs… 
+
+|
+
+**Change Log**
+--------------
+
++----------------+----------------+----------------+----------------+---------------------------------------+
+| **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
+|                | Request ID**   |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+| 06/19/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from Code Review  |
+|                |                |                | Jayaraman      | Checklist Jive page                   |
++----------------+----------------+----------------+----------------+---------------------------------------+
+|                |                |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+
+
+.. |image0| image:: /_static/SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_Image0.jpg
+.. |image1| image:: /_static/SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_Image1.jpg
+.. |image2| image:: /_static/SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_Image2.jpg
+.. |image3| image:: /_static/SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_Image3.jpg
+.. |image4| image:: /_static/SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_Image4.jpg
+.. |image5| image:: /_static/SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_Image5.jpg

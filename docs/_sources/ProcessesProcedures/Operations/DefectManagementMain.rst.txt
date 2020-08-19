@@ -57,8 +57,8 @@ Standards & Guidelines
 ======================
 
 - `Monitoring Defect Metrics <../ProgramManagement/MonitoringDefectMetricsGuidelines.html>`_
-- `Defect Creation and Publication Guidelines <../../WorkInstructions//DefectEscalationEnhReqMgmt/DefectCreationAndPublication_WI.html>`_
-- `Customer Defects and Escalations Guidelines <../../WorkInstructions/DefectEscalationEnhReqMgmt/CustomerDefectsAndEscalation_WI.html>`_
+- `Defect Creation and Publication Guidelines <../../SupplementaryGuidelines//DefectEscalationEnhReqMgmt/DefectCreationAndPublication_SG.html>`_
+- `Customer Defects and Escalations Guidelines <../../SupplementaryGuidelines/DefectEscalationEnhReqMgmt/CustomerDefectsAndEscalation_SG.html>`_
 
 
 *Note: Team to identify additional Standards & Guidelines as applicable*
@@ -89,7 +89,7 @@ Tools & Templates
 **Templates**
 -------------
 
-- `Defect Template <../../../WorkInstructions/DefectEscalationEnhReqMgmt/DefectTemplate_WI.html>`_
+- `Defect Template <../../../SupplementaryGuidelines/DefectEscalationEnhReqMgmt/DefectTemplate_SG.html>`_
 
 |
 

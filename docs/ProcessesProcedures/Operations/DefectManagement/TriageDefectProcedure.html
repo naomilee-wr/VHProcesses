@@ -45,7 +45,7 @@
                 <li><a href="../../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
                 <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
                 <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
-                <li><a href="../../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+                <li><a href="../../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -71,15 +71,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../MeasurementMain.html"><strong>Measurement</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../TrainingMain.html"><strong>Training</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
 </ul>
 </ul>
 </li>
@@ -123,8 +114,13 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>The purpose of defect triage is to a) ensure new defect records have been properly routed and adequately documented, b) weed out non-defects, and c) initiate timely action to address security and other high priority defects, especially customer-reported defects.</p>
-<p>The focus of triage is to quickly assess the defect record and to defer a thorough technical investigation, including attempts at reproduction of the problem.</p>
+<p>The purpose of defect triage is to:</p>
+<ol class="loweralpha simple">
+<li><p>ensure new defect records have been properly routed and adequately documented,</p></li>
+<li><p>weed out non-defects, and</p></li>
+</ol>
+<p>c) initiate timely action to address security and other high priority defects, especially customer-reported defects.
+The focus of triage is to quickly assess the defect record and to defer a thorough technical investigation, including attempts at reproduction of the problem.</p>
 <p>The defect record is taken at face value: that the submitter is competent in the use of the product and that the symptoms are accurately reported. This is especially essential in dealing with defects that are difficult to reproduce because it is assumed that the defect exists even if it can’t reproduced.</p>
 <p>The Engineering Manager, Technical Feature Owner or Scrum team is responsible for this procedure. In the case of a customer reported defect, it may be necessary for the Domain Lead to assign the defect for a timely resolution.</p>
 <div class="line-block">
@@ -155,19 +151,33 @@ Tracking System (e.g., Jira)</p></li>
 <li><p>The Defect <em>Status</em> is in one of
 the following</p>
 <ul>
-<li><p>“Open” and assigned to defect
-fixer</p></li>
-<li><p>Set to “On Hold” with a reason
-provided</p></li>
-<li><p>“Resolved” with <em>Resolution</em>
-set to “Duplicate”, “Won’t
-Fix”, or “Rejected”</p></li>
-<li><p>Withdrawn</p></li>
+<li><dl class="simple">
+<dt>“Open” and assigned to defect</dt><dd><p>fixer</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Set to “On Hold” with a reason</dt><dd><p>provided</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Set to “In Progress” working on</dt><dd><p>on a fix or solution</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>“Resolved” with <em>Resolution</em></dt><dd><p>set to “Duplicate”, “Won’t
+Fix”, or “Rejected”</p>
+</dd>
+</dl>
+</li>
+<li><p>“Withdrawn”</p></li>
 </ul>
 </li>
 <li><p>The defect may be re-categorized
-by setting <em>Issue Type</em> to
-“Enhancement Request”</p></li>
+by setting <em>Issue Type</em> to “Story
+or Enhancement Request”</p></li>
 <li><p>The defect <em>Priority</em> and
 <em>Severity</em> may be adjusted</p></li>
 </ul>
@@ -182,7 +192,7 @@ by setting <em>Issue Type</em> to
 </tbody>
 </table>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><strong>Outputs</strong>                          | -  Updated defect record             |</div>
 </div>
 <div class="section" id="steps">
 <h2><strong>Steps</strong><a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
@@ -356,13 +366,19 @@ Domain Lead</p></td>
 <td><p>Shree Vidya Jayaraman</p></td>
 <td><p>Updates based on Rodger’s feedback</p></td>
 </tr>
-<tr class="row-even"><td></td>
+<tr class="row-even"><td><p>08/13/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.3</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updates to the Entry Criteria and Diagration based on the EPMs feedback</p></td>
+</tr>
+<tr class="row-odd"><td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td></td>
+<tr class="row-even"><td></td>
 <td></td>
 <td></td>
 <td></td>

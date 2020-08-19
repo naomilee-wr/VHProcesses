@@ -37,7 +37,7 @@ Developer submission of modified/created code to the CM system (e.g., Git) via B
 
 1. The Architect/Domain Lead is responsible to identify the configurations for the CI pipeline as well as the nightly regression tests.  The Build & Configuration team is responsible for ensuring the configs are part of the CI pipeline checks.
 
-2. Using the CI pipeline (Jenkins) build tool, the Developer submits code into the integration branch according to the Work Instructions in `Submitting Code into the Integration Branch <./SubmitCodeIntegrationBranch_WI.html>`__ 
+2. Using the CI pipeline (Jenkins) build tool, the Developer submits code into the integration branch according to the Work Instructions in `Submitting Code into the Integration Branch <../../../SupplementaryGuidelines/Development/SubmitCodeIntegrationBranch_SG.html>`__ 
 
    - Each code submission by the Developer goes through a series of configuration builds as part of the CI pipeline. The CI pipeline double checks/validates all the previously performed tests, warnings, analysis, reviews and code clean up by the Developer.
    - Once the CI pipeline check is completed, the Jenkins tool automatically checks in the code into the Integration branch and automatically update the state of the Jira Defect (if it is a Defect) to "Checked in".  
@@ -47,7 +47,7 @@ Developer submission of modified/created code to the CM system (e.g., Git) via B
 
 3. After the Feature Complete date (code freeze), the Release Branch is created off of the Integration Branch.  
 
-   - The Developer submits the code according to the Work Instructions in `Submitting Code into the Release Branch <./SubmitCodeReleaseBranch_WI.html>`__.  The code is submitted via the `Pull Request Checklist Template <../../../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx>`__
+   - The Developer submits the code according to the Work Instructions in `Submitting Code into the Release Branch <../../../SupplementaryGuidelines/Development/SubmitCodeReleaseBranch_SG.html>`__.  The code is submitted via the `Pull Request Checklist Template <../../../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx>`__
    
    - Once the code is committed to the regression branch, the continuous build and nightly regression tests are initiated.  See `Continuous Build and Nightly Regression Testing Process <./ContinuousBuildTestingProcess.html>`__
    
@@ -57,7 +57,7 @@ Developer submission of modified/created code to the CM system (e.g., Git) via B
        
 	 - If issues found, the tester raises a defect in the Defect Management system, Jira according to the `Defect Management process <../../Operations/DefectManagement/DefectManagementProcess.html>`__
 	
-4. To submit fixes into the SR05xx maintenance branch, the Developer submits code into the Maintenance/Sustaining branch according to the Work Instructions in `Submitting Code into the Maintenance Branch <./SubmitCodeMaintenanceBranch_WI.html>`__
+4. To submit fixes into the SR05xx maintenance branch, the Developer submits code into the Maintenance/Sustaining branch according to the Work Instructions in `Submitting Code into the Maintenance Branch <../../../SupplementaryGuidelines/Development/SubmitCodeMaintenanceBranch_SG.html>`__
 
    - The code is submitted via the `Pull Request Checklist Template <../../../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx>`__
  
@@ -66,9 +66,9 @@ Developer submission of modified/created code to the CM system (e.g., Git) via B
 **Related Process Assets/Tools**
 --------------------------------
 
-- `VxWorks: Submitting code into the Integration Branch <./SubmitCodeIntegrationBranch_WI.html>`__
-- `VxWorks: Submitting code into a Release Branch <./SubmitCodeReleaseBranch_WI.html>`__
-- `VxWorks: Submitting code into the SRO5XX Maintenance Branch <./SubmitCodeMaintenanceBranch_WI.html>`__
+- `VxWorks: Submitting code into the Integration Branch <../../../SupplementaryGuidelines/Development/SubmitCodeIntegrationBranch_SG.html>`__
+- `VxWorks: Submitting code into a Release Branch <../../../SupplementaryGuidelines/Development/SubmitCodeReleaseBranch_SG.html>`__
+- `VxWorks: Submitting code into the SRO5XX Maintenance Branch <../../../SupplementaryGuidelines/Development/SubmitCodeMaintenanceBranch_SG.html>`__
 - `Release Build Process <./ReleaseBuildProcess.html>`__
 - Engineering Requirements Management system (e.g., Jira Agile)
 - Configuration Management system (e.g., Git)
@@ -79,7 +79,7 @@ Developer submission of modified/created code to the CM system (e.g., Git) via B
 **References**
 ---------------
 
-- `Dealing with VSBL, Spec Files and RPMs <./VsblSpecFilesRpm_WI.html>`__
+- `Dealing with VSBL, Spec Files and RPMs <../../../SupplementaryGuidelines/Development/VsblSpecFilesRpm_SG.html>`__
 - `VxWorks Pull Request Submission Template <../../../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx>`__
 - Accessing and Modifying VxWorks 7 code using Git   --- The Jive page contains a lot of other Jive link references.  Kitty/Martin to check
 

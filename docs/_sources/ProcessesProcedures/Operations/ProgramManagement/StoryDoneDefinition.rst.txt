@@ -52,7 +52,7 @@ The acceptance of Story is contingent on the following criteria being met.
      - Java coverage: TBD ??
 
 #. No P1 defects, no P2 blocking defects 
-#. Document updates done refer to `Doc as Code Guideline <../../CoreDev/CodingIntBuild/DocAsCodeGuideline.html>`__
+#. Document updates done refer to `Doc as Code Guideline <../InformationDevelopment/DocAsCodeGuideline.html>`__
 #. Code checked in
 
    - If the feature under development is for current SR release, a pull request against current SR release branch should be opened and merged

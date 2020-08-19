@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolving Compiler Warnings &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
+                <li><a href="../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="resolving-compiler-warnings">
+<h1>Resolving Compiler Warnings<a class="headerlink" href="#resolving-compiler-warnings" title="Permalink to this headline">¶</a></h1>
+<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
+<p><strong>Purpose:</strong> As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.</p>
+<p>(Source:</p>
+<div class="section" id="introduction">
+<h2><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Resolving compiler warnings is not just about making the compiler be quiet. It is about making the code better, more correct. While almost any warning can be easily avoided with a simple type-cast,variable initialization, etc, long term we are all better off by doing the right thing. The general approach should be:</p>
+<ul class="simple">
+<li><p>analyze and understand the code, the meaning of types, variables involved</p></li>
+<li><p>think about what would make sense if you were to write the code from scratch (consider things like range of a variables, operations involved)</p></li>
+<li><p>consider API compatibility and standard API specification</p></li>
+<li><p>chose solution case by case; there is no one-size-fits-all rule</p></li>
+</ul>
+<p>This document is not meant to address all types of warnings. It is meant to provide some guidelines and examples how to go about resolving some of the common ones that are relevant, especially in the context of the increased level of compiler warnings VxWorks 7 SR0610 release. But the guidelines are relevant in much wider scope.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sign-conversion-and-sign-compare-warnings">
+<h2><strong>Sign conversion and sign compare warnings</strong><a class="headerlink" href="#sign-conversion-and-sign-compare-warnings" title="Permalink to this headline">¶</a></h2>
+<p>The sign conversion warnings are enabled by -Wsign-compare and -Wsign-conversion compiler options (gcc and LLVM). These two are similar as they are about assigning or comparing unsigned and signed values. The range of a signed and an unsigned types are different, even if the size is the same; therefore assignments and comparisons have to be done carefully to make sure that values in non-overlapping ranges are excluded or properly handled. Ideally, the types of variables, constants, function parameters, structure members used for values of the same meaning should all use the same type, either all signed or all unsigned (and of course the same size).</p>
+<div class="section" id="bit-wise-operations">
+<h3><strong>Bit-wise operations</strong><a class="headerlink" href="#bit-wise-operations" title="Permalink to this headline">¶</a></h3>
+<p>Bit-wise operations (bit mask, bit set, bit shift, etc) normally should be performed using unsigned values. In fact the C11 standard states:</p>
+<p>“<em>Some operators (the unary operator ~, and the binary operators &lt;&lt;, &gt;&gt;, &amp;, ^, and |,collectively described as bitwise operators) are required to have operands that have integer type. These operators yield values that depend on the internal representations of integers, and have **implementation-defined and undefined aspects for signed types*</em>.*”</p>
+<p>That means variables, constants, function parameters and structure members used to represent bit fields should be preferably all unsigned.</p>
+</div>
+<div class="section" id="unsigned-constants">
+<h3><strong>Unsigned constants</strong><a class="headerlink" href="#unsigned-constants" title="Permalink to this headline">¶</a></h3>
+<p>In C code constant values can use the ‘u’ or ‘U’ suffix to indicate the compiler that they are represent unsigned values (e.g. 100u). The ‘u’ suffix can also be combined with ‘l’ or ‘L’ to indicate “unsigned long” (e.g. 100ul). For example, a constant definition used for bit-mask operations can be defined as:</p>
+<p><img alt="image0" src="../../_images/ResolvingCompilerWarning_Image0.jpg" /></p>
+<p>The suffix is not recognized in assembly files. When a constant is supposed to be usable in either C or assembly code, it can be conditionally defined based on _ASMLANGUAGE. To simplify, a set of abstraction macros are provided (made visible by including vxWorks.h):</p>
+<p><img alt="image1" src="../../_images/ResolvingCompilerWarning_Image1.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="existing-api-and-open-standard-functions">
+<h2><strong>Existing API and open standard functions</strong><a class="headerlink" href="#existing-api-and-open-standard-functions" title="Permalink to this headline">¶</a></h2>
+<p>It is not always feasible to change functions signatures; backward compatibility and standard specifications must be considered. For example, the &lt;options&gt; argument to semMCreate(), rtpSpawn() and similar functions, or &lt;taskPriority&gt; argument for taskSpawn() have been declared as signed integer for a very long time. Although they would be better be defined as unsigned, to avoid potential impact on user applications, they shall remain as is. That means, when such argument are used internally in VxWorks libraries, they may need conversion to unsigned value, with explicit typecast (this is a case when typecast is acceptable). For example the &lt;options&gt; value is stored in WIND_RTP structure and used internally in bitwise operation as unsigned.</p>
+<p><img alt="image2" src="../../_images/ResolvingCompilerWarning_Image2.jpg" /></p>
+<p>On the other hand, there are situations where changing the signature of a public interface is warranted.  For example, the following is a ‘grep’ of VxWorks 7 source pertaining to using the return value of sysClkRateGet() as the value for the ‘delay’ argument to taskDelay():</p>
+<p><img alt="image3" src="../../_images/ResolvingCompilerWarning_Image3.jpg" /></p>
+<p>Given that the return value of sysClkRateGet() is a signed quantity (int) and ‘delay’ parameter is an unsigned quantity (_Vx_ticks_t -&gt; unsigned int), the application of the -Wsigned-conversion compiler option results in a “warning: implicit conversion changes signedness” warning.  Note that the usage of taskDelay() is merely a subset of the overall scenarios that will result in the -Wsign-conversion related warning. The usage of sysClkRateGet() as an argument to any Wind kernel API that accepts a “delay” or “timeout” parameter that is typed as _Vx_ticks_t will generate the -Wsign-conversion related warning. For example, the usage of wdStart(), msgQSend(), msgQReceive(), semTake(), semRTake(), semWTake(), taskDelay(), taskWait(), eventReceive(), rtpWait(), etc. are susceptible to the warning.</p>
+<p>Given the wide-spread occurrence of this scenario (and thus the large number of typecasts required in VxWorks source code to silence the warning), it is recommended to “correct” the signature of sysClkRateGet(), sysClkRateSet(), sysAuxClkRateGet(), and sysAuxClkRateSet() to return/accept an unsigned quantity for the tick rate. In other words, the following signature changes are recommended:</p>
+<p><img alt="image4" src="../../_images/ResolvingCompilerWarning_Image4.jpg" /></p>
+<p>To:</p>
+<p><img alt="image5" src="../../_images/ResolvingCompilerWarning_Image5.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="uninitialized-variable-warnings">
+<h2><strong>Uninitialized Variable Warnings</strong><a class="headerlink" href="#uninitialized-variable-warnings" title="Permalink to this headline">¶</a></h2>
+<p>LLVM and gcc have two type of warning related to uninitialized variables: -Wunitialized and -Wmaybe-uninitialized. In either case, the compiler may report a variable being used before it’s value is set. Note that the compiler in some cases may report a false positive. As with any warning code flagged with such warning should be reviewed for logic, and appropriate action taken. Do not just automatically add an initialization; doing that has the potential to hide an actual bug; it can also hide a bug that is introduced by future changes. But, of course, if the algorithm requires an initial value (e.g. a counter starting with 0), initializing the variable as such is the right thing to do.</p>
+<div class="section" id="false-positives">
+<h3><strong>False positives</strong><a class="headerlink" href="#false-positives" title="Permalink to this headline">¶</a></h3>
+<p>For false positives - i.e. when the logic was verified and the compiler emits a false uninitialized warning, it may be tempting to avoid the warning by adding a “dummy” initial value. That, however (just like adding typecasts to avoid compiler warnings), should be last resort. Instead, consider these solutions for modifying the code to reduce code complexity of the functions. If something is hard understand by a person, it has a higher potential to be misunderstood by the compiler as well.</p>
+<p>For example, the following code may result in compiler warning about x being used uninitialized. The compiler cannot always tell that the two if statements have the same condition. This is especially true when global variables are involved in the condition (the compiler can’t generally tell whether the global variable can be changed by another execution context). But we, programmers, can.</p>
+<p><img alt="image6" src="../../_images/ResolvingCompilerWarning_Image6.jpg" /></p>
+<p>If we determine that the condition is indeed invariant between two evaluations, modifying the code as follows helps the compiler making a more informed decision about the initialization of variable &lt;x&gt; being tied to &lt;myCondition&gt; being set to TRUE.</p>
+<p><img alt="image7" src="../../_images/ResolvingCompilerWarning_Image7.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="adjusting-warning-levels">
+<h2><strong>Adjusting warning levels</strong><a class="headerlink" href="#adjusting-warning-levels" title="Permalink to this headline">¶</a></h2>
+<p>The VxWorks build system defines several warning levels that can be used for building code in a VSB. Normally this means setting the warning level in the layer’s Makefile, by setting one or more of the following make variables:</p>
+<p><img alt="image8" src="../../_images/ResolvingCompilerWarning_Image8.jpg" /></p>
+<p>Note that, as shown above, the layer Makefile syntax does not use the $ syntax.</p>
+<p>When the warning level needs to be set for some source directories of a layer, Makefiles at individual directories can set the following make variables:</p>
+<p><img alt="image9" src="../../_images/ResolvingCompilerWarning_Image9.jpg" /></p>
+<p>The above will apply the selected warning level all kernel or user side builds, respectively, for C and C++ code in the layer. The default (nothing set in the layer’s Makefile) is CC_WARNINGS_MED.</p>
+<p>Available warning level choices (in place of CC_WARNINGS_XXX):</p>
+<p><img alt="image10" src="../../_images/ResolvingCompilerWarning_Image10.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="third-party-code">
+<h2><strong>Third Party Code</strong><a class="headerlink" href="#third-party-code" title="Permalink to this headline">¶</a></h2>
+<p>It is desired that local WR specific changes are minimized for third party code (whether open source or proprietary) that is regularly synchronized with outside repository. When submitting patches to the external repository is not accepted or not feasible for other reasons, the layer can override default build flags to CC_WARNINGS_3PP.</p>
+<p>The use of CC_WARNINGS_NONE should be avoided even for third party code when that code is intended for customer application use. Using this option needs to be approved by a PT.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="references">
+<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="../../ProcessDocuments/CoreDev/CodingIntBuild/SignedUnsignedinC.pptx">Signed &amp; Unsigned in C</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-81310">Helix Cert Coding Standard Violation Guide</a></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 38%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change
+Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>06/18/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Transferred content from Resolving
+Compiler Warning Jive page</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../_sources/SupplementaryGuidelines/Development/ResolvingCompilerWarnings_SG.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

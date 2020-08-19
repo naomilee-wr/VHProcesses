@@ -36,7 +36,6 @@ This procedure describes how to submit a defect. The filer of the defect is resp
 #. When a defect has been found, before reporting it, search the defect database to see if a defect has been filed before for the same issue.
 #. If an existing defect is found, update the record with any new information.
 
-   **Note:** For customer support defect, filling in the *Found in Version* field is mandatory.
 #. If a defect record doesn't exist, create a new defect record. The following fields are required when creating a new defect:
 
    -  *Project*
@@ -47,6 +46,7 @@ This procedure describes how to submit a defect. The filer of the defect is resp
    -  *Components*
    -  *Found in Versions*
    -  *Where Found*
+   -  *Reporter*				
 
    **These additional fields should also be filled in, if known:**
 
@@ -101,6 +101,8 @@ This procedure describes how to submit a defect. The filer of the defect is resp
 | **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 | 05/08/2020   | N/A                     | 0.1           | Martin Cote             | Initial Draft                                                                                       |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 08/13/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Update based on Doina's feedback                                                                    |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 |              |                         |               |                         |                                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
