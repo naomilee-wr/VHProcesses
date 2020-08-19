@@ -140,7 +140,7 @@ html_theme_options = {
         ("Getting Started (WIP)", "./GettingStarted/GettingStarted.html", 1),
         ("Processes by Roles (WIP)", "../../GettingStarted/ByRoles.html", 1),
         ("Generic Plans and Documents", "./GenericPlans/GenericIndex.html", 1),
-        ("Work Instructions", "./WorkInstructions/WorkInstructionsIndex.html", 1),        
+        ("Supplementary Guidelines", "./SupplementaryGuidelines/SupplementaryGuidelinesIndex.html", 1),        
     ],
 
     # Render the next and previous page links in navbar. (Default: true)

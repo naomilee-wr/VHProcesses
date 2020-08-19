@@ -19,7 +19,7 @@ This document consolidates the various tasks and expectations fulfilled by Techn
 **Important Reference**
 -----------------------
 
-`Feature Grooming and Workflow <./FeatureGrooming_Workflow.html>`__
+`Feature Grooming and Workflow <../../../SupplementaryGuidelines/FeatureMgmt/FeatureGrooming_Workflow_SG.html>`__
 
 |
 

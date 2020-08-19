@@ -7,10 +7,11 @@
 Configuration Management Process
 =================================
 
-This process describes the steps in managing defect reports from submission through resolution. Defects are managed in the Defect Management System (e.g., Jira).  
+The configuration management process describes how to establish and maintain the integrity of program-related work products and baselines throughout the lifecycle and make them available to relevant stakeholders in time for their need.
 
-The EPM is responsible for ensuring that this process is followed. 
-The Bug Board is responsible for reviewing the defect record and deciding on the bug disposition.
+A Software Configuration Management (SCM) Plan is used to document and guide project stakeholders in the CM tools and methods used within the program.
+
+The Configuration Management(CM)/ Build & Configuration Lead is responsible to see that this process is performed.
 
 |
 
@@ -48,34 +49,31 @@ The Bug Board is responsible for reviewing the defect record and deciding on the
      - The CM Lead develops the program's SCM plan.  The plan is updated to reflect any major changes.  Key elements in the plan are:
 	 
        -  Roles and responsibilities
-	 
-       -  Required resources, tools and repositories
-	 
-       -  Identification of Configuration Items (CIs) to be controlled
-	 
-       -  Strategy and methods for creating and releasing baselines, configuration control and configuration status accounting and auditing.
+	   -  Required resources, tools and repositories
+	   -  Identification of Configuration Items (CIs) to be controlled
+	   -  Strategy and methods for creating and releasing baselines, configuration control and configuration status accounting and auditing <<need to revisit after Devstar launch>>
+	   
+	   The SCM plan should be approved by all key stakeholders (e.g., Engineering Management, Product Management, Engineering Program Management, Info Dev, etc)
   
    * - 2
-     - Identify project items for control
-     - The CM Lead, in conjunction with the Key Stakeholders (e.g., Engineering Manager, EPM, Technical Lead, and Test Lead) identify the CIs that have been documented in the SCM plan and assign unique identifiers to each item by following the document policy. These CIs compose the baselines at given points in the lifecycle.
+     - Identify program release items for control
+     - The CM Lead, in conjunction with the key stakeholders (e.g., Engineering Manager, EPM, Technical Lead, and Test Lead) identify the CIs that have been documented in the SCM plan. These CIs compose the baselines at given points in the lifecycle.
 
    * - 3
-     - Establish and maintain the CM system
-     - The CM Lead establishes the CM system(s) needed to manage multiple levels of control, per the SCM plan. The systems include the storage media, procedures and tools for accessing the system(s).
-
+     - Establish and maintain the CM framework
+     - The CM Lead establishes the framwork for the CM activities and multiple levels of control, per the SCM plan. 
+	 
    * - 4
      - Create and release baselines
-     - The CM Lead, supported by the Development and Test Managers and teams, establish and maintain baselines at designated points in the lifecycle, per the SCM plan. A baseline is a set of CIs that has been reviewed and agreed on, which thereafter serves as the basis for further development and which can be changed only by following the change control process and program change request procedure. Baselines can be internal or external and typically include functional (e.g., requirements), development (e.g., builds) and release (e.g., product deliveries) baselines.
+     - The CM Lead, supported by the Development and Test Managers and teams, establish and maintain baselines at designated points in the lifecycle, per the SCM plan. A baseline is a set of CIs that has been reviewed and agreed on, which thereafter serves as the basis for further development and which can be changed only by following the change control process and program change request procedure. Baselines can be internal or external and typically include functional (e.g., committed set of requirements), development (e.g., builds) and release (e.g., product deliveries) baselines.
 
-       The CI descriptions that compose the baselines are kept up-to-date, including their decomposition into lower level components, who is responsible for each item and when it is placed under control. The history of each CI is recorded in sufficient detail to recover a previously baselined version, if needed.
-
-       After their approval, the baselines are communicated to the project staff using various mechanisms (e.g., Team email).
+       The CI description that compose the baselines are updated, placed under control, and communicated.  After their approval, the baselines are communicated to the team using various collaboration mechanisms (e.g., Team email, Jive/Sharepoint).
 
    * - 5
      - Track and control changes to baselined configuration items
-     - The CM Lead and Development and Test Managers and teams initiate and record defects to address changes to baselined requirements and development work products (e.g., design). Meeting with the Key Stakeholders is held to request, evaluate, approve, disapprove and implement changes to baselined CIs according to the `Change Management Procedure <./ChangeManagementProcedure.html>`__. The changes encompass both error correction and enhancement.
+     - The CM Lead, Development, Test Managers and teams initiate and record a defect or Change Request to address changes to baselined requirements and development work products (e.g., design). Meeting with the Key Stakeholders is held to request, evaluate, approve, disapprove and implement changes to baselined CIs according to the `Change Management Procedure <./ChangeManagementProcedure.html>`_. The changes encompass both error correction and enhancement.
 
-       The degree of formality necessary for the change process, as well as the change mechanism used depends on the project baseline affected and the impact of the change within the configuration structure, as outlined in the change management process.
+       The degree of formality necessary for the change process, as well as the change mechanism used depends on the baseline affected and the impact of the change within the configuration structure, as outlined in the `Change Management Procedure <./ChangeManagementProcedure.html>`_.
 
    * - 6
      - Control obsolete configuration items
@@ -131,7 +129,14 @@ The Bug Board is responsible for reviewing the defect record and deciding on the
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 | 05/01/2020   | N/A                     | 0.1           | Naomi Lee               | Initial Draft                                                                                       |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
-| 07/20/2020   | N/A                     | 0.2           | Shree Vidya Jayraman    | Updated the flow diagram and added link to step 5                                                   |
+| 07/20/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Updated the flow diagram and added link to step 5                                                   |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 08/13/2020   | N/A                     | 0.3           | Shree Vidya Jayaraman   | Updates based on the feedback received from Martin                                                  |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+
 
 .. |image0| image:: /_static/Operations/ConfigurationManagement/SWConfigManagementProcess.jpg    

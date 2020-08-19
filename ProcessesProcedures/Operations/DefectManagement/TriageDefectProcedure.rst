@@ -8,9 +8,11 @@ Triage Defect Procedure
 ===========================
 
 |
+The purpose of defect triage is to:
 
-The purpose of defect triage is to a) ensure new defect records have been properly routed and adequately documented, b) weed out non-defects, and c) initiate timely action to address security and other high priority defects, especially customer-reported defects.
-
+a) ensure new defect records have been properly routed and adequately documented, 
+b) weed out non-defects, and 
+c) initiate timely action to address security and other high priority defects, especially customer-reported defects.
 The focus of triage is to quickly assess the defect record and to defer a thorough technical investigation, including attempts at reproduction of the problem.
 
 The defect record is taken at face value: that the submitter is competent in the use of the product and that the symptoms are accurately reported. This is especially essential in dealing with defects that are difficult to reproduce because it is assumed that the defect exists even if it can't reproduced.
@@ -29,24 +31,25 @@ The Engineering Manager, Technical Feature Owner or Scrum team is responsible fo
 | **Exit Criteria**                    | -  The Defect *Status* is in one of  |
 |                                      |    the following                     |
 |                                      |                                      |
-|                                      |    -  "Open" and assigned to defect  |
+|                                      |    - "Open" and assigned to defect   |
 |                                      |       fixer                          |
-|                                      |    -  Set to "On Hold" with a reason |
+|                                      |    - Set to "On Hold" with a reason  |
 |                                      |       provided                       |
-|                                      |    -  "Resolved" with *Resolution*   |
+|                                      |    - Set to "In Progress" working on |
+|                                      |       on a fix or solution           |
+|                                      |    - "Resolved" with *Resolution*    |
 |                                      |       set to "Duplicate", "Won't     |
 |                                      |       Fix", or "Rejected"            |
-|                                      |    -  Withdrawn                      | 
+|                                      |    - "Withdrawn"                     | 
 |                                      |                                      |
 |                                      | -  The defect may be re-categorized  |
-|                                      |    by setting *Issue Type* to        |
-|                                      |    "Enhancement Request"             |
+|                                      |    by setting *Issue Type* to "Story |
+|                                      |    or Enhancement Request"           |
 |                                      | -  The defect *Priority* and         |
 |                                      |    *Severity* may be adjusted        |
 +--------------------------------------+--------------------------------------+
 | **Outputs**                          | -  Updated defect record             |
 +--------------------------------------+--------------------------------------+
-
 |
 
 **Steps**
@@ -169,6 +172,8 @@ Depending on decisions described above:
 | 05/08/2020   | N/A                     | 0.1           | Martin Cote             | Initial Draft                                                                                       |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 | 08/07/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Updates based on Rodger's feedback                                                                  |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 08/13/2020   | N/A                     | 0.3           | Shree Vidya Jayaraman   | Updates to the Entry Criteria and Diagration based on the EPMs feedback                             |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 |              |                         |               |                         |                                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+

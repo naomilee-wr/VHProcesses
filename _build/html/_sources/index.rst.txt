@@ -1,4 +1,5 @@
-.. Vx7 and HVP Dev Processes documentation master file
+.. 
+  Vx7 and HVP Dev Processes documentation master file
 |
 |
 |
@@ -58,42 +59,40 @@ Operations Processes:
    
    ProcessesProcedures/Operations/InformationDevelopmentMain.rst    
  
-
-Supporting Processes:
------------------------
-
-.. toctree::
-   :maxdepth: 1
-   :glob:   
-   
+.. 
+   NL <Aug 2020>: commented out until Supporting processes are in use.  To uncomment, remove ".." and restore indentations & carriage returns. 
+   Supporting Processes:
+   -----------------------
+   .. toctree::
+      :maxdepth: 1
+      :glob:   
    ProcessesProcedures/Supporting/MaintenanceMain.rst   
-
    ProcessesProcedures/Supporting/SupplierManagementMain.rst
-   
-Continuous Improvement Processes:
-----------------------------------
 
-.. toctree::
-   :maxdepth: 1
-   :glob:   
-
+.. 
+   NL <Aug 2020>: commented out until Continuous Improvement processes are in use.  To uncomment, remove ".." and restore indentations & carriage returns.    
+   Continuous Improvement Processes:
+   ----------------------------------
+   .. toctree::
+      :maxdepth: 1
+      :glob:   
    ProcessesProcedures/ContinuousImprovement/CAPAMain.rst 
    ProcessesProcedures/ContinuousImprovement/ContinuousImprovementMain.rst   
    ProcessesProcedures/ContinuousImprovement/QMSMaintenanceMain.rst
-|
    
 **Other:** 
 +++++++++++
 
 - `Generic Plans and Documents <./GenericPlans/GenericIndex.html>`__
 
-- `Work Instructions <./WorkInstructions/WorkInstructionsIndex.html>`__
-|
-   
+- `Supplementary Guidelines <./SupplementaryGuidelines/SupplementaryGuidelinesIndex.html>`__
+
+  
 **References:** 
 +++++++++++++++++
 
-|
+- TBD
+ 
 
 **Search** 
 +++++++++++

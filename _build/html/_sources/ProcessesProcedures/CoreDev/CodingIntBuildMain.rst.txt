@@ -39,45 +39,43 @@ Processes & Procedures
 Standards & Guidelines
 ======================
 
-(*NL 8/12:  Replace the links to WorkInstructions folder*)
-
 - `VxWorks Coding Standard <http://bitbucket.wrs.com/projects/VX7/repos/codingstandard/browse>`__
 - `Coding Standards <../../ProcessDocuments/CoreDev/CodingIntBuild/WindRiverVxWorksCodingStandard.pdf>`__     **Draft version updated but not reviewed/approved**
 
   - `Coding Style Guide <../../ProcessDocuments/CoreDev/CodingIntBuild/WindRiverVxWorksCodingStyleGuide.pdf>`__
   - `Coding Rules Guide <../../ProcessDocuments/CoreDev/CodingIntBuild/WindRiverVxWorksCodingRulesGuide.pdf>`__
 
-- `Submitting code to Integration Branch <./CodingIntBuild/SubmitCodeIntegrationBranch_WI.html>`__
-- `Submitting code to Release Branch <./CodingIntBuild/SubmitCodeReleaseBranch_WI.html>`__
-- `Submitting code to Maintenance Branch <./CodingIntBuild/SubmitCodeMaintenanceBranch_WI.html>`__
-- `Dealing with VSBL, Spec Files and RPMs <./CodingIntBuild/VsblSpecFilesRpm_WI.html>`__
-- `Doc as Code Guideline <./CodingIntBuild/DocAsCodeGuideline.html>`_   
-- `Accessing and Installing a VxWorks Spin <./CodingIntBuild/Accessing_InstallingVxWSpin.html>`_
-- `Set up Development Environment from Git <./CodingIntBuild/SetupDevelopmentEnvironmentFromGit.html>`_
-- `Accessing and Modifying VxWorks 7 code using Git <./CodingIntBuild/AccessingAndModifyingVxWorksCodeUsingGit.html>`_
+- `Submitting code to Integration Branch <../../SupplementaryGuidelines/Development/SubmitCodeIntegrationBranch_SG.html>`__
+- `Submitting code to Release Branch <../../SupplementaryGuidelines/Development/SubmitCodeReleaseBranch_SG.html>`__
+- `Submitting code to Maintenance Branch <../../SupplementaryGuidelines/Development/SubmitCodeMaintenanceBranch_SG.html>`__
+- `Dealing with VSBL, Spec Files and RPMs <../../SupplementaryGuidelines/Development/VsblSpecFilesRpm_SG.html>`__
+- `Doc as Code Guideline <../Operations/InformationDevelopment/DocAsCodeGuideline.html>`_   
+- `Accessing and Installing a VxWorks Spin <../../SupplementaryGuidelines/Development/Accessing_InstallingVxWSpin_SG.html>`_
+- `Set up Development Environment from Git <../../SupplementaryGuidelines/Development/SetupDevelopmentEnvironmentFromGit_SG.html>`_
+- `Accessing and Modifying VxWorks 7 code using Git <../../SupplementaryGuidelines/Development/AccessingAndModifyingVxWorksCodeUsingGit_SG.html>`_
 
   - `Git Cheat Sheet #1 <../../ProcessDocuments/CoreDev/CodingIntBuild/GitCheatSheet_1.pdf>`__
   - `Git Cheat Sheet #2 <../../ProcessDocuments/CoreDev/CodingIntBuild/GitCheatSheet_2.pdf>`__
   
-- `Generating a new RPM <./CodingIntBuild/GeneratingNewRPM.html>`__
-- `Guidelines for deprecating or EOL'ing layers and components, or releasing "unsupported" content, or moving functionality between layers <./CodingIntBuild/GuidelinesforLayersComponents.html>`__
-- `Restricted Files in VxWorks 7 <./CodingIntBuild/RestrictedFilesinVxWorks.html>`_
-- `Maintaining Coverity "Clean" Code <./CodingIntBuild/MaintainingCoverityCleanCode.html>`_
-- `Build Warning Guidelines of VxWorks 7 <./CodingIntBuild/GuidelinesBuildWarning.html>`__
+- `Generating a new RPM <../../SupplementaryGuidelines/Development/GeneratingNewRPM_SG.html>`__
+- `Guidelines for deprecating or EOL'ing layers and components, or releasing "unsupported" content, or moving functionality between layers <../../SupplementaryGuidelines/Development/GuidelinesforLayersComponents_SG.html>`__
+- `Restricted Files in VxWorks 7 <../../SupplementaryGuidelines/Development/RestrictedFilesinVxWorks_SG.html>`_
+- `Maintaining Coverity "Clean" Code <../../SupplementaryGuidelines/Development/MaintainingCoverityCleanCode_SG.html>`_
+- `Build Warning Guidelines of VxWorks 7 <../../SupplementaryGuidelines/Development/GuidelinesBuildWarning_SG.html>`__
 - Code Reviews and Doc Reviews  
 
   - `Code Review Improvements <../../ProcessDocuments/CoreDev/CodingIntBuild/CodeReviewImprovements.pptx>`__
-  - `Writers Review of Engineering Generated Documents <./CodingIntBuild/WritersReviewofEngGeneratedDocs.html>`__
-  - `Code Review Checklist Guidelines <./CodingIntBuild/CodeReviewChecklistGuidelines.html>`__
+  - `Writers Review of Engineering Generated Documents <../../SupplementaryGuidelines/Development/WritersReviewofEngGeneratedDocs_SG.html>`__
+  - `Code Review Checklist Guidelines <../../SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_SG.html>`__
   
-- `Responding to Nightly Validation <./CodingIntBuild/RespondingToNightlyValidation.html>`_
+- `Responding to Nightly Validation <../../SupplementaryGuidelines/Development/RespondingToNightlyValidation_SG.html>`_
 - `How to Handle Build Issues <../../ProcessDocuments/CoreDev/CodingIntBuild/HowToHandleBuildIssues_Final.docx>`__
-- `Documenting a Feature/Epic <./CodingIntBuild/DocumentingFeature_Epic.html>`__
-- `Open Source BSP process <../../WorkInstructions/Development/OpenSourceBSPProcess_WI.html>`__
-- `Managing Third Party Libraries Located in WR GitHub <../../WorkInstructions/Development/ManagingThirdPartyLibrariesLocatedInWindRiverGitHub_WI.html>`__
-- `Declaring New and Modified 3rd Party IP <../../WorkInstructions/Development/DeclaringNewAndModifiedThirdPartyIP_WI.html>`_
-- `CVE tracking & Third Party Library upgrade process <../../WorkInstructions/Development/CveTrackingThirdPartyLibraryUpgrade_WI.html>`__
-- `Setting up a Development Environment <../../WorkInstructions/Development/SettingUpDevelopmentEnvironment_WI.html>`__
+- `Documenting a Feature/Epic <../../SupplementaryGuidelines/Development/DocumentingAFeature_SG.html>`__
+- `Open Source BSP process <../../SupplementaryGuidelines/Development/OpenSourceBSPProcess_SG.html>`__
+- `Managing Third Party Libraries Located in WR GitHub <../../SupplementaryGuidelines/Development/ManagingThirdPartyLibrariesLocatedInWindRiverGitHub_SG.html>`__
+- `Declaring New and Modified 3rd Party IP <../../SupplementaryGuidelines/Development/DeclaringNewAndModifiedThirdPartyIP_SG.html>`_
+- `CVE tracking & Third Party Library upgrade process <../../SupplementaryGuidelines/Development/CveTrackingThirdPartyLibraryUpgrade_SG.html>`__
+- `Setting up a Development Environment <../../SupplementaryGuidelines/Development/SettingUpDevelopmentEnvironment_SG.html>`__
  
 
 

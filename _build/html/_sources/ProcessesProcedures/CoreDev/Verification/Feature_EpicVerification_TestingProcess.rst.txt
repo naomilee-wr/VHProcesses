@@ -129,7 +129,7 @@ The Technical Feature Owner is responsible for this process.
 
 - `working guide <https://jive.windriver.com/docs/DOC-80308>`__
 - `VxWorks Test Case Meta Data File (test_case.conf) Usage Guideline (recovered version) <https://jive.windriver.com/docs/DOC-80297>`__
-- `Uploading Manual test Results to LTAF <../../../WorkInstructions/Test/UploadingFeatureTestResults_WI.html>`_ 
+- `Uploading Manual test Results to LTAF <../../../SupplementaryGuidelines/Test/UploadingFeatureTestResults_SG.html>`_ 
 - `VxWorks 7 Regression Test Suite User Guide_SR3630 <./vxworks_7_regression_test_suite_users_guide_sr0630.pdf>`_ (*NL 8/12:  I don't see this file anywhere?*)
 
 |

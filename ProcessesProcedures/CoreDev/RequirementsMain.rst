@@ -74,7 +74,7 @@ References
 
 - `Product Requirements Workflow Diagram <https://jive.windriver.com/docs/DOC-76575>`__
 - `MST to Product Team Product Requirements Processes <https://jive.windriver.com/docs/DOC-71790>`_
-- `Feature Grooming / Workflow <../Operations/ProgramManagement/FeatureGrooming_Workflow.html>`_
+- `Feature Grooming / Workflow <../../SupplementaryGuidelines/FeatureMgmt/FeatureGrooming_Workflow_SG.html>`_
 - `VxWorks Enhancement Review <https://jive.windriver.com/docs/DOC-26090>`_   This is a VxWorks artifact
 - `Requirements Prioritization Process.pptx <https://jive.windriver.com/docs/DOC-71813>`_
 - `Wind River Enhancement Request Process <https://jive.windriver.com/docs/DOC-37616>`_ 

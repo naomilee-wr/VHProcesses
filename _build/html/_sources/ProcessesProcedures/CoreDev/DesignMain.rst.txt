@@ -35,10 +35,8 @@ Standards & Guidelines
 
 *Note: Team to identify additional Standards & Guidelines as applicable*
 
-- `Ensuring Product Architect Oversight <./Design/ProductArchitectOversight.html>`_
+- `Ensuring Product Architect Oversight <../../SupplementaryGuidelines/Development/EnsuringProductArchitectOversight_SG.html>`_
 - Software Design Standard?
-
-|
 
 Tools & Templates
 =================

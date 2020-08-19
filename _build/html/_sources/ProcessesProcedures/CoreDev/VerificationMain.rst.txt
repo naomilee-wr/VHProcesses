@@ -42,15 +42,15 @@ Processes & Procedures
 Standards & Guidelines
 ======================
 
-- `Creating a Test Plan <./Verification/CreatingFTPGuideline.html>`__ 
+- `Creating a Feature Test Plan Guideline <../../SupplementaryGuidelines/Test/CreatingFTPGuideline_SG.html>`__ 
 - `Test Process Guideline <./Verification/TestProcessGuideline.html>`__
-- `Uploading Feature Test Results <../../WorkInstructions/Test/UploadingFeatureTestResults_WI.html>`__
+- `Uploading Feature Test Results <../../SupplementaryGuidelines/Test/UploadingFeatureTestResults_SG.html>`__
 
-  - `Quick Reference: Uploading Manual Test Results to LTAF <../../WorkInstructions/Test/UploadingManualTestResultsToLTAF_WI.html>`__
+  - `Quick Reference: Uploading Manual Test Results to LTAF <../../SupplementaryGuidelines/Test/UploadingManualTestResultsToLTAF_SG.html>`__
   
-- `Viewing Nightly and Release Testing Results <../../WorkInstructions/Test/ViewingNightlyAndReleaseTestingResults_WI.html>`__
-- `Adding to Regression Testing <../../WorkInstructions/Test/AddingToRegressionTesting_WI.html>`__
-- `Scrum tester responsibilities <../../WorkInstructions/Test/ScrumTesterResponsibilities.html>`__
+- `Viewing Nightly and Release Testing Results <../../SupplementaryGuidelines/Test/ViewingNightlyAndReleaseTestingResults_SG.html>`__
+- `Adding to Regression Testing <../../SupplementaryGuidelines/Test/AddingToRegressionTesting_SG.html>`__
+- `Scrum tester responsibilities <../../SupplementaryGuidelines/Test/ScrumTesterResponsibilities_SG.html>`__
 
 |
 

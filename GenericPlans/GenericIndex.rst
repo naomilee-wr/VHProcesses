@@ -32,7 +32,7 @@ Other Documents **WIP**
 - `Wind_River VxWorks_HVP Software_Development Process Overview <../ProcessDocuments/GenericPlans/Wind_River_VxWorks_HVP_Software_Development_Process_Overview.docx>`_
 - `Roles and Responsibiliites <../ProcessDocuments/GenericPlans/WRGeneric_RR.docx>`_
 - `Program Contact Information <../ProcessDocuments/GenericPlans/ProgramContactInformation.docx>`_
-- Training Matrix
+- `Training Matrix <../ProcessDocuments/Operations/Training/TrainingMatrix.xlsx>`_  (*NL 8/2020:  Is this the right file?  should it be moved to genericplans folder?*)
 - Tools and Environment 
 - Document Responsibility Matrix (TBD)
 

@@ -45,7 +45,7 @@
                 <li><a href="../../.././GettingStarted/GettingStarted.html">Getting Started (WIP)</a></li>
                 <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
                 <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
-                <li><a href="../../.././WorkInstructions/WorkInstructionsIndex.html">Work Instructions</a></li>
+                <li><a href="../../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -71,15 +71,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../MeasurementMain.html"><strong>Measurement</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../TrainingMain.html"><strong>Training</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../Supporting/MaintenanceMain.html"><strong>Maintenance</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Supporting/SupplierManagementMain.html"><strong>Supplier Management</strong></a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/CAPAMain.html"><strong>Corrective Action and Preventive Action</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/ContinuousImprovementMain.html"><strong>Continuous Improvement</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ContinuousImprovement/QMSMaintenanceMain.html"><strong>QMS Maintenance and Management</strong></a></li>
 </ul>
 </ul>
 </li>
@@ -120,9 +111,9 @@
 </div>
 <div class="section" id="configuration-management-process">
 <h1>Configuration Management Process<a class="headerlink" href="#configuration-management-process" title="Permalink to this headline">¶</a></h1>
-<p>This process describes the steps in managing defect reports from submission through resolution. Defects are managed in the Defect Management System (e.g., Jira).</p>
-<p>The EPM is responsible for ensuring that this process is followed.
-The Bug Board is responsible for reviewing the defect record and deciding on the bug disposition.</p>
+<p>The configuration management process describes how to establish and maintain the integrity of program-related work products and baselines throughout the lifecycle and make them available to relevant stakeholders in time for their need.</p>
+<p>A Software Configuration Management (SCM) Plan is used to document and guide project stakeholders in the CM tools and methods used within the program.</p>
+<p>The Configuration Management(CM)/ Build &amp; Configuration Lead is responsible to see that this process is performed.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -184,33 +175,38 @@ permanently archived</p></li>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>Develop and maintain plan for software configuration management</p></td>
 <td><p>The CM Lead develops the program’s SCM plan.  The plan is updated to reflect any major changes.  Key elements in the plan are:</p>
-<ul class="simple">
-<li><p>Roles and responsibilities</p></li>
+<ul>
+<li><dl>
+<dt>Roles and responsibilities</dt><dd><ul class="simple">
 <li><p>Required resources, tools and repositories</p></li>
 <li><p>Identification of Configuration Items (CIs) to be controlled</p></li>
-<li><p>Strategy and methods for creating and releasing baselines, configuration control and configuration status accounting and auditing.</p></li>
+<li><p>Strategy and methods for creating and releasing baselines, configuration control and configuration status accounting and auditing &lt;&lt;need to revisit after Devstar launch&gt;&gt;</p></li>
+</ul>
+<p>The SCM plan should be approved by all key stakeholders (e.g., Engineering Management, Product Management, Engineering Program Management, Info Dev, etc)</p>
+</dd>
+</dl>
+</li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>Identify project items for control</p></td>
-<td><p>The CM Lead, in conjunction with the Key Stakeholders (e.g., Engineering Manager, EPM, Technical Lead, and Test Lead) identify the CIs that have been documented in the SCM plan and assign unique identifiers to each item by following the document policy. These CIs compose the baselines at given points in the lifecycle.</p></td>
+<td><p>Identify program release items for control</p></td>
+<td><p>The CM Lead, in conjunction with the key stakeholders (e.g., Engineering Manager, EPM, Technical Lead, and Test Lead) identify the CIs that have been documented in the SCM plan. These CIs compose the baselines at given points in the lifecycle.</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
-<td><p>Establish and maintain the CM system</p></td>
-<td><p>The CM Lead establishes the CM system(s) needed to manage multiple levels of control, per the SCM plan. The systems include the storage media, procedures and tools for accessing the system(s).</p></td>
+<td><p>Establish and maintain the CM framework</p></td>
+<td><p>The CM Lead establishes the framwork for the CM activities and multiple levels of control, per the SCM plan.</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
 <td><p>Create and release baselines</p></td>
-<td><p>The CM Lead, supported by the Development and Test Managers and teams, establish and maintain baselines at designated points in the lifecycle, per the SCM plan. A baseline is a set of CIs that has been reviewed and agreed on, which thereafter serves as the basis for further development and which can be changed only by following the change control process and program change request procedure. Baselines can be internal or external and typically include functional (e.g., requirements), development (e.g., builds) and release (e.g., product deliveries) baselines.</p>
-<p>The CI descriptions that compose the baselines are kept up-to-date, including their decomposition into lower level components, who is responsible for each item and when it is placed under control. The history of each CI is recorded in sufficient detail to recover a previously baselined version, if needed.</p>
-<p>After their approval, the baselines are communicated to the project staff using various mechanisms (e.g., Team email).</p>
+<td><p>The CM Lead, supported by the Development and Test Managers and teams, establish and maintain baselines at designated points in the lifecycle, per the SCM plan. A baseline is a set of CIs that has been reviewed and agreed on, which thereafter serves as the basis for further development and which can be changed only by following the change control process and program change request procedure. Baselines can be internal or external and typically include functional (e.g., committed set of requirements), development (e.g., builds) and release (e.g., product deliveries) baselines.</p>
+<p>The CI description that compose the baselines are updated, placed under control, and communicated.  After their approval, the baselines are communicated to the team using various collaboration mechanisms (e.g., Team email, Jive/Sharepoint).</p>
 </td>
 </tr>
 <tr class="row-even"><td><p>5</p></td>
 <td><p>Track and control changes to baselined configuration items</p></td>
-<td><p>The CM Lead and Development and Test Managers and teams initiate and record defects to address changes to baselined requirements and development work products (e.g., design). Meeting with the Key Stakeholders is held to request, evaluate, approve, disapprove and implement changes to baselined CIs according to the <a class="reference external" href="./ChangeManagementProcedure.html">Change Management Procedure</a>. The changes encompass both error correction and enhancement.</p>
-<p>The degree of formality necessary for the change process, as well as the change mechanism used depends on the project baseline affected and the impact of the change within the configuration structure, as outlined in the change management process.</p>
+<td><p>The CM Lead, Development, Test Managers and teams initiate and record a defect or Change Request to address changes to baselined requirements and development work products (e.g., design). Meeting with the Key Stakeholders is held to request, evaluate, approve, disapprove and implement changes to baselined CIs according to the <a class="reference external" href="./ChangeManagementProcedure.html">Change Management Procedure</a>. The changes encompass both error correction and enhancement.</p>
+<p>The degree of formality necessary for the change process, as well as the change mechanism used depends on the baseline affected and the impact of the change within the configuration structure, as outlined in the <a class="reference external" href="./ChangeManagementProcedure.html">Change Management Procedure</a>.</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
@@ -291,8 +287,26 @@ permanently archived</p></li>
 <tr class="row-odd"><td><p>07/20/2020</p></td>
 <td><p>N/A</p></td>
 <td><p>0.2</p></td>
-<td><p>Shree Vidya Jayraman</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
 <td><p>Updated the flow diagram and added link to step 5</p></td>
+</tr>
+<tr class="row-even"><td><p>08/13/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.3</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updates based on the feedback received from Martin</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>

@@ -63,7 +63,7 @@ Standards & Guidelines
 - `Release Planning Guidelines <./ProgramManagement/ReleasePlanningGuidelines.html>`__
 - `Program Status Color Standard <./ProgramManagement/ProgramStatusColorStandard.html>`__
 - `Checklist and Guideline for Story Preparation <../../ProcessDocuments/Operations/ProgramManagement/Checklist_GuidelineStoryPreparation.docx>`__
-- `Feature Grooming and Workflow <./ProgramManagement/FeatureGrooming_Workflow.html>`__
+- `Feature Grooming and Workflow <../../SupplementaryGuidelines/FeatureMgmt/FeatureGrooming_Workflow_SG.html>`__
 - `Definition of Done for Features/Epics <./ProgramManagement/FeatureDoneDefinition.html>`__
 - `Definition of Done for Stories <./ProgramManagement/StoryDoneDefinition.html>`__
 - `Product Manager - Jira Agile Responsibilities <./ProgramManagement/ProductManager_JiraAgileResponsibilities.html>`__
@@ -75,7 +75,7 @@ Standards & Guidelines
 - `Plan Of Record(POR) Criteria <../../ProcessDocuments/Operations/ProgramManagement/POR_Criteria.xlsx>`__
 - `Feature Complete Criteria <../../ProcessDocuments/Operations/ProgramManagement/FC_Criteria.xlsx>`__
 - `Release Criteria <../../ProcessDocuments/Operations/ProgramManagement/ReleaseCriteria.xlsx>`__
-- `Delivering Features Spawning Mutiple Releases <./ProgramManagement/FeaturesSpawningMutipleReleases.html>`__
+- `Delivering Features Spawning Mutiple Releases <../../SupplementaryGuidelines/FeatureMgmt/FeaturesSpawningMutipleReleases_SG.html>`__
 
 *Note: Team to identify additional Standards & Guidelines as applicable*
 

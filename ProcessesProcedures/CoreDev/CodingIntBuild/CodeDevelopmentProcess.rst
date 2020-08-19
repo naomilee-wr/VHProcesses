@@ -110,9 +110,9 @@ This process describes how product code is developed.
   
 - `Devlopment Unit Test Process <./DevUnitTestingProcedure.html>`__
 - `Peer Review Procedure Using Code Collaborator <./PeerReviewProcedure_CodeCollaborator.html>`__
-- `VxWorks: Submitting code into the Integration Branch <./SubmitCodeIntegrationBranch_WI.html>`__
-- `VxWorks: Submitting code into a Release Branch <./SubmitCodeReleaseBranch_WI.html>`__
-- `VxWorks: Submitting code into the SRO5XX Maintenance Branch <./SubmitCodeMaintenanceBranch_WI.html>`__
+- `VxWorks: Submitting code into the Integration Branch <../../../SupplementaryGuidelines/Development/SubmitCodeIntegrationBranch_SG.html>`__
+- `VxWorks: Submitting code into a Release Branch <../../../SupplementaryGuidelines/Development/SubmitCodeReleaseBranch_SG.html>`__
+- `VxWorks: Submitting code into the SRO5XX Maintenance Branch <../../../SupplementaryGuidelines/Development/SubmitCodeMaintenanceBranch_SG.html>`__
 - Engineering Requirements Management system (e.g., Jira Agile)
 - Configuration Management system (e.g., Git)
 - Peer Review system (e.g., Code Collaborator)
