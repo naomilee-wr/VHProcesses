@@ -87,6 +87,7 @@ Operations Processes:
 
 - `Supplementary Guidelines <./SupplementaryGuidelines/SupplementaryGuidelinesIndex.html>`__
 
+-  `Process Documentation Site Getting Started Guide (WIP) <./GettingStarted/GettingStarted.html>`__
   
 **References:** 
 +++++++++++++++++
