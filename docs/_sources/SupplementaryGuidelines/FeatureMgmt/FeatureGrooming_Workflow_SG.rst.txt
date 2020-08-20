@@ -1,4 +1,5 @@
 :orphan:
+
 |
 |
 |
@@ -136,4 +137,4 @@ Accessing the VxWorks Feature Backlog
 |                |                |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
 
-.. |image0| image:: ../../../_static/Operations/ProgramManagement/FeatureGroomingWorkflow.jpg
+.. |image0| image:: /_static/Operations/ProgramManagement/FeatureGroomingWorkflow.jpg

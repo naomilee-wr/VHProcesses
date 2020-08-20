@@ -1,4 +1,5 @@
 ﻿:orphan:
+
 |
 |
 |
@@ -113,7 +114,7 @@ Overall Note: In some situations, legal agreements/restrictions may require that
 .. |image4| image:: /_static/SupplementaryGuidelines/Development/GuidelineLayer_image4.jpg
 .. |image5| image:: /_static/SupplementaryGuidelines/Development/GuidelineLayer_image5.jpg
 .. |image6| image:: /_static/SupplementaryGuidelines/Development/GuidelineLayer_image6.jpg
-.. |image7| image:: ../../..//_static/CoreDev/CodingIntBuild/GuidelineLayer_image7.jpg
+.. |image7| image:: /_static/SupplementaryGuidelines/Development/GuidelineLayer_image7.jpg
 .. |image8| image:: /_static/SupplementaryGuidelines/Development/GuidelineLayer_image8.jpg
 .. |image9| image:: /_static/SupplementaryGuidelines/Development/GuidelineLayer_image9.jpg
 .. |image10| image:: /_static/SupplementaryGuidelines/Development/GuidelineComponent_image10.jpg

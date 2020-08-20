@@ -1,4 +1,5 @@
 ﻿:orphan:
+
 |
 |
 |
@@ -269,5 +270,5 @@ The SR0610 BSP documentation is a template for all future BSP documents.
 |                |                |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
 
-.. |image0| image:: ../../../_static/CoreDev/CodingIntBuild/Target_ref_Image0.jpg
-.. |image1| image:: ../../../_static/CoreDev/CodingIntBuild/Target_ref_Image1.jpg
+.. |image0| image:: /_static/SupplementaryGuidelines/Development/Target_ref_Image0.jpg
+.. |image1| image:: /_static/SupplementaryGuidelines/Development/Target_ref_Image1.jpg

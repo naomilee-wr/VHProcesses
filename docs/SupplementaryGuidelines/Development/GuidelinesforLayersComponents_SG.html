@@ -65,6 +65,7 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/DefectManagementMain.html"><strong>Defect Management</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
@@ -155,7 +156,7 @@
 <ul class="simple">
 <li><p>The following illustrates how NOT to update the example layer definition AFTER the layer has been EOL’ed, i.e. do NOT add the following RETROFIT statement:</p></li>
 </ul>
-<p><img alt="image7" src="SupplementaryGuidelines\Development\../../..//_static/CoreDev/CodingIntBuild/GuidelineLayer_image7.jpg" /></p>
+<p><img alt="image7" src="../../_images/GuidelineLayer_image7.jpg" /></p>
 <p>The above RETROFIT statement will make all previous versions of the layer dependent on the non-existent LAYER_NOT_SUPPORTED layer; thus effectively “disabling” all of the    previous versions of the layer.  This is especially disruptive to customers with existing VSB projects where an old version of the layer was enabled in that project.</p>
 </li>
 <li><p>When all of the layers shipped in an RPM have become EOL’ed, the YUM repository should be updated to mark the RPM as “optional”.  A new Wind River Installer feature (Rally US52509) will use the “type” flag from the YUM group definition.  RPMs marked with type=”optional” will not be automatically downloaded/installed at a customers site.   This will prevent “new” and existing customers from automatically having the EOL’ed content installed. The “optional” type designation applies to all versions of the RPM.   Customers can explicitly download and install the EOL’ed content, but using the content will be “at their own risk” (since it’s not supported anymore).   The process for marking an RPM with type=”optional”  is T.B.D.   (current process is to send an e-mail to the relevant Tools team member).</p></li>

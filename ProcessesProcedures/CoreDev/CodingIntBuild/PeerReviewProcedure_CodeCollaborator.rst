@@ -7,7 +7,6 @@
 Peer Review Procedure Using Code Collaborator Tool
 ======================================================
 
-|
 
 Peer review is method for inspection of newly written or modified code for the purpose of discovering and fixing bugs before files are checked in.  Numerous studies have shown that use of peer reviews early in software development and test leads to significantly fewer defects found during stabilization phase and more importantly, significantly fewer defects found by customers.  The earlier in development/test cycle that a defect is found, the quicker it is to fix.
 By using an efficient tool such as Code Collaborator to conduct peer reviews, the cumulative time spent conducting code reviews and thus fixing defects early is far quicker than time required to find and fix these defects later.

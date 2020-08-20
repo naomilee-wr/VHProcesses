@@ -1,5 +1,9 @@
 :orphan:
 
+|
+|
+|
+
 =============================================
 Submitting Code into the Integration Branch
 =============================================
@@ -147,5 +151,4 @@ This workflow applies for fixing issues for HAZOP, coding violations, and nightl
 |              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 
-.. |image0| image:: ../../_static/CoreDev/CodingIntBuild/Checkin_Integration_CIpipeline_image0.jpg
-
+.. |image0| image:: /_static/SupplementaryGuidelines/Development/Checkin_Integration_CIpipeline_image0.jpg

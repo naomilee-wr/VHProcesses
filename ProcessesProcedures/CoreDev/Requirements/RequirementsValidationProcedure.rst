@@ -29,7 +29,9 @@ The Product Architect, Product Manager, and EPM are responsible for executing th
 | **Outputs**                          |The Epic record update to one of the following status:|
 |                                      |                                                      |
 |                                      |- If not accepted, status changed to "In Progress" and|             
-|                                      |implementation gaps captured in software requirements |             
+|                                      |  implementation gaps captured in software            |
+|                                      |  requirements                                        | 
+|                                      |                                                      |
 |                                      |- If accepted, status changed to "Accepted"           | 
 +--------------------------------------+------------------------------------------------------+
 
@@ -46,7 +48,8 @@ The Product Architect, Product Manager, and EPM are responsible for executing th
 +------------------------+-------------------------------------------------------------------------------+
 |Product Manager         |Responsible for validating that the implementation fulfills the request        |
 |                        |customer and/or market segment requirements.                                   |
-|                        | - Reviewing/Approving to ensure that the Epic meets the Acceptance Criteria   |
+|                        |                                                                               |
+|                        |- Reviewing/Approving to ensure that the Epic meets the Acceptance Criteria    |
 +------------------------+-------------------------------------------------------------------------------+
 |Engineering Program     |Responsible for validating that the Epic meets all FC Criteria related (e.g.,  |
 |Manager                 |test executing, pass rates, IP/Export disclosures done, etc.)                  |

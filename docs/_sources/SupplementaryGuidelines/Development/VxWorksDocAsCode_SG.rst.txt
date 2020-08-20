@@ -1,5 +1,9 @@
 :orphan:
 
+|
+|
+|
+
 ================================
 VxWorks Doc as Code Guideline
 ================================
@@ -38,7 +42,7 @@ http://stash.wrs.com/projects/VX7/repos/devdoc/browse
 All the new feature documents changes in devdoc or vxworks repository should follow the code review process with InfoDev team as reviewer：
 
 1. Please include shoba.tumma@windriver.com for any reviews of code that generates customer facing text in vxworks repository.
-   Public API markup, BSP readme.md, new and updated layer.vsbl and "*.cdf" files, and general code with printf() and logMsg() string updates.
+   Public API markup, BSP readme.md, new and updated layer.vsbl and .cdf files, and general code with printf() and logMsg() string updates.
 
 2. Please include Bryan.Douglas@windriver.com  on code reviews of  new feature document file commits to devdoc repository.
  

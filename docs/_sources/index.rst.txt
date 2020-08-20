@@ -1,5 +1,6 @@
 .. 
   Vx7 and HVP Dev Processes documentation master file
+
 |
 |
 |
@@ -47,7 +48,7 @@ Operations Processes:
   
    ProcessesProcedures/Operations/ProgramManagementMain.rst
    
-   ProcessesProcedures/Operations/DefectManagement.rst  
+   ProcessesProcedures/Operations/DefectManagementMain.rst  
 
    ProcessesProcedures/Operations/ConfigurationManagementMain.rst
    

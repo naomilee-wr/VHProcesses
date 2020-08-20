@@ -65,6 +65,7 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/DefectManagementMain.html"><strong>Defect Management</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
@@ -110,9 +111,6 @@
 </div>
 <div class="section" id="peer-review-procedure-using-code-collaborator-tool">
 <h1>Peer Review Procedure Using Code Collaborator Tool<a class="headerlink" href="#peer-review-procedure-using-code-collaborator-tool" title="Permalink to this headline">¶</a></h1>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
 <p>Peer review is method for inspection of newly written or modified code for the purpose of discovering and fixing bugs before files are checked in.  Numerous studies have shown that use of peer reviews early in software development and test leads to significantly fewer defects found during stabilization phase and more importantly, significantly fewer defects found by customers.  The earlier in development/test cycle that a defect is found, the quicker it is to fix.
 By using an efficient tool such as Code Collaborator to conduct peer reviews, the cumulative time spent conducting code reviews and thus fixing defects early is far quicker than time required to find and fix these defects later.</p>
 <p>The peer review is required for the following but not limited to:</p>
@@ -317,7 +315,7 @@ completed, even if the comment was added by an observer.</p>
 <li><p>For user story, copy &amp; paste the link to the Jira user story “Comments” field (the format of the link should look something like this:  <a class="reference external" href="http://codereview.wrs.com/ui#review:id=XXXX">http://codereview.wrs.com/ui#review:id=XXXX</a> where “XXXX” is the Code Collaborator ID number for the review that was conducted)</p></li>
 <li><p>For defect, enter the JIRA number into Code Collaborator “Remote System Links” section.</p></li>
 </ul>
-<p><img alt="image1" src="ProcessesProcedures\CoreDev\CodingIntBuild\../../../_static/CoreDev/CodingIntBuild/CodeReviewProcedure_CCRToolExample.jpg" /></p>
+<p><img alt="image1" src="../../../_images/CodeReviewProcedure_CCRToolExample.jpg" /></p>
 <p>Once the peer review is completed,</p>
 <ul class="simple">
 <li><p>the code goes through the Continuous Integration (CI) pipeline for sanity testing, other checks and, check-in using the <a class="reference external" href="./CheckinProcedure.html">Check-in procedure</a> and then the Story can be marked complete.</p></li>
