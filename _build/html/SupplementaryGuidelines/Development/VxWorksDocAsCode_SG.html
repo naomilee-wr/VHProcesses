@@ -112,18 +112,23 @@
 <div class="section" id="vxworks-doc-as-code-guideline">
 <h1>VxWorks Doc as Code Guideline<a class="headerlink" href="#vxworks-doc-as-code-guideline" title="Permalink to this headline">¶</a></h1>
 <p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
-<p><strong>Purpose:</strong> IWe need a consistent way to write readme document for manual test case, new feature and release what’s new. We also need to treat document as code to achieve continuous delivery. This process document is to describe how to use Markdown to write these readme files. The generated documentation web site <a class="reference external" href="http://pek-vx-doc.wrs.com/">http://pek-vx-doc.wrs.com/</a> will be updated through nightly build.</p>
+<p>The purpose is:</p>
+<ul class="simple">
+<li><p>to have a consistent way to write readme document for manual test case, new feature and release what’s new.</p></li>
+<li><p>to treat document as code to achieve continuous delivery.</p></li>
+</ul>
+<p>This document provide guidance on how to use Markdown to write these readme files. The generated documentation web site “<a class="reference external" href="http://pek-vx-doc.wrs.com/">http://pek-vx-doc.wrs.com/</a>” will be updated through nightly build.</p>
 <p>(Source: <a class="reference external" href="https://jive.windriver.com/docs/DOC-74303">https://jive.windriver.com/docs/DOC-74303</a>)</p>
 <div class="section" id="general-guideline">
 <h2><strong>General Guideline:</strong><a class="headerlink" href="#general-guideline" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p>We should follow <a class="reference external" href="https://commonmark.org/">CommonMark</a> specification: A strongly defined, highly compatible specification of Markdown.</p></li>
+<li><p>Follow CommonMark specification: A strongly defined, highly compatible specification of <a class="reference external" href="https://commonmark.org/">Markdown</a>. More specifically, we should use the following Markdown type:</p></li>
 </ol>
 <p>More specifically, we should use the following Markdown type:</p>
 <p><a class="reference internal" href="../../_images/VxWorksDocAsCode_Image0.jpg"><img alt="image0" src="../../_images/VxWorksDocAsCode_Image0.jpg" style="width: 250pt;" /></a></p>
 <ol class="arabic simple" start="2">
 <li><p>Try your best to avoid binary files such as picture, excel, docx, etc. Create ASCII diagrams just like those in the IETF RFCs and Linux kernel documentation.</p></li>
-<li><p>If <a class="reference external" href="https://commonmark.org/">CommonMark</a> specification could not meet your needs, you could use rst format which is specified by  <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText User Documentation</a></p></li>
+<li><p>If  <a class="reference external" href="https://commonmark.org/">CommonMark</a> specification could not meet your needs, you could use rst format which is specified by  <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText User Documentation</a></p></li>
 </ol>
 </div>
 <div class="section" id="stash-of-document-codes">
@@ -132,23 +137,24 @@
 </div>
 <div class="section" id="new-feature-document-review">
 <h2><strong>New feature document review:</strong><a class="headerlink" href="#new-feature-document-review" title="Permalink to this headline">¶</a></h2>
-<p>All the new feature documents changes in devdoc or vxworks repository should follow the code review process with InfoDev team as reviewer：</p>
-<ol class="arabic simple">
-<li><p>Please include <a class="reference external" href="mailto:shoba&#46;tumma&#37;&#52;&#48;windriver&#46;com">shoba<span>&#46;</span>tumma<span>&#64;</span>windriver<span>&#46;</span>com</a> for any reviews of code that generates customer facing text in vxworks repository.
-Public API markup, BSP readme.md, new and updated layer.vsbl and .cdf files, and general code with printf() and logMsg() string updates.</p></li>
-<li><p>Please include <a class="reference external" href="mailto:Bryan&#46;Douglas&#37;&#52;&#48;windriver&#46;com">Bryan<span>&#46;</span>Douglas<span>&#64;</span>windriver<span>&#46;</span>com</a>  on code reviews of  new feature document file commits to devdoc repository.</p></li>
-</ol>
+<p>All the new feature documents changes in devdoc or vxworks repository should follow the code review process with Information Development team as reviewer.</p>
+<ul class="simple">
+<li><p>Include Shoba Tumma (<a class="reference external" href="mailto:Shoba&#46;Tumma&#37;&#52;&#48;windriver&#46;com">Shoba<span>&#46;</span>Tumma<span>&#64;</span>windriver<span>&#46;</span>com</a>) for any reviews of code that generates customer facing text in vxworks repository. Public API markup, BSP readme.md, new and updated layer.vsbl and .cdf files, and general code with printf() and logMsg() string updates.</p></li>
+<li><p>Include Bryan Douglas (<a class="reference external" href="mailto:Bryan&#46;Douglas&#37;&#52;&#48;windriver&#46;com">Bryan<span>&#46;</span>Douglas<span>&#64;</span>windriver<span>&#46;</span>com</a>) on code reviews of  new feature document file commits to devdoc repository.</p></li>
+</ul>
 </div>
 <div class="section" id="new-feature-document-procedure">
 <h2><strong>New feature document procedure:</strong><a class="headerlink" href="#new-feature-document-procedure" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Every new feature should have a dedicated subdirectory created in the ‘Doc as Code” git repo in their corresponding categories with the feature ID as the directory name</p></li>
-</ol>
+<ol class="arabic">
+<li><p>Every new feature should have a dedicated subdirectory created in the ‘Doc as Code” git repo in their corresponding categories with the feature ID as the directory name</p>
 <ul class="simple">
 <li><p>eg: a storage feature should be put into release/sr06xx/Storage directory</p></li>
 <li><p>inside the directory, create a file named as feature ID, with .md or .rst as the file extension depending on which mark-up language you want to use</p></li>
 <li><p>other files related to this feature that will be referenced by the feature readme file should be put under the same directory, eg: photos or snapshots that helps to describe the feature</p></li>
 </ul>
+<p>The final directory should look like below:</p>
+</li>
+</ol>
 <p>The final directory should look like below:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>bmeng@vhost:devdoc/release/sr0620/Storage$ tree
 
@@ -171,7 +177,7 @@ Public API markup, BSP readme.md, new and updated layer.vsbl and .cdf files, and
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>### [F10912 - [FS] New name scheme for VxWorks TTY devices (Python enabler)](Storage/F10912/F10912)
 </pre></div>
 </div>
-<p>As you can see, it follows the markdown []() language to create the link. Note inside the (), the relative path to the feature readme file should be used without the file extension (md or rst)</p>
+<p>As shown, it follows the markdown <strong>[]()</strong> language to create the link. Note inside the <strong>()</strong>, the relative path to the feature readme file should be used <strong>without the file extension (md or rst)</strong></p>
 <ol class="arabic simple" start="4">
 <li><p>New feature document template can be found on stash: <a class="reference external" href="http://stash.wrs.com/projects/VX7/repos/devdoc/browse/release/template">http://stash.wrs.com/projects/VX7/repos/devdoc/browse/release/template</a></p></li>
 </ol>
@@ -261,11 +267,43 @@ make html
 <h2><strong>Tools reference links:</strong><a class="headerlink" href="#tools-reference-links" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://chrome.google.com/webstore/detail/markdown-reader/gpoigdifkoadgajcincpilkjmejcaanc">Markdown Reader for Chrome</a></p></li>
-<li><p><a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-webext">Markdown Viewer Webext for Firefox</a></p></li>
+<li><p>Markdown Viewer Webext for Firefox: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-webext">https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-webext</a></p></li>
 <li><p><a class="reference external" href="https://dillinger.io/">Online Markdown editor</a></p></li>
 <li><p><a class="reference external" href="https://github.com/joeyespo/grip">Grip – GitHub Readme Instant Preview</a></p></li>
 <li><p><a class="reference external" href="http://asciiflow.com/">Online ASCII diagram editor - ASCIIFlow Infinity</a></p></li>
 </ul>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 56%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>05/21/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Initial Draft</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

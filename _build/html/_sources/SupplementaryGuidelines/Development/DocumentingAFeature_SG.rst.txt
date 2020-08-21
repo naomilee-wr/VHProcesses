@@ -18,7 +18,7 @@ Documenting a Feature
 ----------------
 - As soon as the Technical Feature Owner (TFO) is aware that their Feature will require documentation changes, they should contact their InfoDev author and make them aware of the requirement
 
-  - If the TFO does not know who is their designated author, they should contact brian.kuhl@windriver.com
+  - If the TFO does not know who is their designated author, they should contact Manager, Technical Content Engineering (Information Development Team)
  
 - Once the requirement has been communicated to an author, the team should negotiate when and how they will communicate their updates
 
@@ -43,3 +43,18 @@ Documenting a Feature
 - `Doc as Code Guideline <./VxWorksDocAsCode_SG.html>`__
 - `Style Guide for Developers <https://jive.windriver.com/docs/DOC-66941>`__
 - `VxWorks BSP Documentation Update Process (from SR0610) <https://jive.windriver.com/docs/DOC-75523>`__
+
+
+**Change Log**
+--------------
+
+
++----------------+----------------+----------------+----------------+---------------------------------------+
+| **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
+|                | Request ID**   |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+| 06/24/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from Documenting a|
+|                |                |                | Jayaraman      | Feature Jive page                     |
++----------------+----------------+----------------+----------------+---------------------------------------+
+|                |                |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+

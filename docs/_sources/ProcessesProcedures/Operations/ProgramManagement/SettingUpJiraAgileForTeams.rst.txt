@@ -86,7 +86,7 @@ All boards created in this way are visible to anyone looking at the project. If 
 
 A team dashboard can collect a set of filters that the team uses into one place, and add to those filters gadgets that can help the team examine its progress and workload.
 
-Instructions for `creating a dashboard are available from Atlassian <https://confluence.atlassian.com%2Fjirasoftwarecloud%2Fconfiguring-dashboards-764478209.html>`__(*NL 8/12: this is not a valid link.  not sure where it should point to*), as are instructions for `adding gadgets to a dashboard <https:// confluence.atlassian.com%2Fjirasoftwarecloud%2Fadding-and-customizing-gadgets-764478204.html>`__(*NL 8/12: this is not a valid link.  not sure where it should point to*).
+Instructions for `creating a dashboard are available from Atlassian <https://confluence.atlassian.com%2Fjirasoftwarecloud%2Fconfiguring-dashboards-764478209.html>`__ (*NL 8/12: this is not a valid link.  not sure where it should point to*), as are instructions for `adding gadgets to a dashboard <https:// confluence.atlassian.com%2Fjirasoftwarecloud%2Fadding-and-customizing-gadgets-764478204.html>`__ (*NL 8/12: this is not a valid link.  not sure where it should point to*).
 
 
 **Helpful Gadgets for Teams**

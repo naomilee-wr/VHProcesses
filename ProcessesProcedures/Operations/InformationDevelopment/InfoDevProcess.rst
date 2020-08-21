@@ -42,19 +42,16 @@ This process describes the activities for writing, testing, and publishing user 
 |                                      |    tested and approved for the       |
 |                                      |    product release per Documentation |
 |                                      |    and Test Plans                    |
-|                                      | -  Required files checked-in for     |
-|                                      |    media as per the requirements or  |
-|                                      |    documentation plan                |
-|                                      | -  Required files posted to the web  |
-|                                      |    for Wind River Support Network    |
-|                                      |    (WRSN)                            |
+|                                      | -  Required documents published in   |
+|                                      |    DITA database and then pushed to  |
+|                                      |    the Wind River Support Network    |
+|                                      |    (WRSN)- docs.windriver.com        |
 +--------------------------------------+--------------------------------------+
 | **Outputs**                          | -  Documentation Plan                |
-|                                      | -  Documentation Test Cases and      |
-|                                      |    Results                           |
 |                                      | -  User Documentation                |
 |                                      | -  Files posted for WRSN             |
 +--------------------------------------+--------------------------------------+
+
 
 |
 
@@ -101,16 +98,18 @@ This process describes the activities for writing, testing, and publishing user 
      - Review content
      - Review content for technical accuracy.  See `Information Documentation Review process <./InfoDevReviewProcess.html>`__
 
-       Collaboration between: InfODev, Development, Field Engineering, Product Management, and Customer Service Organization (CSO).
+       Collaboration between: InfoDev, Development, Field Engineering, Product Management, and Customer Service Organization (CSO).
     
    * - 7
      - Notify Test and provide feedback
      - Collaboration between:  Engineering, Test, and InfoDev to create and review documentation test cases.
+
+       **Note:** Steps 7-9 is optional and perfomed only if the testing activity is planned as part of Documentation planning.
     
    * - 8
-     - Test the User Documentation and submit defects
-     - Documents are posted to the WRSN Staging website at https://windriver-staging.zoominsoftware.io/ for test.  InfoDev and Test team collaborate to test the User Documentation using the Documentation Test Cases and submit defects in the defect tracking system.
-  
+     - Test the User Documentation and submit defects (if planned in the Documentation Plan)
+     - Documents may be posted to the WRSN Staging site at https://windriver-staging.zoominsoftware.io/ for test.  InfoDev and Test team collaborate to test the User Documentation and submit defects in the defect management system.
+	 
    * - 9
      - Fix Documentation defects
      - InfoDev group resolves the Documentation defects and Development group resolves the product defects by using the `Defect Management Process <../DefectManagement/DefectManagementProcess.html>`__.   
@@ -134,10 +133,10 @@ This process describes the activities for writing, testing, and publishing user 
 
 -  XML/DITA (Documentation Methodology and Standards)
 -  iXiasoft (Content Management System)
--  Documentation Plan Template: file:  //ala-nas2.wrs.com/docs/templates/docplan 
+-  Documentation Plan Template file:  //ala-nas2.wrs.com/docs/templates/docplan 
 -  Jira Agile (Requirement Management System)
--  JIRA (Defect Tracking Tool)
--  Jive (Collaboration Tool)
+-  JIRA (Defect Management System)
+-  Jive (Collaboration System)
 -  Git (Configuration Management)
 
 |
@@ -149,6 +148,8 @@ This process describes the activities for writing, testing, and publishing user 
 | **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                       |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------+
 | 06/12/2020   | N/A                     | 0.1           | Shree Vidya Jayaraman   | Initial Draft                                                         |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------+
+| 08/18/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Updates to Exit Criteria and Outputs based on Brian's feedback        |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------+
 |              |                         |               |                         |                                                                       |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------+

@@ -8,8 +8,8 @@
 Prepare Defect for Publication Procedure
 ============================================
 
-|
 <EPMs to discuss this policy with Dev & CSO>
+
 Decide if defect is suitable to be published; record the decision, and if it is to be published, prepare and review the published information.  Customer-reported defects are published at submission by the Customer Support Engineer submitting the defect. Defects found by engineering are published by the Technical Lead.
 
 Which defects must be published and how quickly is defined in the `Defect Publication Policy <./DefectPublicationPolicy.html>`__.

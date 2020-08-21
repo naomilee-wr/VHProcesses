@@ -8,12 +8,14 @@
 Triage Defect Procedure
 ===========================
 
-|
 The purpose of defect triage is to:
 
-a) ensure new defect records have been properly routed and adequately documented, 
+a) ensure new defect records have been properly routed and adequately documented,
+ 
 b) weed out non-defects, and 
+
 c) initiate timely action to address security and other high priority defects, especially customer-reported defects.
+
 The focus of triage is to quickly assess the defect record and to defer a thorough technical investigation, including attempts at reproduction of the problem.
 
 The defect record is taken at face value: that the submitter is competent in the use of the product and that the symptoms are accurately reported. This is especially essential in dealing with defects that are difficult to reproduce because it is assumed that the defect exists even if it can't reproduced.
@@ -51,7 +53,7 @@ The Engineering Manager, Technical Feature Owner or Scrum team is responsible fo
 +--------------------------------------+--------------------------------------+
 | **Outputs**                          | -  Updated defect record             |
 +--------------------------------------+--------------------------------------+
-|
+
 
 **Steps**
 ---------
