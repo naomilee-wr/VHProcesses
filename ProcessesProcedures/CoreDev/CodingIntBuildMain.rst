@@ -28,12 +28,12 @@ Processes & Procedures
 
 - `Code Development Process <./CodeDevelopmentProcess.html>`__
 
-  - `Development (Unit) Testing Procedure <./DevUnitTestingProcedure.html>`__
-  - `Peer Review Procedure Using Code Collaborator <./PeerReviewProcedure_CodeCollaborator.html>`_
-  - `Check-in Procedure <./CheckinProcedure.html>`__
+  - `Development (Unit) Testing Procedure <./CodingIntBuild/DevUnitTestingProcedure.html>`__
+  - `Peer Review Procedure Using Code Collaborator <./CodingIntBuild/PeerReviewProcedure_CodeCollaborator.html>`_
+  - `Check-in Procedure <./CodingIntBuild/CheckinProcedure.html>`__
 
-- `Continuous Build and Nightly Regression Testing Process <./ContinuousBuildTestingProcess.html>`__
-- `Release Build Process <./ReleaseBuildProcess.html>`__
+- `Continuous Build and Nightly Regression Testing Process <./CodingIntBuild/ContinuousBuildTestingProcess.html>`__
+- `Release Build Process <./CodingIntBuild/ReleaseBuildProcess.html>`__
 
 |
 
@@ -109,4 +109,4 @@ Related Process Assets
 References 
 =============
 
-Note: For references, refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#development>`_ section.
+Note: For references, refer to `Supplementary Guidelines <../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#development>`_ section.
