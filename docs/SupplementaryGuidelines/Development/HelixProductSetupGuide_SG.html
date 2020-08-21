@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helix Product Setup Guide &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/DefectManagementMain.html"><strong>Defect Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="helix-product-setup-guide">
+<h1>Helix Product Setup Guide<a class="headerlink" href="#helix-product-setup-guide" title="Permalink to this headline">¶</a></h1>
+<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
+<p><strong>Purpose:</strong> As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.</p>
+<p>(Source:</p>
+<div class="section" id="purpose">
+<h2><strong>Purpose</strong><a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>This Guide describes how to create a Helix installation that can be used for product development and testing.</p>
+<p>The following must be done IF you are expected to push changes</p>
+<ul class="simple">
+<li><p><strong>Must be in or Added to the vxworks  group in Bit Bucket</strong>.  Submit a Jira  for Infrastructure to  ALA:Git  or ask a Git Admin</p></li>
+<li><p>Setup SSH keys BEFORE</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="setting-up-a-vxworks-git-repo">
+<h2><strong>Setting Up a VxWorks Git Repo</strong><a class="headerlink" href="#setting-up-a-vxworks-git-repo" title="Permalink to this headline">¶</a></h2>
+<p>Before setting up a Git repo, a SSH key should be added to bitbucket by following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adding SSH keys</p>
+<ul>
+<li><p>SSH keys are useful when you want to avoid entering your password every time you push and pull.</p></li>
+<li><p>If working in multiple environments with different “HOME” directories, i.e. Unix and Windows, multiple SSH keys is needed, one for each (can add multiple SSH keys to your Bitbucket account)</p></li>
+<li><p>For more info on ssh keys: <a class="reference external" href="https://confluence.atlassian.com/bitbucketserver/using-ssh-keys-to-secure-git-operations-776639772.html">https://confluence.atlassian.com/bitbucketserver/using-ssh-keys-to-secure-git-operations-776639772.html</a></p></li>
+<li><p>If you don’t have an Unix or Windows SSH key defined yet, please see: <a class="reference external" href="https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html">https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html</a></p></li>
+<li><p>Procedure for adding a key to Bitbucket account:</p>
+<ol class="arabic simple">
+<li><p>Log into Bitbucket.</p></li>
+<li><p>At the top of the page, the last icon on the right is a pull down menu for the User. Select Manage account.</p></li>
+<li><p>In the left column, select SSH keys.</p></li>
+<li><p>In the right pane, select Add key.</p></li>
+<li><p>In your home directory, there is a .ssh sub-directory. In that directory is an id_rsa.pub Cut and paste the contents of this file into the Key text box.</p>
+<ul>
+<li><p>If you don’t have an ssh key yet, see the instructions above.</p></li>
+<li><p>id_rsa.pub is the default file name. If desired, this can be overridden when executing the ssh key generation command.</p></li>
+</ul>
+</li>
+<li><p>Press the Add key button at the bottom.</p></li>
+<li><p>MULTIPLE SSH Keys!</p></li>
+</ol>
+</li>
+<li><p><a class="reference external" href="https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/">Set up an SSH key</a></p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<p>Setting up a new git repo for doing Helix development is three step process.</p>
+<ol class="arabic simple">
+<li><p>Clone the VxWorks git repository.</p>
+<ul class="simple">
+<li><p>The VxWorks repo is very big, so be sure to put it in a directory that has a lot of space! Helix developers typically use their personal directory on a build server. (No personal directory, ask where it can be created.)</p></li>
+<li><p>Some developers find it convenient to name their VxWorks repo after the Git branch that will be checked out, which is typically vx7-integration. This makes it easy to keep track of things if you need to create multiple VxWorks repos, each using a different git branch. (If no repo name is specified, it will default to vxworks.)</p></li>
+</ul>
+</li>
+</ol>
+<p><img alt="image0" src="../../_images/HelixProductSetupGuide_Image0.jpg" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Check out the VxWorks git branch you want to work on.</p>
+<ul class="simple">
+<li><p>Since repo was just cloned, there is no need to do a ‘git pull’ to get the latest code for that branch.</p></li>
+</ul>
+</li>
+</ol>
+<p><img alt="image1" src="../../_images/HelixProductSetupGuide_Image1.jpg" /></p>
+<ol class="arabic simple" start="3">
+<li><p>Set up additional Helix development tools.</p>
+<ul class="simple">
+<li><p>The development tools are branch-specific. This means re-run setup-tools must run each time branches change, or do a git pull to update the branch. (Details are provided in the “Updating a VxWorks git repo” section below.)</p></li>
+<li><p>The setup process goes fastest if site code is specified, rather than using the default location (Alameda). It’s also helpful to set up your SSHkeys with the BitBucket server; if not done, be prepared to enter your password (possibly multiple times).</p></li>
+<li><p>The setup-tools script adds a number of git sub-repos to the main VxWorks Git repository. These repos contain things needed to build Helix, such as compilers and Workbench.</p></li>
+</ul>
+</li>
+</ol>
+<p><img alt="image2" src="../../_images/HelixProductSetupGuide_Image2.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="updating-a-vxworks-git-repo">
+<h2><strong>Updating a VxWorks Git Repo</strong><a class="headerlink" href="#updating-a-vxworks-git-repo" title="Permalink to this headline">¶</a></h2>
+<p>Must update the VxWorks Git repo:</p>
+<ul class="simple">
+<li><p>to incorporate the latest code changes that have been made to master VxWorks repo, or</p></li>
+<li><p>to switch to a different VxWorks branch.</p></li>
+</ul>
+<p>The command sequence shown below updates the VxWorks repo.</p>
+<p>Note: While it is often safe to skip the commands after ‘git pull’, it’s best to do them anyway. These commands take only a few seconds if the sub-modules and development tools haven’t been changed, whereas failing to perform them when they are required can take many minutes (or hours) trying to figure out why the setup is no longer working properly!</p>
+<p><img alt="image3" src="../../_images/HelixProductSetupGuide_Image3.jpg" /></p>
+<p><strong>Troubleshooting</strong></p>
+<p>On rare occasions, rerunning <em>setup-tools</em> during a VxWorks repo update may fail. If this happens, the steps below usually correct the problem.
+It’s best to specify the same setup site as used for the original setup; otherwise, the cleanup script may attempt to use path-names that don’t exist.</p>
+<p><img alt="image4" src="../../_images/HelixProductSetupGuide_Image4.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="vx7-sr0620-feature-in-opengrok">
+<h2><strong>Vx7-SR0620-Feature in OpenGrok</strong><a class="headerlink" href="#vx7-sr0620-feature-in-opengrok" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://opengrok.wrs.com/source/xref/vx7-SR0620-features/">Vx7-SR0620-features in OpenGrok</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="using-a-pre-installed-helix-spin">
+<h2><strong>Using a pre-installed Helix Spin</strong><a class="headerlink" href="#using-a-pre-installed-helix-spin" title="Permalink to this headline">¶</a></h2>
+<p>If tests need to be run against an official Helix spin (rather than a VxWorks git repo branch), use an installation created by the Helix nightly automated test system.</p>
+<p>The SSP5 and SSP6 servers each have a directory containing all Helix spins used for nightly testing over the last 30 days. The available spins can be viewed using the links below. (To select a spin installation when testing, replace “http:” with “/net”.)</p>
+<blockquote>
+<div><p><a class="reference external" href="http://yow-ssp5-lx/buildarea2/helix_nightly_installs/">http://yow-ssp5-lx/buildarea2/helix_nightly_installs/</a>
+<a class="reference external" href="http://yow-ssp6-lx/buildarea11/helix_nightly_installs/">http://yow-ssp6-lx/buildarea11/helix_nightly_installs/</a></p>
+</div></blockquote>
+<p>The DVD installations are write-protected, so will not be able to modify the Helix product code.
+DVD names ending with “vx7-helix” were generated from the “vx7-integration” branch. Those ending with “vx7-SRnnnn-helix” were generated from the corresponding “vx7-SRxxxx-features” branch.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 52%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>08/03/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Transferred content from Jive page: DOC-74113</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../_sources/SupplementaryGuidelines/Development/HelixProductSetupGuide_SG.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

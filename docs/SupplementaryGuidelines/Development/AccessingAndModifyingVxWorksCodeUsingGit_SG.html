@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing and Modifying VxWorks 7 Code Using Git &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/DefectManagementMain.html"><strong>Defect Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="accessing-and-modifying-vxworks-7-code-using-git">
+<h1>Accessing and Modifying VxWorks 7 Code Using Git<a class="headerlink" href="#accessing-and-modifying-vxworks-7-code-using-git" title="Permalink to this headline">¶</a></h1>
+<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
+<p><strong>Purpose:</strong> As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.</p>
+<p>(Source:</p>
+<div class="section" id="purpose">
+<h2><strong>Purpose</strong><a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>Git is the primary tool used to access and submit VxWorks 7 code.  The following provides the steps required to setup your Git environment, access VxWorks 7 code, and perform submissions.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="important-reference">
+<h2><strong>Important Reference</strong><a class="headerlink" href="#important-reference" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://bitbucket.wrs.com/dashboard">Primary BitBucket Portal</a></p></li>
+<li><p><a class="reference external" href="../../ProcessDocuments/CoreDev/CodingIntBuild/VxWorksSR0520GitWorkflow-v2.pptx">Git Workflow</a></p></li>
+<li><p><a class="reference external" href="./SetupDevelopmentEnvironmentFromGit_SG.html">Environment setup for VxWorks 7 in Git: Setup Development Environment from Git</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-74113">Virtualization Profile documentation on getting started</a></p></li>
+<li><p>Security Profile documentation on getting started: <a class="reference external" href="https://jive.windriver.com/groups/vxworks-7-security/blog/2017/02/17/getting-started">How to get started with the VxWorks 7 security development</a></p></li>
+<li><p><a class="reference external" href="http://twiki.wrs.com/PBUeng/ViperDevEnv">Viper documentation on getting started (not relevant to VxWorks 7, but contains a lot of great tips for using Git)</a></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="procedure">
+<h2><strong>Procedure</strong><a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="setting-up-your-environment">
+<h2><strong>Setting-Up Your Environment</strong><a class="headerlink" href="#setting-up-your-environment" title="Permalink to this headline">¶</a></h2>
+<p>The recommended steps for setting up your environment and cloning the VxWorks 7 repository can be viewed at <a class="reference external" href="./HelixProductSetupGuide_SG.html">Helix Product Setup Guide</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="creating-branches-for-pull-requests">
+<h2><strong>Creating Branches (for Pull Requests)</strong><a class="headerlink" href="#creating-branches-for-pull-requests" title="Permalink to this headline">¶</a></h2>
+<p>See the image below or for the instructions on how to create and manipulate branches using Git.</p>
+<p><img alt="image0" src="../../_images/AccessingAndModifyingVxWorksCodeUsingGit_Image0.jpg" /></p>
+<p>To create a branch that will allow you to add code to vx7-integration, you must follow the steps below:</p>
+<ul class="simple">
+<li><p>git clone <a class="reference external" href="ssh://git&#64;stash.wrs.com:7999/vx7/vxworks.git">ssh://git&#64;stash.wrs.com:7999/vx7/vxworks.git</a> -b vx7-integration</p></li>
+<li><p>git clone git://pek-gitmirror-prod.wrs.com/vx7/vxworks.git -b vx7-integration (for git clone from China git mirror from <a class="reference external" href="./UsingChinaGitMirror.html">Using the China Git mirror</a>)</p></li>
+<li><p>cd vxworks</p></li>
+<li><p>./setup-tools</p></li>
+<li><p>./setup-tools -site pek/ctu -set-url (for git clone from China git mirror to set remote url back to stash.wrs.com or else git push will go to the China git mirror and not stash.wrs.com, note that the set remote url requires <strong>git version 2.25 or above</strong>)</p></li>
+<li><p>git pull</p></li>
+<li><p>git checkout vx7-SR0XXX-features (to start with another base branch instead of vx7-integration)</p></li>
+<li><p>git checkout -b &lt;source branch&gt;</p></li>
+<li><p>git push –set-upstream origin &lt;source branch&gt;</p></li>
+</ul>
+</div>
+<div class="section" id="modifying-and-committing-code">
+<h2><strong>Modifying and Committing Code</strong><a class="headerlink" href="#modifying-and-committing-code" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Typically, to modifying and commit code you simply have to follow these steps:
+- make modifications to a &lt;file&gt;
+- git add &lt;file&gt;
+- git commit
+- git push</p></li>
+<li><p>Good commit messages help give details on the commit and the impact. It provides traceability to the work.
+- <a class="reference external" href="./GitCommitMessageStandard_SG.html">Git Commit Message Standard</a>
+- Sample commit message template:</p></li>
+</ul>
+<p><img alt="image1" src="../../_images/AccessingAndModifyingVxWorksCodeUsingGit_Image1.jpg" /></p>
+</div>
+<div class="section" id="how-to-do-rebases-to-prevent-merge-commits">
+<h2><strong>How To Do Rebases To Prevent Merge Commits</strong><a class="headerlink" href="#how-to-do-rebases-to-prevent-merge-commits" title="Permalink to this headline">¶</a></h2>
+<p>(IMPORTANT!) DO NOT create merge records.  The steps on getting around the creation of merge records are clearly explained in <a class="reference external" href="../../ProcessDocuments/CoreDev/CodingIntBuild/VxWorksSR0520GitWorkflow-v2.pptx">VxWorks SR0520 Git Workflow</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 52%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>08/03/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Transferred content from Jive page: DOC-57324</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../_sources/SupplementaryGuidelines/Development/AccessingAndModifyingVxWorksCodeUsingGit_SG.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitting Code into the Integration Branch &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/DefectManagementMain.html"><strong>Defect Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="submitting-code-into-the-integration-branch">
+<h1>Submitting Code into the Integration Branch<a class="headerlink" href="#submitting-code-into-the-integration-branch" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Throughout the course of developing Features, code changes based on defects, Developers are encouraged to frequently test and submit their code into a common integration branch.  This document describes the submission process and the prerequisites that must be met prior to submitting code.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="merging-to-vx7-integration">
+<h2><strong>Merging to vx7-integration</strong><a class="headerlink" href="#merging-to-vx7-integration" title="Permalink to this headline">¶</a></h2>
+<p>In order to submit code to the “vx7-integration” branch, developers must use the Continuous Integration (CI) Pipeline in Jenkins. To do so you must provide references to the appropriate development artifacts and ensure your JIRA records are in order.</p>
+<p><img alt="image0" src="../../_images/Checkin_Integration_CIpipeline_image0.jpg" /></p>
+<ol class="arabic">
+<li><p>Log into the <a class="reference external" href="http://vxjenkins.wrs.com:8080/">http://vxjenkins.wrs.com:8080/</a> webpage</p></li>
+<li><p>Select the “vx7 projects” tab</p></li>
+<li><p>Select the “Project 01.0 VX7 Continuous Integration” pipeline (i.e. <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/</a>)</p></li>
+<li><p>Click on “Build with Parameters” (i.e. <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/build?delay=0sec">http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/build?delay=0sec</a>)</p>
+<p><em>NOTE:  if you don’t see this option, check if logged in</em></p>
+</li>
+<li><p>Fill the parameters required by the build pipeline as it pertains to User Story and/or JIRA</p>
+<ul>
+<li><p><strong>VX7_BRANCH</strong>:  This is the Git runtime branch where your code was submitted</p></li>
+<li><p><strong>JIRA_ID</strong>:  Must be either Jira Defect or Jira Story</p>
+<p>The criteria to meet a valid Jira Defect and Story is detailed on the “Build with Parameters” page and will not be repeated here to avoid having to update the text in 2 places when it changes.</p>
+</li>
+<li><p><strong>CODE_REVIEW_ID</strong>:  This is the link to the Code Collaborator review you created (see Code Reviews and Doc Reviews)</p></li>
+<li><p><strong>COMPLETION_MAIL_LIST</strong>:  This is a list of email recipients that should be notified once submission is completed</p></li>
+</ul>
+</li>
+<li><p>Click on the “Build” button at the bottom of the page</p></li>
+<li><p>The above steps will cause the Jenkins pipeline to verify your development artifacts, run rudimentary sanity wassp tests and attempt to merge the code on your behalf</p>
+<ul class="simple">
+<li><p>If successful: an email will be sent and your code will be merged to the “vx7-integration” branch</p></li>
+<li><p>If unsuccessful: the pipeline will notify which of your development artifacts or build tests failed to pass validation</p></li>
+<li><p>If unsuccessful, and all artifacts and build tests were validated:</p>
+<ul>
+<li><p>The pipeline may have encountered a merge conflict (which you will have to resolved prior to re-submission)</p></li>
+<li><p>The pipeline may have detected new compiler warnings</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Test Pipelines</p>
+<p>There are several test pipelines you can use to validate changes before attempting to submitting code to the CI Pipeline.</p>
+<ul class="simple">
+<li><p>WASSP Pre-ci Test</p>
+<ul>
+<li><p>The same set of wassp tests that are used in the CI Pipeline can be run on your branch by using the WASSP Launcher <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_wassp_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_wassp_launcher/</a></p></li>
+<li><p>This pipeline does not validate the submission criteria (Jira/User Story, etc) nor does it validate the rpm generation. Only the wassp tests are run on your branch.</p></li>
+</ul>
+</li>
+<li><p>Helix Spins</p>
+<ul>
+<li><p>To generate a Helix spin that you can transfer to R1 and install, use the VX7 Helix Spin launcher <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_p1_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_p1_launcher/</a></p></li>
+<li><p>This pipeline runs the same set of tests as the nightly vx7-helix production pipeline and manufactures a spin that can be pushed (<a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_push/">http://vxjenkins.wrs.com:8080/job/vx7_push/</a> ) and installed from R1.</p></li>
+</ul>
+</li>
+<li><p>Native Spins</p>
+<ul>
+<li><p>To generate a Native vx7 spin that you can transfer to R1 and install, use the VX7 Native Spin launcher <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_project4_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_project4_launcher/</a></p></li>
+<li><p>This pipeline runs the same set of tests as the nightly vx7-native production pipeline and manufactures a spin that can be pushed (<a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_push/">http://vxjenkins.wrs.com:8080/job/vx7_push/</a> ) and installed from R1.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="merging-to-helix-hvp-integration">
+<h2><strong>Merging to Helix/HVP-integration</strong><a class="headerlink" href="#merging-to-helix-hvp-integration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="developer-info-code-development-workflow">
+<h3><strong>Developer Info - Code Development Workflow</strong><a class="headerlink" href="#developer-info-code-development-workflow" title="Permalink to this headline">¶</a></h3>
+<p>This workflow applies for fixing issues for HAZOP, coding violations, and nightly tests.</p>
+<ul class="simple">
+<li><p>File a HELIXCERT defect</p>
+<ul>
+<li><p>For GOS: set component = “gos”</p></li>
+<li><p>For HV: set component = “hv”</p></li>
+<li><p>indicate the cert “component” it is against in the summary of the defect using the format [&lt;component name&gt;] . E.g. “[Vx_kernel_msgQ]: blah blah blah”.</p></li>
+<li><p>labels to apply</p>
+<ul>
+<li><p><strong>regression</strong> for functionality regression (most likely nightly)</p></li>
+<li><p><strong>code_rework</strong> for any type of code rework</p></li>
+<li><p><strong>tools</strong> for test harness, ci pipeline, etc.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>If the layer  needs to be updated, then number up the latest digit by 1 and add .cert at the end of the layer, e.g. 1.2.3.4 becomes 1.2.3.5.cert.</p>
+<ul>
+<li><p>Fix the issue - there`s no need to update the Jira publication field.</p></li>
+<li><p>Run any regression testing</p>
+<ul>
+<li><p>For GOS, e.g. if you are fixing POSIX, we got vxTest for posix tests to run.</p>
+<ul>
+<li><p>Use <a class="reference external" href="http://ala-jenkins:8080/job/Developers_Cert_Pipeline">Developer Cert Pipeline</a>, select vxworks7 and then the vxTest components you want to run</p></li>
+</ul>
+</li>
+<li><p>For HV:</p>
+<ul>
+<li><p><a class="reference external" href="http://yow-ssp6-lx:8080/job/Hv_Test_Developer">Developer test</a></p></li>
+</ul>
+</li>
+<li><p>Minimal testing required any necessary developer testing plus <a class="reference external" href="https://jive.windriver.com/docs/DOC-78540">run the golden matrix</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Run any requirement based tests that are available: &lt;TBD for the pipeline&gt;</p>
+<ul>
+<li><p>Review the code</p>
+<ul>
+<li><p>Include experts in that area, e.g. if you are fixing POSIX, include reviewers like Dan Kresja or Zoltan or Sekhar. Code Collaborator Review should provide, tests ran, defect fix, etc.</p></li>
+</ul>
+</li>
+<li><p>Commit the code using the <a class="reference external" href="https://jive.windriver.com/docs/DOC-78771">cert ci pipeline</a></p></li>
+</ul>
+</li>
+<li><p>If the fix should also be propagated to the vx7-integration branch, (ideally anything in the vx7-SC0630 branch (default assumption)), then clone the defect for vx7-integration (i.e. into the various projects like V7PRO, V7COR, etc), fix it in vx7-integration following vx7-integration defect fixing strategy.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-64200">How to build WB4 drop and spin from Jenkins</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-81032">Helix Cert Developer Information</a></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 52%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>05/01/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Naomi Lee</p></td>
+<td><p>Transferred content from Submit Code Integration Branch Jive page</p></td>
+</tr>
+<tr class="row-odd"><td><p>06/26/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.2</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Update based on Kitty’s feedback</p></td>
+</tr>
+<tr class="row-even"><td><p>07/22/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.3</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Update based on Kitty’s feedback (Helix Code Development Workflow)</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../_sources/SupplementaryGuidelines/Development/SubmitCodeIntegrationBranch_SG.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

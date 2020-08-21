@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Handle Build Issues &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/DefectManagementMain.html"><strong>Defect Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="how-to-handle-build-issues">
+<h1>How to Handle Build Issues<a class="headerlink" href="#how-to-handle-build-issues" title="Permalink to this headline">¶</a></h1>
+<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
+<p>Build issues can be related to the software pipeline, as well as infrastructure issues.</p>
+<p>(Source: <a class="reference external" href="https://jive.windriver.com/docs/DOC-85089">https://jive.windriver.com/docs/DOC-85089</a>)</p>
+<div class="section" id="software-pipeline">
+<h2><strong>Software Pipeline</strong><a class="headerlink" href="#software-pipeline" title="Permalink to this headline">¶</a></h2>
+<p>A software pipeline consists of a set of automated elements (processes and tools), that allow developers to build, test and deploy their code in the integration stream.</p>
+<p>The pipeline process verifies the code to be submitted satisfies a set of checklists prior to being checked in, such as:</p>
+<ul class="simple">
+<li><p>No new static analysis issues</p></li>
+<li><p>No new build warnings</p></li>
+<li><p>Code reviews have been completed</p></li>
+<li><p>Sanity / Unit tests performed</p></li>
+<li><p>State of defect, story, epic is correct</p></li>
+</ul>
+<p>Pipeline tools that support the processes:</p>
+<ul class="simple">
+<li><p>Revision Control System:</p>
+<ul>
+<li><p>Git</p>
+<ul>
+<li><p>Access and availability provided by Engineering Success</p></li>
+<li><p>Structure and process by VxWorks</p></li>
+</ul>
+</li>
+<li><p>Bit Bucket</p>
+<ul>
+<li><p>Access and availability provided by Engineering Success</p></li>
+<li><p>Structure and process by VxWorks</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Compiler and Static Code Analysis:</p>
+<ul>
+<li><p>Jenkins</p>
+<ul>
+<li><p>Owned and maintained by VxWorks</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Code Collaborator</p>
+<ul>
+<li><p>Access and availability provided by Engineering Success</p></li>
+<li><p>Structure and process by VxWorks</p></li>
+</ul>
+</li>
+<li><p>Coverity</p>
+<ul>
+<li><p>Access and availability provided by Engineering Success</p></li>
+<li><p>Structure and process by VxWorks</p></li>
+</ul>
+</li>
+<li><p>Test Harness</p>
+<ul>
+<li><p>Access and availability provided by Engineering Success</p></li>
+<li><p>Structure and process by VxWorks</p></li>
+</ul>
+</li>
+<li><p>Jira</p></li>
+</ul>
+<p><a class="reference internal" href="../../_images/HowToHandleBuildIssues_Image0.jpg"><img alt="image0" src="../../_images/HowToHandleBuildIssues_Image0.jpg" style="width: 400pt;" /></a></p>
+</div>
+<div class="section" id="infrastructure">
+<h2><strong>Infrastructure</strong><a class="headerlink" href="#infrastructure" title="Permalink to this headline">¶</a></h2>
+<p>The Infrastructure consists of the components – hardware and software - that are supporting the software development environment.</p>
+<p>Ownership:</p>
+<ul class="simple">
+<li><p>Physical Build Servers, OS, structure, maintenance, space – VxWorks</p></li>
+<li><p>Jenkins Servers, OS, structure, maintenance, space – VxWorks</p></li>
+<li><p>Targets – VxWorks</p></li>
+<li><p>R1 – Build repository server space, storage, maintenance and structure – VxWorks</p></li>
+<li><p>Virtual Build Servers – IT</p></li>
+</ul>
+<p>Services:</p>
+<ul>
+<li><p>Infrastructure residing in IT owned space: Space, Power, and network access is supported by IT, everything else is by VxWorks</p></li>
+<li><p>Infrastructure residing in Engineering labs: Space, Power, and network access is supported by Engineering Success, everything else is by VxWorks</p>
+<p>Note: “Space” is physical space/racks for servers/targets not hard drive space</p>
+</li>
+</ul>
+<p>Categories:</p>
+<ul class="simple">
+<li><p>Network Services</p>
+<ul>
+<li><p>Firewalls</p></li>
+<li><p>Hardware</p></li>
+<li><p>Wireless Connectivity</p></li>
+</ul>
+</li>
+<li><p>Servers &amp; Data</p>
+<ul>
+<li><p>Drive space</p></li>
+<li><p>Operating Systems</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="build-failures">
+<h2><strong>Build failures</strong><a class="headerlink" href="#build-failures" title="Permalink to this headline">¶</a></h2>
+<p>Every build failure has to be tracked via a P1 defect.</p>
+<p>This defect should be created by the Build &amp; Config Team (see Note at the end of the document)</p>
+<p>When creating the defect, [Build Failure] should prefix the summary.</p>
+<p>Example:</p>
+<p>[Build Failure]: VX7 Build Results for 20200418061605_vx7-native : FAILED due to installer conflicts</p>
+<p>Once the defect is created, the Build &amp; Config team would do the initial analysis, to understand the root cause and properly classify / re-direct the defect.</p>
+<p>Build failures can have different causes – labels can be used to classify the root cause.</p>
+</div>
+<div class="section" id="pipeline-issues">
+<h2><strong>Pipeline issues</strong><a class="headerlink" href="#pipeline-issues" title="Permalink to this headline">¶</a></h2>
+<p>In order to be able to determine if the issue is caused by a service not being available / not functioning properly, following dashboard has to be reviewed:
+<a class="reference external" href="http://noc.wrs.com:3000/d/sQykHLZZz/engineering-services?orgId=1&amp;refresh=5m">http://noc.wrs.com:3000/d/sQykHLZZz/engineering-services?orgId=1&amp;refresh=5m</a></p>
+<ul class="simple">
+<li><p>Issue relates to the Tools access and availability</p>
+<ul>
+<li><p>To be used when it was confirmed the tools are not available</p></li>
+<li><p>Labels: <strong>Vx_BUILD_PIPELINE_ISSUES</strong></p>
+<ul>
+<li><p>“Tools” label should be used in addition to above, to capture an issue related to git, Code Collaborator, Coverity, Jira, Bit Bucket not being available</p></li>
+</ul>
+</li>
+<li><p>A “Support Request” should be opened with the Engineering Support team</p>
+<ul>
+<li><p>Create Issue</p></li>
+<li><p>Select Project = Infrastructure Support</p></li>
+<li><p>Issue Type = Support Request</p></li>
+<li><p>Component/s =  select the component that matches the Tools causing the issue</p></li>
+</ul>
+</li>
+<li><p>Note: the Support Request may be moved to IT for resolution</p></li>
+</ul>
+</li>
+</ul>
+<p><a class="reference internal" href="../../_images/HowToHandleBuildIssues_Image1.jpg"><img alt="image1" src="../../_images/HowToHandleBuildIssues_Image1.jpg" style="width: 400pt;" /></a></p>
+<ul class="simple">
+<li><p>Issue relates to the Tools structure and process</p>
+<ul>
+<li><p>To be used when tools are available, but issue is related to process / structure or for any Jenkins related issue</p></li>
+<li><p>Labels: <strong>Vx_BUILD_PIPELINE_ISSUES</strong></p>
+<ul>
+<li><p>“VxWorks” label should be used in addition to above</p></li>
+<li><p>The defect will be created in the “Vx7 Build &amp; Host Side Tools” project</p></li>
+<li><p>Resolution may be provided by the Build &amp; Config team, or by the submitters in the build, depending if issue is related to structure or process</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Issue relates to a submission in the pipeline</p>
+<ul>
+<li><p>Labels: <strong>Vx_BUILD_PIPELINE_ISSUES</strong></p>
+<ul>
+<li><p>“Dev” label should be used in addition to above, to capture the issue relates to a submission</p></li>
+</ul>
+</li>
+<li><p>Defect should be created in the “Vx7 Build &amp; Host Side Tools” project</p>
+<ul>
+<li><p>Build &amp; Config team will do the initial analysis and, based on the results, can assign the defect to the designer who’s submission caused the failure</p></li>
+<li><p>See “Service Level Agreement” section for more details</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="infrastructure-issues">
+<h2><strong>Infrastructure issues</strong><a class="headerlink" href="#infrastructure-issues" title="Permalink to this headline">¶</a></h2>
+<p>Those are related to any of the Categories listed under the “Infrastructure” section</p>
+<ul class="simple">
+<li><p>Issue relates to infrastructure owned by VxWorks</p>
+<ul>
+<li><p>Those issues could be related to:</p>
+<ul>
+<li><p>Physical Build Servers, OS, structure, maintenance, space</p></li>
+<li><p>Jenkins Servers, OS, structure, maintenance, space</p></li>
+<li><p>Targets</p></li>
+<li><p>R1 – Build repository server space, storage, maintenance and structure</p></li>
+</ul>
+</li>
+<li><p>Labels: <strong>VX7_BUILD_INFRASTRUCTURE_ISSUES</strong></p>
+<ul>
+<li><p>“VxWorks” label should be used in addition to above</p></li>
+<li><p>The defect will be created in the “Vx7 Build &amp; Host Side Tools” project</p></li>
+<li><p>Resolution should be provided with the help of the owners of the infrastructure</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Issue relates to services provided by infrastructure residing in Engineering labs</p>
+<ul>
+<li><p>Those issues could be related to:</p>
+<ul>
+<li><p>Space</p></li>
+<li><p>Power</p></li>
+<li><p>Network Access</p></li>
+</ul>
+</li>
+<li><p>Labels: <strong>VX7_BUILD_INFRASTRUCTURE_ISSUES</strong></p>
+<ul>
+<li><p>“LabOPS” label should be used in addition to above</p></li>
+</ul>
+</li>
+<li><p>A “Support Request” should be opened with the Engineering Support team</p>
+<ul>
+<li><p>Create Issue</p></li>
+<li><p>Select Project = Lab Ops</p></li>
+<li><p>Issue Type = Support Request</p></li>
+<li><p>Component/s =  select the lab where the ownership resides</p></li>
+</ul>
+</li>
+<li><p>Note: the Support Request may be moved to IT for resolution</p></li>
+</ul>
+</li>
+</ul>
+<p><a class="reference internal" href="../../_images/HowToHandleBuildIssues_Image2.jpg"><img alt="image2" src="../../_images/HowToHandleBuildIssues_Image2.jpg" style="width: 400pt;" /></a></p>
+<ul class="simple">
+<li><p>Issue relates to services provided by infrastructure residing in IT owned space</p>
+<ul>
+<li><p>Those issues could be related to:</p>
+<ul>
+<li><p>Space</p></li>
+<li><p>Power</p></li>
+<li><p>Network Access</p></li>
+<li><p>Virtual Build Servers</p></li>
+</ul>
+</li>
+<li><p>IT issues are tracked via “Remedy Force” tickets</p></li>
+<li><p>To have visibility on the VxWorks project side, a P1 defect should be created, to track the issue</p>
+<ul>
+<li><p>Project = Vx7 Build &amp; Host Side Tools</p></li>
+<li><p>Component = Build, Packaging and Media</p></li>
+<li><p>In the summary, the Remedy Force ticket should be referenced</p></li>
+<li><p>Labels: <strong>VX7_BUILD_INFRASTRUCTURE_ISSUES</strong></p>
+<ul>
+<li><p>Labels that could be used in addition to the above:</p>
+<ul>
+<li><p>“Network” -  network  related issues</p></li>
+<li><p>“Servers” – server related issues</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>The B&amp;C defect will be put “On Hold”, until the Remedy Force ticket is resolved</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a class="reference internal" href="../../_images/HowToHandleBuildIssues_Image3.jpg"><img alt="image3" src="../../_images/HowToHandleBuildIssues_Image3.jpg" style="width: 400pt;" /></a></p>
+</div>
+<div class="section" id="quick-reference">
+<h2><strong>Quick Reference</strong><a class="headerlink" href="#quick-reference" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 26%" />
+<col style="width: 37%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>ISSUE</strong></p></td>
+<td><p><strong>WHEN</strong></p></td>
+<td><p><strong>LABELS</strong></p></td>
+<td><p><strong>WHAT</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Pipeline</p></td>
+<td><p>Tools access and availability</p></td>
+<td><p>Vx_BUILD_PIPELINE_ISSUES &amp; Tools</p></td>
+<td><p>“Support Request”  with the Engineering Support team</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pipeline</p></td>
+<td><p>Tools structure and process</p></td>
+<td><p>Vx_BUILD_PIPELINE_ISSUES &amp; VxWorks</p></td>
+<td><p>Defect in “Vx7 Build &amp; Host Side Tools” project</p></td>
+</tr>
+<tr class="row-even"><td><p>Pipeline</p></td>
+<td><p>Issue related to submission</p></td>
+<td><p>Vx_BUILD_PIPELINE_ISSUES &amp; Dev</p></td>
+<td><p>Defect in “Vx7 Build &amp; Host Side Tools” project</p></td>
+</tr>
+<tr class="row-odd"><td><p>Infrastructure</p></td>
+<td><p>Infrastructure owned by VxWorks</p></td>
+<td><p>Vx_BUILD_PIPELINE_ISSUES &amp; Dev</p></td>
+<td><p>Defect in “Vx7 Build &amp; Host Side Tools” project</p></td>
+</tr>
+<tr class="row-even"><td><p>Infrastructure</p></td>
+<td><p>Services provided by
+infrastructure residing in
+Engineering labs</p></td>
+<td><p>VX7_BUILD_INFRASTRUCTURE_ISSUES
+&amp; LabOPS</p></td>
+<td><p>“Support Request”  with the Engineering Support team</p></td>
+</tr>
+<tr class="row-odd"><td><p>Infrastructure</p></td>
+<td><p>Services provided by
+infrastructure residing in IT
+owned space</p></td>
+<td><p>VX7_BUILD_INFRASTRUCTURE_ISSUES &amp;
+Network &amp; Servers</p></td>
+<td><p>Remedy Force + Defect in “Vx7 Build &amp; Host Side
+Tools” project</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="service-level-agreement">
+<h2><strong>Service Level Agreement</strong><a class="headerlink" href="#service-level-agreement" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Anyone submitting into a build is expected to monitor the build results and ensure that the load gets generated properly</p></li>
+<li><p>If the load does not build successfully, 7x24 focus until correction is done</p></li>
+<li><p>No new submissions are allowed until the issue is solved</p></li>
+</ul>
+<div class="section" id="note">
+<h3><strong>Note</strong><a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
+<p>A backup team will be available in China, for CI pipeline related work.</p>
+<p>This team will have the ability to lock CI/approve pull request/kick-start the build.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../_sources/SupplementaryGuidelines/Development/HowToHandleBuildIssues_SG.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

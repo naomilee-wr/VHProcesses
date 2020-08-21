@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noncompliance Procedure &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DefectManagementMain.html"><strong>Defect Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="noncompliance-procedure">
+<h1>Noncompliance Procedure<a class="headerlink" href="#noncompliance-procedure" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This process describes how noncompliances resulting from internal audits are managed.</p>
+<p>The Software Quality Assurance (SQA) and Configuration Management (CM) Lead is responsible for this process. The SQA/CM Lead may designate another person to perform the noncompliance process.</p>
+<p>The Key Stakeholders (e.g., Engineering Managers/Director, Engineering Program Manager (EPM), Technical Lead, Test Lead, noncompliance owner) participate in this process.  Noncompliance owners can be anyone and the owners are responsible for resolving noncompliances.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Entry Criteria</strong></p></td>
+<td><p>An audit finds a noncompliance</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Inputs</strong></p></td>
+<td><p>Audit Record in Audit Tool</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Exit Criteria</strong></p></td>
+<td><p>The Noncompliance Record is closed.
+The noncompliance was either fixed,
+determined not to fix, withdrawn
+because it was not valid.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Outputs</strong></p></td>
+<td><p>Noncompliance Records in Audit Tool
+and status is closed.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="activities">
+<h2><strong>Activities</strong><a class="headerlink" href="#activities" title="Permalink to this headline">¶</a></h2>
+<p><img alt="image0" src="../../../_images/NoncomplianceProcedure.jpg" /></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 19%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Step #</p></th>
+<th class="head"><p>Activity Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Submit Noncompliance Record</p></td>
+<td><p>In the Audit Tool, the Auditor creates a new Noncompliance Record.  Link the Noncompliance to the audit record.  Set the severity:</p>
+<ul class="simple">
+<li><p>Minor: The noncompliance minimally impacts the program and does not impact the quality of the product.</p></li>
+<li><p>Major: The noncompliance could potentially have significant impact on the program or product quality.</p></li>
+</ul>
+<p><em>Note:</em> Observations (opportunities for improvement) are evidence of weak practices (not of significant concern) which if not addressed could result in a future nonconformity.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Review Noncompliance Record</p></td>
+<td><p>Discuss the noncompliance with Key Stakeholders. Determine if it is a valid problem.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Noncompliance withdrawn</p></td>
+<td><p>If the noncompliance is not valid, set the resolution to withdrawn and provide an explanation in the Comments.</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Approve “won’t fix”</p></td>
+<td><p>If the noncompliance is valid, but cannot address it, set the Resolution to Won’t Fix.</p>
+<p>If the Key Stakeholders (e.g., Engineering Managers/Director, Engineering Program Manager (EPM), Technical Lead, Test Lead) approve not fixing the issue, provide an explanation in the comments and close the noncompliance.</p>
+<p>If the Key Stakeholders do not approve, then the noncompliance must be addressed.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Assign owner</p></td>
+<td><p>The Key Stakeholders (e.g., Engineering Managers/Director, Engineering Program Manager (EPM), Technical Lead, Test Lead) discuss and assign an Owner to fix the noncompliance.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Determine cause and identify corrective action</p></td>
+<td><p>If the noncompliance is valid and the Owner will fix it, discuss the corrective action with the Owner and describe the corrective action plan. Agree on a date for completion with the Owner and fill in the Due Date.</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Implement corrective action</p></td>
+<td><p>If the Owner completes the action, the Auditor verifies the fix. If the action is not completed, the Auditor/SQA or CM Lead decides to escalate the issue.</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Escalate noncompliance</p></td>
+<td><p>If the Owner fails to carry out the corrective action, the Auditor/SQA or CM Lead and Owner attempt to reach an agreement on when the action will be completed.</p>
+<p>If an agreement is reached, it is documented in the Noncompliance Record.</p>
+<p>If an agreement is not reached, the Auditor/SQA or CM Lead escalates the noncompliance to the Key Stakeholders (e.g., Engineering Manager, Engineering Program Manager (EPM), Technical Lead, Test Lead).</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>Resolve escalation</p></td>
+<td><p>The Key Stakeholders (e.g., Engineering Manager, Engineering Program Manager (EPM), Technical Lead, Test Lead) work with the Owner or Owner’s manager to resolve the escalation.</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>Verify fix</p></td>
+<td><p>When the Owner completes the fix, the Auditor verifies the fix addresses the noncompliance. The Auditor enters what is done to verify the fix.</p>
+<p>If the action repairs the problem, the Auditor sets the Noncompliance resolution to fixed.</p>
+<p>If the fix does not fully address the noncompliance, the auditor and Owner revise the corrective action and the noncompliance remains open.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>Noncompliance closed</p></td>
+<td><p>The Auditor sets the status to closed when the resolution:</p>
+<ul class="simple">
+<li><p>is withdrawn,</p></li>
+<li><p>is won’t fix and the EPM has approved not fixing the issue, or</p></li>
+<li><p>is fixed.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>Report status</p></td>
+<td><p>Progress against noncompliances is reported periodically to the EPM.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 18%" />
+<col style="width: 11%" />
+<col style="width: 18%" />
+<col style="width: 43%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>05/02/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Naomi Lee</p></td>
+<td><p>Initial Draft</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/Operations/SWQualityAssurance/NoncomplianceProcedure.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

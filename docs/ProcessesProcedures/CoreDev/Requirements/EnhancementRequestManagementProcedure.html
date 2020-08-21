@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancement Request Management Process &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/DefectManagementMain.html"><strong>Defect Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="enhancement-request-management-process">
+<h1>Enhancement Request Management Process<a class="headerlink" href="#enhancement-request-management-process" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The purpose of the Enhancement Request Management procedure is to evaluate Enhancement Requests (ER) in the Defect Management Tool (e.g., Jira) as possible requirements. ERs are regularly reviewed and evaluated at Enhancement Request review meetings.  The meeting’s purpose is to review ERs that are new in the system, as well as existing ones that are still under discussion.</p>
+<p>The Customer Service Organization (CSO) is responsible for submitting the ER and holding review meetings.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 57%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Entry Criteria</strong></p></td>
+<td><p>An ER has been found and is in <em>Status</em> “Open”</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Inputs</strong></p></td>
+<td><p>ER record in the Defect Tracking System
+(e.g., Jira)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Exit Criteria</strong></p></td>
+<td><p>The Enhancement Request record <em>Type</em> changed to
+“Epic” or “Defect”</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Outputs</strong></p></td>
+<td><p>Updated Enhancement Request record</p>
+<ul class="simple">
+<li><p><em>Type</em> changed to “Defect”</p></li>
+<li><p>Marked Duplicate</p></li>
+<li><p>“Rejected” or “Withdrawn” with explanation</p></li>
+<li><p>If accepted, Type changed to “Epic”</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="stakeholders">
+<h2><strong>Stakeholders</strong><a class="headerlink" href="#stakeholders" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 76%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Role</strong></p></td>
+<td><p><strong>Responsibilities</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Customer Service
+Organization</p></td>
+<td><p>Responsible for Submitting the ER and holding review meetings</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key Stakeholders
+/ Scrum Team</p></td>
+<td><p>Key Stakeholders (Product Manager, Engineering Manager, Technical Feature
+Owner) and/or Scrum team are responsible for reviewing the ER.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="activities">
+<h2><strong>Activities</strong><a class="headerlink" href="#activities" title="Permalink to this headline">¶</a></h2>
+<p><img alt="image0" src="../../../_images/ERManagement.jpg" /></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 19%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Step #</p></th>
+<th class="head"><p>Activity Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Submit enhancement request(s)</p></td>
+<td><p>When an ER is requested, before creating a new record, search the Tracking System (e.g., Jira) to see if an ER has been filed before for the same issue.</p>
+<ul class="simple">
+<li><p><em>Project</em></p></li>
+<li><p><em>Issue Type</em> (set to “Enhancement Request”)</p></li>
+<li><p><em>Summary</em></p></li>
+<li><p><em>Priority</em></p></li>
+<li><p><em>Severity</em></p></li>
+</ul>
+<p><strong>These additional fields should also be filled in, if known:</strong></p>
+<ul class="simple">
+<li><p><em>Description</em></p></li>
+<li><p><em>Workaround</em></p></li>
+<li><p><em>Components</em></p></li>
+<li><p><em>Found In Versions</em></p></li>
+<li><p><em>Salesforce Case Reference</em> (for customer requested ERs)</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Review enhancment request(s) - Search enhancement request(s)</p></td>
+<td><p>Identify new enhancement request (ER) record(s) by reviewing e-mail notifications from the Defect Tracking System (e.g., Jira) or running queries. Identify relevant enhancement request records in <em>Status</em> “Open”</p></td>
+</tr>
+<tr class="row-even"><td><p>2a</p></td>
+<td><p>Review enhancment request(s) - Examine the enhancement record</p></td>
+<td><p>Review the <em>Summary</em> and <em>Description</em> to determine if it describes:</p>
+<ul class="simple">
+<li><p>New functionality. In this case, determine if a new requirement is required to reflect the request.</p></li>
+<li><p>Unexpected or incorrect behavior or properties. In this case, change the <em>Type</em> to “Defect”, which will be evaluated following the <a class="reference external" href="../../Operations/DefectManagement/DefectManagementProcess.html">Defect Management Process</a>.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>2b</p></td>
+<td><p>Review enhancment request(s) - Plan and take appropriate action</p></td>
+<td><p>Determine the appropriate action:</p>
+<ul class="simple">
+<li><p>If the ER is a duplicate of an existing enhancement request or Epic, mark it as “Duplicate.” This will close the ER.</p></li>
+<li><p>Reject or withdraw a request (i.e., the enhancement request has already been implemented in a future release or will not be implemented for some reason).</p>
+<ul>
+<li><p>Make note of the reason for rejecting the ER and mark “Reject”. This will close the ER.</p></li>
+<li><p><strong>Note:</strong>  The submitter may request an ER to be “Withrawn”. This will close the ER.</p></li>
+</ul>
+</li>
+<li><p>Accept the ER (i.e., change <em>Type</em> to “Epic”).</p>
+<ul>
+<li><p>If the ER is requesting a new functionality and the PM decides that there is sufficient value to add the new functionality to the product backlog, then change the <em>Type</em> of the ER to “Epic”. Enter the required information in the Epic record. An Epic will now be available in the Requirements Management tool (e.g., Jira Agile). The Epic will be evaluated per the <a class="reference external" href="./RequirementsDevelopmentProcedure.html">Requirements Development Process</a>.</p></li>
+<li><p><strong>Note:</strong>  This does not indicate that the ER will be implemented, but that the ER is now entered in the backlog for evaluation in the next sprint.</p></li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 8%" />
+<col style="width: 14%" />
+<col style="width: 56%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>04/29/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Initial Draft</p></td>
+</tr>
+<tr class="row-odd"><td><p>06/11/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.2</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updated based on the feedback from Martin.  Converting this into a procedure instead of process.</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/CoreDev/Requirements/EnhancementRequestManagementProcedure.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release Build Process &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html"><span><img src="../../../_static/WIND-Logo-Red-Screen-Md.png"></span>
+          Wind River VxWorks and HVP Process Documentation</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
+                <li><a href="../../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Processes <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../LifecycleMain.html"><strong>Lifecycle</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RequirementsMain.html"><strong>Requirements</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DesignMain.html"><strong>Design</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VerificationMain.html"><strong>Verification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ValidationMain.html"><strong>Validation</strong></a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ProgramManagementMain.html"><strong>Program Release Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/DefectManagementMain.html"><strong>Defect Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/ConfigurationManagementMain.html"><strong>Configuration Management</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/SWQualityAssuranceMain.html"><strong>Software Quality Assurance</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/MeasurementMain.html"><strong>Measurement</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/TrainingMain.html"><strong>Training</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Operations/InformationDevelopmentMain.html"><strong>Information Development</strong></a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="release-build-process">
+<h1>Release Build Process<a class="headerlink" href="#release-build-process" title="Permalink to this headline">¶</a></h1>
+<p>This process describes how to create:</p>
+<ul class="simple">
+<li><p>the spin/build (post Feature Complete code) on the Release branch for <a class="reference external" href="../Verification/ReleaseVerification_TestingProcess.html">Release Verification Process</a>.</p></li>
+<li><p>the final spin/build (release candidate) for <a class="reference external" href="../../Operations/ProgramManagement/ReleaseProcess.html">Release Process</a>.</p></li>
+</ul>
+<p>The Build &amp; Configuration (B&amp;C) Lead is responsible for the build in the release branch and the Release Lead from the release team is responsible for the release delivery.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 51%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Entry Criteria</strong></p></td>
+<td><ul class="simple">
+<li><p>Development Feature Complete (FC)
+milestone achieved</p></li>
+<li><p>Release branch ready to be created
+from integration branch</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Inputs</strong></p></td>
+<td><ul class="simple">
+<li><p>Development &amp; documentation content
+in the integration branch of the CM
+system (e.g., Git)</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Exit Criteria</strong></p></td>
+<td><ul class="simple">
+<li><p>Code Freeze achieved</p></li>
+<li><p>Approved Release build</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Outputs</strong></p></td>
+<td><ul class="simple">
+<li><p>Release candidate build ready for
+release</p></li>
+<li><p>Labeled baseline on development
+in the CM system (e.g., Git repo)</p></li>
+<li><p>Final Release content on web based
+repositories (e.g., WindShare)</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="activities">
+<h2><strong>Activities</strong><a class="headerlink" href="#activities" title="Permalink to this headline">¶</a></h2>
+<p><img alt="image0" src="../../../_images/ReleaseBuild.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 19%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Step #</p></th>
+<th class="head"><p>Activity Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Create release branch based on the integration branch in the repo.</p></td>
+<td><p>After the Feature Completion date, the B&amp;C Lead spins off a side branch known as the Release branch for each product release (e.g., vx7-sr0660-features branch). Permissions are set for the release branch, including setting up pull request settings and merge strategy, default reviewers for pull requests, etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Add content to the release branch</p></td>
+<td><p>The Scrum Team - Developer submits code to the release branch according to the <a class="reference external" href="./CheckinProcedure.html">Check in Procedure</a> (post FC complete). The B&amp;C Lead performs the maintenance of the release branch according to the <a class="reference external" href="https://jive.windriver.com/docs/DOC-83617">Build and Config Release Branch Operations</a>.</p>
+<blockquote>
+<div><p>Note: This is the stabilization period where mainly defect fixes are committed onto the release branch and no new features are added.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Run the spin/build using the launchers (e.g., Jenkins)</p></td>
+<td><p>The B&amp;C Lead runs build scripts which:</p>
+<ul class="simple">
+<li><p>generate spin/build for the release testing:</p>
+<ul>
+<li><p>Internal spins including Technical Documentation</p></li>
+</ul>
+</li>
+</ul>
+<p>Issues are filed as necessary for spin failures.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Run release tests on the release branch</p></td>
+<td><p>The Testing team performs the Release verification (testing) - Automated and manual tests.  See <a class="reference external" href="../Verification/ReleaseVerification_TestingProcess.html">Release Verification Process</a>.</p>
+<p>Issues are filed as necessary for any test failures. See <a class="reference external" href="../../Operations/DefectManagement/DefectManagementProcess.html">Defect Management Process</a>.</p>
+<p><strong>Note:</strong> Steps 2-4 happens on a daily/nightly basis from the point Feature Complete until Code Freeze.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Approve release candidate build</p></td>
+<td><p>The release candidate build is approved by the Key Stakeholders e.g., EPM, PM, Test and Dev Team.   The B&amp;C Lead creates the release candidate build from the release branch based on the code freeze/<a class="reference external" href="../../../ProcessDocuments/Operations/ProgramManagement/ReleaseCriteria.xlsx">release criteria</a>.    The EPM initiates <a class="reference external" href="../../Operations/ProgramManagement/ReleaseProcess.html">Release Process</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="related-process-assets-tools">
+<h2><strong>Related Process Assets/Tools</strong><a class="headerlink" href="#related-process-assets-tools" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="./CheckinProcedure.html">Check in Procedure</a></p></li>
+<li><p><a class="reference external" href="../Verification/ReleaseVerification_TestingProcess.html">Release Verification Process</a></p></li>
+<li><p><a class="reference external" href="../../Operations/DefectManagement/DefectManagementProcess.html">Defect Management Process</a></p></li>
+<li><p><a class="reference external" href="../../Operations/ProgramManagement/ReleaseProcess.html">Release Process</a></p></li>
+<li><p>Configuration Management system (e.g., Git)</p></li>
+<li><p>CI Launcher/Build tool(e.g., Jenkins)</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="references">
+<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-83617">Build and Configuration Release Branch</a></p></li>
+<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-77180">VxWorks Feature Release to RTO/GA</a></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-log">
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 52%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Date</strong></p></td>
+<td><p><strong>Change Request ID</strong></p></td>
+<td><p><strong>Version</strong></p></td>
+<td><p><strong>Change By</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>05/04/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.1</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Initial Draft</p></td>
+</tr>
+<tr class="row-odd"><td><p>06/29/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.2</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updates based on Kitty’s feedback</p></td>
+</tr>
+<tr class="row-even"><td><p>06/30/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.3</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updates based on Mike and Alan’s feedback</p></td>
+</tr>
+<tr class="row-odd"><td><p>07/01/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.4</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updates based on Kitty’s feedback</p></td>
+</tr>
+<tr class="row-even"><td><p>07/13/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.5</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updates based on Kitty’s feedback</p></td>
+</tr>
+<tr class="row-odd"><td><p>07/22/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.6</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updates based on Kitty’s feedback</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../../_sources/ProcessesProcedures/CoreDev/CodingIntBuild/ReleaseBuildProcess.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Wind River Systems, Inc..<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
