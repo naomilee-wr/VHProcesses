@@ -82,9 +82,9 @@ The defect fixer is responsible for this procedure.
 
    -  If work on a defect has to be postponed, the defect is set to On Hold to notify Key Stakeholders of the temporary delay in developing the fix.  (For example, developer temporarily reassigned to higher priority defect)
 
-#. **Review the defect fix according to the** `Code Review <../CodingIntBuild/CodeReviewProcedure_CodeCollaborator.html>`__ **process**
+#. **Review the defect fix according to the** `Code Review <../../CoreDev/CodingIntBuild/PeerReviewProcedure_CodeCollaborator.html>`__ **process**
 
-#. **The** `Release Build <../CodingIntBuild/ReleaseBuildProcess.html>`__ **process will automatically move fixed to the** *"checked in"* **state**
+#. **The** `Release Build <../../CoreDev/CodingIntBuild/ReleaseBuildProcess.html>`__ **process will automatically move fixed to the** *"checked in"* **state**
 
    -  Include any details regarding the fix.
    
@@ -148,10 +148,15 @@ The defect fixer is responsible for this procedure.
 **Change Log**
 --------------
 
-+--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
-| **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                                                     |
-+--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
-| 05/08/2020   | N/A                     | 0.1           | Martin Cote             | Initial Draft                                                                                       |
-+--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
-|              |                         |               |                         |                                                                                                     |
-+--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
++--------------+-------------------------+---------------+-------------------------+------------------------------------------------------------------+
+| **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                  |
++--------------+-------------------------+---------------+-------------------------+------------------------------------------------------------------+
+| 05/08/2020   | N/A                     | 0.1           | Martin Cote             | Initial Draft                                                    |
++--------------+-------------------------+---------------+-------------------------+------------------------------------------------------------------+
+| 08/21/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Updated the links based on Shawn's feedback                      |
++--------------+-------------------------+---------------+-------------------------+------------------------------------------------------------------+
+|              |                         |               |                         |                                                                  |
++--------------+-------------------------+---------------+-------------------------+------------------------------------------------------------------+
+|              |                         |               |                         |                                                                  |
++--------------+-------------------------+---------------+-------------------------+------------------------------------------------------------------+
+
