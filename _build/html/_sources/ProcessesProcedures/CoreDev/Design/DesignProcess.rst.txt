@@ -108,8 +108,9 @@ The Technical Feature Owner and/or scrum team members are responsible for execut
 **References** 
 -----------------
 
-- `Epics in Jira Agile <https://jive.windriver.com/docs/DOC-76323>`__
-- `Jira Agile Documentation Index <https://jive.windriver.com/docs/DOC-76381>`__
+- `Epics in Jira Agile <../../Operations/ProgramManagement/EpicsInJiraAgile.html>`__
+
+Note:  For additional reference, refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html>`_ 
 
 |	   
 

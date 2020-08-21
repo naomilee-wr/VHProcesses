@@ -97,15 +97,7 @@ The Product Manager is responsible for this process.
 **References**
 -----------------
 
-- `Requirements Summary Flow Diagram <../../../_static/CoreDev/Requirements/Requirements.jpg>`__
-- `Product Requirements Workflow Diagram <https://jive.windriver.com/docs/DOC-76575>`__
-- `MST to Product Team Product Requirements Processes <https://jive.windriver.com/docs/DOC-71790>`__
-- `Requirements Prioritization Process.pptx <https://jive.windriver.com/docs/DOC-71813>`__
-- `Wind River Enhancement Request Process <https://jive.windriver.com/docs/DOC-37616>`_ 
-- `Enhancement Requests using Jira Workflows (version 6.0) <https://jive.windriver.com/docs/DOC-37617>`_
-- `Backlog management in Jira Agile <https://jive.windriver.com/docs/DOC-76366>`__
-- `Epics in Jira Agile <https://jive.windriver.com/docs/DOC-76323>`__
-- `Jira Agile Documentation Index <https://jive.windriver.com/docs/DOC-76381>`__
+- Refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#requirements>`_ 
 
 |
 

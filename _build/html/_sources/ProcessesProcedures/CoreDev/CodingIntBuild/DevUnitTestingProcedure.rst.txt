@@ -96,7 +96,7 @@ The Developer is responsible for this process.
 **References**
 -----------------
 
-- ?
+- Refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#development>`_ section.
    
 |
 

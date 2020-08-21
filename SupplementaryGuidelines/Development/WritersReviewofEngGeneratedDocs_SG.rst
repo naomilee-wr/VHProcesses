@@ -7,11 +7,14 @@
 =======================================================
 Writers Review of Engineering Generated Documents
 =======================================================
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
 
-**Purpose:** When code comments and other code-based documentation are consistent with the Wind River writing standard used for our product guides, we ensure that our customers perceive our products as having a high quality, suitable for safe and secure deployments. Clear, consistent communication in all aspects of documentation reduces confusion and ensures customer success without the costly support calls.  
+|
+|
 
-(Source:https://jive.windriver.com/docs/DOC-53016)
+**Purpose**
+-------------
+
+When code comments and other code-based documentation are consistent with the Wind River writing standard used for our product guides, we ensure that our customers perceive our products as having a high quality, suitable for safe and secure deployments. Clear, consistent communication in all aspects of documentation reduces confusion and ensures customer success without the costly support calls.  
 
 **All customer-facing documentation created by development must be reviewed by a Writer before release**. The review should be done as part of the normal development process using the same tools used for technical review of code. For example:
 
@@ -27,7 +30,7 @@ A Lead Writer for each technology line is available. If they are busy, or the te
 | VxWorks                        |`Shoba Tumma <https://jive.windriver.com/people/stumma>`__         | comment blocks of new published APIs, new visible CDF components, new  |
 |                                |                                                                   | layers.vsbl, customer visible*.vxconfig additions, target.ref updates, |
 |                                |                                                                   | and anynon-DEBUG output to the console via printf(), logMsg(),         |
-|                                |                                                                   | printErr(), and printExc(), and so forth.                              |                
+|                                |                                                                   | printErr(), and printExc(), and so forth.                              |            
 +--------------------------------+-------------------------------------------------------------------+------------------------------------------------------------------------+
 | Linux                          |`Mark Morton <https://jive.windriver.com/people/mmorton>`__        | layer readme.txt files                                                 |
 +--------------------------------+-------------------------------------------------------------------+------------------------------------------------------------------------+
@@ -59,8 +62,8 @@ A Lead Writer for each technology line is available. If they are busy, or the te
 | **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
 |                | Request ID**   |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
-| 06/19/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from Writers      |
-|                |                |                | Jayaraman      | Review of Eng Generated docs Jive page|
+| 06/19/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from DOC-53016    |
+|                |                |                | Jayaraman      |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
 |                |                |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+

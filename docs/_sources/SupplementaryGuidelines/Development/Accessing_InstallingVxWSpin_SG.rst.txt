@@ -8,16 +8,15 @@
 Accessing and Installing a VxWorks Spin
 ======================================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.** 
+**Purpose**
+-----------
 
-**Purpose:** During the course of development or testing, it may become necessary for a Developement or Test Engineer to install a VxWorks Spin.  The term Spin refers to manufactured and packaged VxWorks media.  Traditionally this would have been a DVD image, but today VxWorks is delivered electronically. The following provides useful information on Spins and accessing and installing them.
-
-(Source:
+During the course of development or testing, it may become necessary for a Developement or Test Engineer to install a VxWorks Spin.  The term Spin refers to manufactured and packaged VxWorks media.  Traditionally this would have been a DVD image, but today VxWorks is delivered electronically. The following provides useful information on Spins and accessing and installing them.
 
 |
 
-**Procedure**
--------------
+**Guidelines**
+--------------
 
 - All VxWorks Spins are hosted on R1 sites.  R1 sites can be access either through a Unix or Microsoft Windows network share.  The sites are distributed geographically for efficiency and kept in sync. The list of R1 sites:
 

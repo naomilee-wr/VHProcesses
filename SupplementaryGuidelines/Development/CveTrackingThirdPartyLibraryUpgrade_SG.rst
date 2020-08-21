@@ -8,11 +8,13 @@
 CVE Tracking and Third Party Library Upgrade Process
 ====================================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+|
+|
 
-This page documents the process & guidelines of VxWorks 7 CVE monitoring and the related 3rd party libraries upgrade.
+**Purpose**
+-------------
 
-(Source: https://jive.windriver.com/docs/DOC-79998)
+This guideline describes the process & guidelines of VxWorks 7 CVE monitoring and the related 3rd party libraries upgrade.
 
 |
 
@@ -41,6 +43,8 @@ The general proposed guideline is to upgrade all 3rd party libraries with CVE fi
 
 #. All 3rd party library upgrade EPIC of one release should be created and reviewed by POR with updates on CVE component sheet also. Then, these EPICs will follow normal feature process. Otherwise, normal PCR process is needed.
 
+|
+
 **How to Documents:**
 ----------------------
 
@@ -49,6 +53,8 @@ The general proposed guideline is to upgrade all 3rd party libraries with CVE fi
 - `How to publish security notice for VxWorks <https://jive.windriver.com/docs/DOC-80266>`__
 
 - `How to create RSS feeds <https://jive.windriver.com/docs/DOC-80267>`__
+
+|
 
 **Useful Links:**
 -----------------
@@ -64,3 +70,17 @@ The general proposed guideline is to upgrade all 3rd party libraries with CVE fi
 
 - `Security Vulnerability Response Policy of Wind River <https://support2.windriver.com/docs/Security_Vulnerability_Response_Policy_doc.pdf>`__  
  
+ 
+ |
+
+**Change Log**
+--------------
++----------------+----------------+----------------+----------------+---------------------------------------+
+| **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
+|                | Request ID**   |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+| 06/10/2020     | N/A            | 0.1            | Naomi Lee      | Transferred content from DOC-79998    |
+|                |                |                |                | Jive page                             |
++----------------+----------------+----------------+----------------+---------------------------------------+
+|                |                |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+

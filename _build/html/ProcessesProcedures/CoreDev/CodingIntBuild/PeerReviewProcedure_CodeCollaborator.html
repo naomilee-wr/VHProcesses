@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peer Review Procedure Using Code Collaborator Tool &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
 <meta charset='utf-8'>
@@ -59,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../LifecycleMain.html"><strong>Lifecycle</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../RequirementsMain.html"><strong>Requirements</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../DesignMain.html"><strong>Design</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html">Coding, Integration, and Build Main page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../VerificationMain.html"><strong>Verification</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ValidationMain.html"><strong>Validation</strong></a></li>
 </ul>
@@ -111,8 +110,12 @@
 </div>
 <div class="section" id="peer-review-procedure-using-code-collaborator-tool">
 <h1>Peer Review Procedure Using Code Collaborator Tool<a class="headerlink" href="#peer-review-procedure-using-code-collaborator-tool" title="Permalink to this headline">¶</a></h1>
-<p>Peer review is method for inspection of newly written or modified code for the purpose of discovering and fixing bugs before files are checked in.  Numerous studies have shown that use of peer reviews early in software development and test leads to significantly fewer defects found during stabilization phase and more importantly, significantly fewer defects found by customers.  The earlier in development/test cycle that a defect is found, the quicker it is to fix.
-By using an efficient tool such as Code Collaborator to conduct peer reviews, the cumulative time spent conducting code reviews and thus fixing defects early is far quicker than time required to find and fix these defects later.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p>Peer review is method for inspection of newly written or modified code for the purpose of discovering and fixing bugs before files are checked in.  Numerous studies have shown that use of peer reviews early in software development and test leads to significantly fewer defects found during stabilization phase and more importantly, significantly fewer defects found by customers.  The earlier in development/test cycle that a defect is found, the quicker it is to fix.</p>
+<p>By using an efficient tool such as Code Collaborator to conduct peer reviews, the cumulative time spent conducting code reviews and thus fixing defects early is far quicker than time required to find and fix these defects later.</p>
 <p>The peer review is required for the following but not limited to:</p>
 <ul class="simple">
 <li><p>High Level Designs (HLDs)</p></li>
@@ -185,9 +188,11 @@ InfoDev team for any customer facing content.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p>Observer</p></td>
-<td><p>An observer (e.g., Product Architect, Scrum Tester) is an optional participant
-in a review. No observer is required to do anything for a review. There are
-often many observers for any given code review.</p></td>
+<td><p>An observer (e.g., Scrum Tester) is an optional participant in a review. No
+observer is required to do anything for a review. There are often many observers
+for any given code review.   A Product Architect must be an Observer for all
+Feature/Epic content review, and must be a Reviewer if the modifications include
+framework/API change, new design or have big impact to performances.</p></td>
 </tr>
 </tbody>
 </table>
@@ -407,7 +412,9 @@ completed, even if the comment was added by an observer.</p>
 <li><p><a class="reference external" href="../../../SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_SG.html">Code Review Checklist Guideline</a></p></li>
 <li><p><a class="reference external" href="../../../ProcessDocuments/CoreDev/CodingIntBuild/CodeReviewImprovements.pptx">VxWorks 7 Code Review Improvements (Best Practices)</a></p></li>
 <li><p>Code Collaborator: <a class="reference external" href="http://codereview.wrs.com/">http://codereview.wrs.com/</a> by SmartBear Software as the code review tool</p></li>
+<li><p><a class="reference external" href="../../../ProcessDocuments/GenericPlans/ProgramContactInformation.docx">Program Contact Information</a></p></li>
 </ul>
+<p>Note:  For additional guidelines/refereces, refer to <a class="reference external" href="../../SupplementaryGuidelinesIndex.html#development">Supplementary Guidelines</a> section.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -466,11 +473,12 @@ Jayaraman</p></td>
 Jayaraman</p></td>
 <td><p>Updated based on Kitty’s comments</p></td>
 </tr>
-<tr class="row-odd"><td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td><p>08/20/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.6</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Updated based on Shawn’s comments</p></td>
 </tr>
 <tr class="row-even"><td></td>
 <td></td>
@@ -503,7 +511,7 @@ Jayaraman</p></td>
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
     </p>
   </div>
 </footer>

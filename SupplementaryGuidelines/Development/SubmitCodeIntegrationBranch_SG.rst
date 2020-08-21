@@ -7,6 +7,8 @@
 =============================================
 Submitting Code into the Integration Branch
 =============================================
+|
+|
 
 |
 
@@ -23,11 +25,11 @@ In order to submit code to the "vx7-integration" branch, developers must use the
 
 #. Log into the http://vxjenkins.wrs.com:8080/ webpage
 
-#. Select the "vx7 projects" tab 
+#. Log into: http://vxjenkins2.wrs.com:8080/job/CI_Pipe/
 
 #. Select the "Project 01.0 VX7 Continuous Integration" pipeline (i.e. http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/)
 
-#. Click on "Build with Parameters" (i.e. http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/build?delay=0sec)
+#. Click on "Build with Parameters" (i.e.  http://yow-build50-vm.wrs.com:8080/job/CI_Pipe/build?delay=0sec)
 
    *NOTE:  if you don't see this option, check if logged in*
  
@@ -56,28 +58,6 @@ In order to submit code to the "vx7-integration" branch, developers must use the
      - The pipeline may have encountered a merge conflict (which you will have to resolved prior to re-submission)
 
      - The pipeline may have detected new compiler warnings   
-
-#. Test Pipelines
-
-   There are several test pipelines you can use to validate changes before attempting to submitting code to the CI Pipeline.
-
-   - WASSP Pre-ci Test 
-
-     - The same set of wassp tests that are used in the CI Pipeline can be run on your branch by using the WASSP Launcher http://vxjenkins.wrs.com:8080/job/vx7_wassp_launcher/
-
-     - This pipeline does not validate the submission criteria (Jira/User Story, etc) nor does it validate the rpm generation. Only the wassp tests are run on your branch.
-   
-   - Helix Spins
-
-     - To generate a Helix spin that you can transfer to R1 and install, use the VX7 Helix Spin launcher http://vxjenkins.wrs.com:8080/job/vx7_p1_launcher/
-
-     - This pipeline runs the same set of tests as the nightly vx7-helix production pipeline and manufactures a spin that can be pushed (http://vxjenkins.wrs.com:8080/job/vx7_push/ ) and installed from R1.
-   
-   - Native Spins
-
-     - To generate a Native vx7 spin that you can transfer to R1 and install, use the VX7 Native Spin launcher http://vxjenkins.wrs.com:8080/job/vx7_project4_launcher/
-
-     - This pipeline runs the same set of tests as the nightly vx7-native production pipeline and manufactures a spin that can be pushed (http://vxjenkins.wrs.com:8080/job/vx7_push/ ) and installed from R1.
 
 |
 
@@ -148,7 +128,12 @@ This workflow applies for fixing issues for HAZOP, coding violations, and nightl
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 | 07/22/2020   | N/A                    | 0.3           | Shree Vidya Jayaraman   | Update based on Kitty's feedback (Helix Code Development Workflow)                  |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+| 08/20/2020   | N/A                    | 0.4           | Shree Vidya Jayaraman   | Update based on Shawn's feedback                                                    |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 |              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+|              |                        |               |                         |                                                                                     |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+
 
 .. |image0| image:: /_static/SupplementaryGuidelines/Development/Checkin_Integration_CIpipeline_image0.jpg

@@ -8,10 +8,7 @@
 Open Source BSP Process
 =============================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
-
-(Source: https://jive.windriver.com/docs/DOC-75360)
-
+|
 |
 
 **Delivery Model:**
@@ -37,6 +34,9 @@ Open source BSPs (aka, unsupported BSP) are provided for quick customer experime
       - The delivered content must be merged back to SR06(x+1)0 release, that is another on train delivery with SR06(x+1)0 release
 
       - If there's updating, then the released GitHub content needs UpRev, or else, just update the README.md to indicate it's based on the new SR06(x+1)0 release.
+
+|
+	  
 
 **Stakeholders**
 -----------------
@@ -77,18 +77,22 @@ Open source BSPs (aka, unsupported BSP) are provided for quick customer experime
 |                       | team                                           |                                    |                       |
 +-----------------------+------------------------------------------------+------------------------------------+-----------------------+
 
+|
+
 **License**
 -----------------
 - All files for open source BSP must include BSD license (`Wind River BSD-3-Clause Open Source Copyright/License Notice <https://jive.windriver.com/docs/DOC-44742>`__)
+
+|
  
 **Quality Assurance**
 -----------------------
+
 Unsupported BSPs are to be provided as-is (which is another way of stating “unsupported”) and are meant to enable customers and partners to start experimenting/developing on the target as quickly as possible. In other words, an open source BSP need not, and should not, have the same level of functionality as a supported BSP nor does it need to have the usual VxWorks production quality.
 
 - WR does not ensure it's an formal release and no supporting is guaranteed to customer
 - No formal feature test / regression test/release test are performed by test team
 - However, scrum team must try best to make it high quality or equal quality of formal release to ease later formal integration. More over, if the code can be regarded as formal release, then use formal review and integrate to SR06X0 directly with formal quality criteria.
- 
 
 On the other hand, an open source BSP must meet some minimum standards:
 
@@ -105,6 +109,7 @@ On the other hand, an open source BSP must meet some minimum standards:
  
 If/when it’s decided to transition a BSP from “unsupported” to “supported”, the usual design and code reviews need to be performed on the BSP. Basically the BSP development should proceed as if starting from scratch from a design and review standpoint (with the benefit of having the source code from the “unsupported” version as reference).
 
+|
 
 **Working Model**
 ------------------
@@ -198,6 +203,8 @@ For a BSP release, any file folders may need to be updated, but per the request 
     LAYER_TYPE        PSL
     LAYER_STATUS      UNSUPPORTED
    }
+   
+|
 
 **IP/Export**
 ------------------
@@ -215,6 +222,8 @@ For a BSP release, any file folders may need to be updated, but per the request 
   - IP team review and Scrum team fix issues, then the pull request can be merged to main branch
   - Scrum team prepares export "non-GA External Software Distribution Request" and send to "export-classification@windriver.com" for approval.
   - If IP and export got approval, the BSP repo will be set public by IP team
+  
+|
 
 **Documentation**
 ------------------
@@ -225,6 +234,8 @@ For a BSP release, any file folders may need to be updated, but per the request 
    
 - On GitHub, the README.md is a simple description of how to use the source tree to install on a released VxWorks 7 versions.
 
+|
+
 **Sustaining**
 ------------------
 - No Customer sustaining work is guaranteed
@@ -232,6 +243,7 @@ For a BSP release, any file folders may need to be updated, but per the request 
 
   - If defect existed, the Scrum team will estimate the effort of fix and discuss with PM whether it should be still a valid unsupported BSP on the new SR06x0 release
 
+|
 
 **References**
 --------------
@@ -240,3 +252,18 @@ For a BSP release, any file folders may need to be updated, but per the request 
 - Folder and Name Change (http://codereview.wrs.com/ui#review:id=62215, http://codereview.wrs.com/ui#review:id=62258)
 - `Unsupported BSP Guideline <https://jive.windriver.com/docs/DOC-74003>`__
 - `Quick BSP Release and Planning <https://jive.windriver.com/docs/DOC-74004>`__
+
+|
+
+**Change Log**
+--------------
+
++----------------+----------------+----------------+----------------+---------------------------------------+
+| **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
+|                | Request ID**   |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+| 05/10/2020     | N/A            | 0.1            | Naomi Lee      | Transferred content from DOC-75360    |
+|                |                |                |                | Jive page                             |
++----------------+----------------+----------------+----------------+---------------------------------------+
+|                |                |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+

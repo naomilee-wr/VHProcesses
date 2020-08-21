@@ -9,6 +9,7 @@ Test Process Guideline
 =====================================
 
 |
+|
 
 This document provides guidelines for feature testing, release testing, nightly testing, weekly testing, sprint testing, EAR, CR testing, test coverage, test criteria and test defect related policy.
 
@@ -31,8 +32,10 @@ The new feature testing, mainly include what will be tested (feature test plan) 
 
 - Feature test plan document link should be added into Jira feature test plan field
 
+
 **Feature Test Report**
 ~~~~~~~~~~~~~~~~~~~~~~~
+
 
 - Feature test result must be imported into LTAF before the feature merged into integration branch
 
@@ -40,8 +43,10 @@ The new feature testing, mainly include what will be tested (feature test plan) 
 
 |image0|
 
+
 **Feature Test Case Delivery**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 - Test case for new feature should be created according to test case user guidelines and add test case meta data according to meta data guideline
 
@@ -98,7 +103,6 @@ Release testing include regression testing, new feature integration testing and 
 
 |
 
-
 **Integration Testing**
 ------------------------
 
@@ -108,33 +112,41 @@ Integration testing includes:
 - Weekly regression test
 - Sprint regression test
 
-New test cases for new features will be added into nightly, weekly or sprint regression test
+New test cases for new features will be added into nightly, weekly or sprint regression test.
+
 
 **Nightly Test**
 ~~~~~~~~~~~~~~~~~
 
 Nightly Test Strategy
 ``````````````````````
+
 - Full nightly test (include 5As and real target) on native spin
 
 - 5As nightly test on both native and Helix spin
 
+
 Nighty Test Report
 ```````````````````
+
 - Submit “vx7-project” to receive the nightly report of VxWorks
 
 |image2|
 
+
 **Weekly Test** (Native only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 Weekly Test Strategy
 ``````````````````````
+
 - Execute all automation regression tests every week
 
 
 Weekly Test Report
 ```````````````````
+
 - Weekly test report could be accessed from LTAF
 
 |image3|
@@ -145,6 +157,7 @@ Weekly Test Report
 
 Sprint Test Strategy
 ``````````````````````
+
 - Execute all automation test and selected manual tests every sprint
 
 - 1-day exploratory test for each sprint
@@ -152,6 +165,7 @@ Sprint Test Strategy
 
 Sprint Test Report
 ```````````````````
+
 - Sprint test report could be accessed from LTAF and ERPT
 
 |image4|
@@ -165,6 +179,7 @@ Sprint Test Report
 
 - Test case type defined in `test case meta data guideline <././TestCaseMetadatafileUsageGuideline.html>`__
 
+|
 
 **Test Coverage and Improvement**
 -----------------------------------
@@ -186,6 +201,8 @@ Sprint Test Report
   http://pek-cc-pb08l.wrs.com/vxtest/vxtest1/LOG_VX7/Vx-7_CodeCoverage/report_SR06xx.html
 
 |image7|
+
+|
 
 **Test Log Backup Policy** (Native only)
 -----------------------------------------

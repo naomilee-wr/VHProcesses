@@ -8,11 +8,17 @@
 BSP Documentation Update Guideline
 ===========================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+|
+|
 
-**Purpose:** As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.
 
-(Source:
+**Purpose**
+------------
+
+ As teams develop new Features/Epics, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following guideline outlines the asteps for updating the VxWorks 7 regression test suite.
+ 
+|
+
 
 **Context**
 -----------
@@ -21,6 +27,7 @@ The legacy target.nr has been retired in favour of a new BSP documentation appro
 
 For a description of why and what the process entails, refer to `Retiring target.ref and Replacing with xxx_readme.md + BSP Supplement <./RetiringTarget_ReplacingWithReadmefile_BSPSupplement_SG.html>`__
 
+|
 
 **Prerequisites**
 -----------------
@@ -102,6 +109,7 @@ These steps assume that WR Engineering must update the customer facing BSP docum
 
 |image8|
 
+|
 
 **Context**
 -----------
@@ -111,6 +119,7 @@ These steps assume that WR Engineering must update the customer facing BSP docum
      
 2. Updates affecting all other aspects of the BSP must be documented in the relevant BSP Supplement document, not the xxx_readme.md file. The BSP Supplement is found on the Wind River Support Network site and git repo (see prerequisites above).
 
+|
  
 **Steps for Updating Customer Visible BSP Documentation**
 ----------------------------------------------------------

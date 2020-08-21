@@ -103,10 +103,10 @@ The Test Lead is responsible for this process.
      - Analyze Test Results
      - Analyze the verification test results.
   
-       For test failures, determine if the failures are due to test code or product defect. Take steps to resolve the failure by either fixing the test code or filing a defect against the product. Defects are evaluated, resolved, or published as specified by the `Defect Management Process <../../Operations/DefectManagement/DefectManagementProcess.html>`__.
+       For test failures, take steps to resolve the failure by either fixing the test code or filing a defect against the product. Defects are evaluated, resolved, or published as specified by the `Defect Management Process <../../Operations/DefectManagement/DefectManagementProcess.html>`_.
 	   
        Performance and footprint test results are reviewed by Product Technical Leads.  In the case of significant degradation, defects are created in the `Defect Management Process <../../Operations/DefectManagement/DefectManagementProcess.html>`__.
-
+	   
    * - 7
      - Track All Issues to Closure
      - Once completed, the test code and review artifacts are delivered by checking them into the CM.
@@ -131,10 +131,7 @@ Related Process Assets/Tools
 References 
 -----------------
 - `Verification Validation Summary Flow Diagram <../../../../../_static/CoreDev/Verification/VerificationValidation.jpg>`__
-- `working guide <https://jive.windriver.com/docs/DOC-80308>`__
-- `VxWorks Test Case Meta Data File (test_case.conf) Usage Guideline (recovered version) <https://jive.windriver.com/docs/DOC-80297>`__
-- `Uploading Manual test Results to LTAF <https://jive.windriver.com/docs/DOC-61193>`_ 
-- `VxWorks 7 Regression Test Suite User Guide_SR3630 <./vxworks_7_regression_test_suite_users_guide_sr0630.pdf>`_  (*NL 8/12:  I don't see this file anywhere?*)
+- For additional references, refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#Test>`_ 
 
 |
 
@@ -149,6 +146,8 @@ References
 | 08/04/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Updates based on Kitty's feedback                                                                   |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 | 08/05/2020   | N/A                     | 0.3           | Shree Vidya Jayaraman   | Updates to Entry Criteria and Diagram based on Kitty's feedback                                     |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 08/14/2020   | N/A                     | 0.4           | Shree Vidya Jayaraman   | Updates to step 6 based on Dapeng's feedback                                                        |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 |              |                         |               |                         |                                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+

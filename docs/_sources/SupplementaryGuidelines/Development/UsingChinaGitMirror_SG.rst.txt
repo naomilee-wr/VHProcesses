@@ -7,13 +7,12 @@
 ======================
 Using China Git Mirror
 ======================
+|
+|
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+The instructions below are meant for non-Linux teams in China who need to clone repositories from Bitbucket but are experiencing speed issues.
 
-**Purpose:** The instructions below are meant for non-Linux teams in China who need to clone repositories from Bitbucket but are experiencing speed issues.
-
-(Source:https://jive.windriver.com/docs/DOC-82366)
-
+ 
 The VxWorks (VX7), Host Tools (HOSTTOOLS), and Workbench (WB4) repositories have been mirrored from Bitbucket to a Git server in Beijing to provide easier cloning. These are read-only clones, and are updated every 4 hours from Alameda.
 
 To clone a repository from the mirror:

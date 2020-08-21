@@ -9,11 +9,11 @@
 
 |
 
+All nightly test runs report is generated and shared with the team members.
+
 All nightly test runs are analyzed once the execution has finished. If there are any failures seen, they are investigated and defects are opened accordingly.
 
 Defects opened against Nightly regression tests are considered Priority 1 defects.
-
-All nightly test runs reported, the pass rates need to be > 95%.
 
 |
 
@@ -27,7 +27,7 @@ All nightly test runs reported, the pass rates need to be > 95%.
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 | 08/04/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Updates based on Kitty's feedback                                                                   |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
-|              |                         |               |                         |                                                                                                     |
+| 08/17/2020   | N/A                     | 0.3           | Shree Vidya Jayaraman   | Updates based on Dapeng's feedback                                                                  |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 |              |                         |               |                         |                                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+

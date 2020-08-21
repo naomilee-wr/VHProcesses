@@ -8,11 +8,12 @@
 How to Handle Build Issues
 =============================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+|
+|
 
 Build issues can be related to the software pipeline, as well as infrastructure issues.
 
-(Source: https://jive.windriver.com/docs/DOC-85089)
+|
 
 **Software Pipeline**
 ---------------------
@@ -67,6 +68,8 @@ Pipeline tools that support the processes:
 
 |image0|
 
+|
+
 **Infrastructure**
 ---------------------
 
@@ -99,6 +102,8 @@ Categories:
 
   - Drive space
   - Operating Systems
+  
+|
 
 **Build failures**
 ---------------------
@@ -116,6 +121,8 @@ Example:
 Once the defect is created, the Build & Config team would do the initial analysis, to understand the root cause and properly classify / re-direct the defect.
 
 Build failures can have different causes – labels can be used to classify the root cause.
+
+|
 
 **Pipeline issues**
 ---------------------
@@ -160,6 +167,8 @@ http://noc.wrs.com:3000/d/sQykHLZZz/engineering-services?orgId=1&refresh=5m
 
     - Build & Config team will do the initial analysis and, based on the results, can assign the defect to the designer who’s submission caused the failure
     - See “Service Level Agreement” section for more details
+	
+|
 
 **Infrastructure issues**
 --------------------------
@@ -232,6 +241,8 @@ Those are related to any of the Categories listed under the “Infrastructure”
 
 |image3|
 
+|
+
 **Quick Reference**
 ---------------------
 
@@ -257,6 +268,7 @@ Those are related to any of the Categories listed under the “Infrastructure”
 |                    | owned space                       |                                       |                                                       |
 +--------------------+-----------------------------------+---------------------------------------+-------------------------------------------------------+
 
+|
 
 **Service Level Agreement**
 ----------------------------
@@ -265,12 +277,26 @@ Those are related to any of the Categories listed under the “Infrastructure”
 - If the load does not build successfully, 7x24 focus until correction is done
 - No new submissions are allowed until the issue is solved
 
-**Note**
-+++++++++
+**Note** 
+~~~~~~~~~~~~~
 
-A backup team will be available in China, for CI pipeline related work.
+- A backup team will be available in China, for CI pipeline related work.
 
-This team will have the ability to lock CI/approve pull request/kick-start the build.
+- This team will have the ability to lock CI/approve pull request/kick-start the build.
+
+|
+
+**Change Log**
+--------------
++----------------+----------------+----------------+----------------+---------------------------------------+
+| **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
+|                | Request ID**   |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+| 06/10/2020     | N/A            | 0.1            | Naomi Lee      | Transferred content from DOC-85089    |
+|                |                |                |                | Jive page                             |
++----------------+----------------+----------------+----------------+---------------------------------------+
+|                |                |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
 
 .. |image0| image:: /_static/SupplementaryGuidelines/Development/HowToHandleBuildIssues_Image0.jpg
    :width: 400pt

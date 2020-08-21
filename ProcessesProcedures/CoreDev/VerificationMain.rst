@@ -27,9 +27,6 @@ Policies
 
 - `Test Logs Backup Policy <./Verification/TestLogsBackupPolicy.html>`_
 
-
-*Note:  Team to identify additional policy(ies) as applicable*
-
 |
 
 Processes & Procedures
@@ -48,10 +45,6 @@ Standards & Guidelines
 - `Uploading Feature Test Results <../../SupplementaryGuidelines/Test/UploadingFeatureTestResults_SG.html>`__
 
   - `Quick Reference: Uploading Manual Test Results to LTAF <../../SupplementaryGuidelines/Test/UploadingManualTestResultsToLTAF_SG.html>`__
-  
-- `Viewing Nightly and Release Testing Results <../../SupplementaryGuidelines/Test/ViewingNightlyAndReleaseTestingResults_SG.html>`__
-- `Adding to Regression Testing <../../SupplementaryGuidelines/Test/AddingToRegressionTesting_SG.html>`__
-- `Scrum tester responsibilities <../../SupplementaryGuidelines/Test/ScrumTesterResponsibilities_SG.html>`__
 
 |
 
@@ -73,8 +66,6 @@ Tools & Templates
 Templates
 -------------
 
-*Note: The following are Procedures from Vx7 Jive page.  To be updated and reviewed for applicability*
-
 - `Feature Test Plan Template <../../ProcessDocuments/CoreDev/Verification/FeatureTestPlanTemplate.docx>`_
 
 - `Release Test Strategy Template <../../ProcessDocuments/CoreDev/Verification/ReleaseTestStrategyTemplate.docx>`__
@@ -84,8 +75,6 @@ Templates
 References
 ==========
  
-*Note: Team to identify additional References as applicable*
-
-- ?
+- Refer to `"Supplementary Guidelines" <../../SupplementaryGuidelinesIndex.html#test>`_ section.
 
 |

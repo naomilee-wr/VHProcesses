@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submitting Code into a Release Branch (via Pull Request) &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
 <meta charset='utf-8'>
@@ -59,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html">Coding, Integration, and Build Main page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
 </ul>
@@ -113,6 +112,7 @@
 <h1>Submitting Code into a Release Branch (via Pull Request)<a class="headerlink" href="#submitting-code-into-a-release-branch-via-pull-request" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
 <div class="line"><br /></div>
+<div class="line"><br /></div>
 </div>
 <p>On Feature Complete date, a new “vx7-SRxxxx-features” branch is created off of the “vx7-integration” branch.</p>
 <p>The purpose of this new branch is to prepare the software for release and limit new code submissions for the purpose of enhancing product stability.  A situation may arise when a developer needs to submit code into the release branch to address some critical or last minute issue.  This code is submitted via a Pull Request.</p>
@@ -162,7 +162,7 @@
 <dt>Monitor the progress or start this process long before creating the pull request:</dt><dd><ul>
 <li><p>Go to: <a class="reference external" href="http://vxjenkins.wrs.com:8080/">http://vxjenkins.wrs.com:8080/</a>  and login using your Linux credentials</p></li>
 <li><p>Select the “vx7 project” tab and click on the “VX7 Release Integration” entry</p></li>
-<li><p>Select the ” Project VX7 Release Integration” from the pipeline list: <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_RI_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_RI_launcher/</a></p></li>
+<li><p>Select the ” Project VX7 Release Integration” from the pipeline list:  <a class="reference external" href="http://vxjenkins2.wrs.com:8080/job/CI_Pipe_No_Merge/">http://vxjenkins2.wrs.com:8080/job/CI_Pipe_No_Merge/</a></p></li>
 <li><p>Select “Build with Parameters” from the left-side menu.  (If the option is not visible, you may have forgotten to log into Jenkins.)</p></li>
 <li><p>The right-side will be populated with several different options for building and testing your Pull Request.  You must provide your originating branch name for the VX7_BRANCH parameter. In most cases, the default values for all other parameters will be sufficient.</p></li>
 <li><p>Click on the “Build” button at the bottom of the form.</p></li>
@@ -216,6 +216,18 @@
 <td><p>Shree Vidya Jayaraman</p></td>
 <td><p>Incorporated Kitty’s feedback</p></td>
 </tr>
+<tr class="row-even"><td><p>08/20/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.3</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Incorporated Shawn’s feedback</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr class="row-even"><td></td>
 <td></td>
 <td></td>
@@ -247,7 +259,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
     </p>
   </div>
 </footer>

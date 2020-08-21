@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Case Meta Data File (test_case.conf) Usage Guideline &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
 <meta charset='utf-8'>
@@ -59,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html">Coding, Integration, and Build Main page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
 </ul>
@@ -111,10 +110,10 @@
 </div>
 <div class="section" id="test-case-meta-data-file-test-case-conf-usage-guideline">
 <h1>Test Case Meta Data File (test_case.conf) Usage Guideline<a class="headerlink" href="#test-case-meta-data-file-test-case-conf-usage-guideline" title="Permalink to this headline">¶</a></h1>
-<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
-<p><strong>Purpose:</strong></p>
-<p>(Source: <a class="reference external" href="https://jive.windriver.com/docs/DOC-80297">https://jive.windriver.com/docs/DOC-80297</a>)
-|</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
 <div class="section" id="general-guideline">
 <h2><strong>General Guideline</strong><a class="headerlink" href="#general-guideline" title="Permalink to this headline">¶</a></h2>
 <p>One test suite needs one test_case.conf file in the associated git repo directory. For VxTest cases in C, one C file is treated as one test case.</p>
@@ -125,20 +124,19 @@
 </div>
 <div class="section" id="detail-guideline-by-example">
 <h2><strong>Detail guideline by example</strong><a class="headerlink" href="#detail-guideline-by-example" title="Permalink to this headline">¶</a></h2>
-<p>Follow test_case.conf file example in git:
-<a class="reference external" href="http://git.wrs.com/cgit/projects/wassp-repos/testcases/vxworks7/tree/networking-kong/IPNET/test_case.conf">http://git.wrs.com/cgit/projects/wassp-repos/testcases/vxworks7/tree/networking-kong/IPNET/test_case.conf</a></p>
-<p>TEST_SUITE_NAME:  Test suite directory or file name. For example, IPNET or tmMemLib.c
-COMPONENT: Same as the component names we used in release LTAF report, such as core, networking, etc.
-TEST_CASE_TYPE: Must choose only one of these values (Functional, System, Performance, Compliance, Stress, Negative and OOBE)
-FEATURE: Optional. Anything put here will be displayed in the “TC Feature” drop down list in LTAF.
-AUTOMATION: yes or no
-RCA: yes or no
-DESCRIPTION: Put test suite or test case description here. It is shown as LTAF “Description” column.
-TRACEABILITY: Put requirement IDs or tags here (Rally feature ID, User story ID, JIRA ID or other tag listed in this guide). Use comma to separate multiple IDs, for example, “F1234, US6789,V7NET-5000”. For security testing, add tag “security” as an ID.
-TEST_CASE_LIST: List one or more test case name here. You could set automation and traceability for each test case by following this example: <a class="reference external" href="http://git.wrs.com/cgit/projects/wassp-repos/testcases/vxworks7/tree/meta_data/core/tmSyscallCorruptSpTest/test_case.con">http://git.wrs.com/cgit/projects/wassp-repos/testcases/vxworks7/tree/meta_data/core/tmSyscallCorruptSpTest/test_case.con</a>…
-GIT_LINK: Test case meta data directory git tree link.
-CREATED_DATE: Use YYYY-MM-DD format, like 2017-06-23.
-RELEASE_NAME: Leave it blank.</p>
+<p>Follow test_case.conf file example in git: <a class="reference external" href="http://git.wrs.com/cgit/projects/wassp-repos/testcases/vxworks7/tree/networking-kong/IPNET/test_case.conf">http://git.wrs.com/cgit/projects/wassp-repos/testcases/vxworks7/tree/networking-kong/IPNET/test_case.conf</a></p>
+<p>TEST_SUITE_NAME:  Test suite directory or file name. For example, IPNET or tmMemLib.c</p>
+<p>COMPONENT: Same as the component names we used in release LTAF report, such as core, networking, etc.</p>
+<p>TEST_CASE_TYPE: Must choose only one of these values (Functional, System, Performance, Compliance, Stress, Negative and OOBE)</p>
+<p>FEATURE: Optional. Anything put here will be displayed in the “TC Feature” drop down list in LTAF.</p>
+<p>AUTOMATION: yes or no</p>
+<p>RCA: yes or no</p>
+<p>DESCRIPTION: Put test suite or test case description here. It is shown as LTAF “Description” column.</p>
+<p>TRACEABILITY: Put requirement IDs or tags here (Rally feature ID, User story ID, JIRA ID or other tag listed in this guide). Use comma to separate multiple IDs, for example, “F1234, US6789,V7NET-5000”. For security testing, add tag “security” as an ID.</p>
+<p>TEST_CASE_LIST: List one or more test case name here. You could set automation and traceability for each test case by following this example: <a class="reference external" href="http://git.wrs.com/cgit/projects/wassp-repos/testcases/vxworks7/tree/meta_data/core/tmSyscallCorruptSpTest/test_case.con">http://git.wrs.com/cgit/projects/wassp-repos/testcases/vxworks7/tree/meta_data/core/tmSyscallCorruptSpTest/test_case.con</a>…</p>
+<p>GIT_LINK: Test case meta data directory git tree link.</p>
+<p>CREATED_DATE: Use YYYY-MM-DD format, like 2017-06-23.</p>
+<p>RELEASE_NAME: Leave it blank.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -197,7 +195,7 @@ RELEASE_NAME: Leave it blank.</p>
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
     </p>
   </div>
 </footer>

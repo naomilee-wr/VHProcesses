@@ -10,19 +10,14 @@ VxWorks Doc as Code Guideline
 
 **THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
 
-The purpose is:
-
-- to have a consistent way to write readme document for manual test case, new feature and release what's new. 
-- to treat document as code to achieve continuous delivery. 
-
-This document provide guidance on how to use Markdown to write these readme files. The generated documentation web site "http://pek-vx-doc.wrs.com/" will be updated through nightly build.
+**Purpose:** IWe need a consistent way to write readme document for manual test case, new feature and release what's new. We also need to treat document as code to achieve continuous delivery. This process document is to describe how to use Markdown to write these readme files. The generated documentation web site http://pek-vx-doc.wrs.com/ will be updated through nightly build.
 
 (Source: https://jive.windriver.com/docs/DOC-74303)
 
 **General Guideline:**
 ------------------------
 
-1. Follow CommonMark specification: A strongly defined, highly compatible specification of `Markdown <https://commonmark.org/>`__. More specifically, we should use the following Markdown type: 
+1. We should follow `CommonMark <https://commonmark.org/>`__ specification: A strongly defined, highly compatible specification of Markdown. 
 
 More specifically, we should use the following Markdown type: 
 
@@ -31,7 +26,7 @@ More specifically, we should use the following Markdown type:
 
 2. Try your best to avoid binary files such as picture, excel, docx, etc. Create ASCII diagrams just like those in the IETF RFCs and Linux kernel documentation. 
 
-3. If  `CommonMark <https://commonmark.org/>`__ specification could not meet your needs, you could use rst format which is specified by  `reStructuredText User Documentation <https://docutils.sourceforge.io/rst.html>`__
+3. If `CommonMark <https://commonmark.org/>`__ specification could not meet your needs, you could use rst format which is specified by  `reStructuredText User Documentation <https://docutils.sourceforge.io/rst.html>`__
 
 
 **Stash of document codes:**
@@ -44,25 +39,23 @@ http://stash.wrs.com/projects/VX7/repos/devdoc/browse
 **New feature document review:**
 ---------------------------------
 
-All the new feature documents changes in devdoc or vxworks repository should follow the code review process with Information Development team as reviewer.
-								 
+All the new feature documents changes in devdoc or vxworks repository should follow the code review process with InfoDev team as reviewer：
 
-- Include Shoba Tumma (Shoba.Tumma@windriver.com) for any reviews of code that generates customer facing text in vxworks repository. Public API markup, BSP readme.md, new and updated layer.vsbl and .cdf files, and general code with printf() and logMsg() string updates.
+1. Please include shoba.tumma@windriver.com for any reviews of code that generates customer facing text in vxworks repository.
+   Public API markup, BSP readme.md, new and updated layer.vsbl and .cdf files, and general code with printf() and logMsg() string updates.
 
-- Include Bryan Douglas (Bryan.Douglas@windriver.com) on code reviews of  new feature document file commits to devdoc repository.
-																																		   
-
+2. Please include Bryan.Douglas@windriver.com  on code reviews of  new feature document file commits to devdoc repository.
+ 
 
 **New feature document procedure:**
 -----------------------------------
 
 1. Every new feature should have a dedicated subdirectory created in the 'Doc as Code" git repo in their corresponding categories with the feature ID as the directory name
 
-   - eg: a storage feature should be put into release/sr06xx/Storage directory
-   - inside the directory, create a file named as feature ID, with .md or .rst as the file extension depending on which mark-up language you want to use
-   - other files related to this feature that will be referenced by the feature readme file should be put under the same directory, eg: photos or snapshots that helps to describe the feature
-   
-   The final directory should look like below:										  
+- eg: a storage feature should be put into release/sr06xx/Storage directory
+- inside the directory, create a file named as feature ID, with .md or .rst as the file extension depending on which mark-up language you want to use
+- other files related to this feature that will be referenced by the feature readme file should be put under the same directory, eg: photos or snapshots that helps to describe the feature
+ 
 
 The final directory should look like below:
 
@@ -83,13 +76,14 @@ The final directory should look like below:
 ..
 
 2. Follow the feature readme template to document your feature and follow the code review process to submit the readme file to Stash.
+
 3. Link the feature readme file in the "What's New" document. A markdown example below:
 
 .. code-block:: rst
 
    ### [F10912 - [FS] New name scheme for VxWorks TTY devices (Python enabler)](Storage/F10912/F10912)
 
-As shown, it follows the markdown **[]()** language to create the link. Note inside the **()**, the relative path to the feature readme file should be used **without the file extension (md or rst)**
+As you can see, it follows the markdown []() language to create the link. Note inside the (), the relative path to the feature readme file should be used without the file extension (md or rst)
 
 4. New feature document template can be found on stash: http://stash.wrs.com/projects/VX7/repos/devdoc/browse/release/template
 
@@ -101,10 +95,11 @@ As shown, it follows the markdown **[]()** language to create the link. Note ins
 **Innovation feature document procedure:**
 ----------------------------------------------
 
-#. There is dedicated directory in "Doc as Code" git repo for documents of innovation features: innovation/.
-#. When innovation features are productized, documents will be moved from innovation directory to new feature directory.
-#. Innovation feature document (readme) template is same as new feature one. 
+1. There is dedicated directory in "Doc as Code" git repo for documents of innovation features: innovation/. 
 
+2. When innovation features are productized, documents will be moved from innovation directory to new feature directory.
+
+3. Innovation feature document (readme) template is same as new feature one.
 
 **What's New document procedure:**
 ----------------------------------
@@ -186,24 +181,13 @@ As shown, it follows the markdown **[]()** language to create the link. Note ins
      
 - `Markdown Reader for Chrome <https://chrome.google.com/webstore/detail/markdown-reader/gpoigdifkoadgajcincpilkjmejcaanc>`__
 
-- Markdown Viewer Webext for Firefox: https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-webext
+- `Markdown Viewer Webext for Firefox  <https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-webext>`__
 
 - `Online Markdown editor  <https://dillinger.io/>`__
 
 - `Grip -- GitHub Readme Instant Preview <https://github.com/joeyespo/grip>`__
 
 - `Online ASCII diagram editor - ASCIIFlow Infinity <http://asciiflow.com/>`__ 
-
-**Change Log**
---------------
-
-+--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
-| **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                                                     |
-+--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
-| 05/21/2020   | N/A                     | 0.1           | Shree Vidya Jayaraman   | Initial Draft                                                                                       |
-+--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
-|              |                         |               |                         |                                                                                                     |
-+--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 
 .. |image0| image:: /_static/SupplementaryGuidelines/Development/VxWorksDocAsCode_Image0.jpg
    :width: 250pt

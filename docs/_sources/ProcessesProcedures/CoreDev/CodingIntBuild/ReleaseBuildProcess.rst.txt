@@ -8,6 +8,8 @@
 Release Build Process
 =========================
 
+|
+
 This process describes how to create: 
 
 - the spin/build (post Feature Complete code) on the Release branch for `Release Verification Process <../Verification/ReleaseVerification_TestingProcess.html>`__.
@@ -104,8 +106,7 @@ The Build & Configuration (B&C) Lead is responsible for the build in the release
 **References**
 --------------- 
 
-- `Build and Configuration Release Branch <https://jive.windriver.com/docs/DOC-83617>`__
-- `VxWorks Feature Release to RTO/GA <https://jive.windriver.com/docs/DOC-77180>`__
+- Refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html>`_.
    
 |
 

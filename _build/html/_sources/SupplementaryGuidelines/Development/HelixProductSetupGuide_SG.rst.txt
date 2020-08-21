@@ -7,11 +7,9 @@
 =================================================
 Helix Product Setup Guide
 =================================================
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
 
-**Purpose:** As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.
-
-(Source:
+|
+|
 
 **Purpose**
 ------------

@@ -7,11 +7,8 @@
 =========================================== 
 Build Warning Guidelines for VxWorks 7
 ===========================================
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
-
-**Purpose:** As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.
-
-(Source:
+|
+|
 
 This document provides guidelines and information on build warnings for VxWorks 7. A nightly build warning report is generated from the VxWorks 7 integration branch and send out to development teams to review and analyze. The guideline on VxWorks 7 is to ensure there are "0" warnings within VxWorks code (3rd party code are excluded) when certain configurations are compiled with the indicated warnings flags. 
 

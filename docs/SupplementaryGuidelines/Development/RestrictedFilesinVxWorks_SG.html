@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restricted Files in VxWorks 7 &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
 <meta charset='utf-8'>
@@ -59,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html">Coding, Integration, and Build Main page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
 </ul>
@@ -111,9 +110,10 @@
 </div>
 <div class="section" id="restricted-files-in-vxworks-7">
 <h1>Restricted Files in VxWorks 7<a class="headerlink" href="#restricted-files-in-vxworks-7" title="Permalink to this headline">¶</a></h1>
-<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
-<p><strong>Purpose:</strong></p>
-<p>(Source:https://jive.windriver.com/docs/DOC-76456)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
 <p>Restricted files in VxWorks 7 are source code files that may impact binary compatibility for RTPs. Starting with VxWorks 7 SR0620, an RTP executable shall remain binary compatible with future “versions” of the kernel. This capability has been requested via Feature F8963.  See the following document for technical details on VxWorks RTPs and system calls: <a class="reference external" href="./VxWorksRTP_SystemCallsBinaryCompatibility_SG.html">VxWorks Real-Time Process (RTP) System Calls and Binary Compatibility</a></p>
 <p>The following is the current list of restricted files in the VxWorks 7 run-time git repository:</p>
 <ul class="simple">
@@ -133,6 +133,9 @@
 <p>The git hooks (installed by setup-tools) check for modifications to the files and provide a warning to the developer. This warning is also appended to the commit message when making the commit so it is clear to the developer that they are committing a modification to a restricted file.</p>
 <p>The Development team needs to Contact and work with the VxWorks Architects via the email alias: <em>vx-architects&#64;list-int.wrs.com</em> on the changes before pushing changes into Git. When modifying a restricted file, consult with the Architects to ensure review and approval.</p>
 <p>In addition, the CI Pipeline will be updated to gate commits that have modified any one of the aforementioned files.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <div class="section" id="developer-responsibilities">
 <h2><strong>Developer Responsibilities</strong><a class="headerlink" href="#developer-responsibilities" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -143,8 +146,9 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+</div>
 <div class="section" id="change-log">
-<h3><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h3>
+<h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 16%" />
@@ -166,8 +170,8 @@ Request ID</strong></p></td>
 <td><p>0.1</p></td>
 <td><p>Shree Vidya
 Jayaraman</p></td>
-<td><p>Transferred content from Restricted
-Files in VxWorks 7 Jive page</p></td>
+<td><p>Transferred content from
+DOC-76456 Jive page</p></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td></td>
@@ -177,7 +181,6 @@ Files in VxWorks 7 Jive page</p></td>
 </tr>
 </tbody>
 </table>
-</div>
 </div>
 </div>
 
@@ -201,7 +204,7 @@ Files in VxWorks 7 Jive page</p></td>
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
     </p>
   </div>
 </footer>

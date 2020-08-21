@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BSP Documentation Update Guideline &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
 <meta charset='utf-8'>
@@ -59,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html">Coding, Integration, and Build Main page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
 </ul>
@@ -111,13 +110,26 @@
 </div>
 <div class="section" id="bsp-documentation-update-guideline">
 <h1>BSP Documentation Update Guideline<a class="headerlink" href="#bsp-documentation-update-guideline" title="Permalink to this headline">¶</a></h1>
-<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
-<p><strong>Purpose:</strong> As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.</p>
-<p>(Source:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="purpose">
+<h2><strong>Purpose</strong><a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>As teams develop new Features/Epics, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following guideline outlines the asteps for updating the VxWorks 7 regression test suite.</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
 <div class="section" id="context">
 <h2><strong>Context</strong><a class="headerlink" href="#context" title="Permalink to this headline">¶</a></h2>
 <p>The legacy target.nr has been retired in favour of a new BSP documentation approach. This provides the guidelines for updating xxx_readme.md and BSP Supplement.</p>
 <p>For a description of why and what the process entails, refer to <a class="reference external" href="./RetiringTarget_ReplacingWithReadmefile_BSPSupplement_SG.html">Retiring target.ref and Replacing with xxx_readme.md + BSP Supplement</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="prerequisites">
 <h2><strong>Prerequisites</strong><a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
@@ -190,6 +202,9 @@
 </ul>
 </div></blockquote>
 <p><img alt="image8" src="../../_images/BSPDocumn_Image8.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="id1">
 <h2><strong>Context</strong><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
@@ -197,6 +212,9 @@
 <li><p>Updates affecting the list of supported device drivers, components and the basic target boot process must be made to xxx_readme.md file(s) in the BSP directory. This file is brief and must not be expanded beyond its current structure without agreement with InfoDev and VxWorks PM.</p></li>
 <li><p>Updates affecting all other aspects of the BSP must be documented in the relevant BSP Supplement document, not the xxx_readme.md file. The BSP Supplement is found on the Wind River Support Network site and git repo (see prerequisites above).</p></li>
 </ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="steps-for-updating-customer-visible-bsp-documentation">
 <h2><strong>Steps for Updating Customer Visible BSP Documentation</strong><a class="headerlink" href="#steps-for-updating-customer-visible-bsp-documentation" title="Permalink to this headline">¶</a></h2>
@@ -306,7 +324,7 @@ Documentation Update Jive page</p></td>
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
     </p>
   </div>
 </footer>

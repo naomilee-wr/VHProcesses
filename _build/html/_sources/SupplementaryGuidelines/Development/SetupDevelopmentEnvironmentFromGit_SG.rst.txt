@@ -7,11 +7,9 @@
 ===========================================
 Set up Development Environment from Git
 ===========================================
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
 
-**Purpose:** 
-
-(Source:https://jive.windriver.com/docs/DOC-72948)
+|
+|
 
 - There are two kinds of Development Environments of VxWorks 7, Spin installation (same as what customer see) or just use Git to get the newest code from remote branch in the Git environment.
 

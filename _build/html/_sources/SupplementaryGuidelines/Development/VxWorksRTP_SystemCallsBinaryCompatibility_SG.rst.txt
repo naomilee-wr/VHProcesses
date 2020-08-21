@@ -8,13 +8,18 @@
 VxWorks Real-Time Process (RTP) System Calls and Binary Compatibility
 ==========================================================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+|
+|
 
-**Purpose:** 
+**Purpose** 
+------------
 
-(Source:https://jive.windriver.com/docs/DOC-77173)
+This gudeline provides background information about VxWorks Real-Time Processes (RTPs) and the mechanism for RTPs to invoke kernel services via system calls. This document also provides detailed information on how to add or modify VxWorks 7 system call services.
 
-This document provides background information about VxWorks Real-Time Processes (RTPs) and the mechanism for RTPs to invoke kernel services via system calls. This document also provides detailed information on how to add or modify VxWorks 7 system call services.
+|
+
+**Guideline** 
+---------------
 
 Regarding the modification (or deletion) of existing VxWorks 7 system calls, starting with SR0620, a binary compatibility guarantee is being provided to customers (see Feature F8963). In other words, the execution of RTP binaries built against an SR0610 kernel shall be supported on a similarly configured kernel any future “release”.
 
@@ -32,9 +37,8 @@ This document is an essential reference any engineer who intends to add or modif
 | **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
 |                | Request ID**   |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
-| 06/18/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from VxWorks RTP  |
-|                |                |                | Jayaraman      | System Calls and Binary Compatibility |
-|                |                |                |                | Jive page                             |
+| 06/18/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from DOC -77173   |
+|                |                |                | Jayaraman      | Jive page                             |
 +----------------+----------------+----------------+----------------+---------------------------------------+
 |                |                |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+

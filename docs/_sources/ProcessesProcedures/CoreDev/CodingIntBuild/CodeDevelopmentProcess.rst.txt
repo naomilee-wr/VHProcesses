@@ -124,19 +124,9 @@ This process describes how product code is developed.
 ---------------
 
 - `VxWorks Pull Request Submission Template <../../../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx>`__
-- `Maintaining Coverity "Clean" Code <https://jive.windriver.com/docs/DOC-84297>`__
-- `VxWorks 7: Git Check-in Process <https://jive.windriver.com/docs/DOC-72793>`__
-- `VxWorks: Setup Development Environment from Git <https://jive.windriver.com/docs/DOC-72948>`_
-- `Accessing and Modifying VxWorks 7 Code using Git <https://jive.windriver.com/docs/DOC-57324>`_
-- `Git Cheat Sheet #1 <../../../ProcessDocuments/CoreDev/CodingIntBuild/GitCheatSheet_1.pdf>`__
-- `Git Cheat Sheet #2 <../../../ProcessDocuments/CoreDev/CodingIntBuild/GitCheatSheet_1.pdf>`__
-- `VxWorks 7 Git Check-in Process <https://jive.windriver.com/docs/DOC-72793>`_
-- `VxWorks 7 Code Review Guideline <https://jive.windriver.com/docs/DOC-72794>`_
-- `VxWorks 7 Code Review Checklist <https://jive.windriver.com/docs/DOC-73882>`_
-- `How to Run Coverity for VxWork 7 Before Running CI Launcher <https://jive.windriver.com/docs/DOC-71808>`__
-- `CC Quickstart <http://twiki.wrs.com/Main/CCollabQuickstart>`_ --- Check with Martin and Kitty if this is available in Jive
-- `CCR tool <http://codereview.wrs.com/>`_
-   
+
+Note: For additional references, refer to `"Supplementary Guidelines" <../../SupplementaryGuidelinesIndex.html#development>`_ section. 
+  
 |
 
 **Change Log**

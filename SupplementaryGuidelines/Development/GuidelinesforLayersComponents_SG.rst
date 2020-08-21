@@ -7,34 +7,30 @@
 ========================================================================================================================================================= 
 Guidelines for Deprecating or (End Of Life) EOL'ing Layers and Components, or Releasing "Unsupported" Content, or Moving Functionality Between Layers
 =========================================================================================================================================================
+|
+|
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
-
-**Purpose:** As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.
-
-(Source:
 
 **Guidelines for Layers**
 --------------------------
-
 
 1. The SYNOPSIS and HELP text must be updated to clearly indicate when a layer is deprecated or EOL'ed, or when any functionality is "moved" to another layer.
 
    - The following example shows the updated SYNOPSIS and HELP text for the IPNET_CRYPTO layer when ALL the functionality from that layer is moved to the OPENSSL layer; the IPNET_CRYPTO layer effectively becomes EOL'ed 
  
-   |image0|
+|image0|
 
    - The following example shows the updated SYNOPSIS and HLEP text when a layer is deprecated.  Note that deprecating is not equivalent to EOL'ing.   A layer is first deprecated, and after a certain amount of time, the layer is then EOL'ed:
 
-   |image1|
+|image1|
 
    - The following example shows the updated SYNOPSIS and HELP text when a layer is "End of Life'd" (EOL):
 
-   |image2|
+|image2|
 
    - The following example shows the SYNOPSIS and HELP text for layers (BSP, PSL, or device driver) that are shipped as part of a unsupported BSP. The unsupported BSP concept was introduced in SR0610: 
 
-   |image3|
+|image3|
    
 2. The SYNOPSIS and HELP fields of ALL previous versions must be updated as outlined in Guideline#1 by using a RETROFIT statement.  This guideline is not necessary for the ("Unsupported") prefix since unsupported BSPs should have this prefix applied from the first version of the layers.
    
@@ -44,15 +40,15 @@ Guidelines for Deprecating or (End Of Life) EOL'ing Layers and Components, or Re
 
    - The following is an example layer definition BEFORE the layer has been deprecated:
 
-   |image4|
+|image4|
       
    - The following is an example layer definition AFTER the layer has been deprecated:
 
-   |image5|
+|image5|
 
    - The following is the example layer definition AFTER the layer has been EOL'ed:
 
-   |image6|
+|image6|
 
    NOTE: a LAYER_REQUIRES statement should be used instead of VSB_REQUIRES for bsp.vsbl files.
    
@@ -60,7 +56,7 @@ Guidelines for Deprecating or (End Of Life) EOL'ing Layers and Components, or Re
 
    - The following illustrates how NOT to update the example layer definition AFTER the layer has been EOL'ed, i.e. do NOT add the following RETROFIT statement:
 
-   |image7|
+|image7|
 
    The above RETROFIT statement will make all previous versions of the layer dependent on the non-existent LAYER_NOT_SUPPORTED layer; thus effectively "disabling" all of the    previous versions of the layer.  This is especially disruptive to customers with existing VSB projects where an old version of the layer was enabled in that project.
  
@@ -70,11 +66,11 @@ Guidelines for Deprecating or (End Of Life) EOL'ing Layers and Components, or Re
 
    - The following is an example of the IPNET_CRYPTO layer before the cryptographic functionality was moved to the OPENSSL layer:
 
-   |image8|
+|image8|
 
    - The following is an example update to the IPNET_CRYPTO layer meta-data to EOL the layer, and also make older versions of the layer mutually exclusive with new versions of the OPENSSL layer.  The newer versions of the OPENSSL layer provide the "CRYPTO" feature:
 
-   |image9|
+|image9|
  
 The  RETROFIT statement will cause all previous versions of the CRYPTO layer to be unusable (due to a “LAYER_REQUIRES LAYER_NOT_SUPPORTED”) if the new OPENSSL layer has been enabled.     Note: the “OPENSSL__OPENSSL_CRYPTO” is a “flag” used in the LAYER_REQUIRES conditional logic statement.  It’s comprised of the layer name (OPENSSL) + a double underscore + feature name (OPENSSL_CRYPTO).
    
@@ -85,7 +81,7 @@ The  RETROFIT statement will cause all previous versions of the CRYPTO layer to 
 
 1. The SYNOPSIS and NAME text must be updated to clearly indicate when a component (CDF) is deprecated.  The following is an example of the INCLUDE_L3_CACHE_QOS component which has been deprecated in favour of the INCLUDE_CACHE_QOS component:
 
-   |image10|
+|image10|
 
 The above example has updated (actually added) the HELP field.  The text provided in this field is not presented anywhere within Workbench.
    

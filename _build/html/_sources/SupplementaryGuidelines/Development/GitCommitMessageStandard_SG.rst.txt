@@ -7,11 +7,9 @@
 ===================================
 Git Commit Message Standard
 ===================================
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+|
+|
 
-**Purpose:** As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.
-
-(Source:
 **Key concepts**
 -----------------
 
@@ -19,6 +17,8 @@ Git Commit Message Standard
 - **Until a commit is pushed and merged into a public or team repo, you have the ability to edit, update and fix the** *draft* **commit message**.
 - **Organization** and **consistency** is desired.
 - Do not push a commit into a public repo with a commit message that does not meet the basic requirements.
+
+|
 
 **Overview**
 ----------------
@@ -30,7 +30,8 @@ The commit history in a repo is like a book to be read. **IT WILL be read in the
 
 It must be readable, accurate, concise and consistent and use factual references (URLs) that backup the narrative presented.
 
- 
+|
+
 **Basic Requirements of A good commit message**
 ------------------------------------------------
 
@@ -39,6 +40,7 @@ It must be readable, accurate, concise and consistent and use factual references
 - Write your commit message in the present tense / Imperative
   - `How to Write a Git Commit Message - Seven Rules <https://chris.beams.io/posts/git-commit/#seven-rules>`_ 
 
+|
  
 **50/72 Style basics**
 -------------------------
@@ -57,7 +59,8 @@ In some contexts, the first line is treated as the subject of an email and the r
 
 See `Git Commit Messages : 50/72 Formatting <https://stackoverflow.com/questions/2290016/git-commit-messages-50-72-formatting>`_
 
- 
+|
+
 **Write your commit message in the present tense / Imperative mode**
 -----------------------------------------------------------------------
 
@@ -85,6 +88,7 @@ What is Imperative Mode? See`HtWaGCM - Imperative <https://chris.beams.io/posts/
 - How does it address the issue in the summary
 - What effects does it have? ( benchmarks, side effects, etc.)
 
+|
  
 **Fixing commit messages**
 ---------------------------
@@ -140,6 +144,7 @@ Attach the commit message to the review.
 *git show --stat > ~/commitmsg.txt*
 *ccollab addfiles NNN ~/commitmsg.txt*
 
+|
  
 **References**
 --------------
@@ -155,7 +160,7 @@ Attach the commit message to the review.
 - `Good Commit Messages And Enforcing Them With Git Hooks <http://addamhardy.com/2013/06/05/good-commit-messages-and-enforcing-them-with-git-hooks.html>`_
 - `Git Commit Messages <https://wiki.openstack.org/wiki/GitCommitMessages>`_
  
-
+|
  
 **Historical references**
 ---------------------------

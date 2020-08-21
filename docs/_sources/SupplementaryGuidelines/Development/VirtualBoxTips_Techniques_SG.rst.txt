@@ -8,11 +8,9 @@
 VirtualBox Tips and Techniques
 ===========================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+|
+|
 
-**Purpose:** 
-
-(Source:???  NL 8/2020:  could not find this page in jive)
 
 **Getting Started**
 --------------------

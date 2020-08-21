@@ -8,17 +8,21 @@
 Responding to Nightly Validation
 ============================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+|
+|
 
-**Purpose:**  Once code has been submitted into a release, it is verified on a nightly basis against a much broader set of criteria.  Developers are responsible for monitoring nightly reports and ensuring that their submissions have not caused any regression.  In the event of a regression, developers are expected to prioritize a fix.  The following document describes the types of nightly validation and how to monitor reports.
+**Purpose**
+-----------
 
-(Source: https://jive.windriver.com/docs/DOC-55939)
+Once code has been submitted into a release, it is verified on a nightly basis against a much broader set of criteria.  Developers are responsible for monitoring nightly reports and ensuring that their submissions have not caused any regression.  In the event of a regression, developers are expected to prioritize a fix.  The following document describes the types of nightly validation and how to monitor reports.
 
-**Procedure:**
+|
+
+**Guideline**
 ---------------
 
 **Verifying Nightly Testing Report**
-++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The results from the Nightly Testing are emailed in a report to the vx7-project email alias (see example below)
 
@@ -48,7 +52,7 @@ The results from the Nightly Testing are emailed in a report to the vx7-project 
  
 
 **Verifying Nightly Build & Manufacturing Report**
-++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The results from the Nightly Build & Manufacturing are emailed in a report to the vx7-project email alias (see example below)
 
@@ -70,8 +74,9 @@ The results from the Nightly Build & Manufacturing are emailed in a report to th
 
 |image2|
 
+
 **Verifying Nightly Coverity Report**
-++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The results from the Nightly Coverity are also provided by email
 
@@ -88,6 +93,21 @@ The results from the Nightly Coverity are also provided by email
 - Example:
 
 |image3|
+
+
+**Change Log**
+--------------
+
++----------------+----------------+----------------+----------------+---------------------------------------+
+| **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
+|                | Request ID**   |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+| 05/10/2020     | N/A            | 0.1            | Naomi Lee      | Transferred content from DOC-55939    |
+|                |                |                |                | Jive page                             |
++----------------+----------------+----------------+----------------+---------------------------------------+
+|                |                |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+
 
 .. |image0| image:: /_static/SupplementaryGuidelines/Development/RespondingToNightlyValidation_Image0.jpg
    :width: 500pt

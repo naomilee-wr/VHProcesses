@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Release Verification (Testing) Process &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
 <meta charset='utf-8'>
@@ -59,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../LifecycleMain.html"><strong>Lifecycle</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../RequirementsMain.html"><strong>Requirements</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../DesignMain.html"><strong>Design</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CodingIntBuildMain.html">Coding, Integration, and Build Main page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../VerificationMain.html"><strong>Verification</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ValidationMain.html"><strong>Validation</strong></a></li>
 </ul>
@@ -226,7 +225,7 @@ verification</p></li>
 <tr class="row-odd"><td><p>6</p></td>
 <td><p>Analyze Test Results</p></td>
 <td><p>Analyze the verification test results.</p>
-<p>For test failures, determine if the failures are due to test code or product defect. Take steps to resolve the failure by either fixing the test code or filing a defect against the product. Defects are evaluated, resolved, or published as specified by the <a class="reference external" href="../../Operations/DefectManagement/DefectManagementProcess.html">Defect Management Process</a>.</p>
+<p>For test failures, take steps to resolve the failure by either fixing the test code or filing a defect against the product. Defects are evaluated, resolved, or published as specified by the <a class="reference external" href="../../Operations/DefectManagement/DefectManagementProcess.html">Defect Management Process</a>.</p>
 <p>Performance and footprint test results are reviewed by Product Technical Leads.  In the case of significant degradation, defects are created in the <a class="reference external" href="../../Operations/DefectManagement/DefectManagementProcess.html">Defect Management Process</a>.</p>
 </td>
 </tr>
@@ -262,10 +261,7 @@ verification</p></li>
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="../../../../../_static/CoreDev/Verification/VerificationValidation.jpg">Verification Validation Summary Flow Diagram</a></p></li>
-<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-80308">working guide</a></p></li>
-<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-80297">VxWorks Test Case Meta Data File (test_case.conf) Usage Guideline (recovered version)</a></p></li>
-<li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-61193">Uploading Manual test Results to LTAF</a></p></li>
-<li><p><a class="reference external" href="./vxworks_7_regression_test_suite_users_guide_sr0630.pdf">VxWorks 7 Regression Test Suite User Guide_SR3630</a>  (<em>NL 8/12:  I don’t see this file anywhere?</em>)</p></li>
+<li><p>For additional references, refer to <a class="reference external" href="../../SupplementaryGuidelinesIndex.html#Test">Supplementary Guidelines</a></p></li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -306,7 +302,13 @@ verification</p></li>
 <td><p>Shree Vidya Jayaraman</p></td>
 <td><p>Updates to Entry Criteria and Diagram based on Kitty’s feedback</p></td>
 </tr>
-<tr class="row-odd"><td></td>
+<tr class="row-odd"><td><p>08/14/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.4</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updates to step 6 based on Dapeng’s feedback</p></td>
+</tr>
+<tr class="row-even"><td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -337,7 +339,7 @@ verification</p></li>
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
     </p>
   </div>
 </footer>

@@ -1,18 +1,11 @@
 ﻿:orphan:
 
-|
-|
-|
-
 ================================= 
-CodeReviewChecklistGuidelines
+Code Review Checklist Guidelines
 =================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
-
-**Purpose:** As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.
-
-(Source:
+|
+|
 
 **Documentation**
 ------------------
@@ -21,13 +14,15 @@ CodeReviewChecklistGuidelines
 - There's no target.ref for BSP now, please submit defect to infoDev team to update README.md and BSP supplement guide: `VxWorks BSP Documentation Update Process (from SR0610) <https://jive.windriver.com/docs/DOC-75523>`__ 
 - For drivers, add "DOC_FILES += xxx.c" out of the "ifdef _WRS_CONFIG_FDT" so that driver API can be automatically produced, `references <http://opengrok.wrs.com/source/xref/vx7-integration/helix/guests/vxworks-7/pkgs_v2/os/psl/renesas/renesas_rz/src/vxbFdtRsRzn1Timer.mk#20>`__
  
+|
 
 **Coverity & Warnings**
 -----------------------
 
-- Make sure there's no Coverity issues before integration, see: `How to Run Coverity for VxWorks 7 Before Running CI Launcher <https://jive.windriver.com/docs/DOC-71808>`_ 
+- Make sure there's no Coverity issues before integration, see: `How to Run Coverity for VxWorks 7 Before Running CI Launcher <HowToRunCoverityBeforeRunningCILanuncher.html>`_ 
 - Make sure there's no new compile warnings generated. The CI Launcher result will see if there are warnings: <http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/ 
  
+|
 
 **Modification History and Change Log**
 ----------------------------------------
@@ -36,7 +31,7 @@ CodeReviewChecklistGuidelines
 - 13mar17,npc fixed calculation of fifo len for errata: AR#61664 (V7PRO-3645)    //<past tense>, no Period, Defect number or Epic number
 - “add a modification history entry for each and every change to a .spec file that describes the specific changes to the file itself”, that means, each time when you updating spec files due to changelog, please also add a modhis.
 - Whenever any file is updated in an RPM (layer), please check if the spec/layer version needs updated, methods: `How to check if an RPM version needs to be updated when code check in? <https://jive.windriver.com/docs/DOC-74083>`__ 
-- If a defect needs publish, please add changelog items with defect number, else, please do not add defect number, buy you may still need to add modhis or changelog.
+- If a defect needs to be published, add changelog items with defect number. Otherwise, do not add defect number, but changelog still needs update.
 - For code committed to git, commit messages should always contain a reference to the defect ID, feature ID or user story ID as well, and "git squash" and/or "git rebase" should be used to minimize the number of commits where possible, see: `Vx7 Git Check-in Process <https://jive.windriver.com/docs/DOC-72793>`__
 - For .spec files, in order to prevent redundant entries pertaining to “%changelog” (see section 3.2.4.2) related updates, a single modification history entry can be used to summarize the various additions to the “changelog” for a given release. The date for the modification history entry shall be the date of the last addition to the %changelog section, and the trigram shall be of the engineer that made the last addition to the %changelog.
 
@@ -44,6 +39,7 @@ CodeReviewChecklistGuidelines
 
 - New entries go at the top, i.e. changelog should grow up (just like the “Modification history” section
 
+|
 
 **Generic Issues**
 -------------------
@@ -62,6 +58,7 @@ CodeReviewChecklistGuidelines
 
 |image5|
 
+|
 
 **BSP and Driver**
 --------------------
@@ -74,7 +71,7 @@ CodeReviewChecklistGuidelines
 
   - Example: vxbFdtRsRzn1Rtc, vxbFdtFslImxClk, vxbFdtFslImxEcspi, vxbFdtZynqI2c
   
-- The driver compatible must be "vendor,processor-type" or "vendor,processor-ipname-type" 
+- The driver compatible must align with Linux DTS from vendor or mainline for any new driver or BSP.
 
   - Example: "fsl,imx-gpio", "fsl,p2020-booke-timer"; "xlnx,nwl-pcie"; "snps,designware-gpio";
   
@@ -84,12 +81,13 @@ CodeReviewChecklistGuidelines
   
 - `DTS name <https://jive.windriver.com/docs/DOC-72547>`__
 
-
+|
 
 **References**
 -------------------
 
-- http://opengrok.wrs.com/source/xref/vx7-integration/helix/guests/vxworks-7/pkgs_v2/os/psl/freescale/fsl_imx/src/vxbFdtFs… 
+- `Coding Style Guide <./WindRiverVxWorksCodingStyleGuide.pdf>`_
+- `Coding Rules Guide <./WindRiverVxWorksCodingRulesGuide.pdf>`_
 
 |
 
@@ -103,9 +101,13 @@ CodeReviewChecklistGuidelines
 | 06/19/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from Code Review  |
 |                |                |                | Jayaraman      | Checklist Jive page                   |
 +----------------+----------------+----------------+----------------+---------------------------------------+
+| 08/20/2020     | N/A            | 0.2            | Shree Vidya    | Updates based on Shawn's feedback     |
+|                |                |                | Jayaraman      |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
 |                |                |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
-
+|                |                |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
 
 .. |image0| image:: /_static/SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_Image0.jpg
 .. |image1| image:: /_static/SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_Image1.jpg

@@ -9,7 +9,7 @@ Submitting Code into a Release Branch (via Pull Request)
 ========================================================
 
 |
-
+|
 
 On Feature Complete date, a new "vx7-SRxxxx-features" branch is created off of the "vx7-integration" branch.
 
@@ -64,7 +64,7 @@ See Submitting Code into the Integration Branch  for the procedure on how to sub
 - Monitor the progress or start this process long before creating the pull request:
    -  Go to: http://vxjenkins.wrs.com:8080/  and login using your Linux credentials
    -  Select the "vx7 project" tab and click on the "VX7 Release Integration" entry 
-   -  Select the " Project VX7 Release Integration" from the pipeline list: http://vxjenkins.wrs.com:8080/job/vx7_RI_launcher/
+   -  Select the " Project VX7 Release Integration" from the pipeline list:  http://vxjenkins2.wrs.com:8080/job/CI_Pipe_No_Merge/ 
    -  Select "Build with Parameters" from the left-side menu.  (If the option is not visible, you may have forgotten to log into Jenkins.)
    -  The right-side will be populated with several different options for building and testing your Pull Request.  You must provide your originating branch name for the VX7_BRANCH parameter. In most cases, the default values for all other parameters will be sufficient.
    -  Click on the "Build" button at the bottom of the form.
@@ -90,6 +90,10 @@ See Submitting Code into the Integration Branch  for the procedure on how to sub
 | 05/01/2020   | N/A                    | 0.1           | Naomi Lee               | Transferred content from Submit Code Release Branch Jive page                       |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 | 06/26/2020   | N/A                    | 0.2           | Shree Vidya Jayaraman   | Incorporated Kitty's feedback                                                       |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+| 08/20/2020   | N/A                    | 0.3           | Shree Vidya Jayaraman   | Incorporated Shawn's feedback                                                       |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+|              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 |              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+

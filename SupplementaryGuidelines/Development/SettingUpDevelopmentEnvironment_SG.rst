@@ -30,3 +30,18 @@ As part of the VxWorks 7 program, developers are responsible for setting-up thei
 
 `Tips and techniques for setting up a development environment in Virtual Box <./VirtualBoxTips_Techniques_SG.html>`__
 
+|
+
+**Change Log**
+--------------
+
++----------------+----------------+----------------+----------------+---------------------------------------+
+| **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
+|                | Request ID**   |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+| 05/10/2020     | N/A            | 0.1            | Naomi Lee      | Transferred content from  Setting Up a|
+|                |                |                |                | Development Environment Jive page     |
++----------------+----------------+----------------+----------------+---------------------------------------+
+|                |                |                |                |                                       |
++----------------+----------------+----------------+----------------+---------------------------------------+
+

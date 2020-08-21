@@ -88,7 +88,8 @@ The Architect/Domain Leads are responsible to identify the configurations and te
 
 **References**
 -----------------
-- ?
+
+- Refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#development>`_ section.
 
 |
 

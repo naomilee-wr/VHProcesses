@@ -1,5 +1,4 @@
 ﻿:orphan:
-
 |
 |
 |
@@ -8,8 +7,11 @@
 Peer Review Procedure Using Code Collaborator Tool
 ======================================================
 
+|
+|
 
 Peer review is method for inspection of newly written or modified code for the purpose of discovering and fixing bugs before files are checked in.  Numerous studies have shown that use of peer reviews early in software development and test leads to significantly fewer defects found during stabilization phase and more importantly, significantly fewer defects found by customers.  The earlier in development/test cycle that a defect is found, the quicker it is to fix.
+
 By using an efficient tool such as Code Collaborator to conduct peer reviews, the cumulative time spent conducting code reviews and thus fixing defects early is far quicker than time required to find and fix these defects later.
 
 The peer review is required for the following but not limited to:
@@ -66,9 +68,11 @@ The author of the work products is responsible for the execution of the peer rev
 |                            | Preferred reviewer: Domain Leads, peer Developer who has the experience,        |
 |                            | InfoDev team for any customer facing content.                                   |
 +----------------------------+---------------------------------------------------------------------------------+
-| Observer                   | An observer (e.g., Product Architect, Scrum Tester) is an optional participant  | 
-|                            | in a review. No observer is required to do anything for a review. There are     |
-|                            | often many observers for any given code review.                                 |
+| Observer                   | An observer (e.g., Scrum Tester) is an optional participant in a review. No     | 
+|                            | observer is required to do anything for a review. There are often many observers|
+|                            | for any given code review.   A Product Architect must be an Observer for all    |
+|                            | Feature/Epic content review, and must be a Reviewer if the modifications include|
+|                            | framework/API change, new design or have big impact to performances.            |
 +----------------------------+---------------------------------------------------------------------------------+
    
 |
@@ -236,7 +240,10 @@ The usage of “File Subscriptions” can help domain owners to get involved to 
 - `Code Review Checklist Guideline <../../../SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_SG.html>`_
 - `VxWorks 7 Code Review Improvements (Best Practices) <../../../ProcessDocuments/CoreDev/CodingIntBuild/CodeReviewImprovements.pptx>`_
 - Code Collaborator: http://codereview.wrs.com/ by SmartBear Software as the code review tool
+- `Program Contact Information <../../../ProcessDocuments/GenericPlans/ProgramContactInformation.docx>`_
    
+Note:  For additional guidelines/refereces, refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#development>`_ section.
+
 |
 
 **Change Log**
@@ -260,10 +267,12 @@ The usage of “File Subscriptions” can help domain owners to get involved to 
 | 07/22/2020     |  N/A           | 0.5            | Shree Vidya    | Updated based on Kitty's comments     |
 |                |                |                | Jayaraman      |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
-|                |                |                |                |                                       |
+| 08/20/2020     |  N/A           | 0.6            | Shree Vidya    | Updated based on Shawn's comments     |
+|                |                |                | Jayaraman      |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
 |                |                |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
+
 
 
 .. |image0| image:: ../../../_static/CoreDev/CodingIntBuild/CodeReview_CC.jpg

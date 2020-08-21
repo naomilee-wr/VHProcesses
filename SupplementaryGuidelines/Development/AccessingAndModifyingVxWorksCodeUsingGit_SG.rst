@@ -8,11 +8,8 @@
 Accessing and Modifying VxWorks 7 Code Using Git
 =================================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
-
-**Purpose:** As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.
-
-(Source:
+|
+|
 
 **Purpose**
 ------------
@@ -64,6 +61,8 @@ To create a branch that will allow you to add code to vx7-integration, you must 
 - git checkout -b <source branch>
 - git push --set-upstream origin <source branch>
 
+|
+
 **Modifying and Committing Code**
 -------------------------------------------
 
@@ -77,6 +76,8 @@ To create a branch that will allow you to add code to vx7-integration, you must 
   - Sample commit message template:
   
 |image1|
+
+|
 
 **How To Do Rebases To Prevent Merge Commits**
 -------------------------------------------------

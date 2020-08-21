@@ -8,11 +8,8 @@
 Retiring Target.ref and Replacing with XXX_readme.md + BSPSupplement
 ========================================================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
-
-**Purpose:** 
-
-(Source:https://jive.windriver.com/docs/DOC-74590)
+|
+|
 
 **Background**
 ----------------
@@ -137,7 +134,6 @@ All VxWorks BSPs shipped with **VxWorks SR0610** and all following VxWorks servi
 
 The BSP developer/WR Engineering was responsible for writing and maintaining target.ref and including in the BSP.
 
-
 **New Solution Workflow**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -160,7 +156,6 @@ The solution requirements relate to the format and contents of:
 - the BSP Supplements hosted in the Wind River Support Network website.
 
 The SR0610 BSP documentation is a template for all future BSP documents.
-
 
 **xxx_readme.md requirements**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -219,7 +214,6 @@ The SR0610 BSP documentation is a template for all future BSP documents.
 
    **Additional Documents**
 
-
 **BSP Supplement requirements**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -264,8 +258,8 @@ The SR0610 BSP documentation is a template for all future BSP documents.
 | **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
 |                | Request ID**   |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
-| 06/24/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from Retiring     |
-|                |                |                | Jayaraman      | Target and Replacing ... Jive page    |
+| 06/24/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from DOC-74590    |
+|                |                |                | Jayaraman      | Jive page                             |
 +----------------+----------------+----------------+----------------+---------------------------------------+
 |                |                |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+

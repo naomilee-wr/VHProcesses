@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VxWorks Real-Time Process (RTP) System Calls and Binary Compatibility &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
 <meta charset='utf-8'>
@@ -59,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html">Coding, Integration, and Build Main page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
 </ul>
@@ -111,16 +110,26 @@
 </div>
 <div class="section" id="vxworks-real-time-process-rtp-system-calls-and-binary-compatibility">
 <h1>VxWorks Real-Time Process (RTP) System Calls and Binary Compatibility<a class="headerlink" href="#vxworks-real-time-process-rtp-system-calls-and-binary-compatibility" title="Permalink to this headline">¶</a></h1>
-<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
-<p><strong>Purpose:</strong></p>
-<p>(Source:https://jive.windriver.com/docs/DOC-77173)</p>
-<p>This document provides background information about VxWorks Real-Time Processes (RTPs) and the mechanism for RTPs to invoke kernel services via system calls. This document also provides detailed information on how to add or modify VxWorks 7 system call services.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="purpose">
+<h2><strong>Purpose</strong><a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>This gudeline provides background information about VxWorks Real-Time Processes (RTPs) and the mechanism for RTPs to invoke kernel services via system calls. This document also provides detailed information on how to add or modify VxWorks 7 system call services.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="guideline">
+<h2><strong>Guideline</strong><a class="headerlink" href="#guideline" title="Permalink to this headline">¶</a></h2>
 <p>Regarding the modification (or deletion) of existing VxWorks 7 system calls, starting with SR0620, a binary compatibility guarantee is being provided to customers (see Feature F8963). In other words, the execution of RTP binaries built against an SR0610 kernel shall be supported on a similarly configured kernel any future “release”.</p>
 <p>The key caveat with respect to the binary compatibility guarantee is that the VSB/VIP for building the kernel on which the RTP binary will be executed against must have an “equivalent” composition and configuration as the VSB/VIP used to originally build the RTP. Also, the term “release” in the previous paragraph really means any combination of layer versions, regardless of the scope of the layer version increments, provided in future releases (assuming of course that the resultant VSB/VIP has an equivalent composition and configuration as the “original” VSB/VIP).</p>
 <p>Thus, in general, existing system calls should not be modified or deleted unless approved by the appropriate VxWorks architect(s) and Product Management. The term “system calls” not only refers to the signature and numbering of the system call themselves, but to any kernel functionality invoked by the system call handler.</p>
 <p>This document is an essential reference any engineer who intends to add or modify a system call to the VxWorks operating system.</p>
 <div class="line-block">
 <div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="change-log">
 <h2><strong>Change Log</strong><a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
@@ -145,8 +154,7 @@ Request ID</strong></p></td>
 <td><p>0.1</p></td>
 <td><p>Shree Vidya
 Jayaraman</p></td>
-<td><p>Transferred content from VxWorks RTP
-System Calls and Binary Compatibility
+<td><p>Transferred content from DOC -77173
 Jive page</p></td>
 </tr>
 <tr class="row-odd"><td></td>
@@ -180,7 +188,7 @@ Jive page</p></td>
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
     </p>
   </div>
 </footer>

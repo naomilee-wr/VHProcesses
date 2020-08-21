@@ -8,11 +8,12 @@
 Style Guide for Developers
 ===========================================
 
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
+|
+|
 
 **Purpose:** This document provides information on a short list of common style issues we see in developer-written documentation. The full style guide for writers is available `here <http://internal.wrs.com/engineering/engops/techpubs/internal-docs/House%20Style%20Guide%208.2/index.html>`__.
 
-(Source: https://jive.windriver.com/docs/DOC-66941)
+|
 
 **Capitalization in Titles and Headings**
 ------------------------------------------------
@@ -930,8 +931,8 @@ Only use passive voice if the person or thing performing the action is unknown o
 | **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
 |                | Request ID**   |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
-| 06/24/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from Style Guide  |
-|                |                |                | Jayaraman      | for Developers Jive page              |
+| 06/24/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from DOC-66941    |
+|                |                |                | Jayaraman      | Jive page                             |
 +----------------+----------------+----------------+----------------+---------------------------------------+
 |                |                |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+

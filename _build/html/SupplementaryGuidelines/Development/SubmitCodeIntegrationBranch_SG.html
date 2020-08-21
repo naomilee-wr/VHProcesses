@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submitting Code into the Integration Branch &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
 <meta charset='utf-8'>
@@ -59,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html">Coding, Integration, and Build Main page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
 </ul>
@@ -113,6 +112,10 @@
 <h1>Submitting Code into the Integration Branch<a class="headerlink" href="#submitting-code-into-the-integration-branch" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
 <div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
 <p>Throughout the course of developing Features, code changes based on defects, Developers are encouraged to frequently test and submit their code into a common integration branch.  This document describes the submission process and the prerequisites that must be met prior to submitting code.</p>
 <div class="line-block">
@@ -124,9 +127,9 @@
 <p><img alt="image0" src="../../_images/Checkin_Integration_CIpipeline_image0.jpg" /></p>
 <ol class="arabic">
 <li><p>Log into the <a class="reference external" href="http://vxjenkins.wrs.com:8080/">http://vxjenkins.wrs.com:8080/</a> webpage</p></li>
-<li><p>Select the “vx7 projects” tab</p></li>
+<li><p>Log into: <a class="reference external" href="http://vxjenkins2.wrs.com:8080/job/CI_Pipe/">http://vxjenkins2.wrs.com:8080/job/CI_Pipe/</a></p></li>
 <li><p>Select the “Project 01.0 VX7 Continuous Integration” pipeline (i.e. <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/</a>)</p></li>
-<li><p>Click on “Build with Parameters” (i.e. <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/build?delay=0sec">http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/build?delay=0sec</a>)</p>
+<li><p>Click on “Build with Parameters” (i.e.  <a class="reference external" href="http://yow-build50-vm.wrs.com:8080/job/CI_Pipe/build?delay=0sec">http://yow-build50-vm.wrs.com:8080/job/CI_Pipe/build?delay=0sec</a>)</p>
 <p><em>NOTE:  if you don’t see this option, check if logged in</em></p>
 </li>
 <li><p>Fill the parameters required by the build pipeline as it pertains to User Story and/or JIRA</p>
@@ -148,29 +151,6 @@
 <ul>
 <li><p>The pipeline may have encountered a merge conflict (which you will have to resolved prior to re-submission)</p></li>
 <li><p>The pipeline may have detected new compiler warnings</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Test Pipelines</p>
-<p>There are several test pipelines you can use to validate changes before attempting to submitting code to the CI Pipeline.</p>
-<ul class="simple">
-<li><p>WASSP Pre-ci Test</p>
-<ul>
-<li><p>The same set of wassp tests that are used in the CI Pipeline can be run on your branch by using the WASSP Launcher <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_wassp_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_wassp_launcher/</a></p></li>
-<li><p>This pipeline does not validate the submission criteria (Jira/User Story, etc) nor does it validate the rpm generation. Only the wassp tests are run on your branch.</p></li>
-</ul>
-</li>
-<li><p>Helix Spins</p>
-<ul>
-<li><p>To generate a Helix spin that you can transfer to R1 and install, use the VX7 Helix Spin launcher <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_p1_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_p1_launcher/</a></p></li>
-<li><p>This pipeline runs the same set of tests as the nightly vx7-helix production pipeline and manufactures a spin that can be pushed (<a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_push/">http://vxjenkins.wrs.com:8080/job/vx7_push/</a> ) and installed from R1.</p></li>
-</ul>
-</li>
-<li><p>Native Spins</p>
-<ul>
-<li><p>To generate a Native vx7 spin that you can transfer to R1 and install, use the VX7 Native Spin launcher <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_project4_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_project4_launcher/</a></p></li>
-<li><p>This pipeline runs the same set of tests as the nightly vx7-native production pipeline and manufactures a spin that can be pushed (<a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_push/">http://vxjenkins.wrs.com:8080/job/vx7_push/</a> ) and installed from R1.</p></li>
 </ul>
 </li>
 </ul>
@@ -282,6 +262,18 @@
 <td><p>Shree Vidya Jayaraman</p></td>
 <td><p>Update based on Kitty’s feedback (Helix Code Development Workflow)</p></td>
 </tr>
+<tr class="row-odd"><td><p>08/20/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.4</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Update based on Shawn’s feedback</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr class="row-odd"><td></td>
 <td></td>
 <td></td>
@@ -313,7 +305,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
     </p>
   </div>
 </footer>

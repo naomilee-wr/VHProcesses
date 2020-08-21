@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeReviewChecklistGuidelines &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
+    <title>Code Review Checklist Guidelines &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
 <meta charset='utf-8'>
@@ -59,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/LifecycleMain.html"><strong>Lifecycle</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/RequirementsMain.html"><strong>Requirements</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/DesignMain.html"><strong>Design</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html"><strong>Coding, Integration, and Build</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/CodingIntBuildMain.html">Coding, Integration, and Build Main page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/VerificationMain.html"><strong>Verification</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ProcessesProcedures/CoreDev/ValidationMain.html"><strong>Validation</strong></a></li>
 </ul>
@@ -104,16 +103,12 @@
   <div class="row">
     <div class="body col-md-12 content" role="main">
       
-  <div class="line-block">
-<div class="line"><br /></div>
+  <div class="section" id="code-review-checklist-guidelines">
+<h1>Code Review Checklist Guidelines<a class="headerlink" href="#code-review-checklist-guidelines" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-<div class="section" id="codereviewchecklistguidelines">
-<h1>CodeReviewChecklistGuidelines<a class="headerlink" href="#codereviewchecklistguidelines" title="Permalink to this headline">¶</a></h1>
-<p><strong>THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.</strong></p>
-<p><strong>Purpose:</strong> As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.</p>
-<p>(Source:</p>
 <div class="section" id="documentation">
 <h2><strong>Documentation</strong><a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -121,13 +116,19 @@
 <li><p>There’s no target.ref for BSP now, please submit defect to infoDev team to update README.md and BSP supplement guide: <a class="reference external" href="https://jive.windriver.com/docs/DOC-75523">VxWorks BSP Documentation Update Process (from SR0610)</a></p></li>
 <li><p>For drivers, add “DOC_FILES += xxx.c” out of the “ifdef _WRS_CONFIG_FDT” so that driver API can be automatically produced, <a class="reference external" href="http://opengrok.wrs.com/source/xref/vx7-integration/helix/guests/vxworks-7/pkgs_v2/os/psl/renesas/renesas_rz/src/vxbFdtRsRzn1Timer.mk#20">references</a></p></li>
 </ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="coverity-warnings">
 <h2><strong>Coverity &amp; Warnings</strong><a class="headerlink" href="#coverity-warnings" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Make sure there’s no Coverity issues before integration, see: <a class="reference external" href="https://jive.windriver.com/docs/DOC-71808">How to Run Coverity for VxWorks 7 Before Running CI Launcher</a></p></li>
+<li><p>Make sure there’s no Coverity issues before integration, see: <a class="reference external" href="HowToRunCoverityBeforeRunningCILanuncher.html">How to Run Coverity for VxWorks 7 Before Running CI Launcher</a></p></li>
 <li><p>Make sure there’s no new compile warnings generated. The CI Launcher result will see if there are warnings: &lt;<a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_CI_launcher/</a></p></li>
 </ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="modification-history-and-change-log">
 <h2><strong>Modification History and Change Log</strong><a class="headerlink" href="#modification-history-and-change-log" title="Permalink to this headline">¶</a></h2>
@@ -136,7 +137,7 @@
 <li><p>13mar17,npc fixed calculation of fifo len for errata: AR#61664 (V7PRO-3645)    //&lt;past tense&gt;, no Period, Defect number or Epic number</p></li>
 <li><p>“add a modification history entry for each and every change to a .spec file that describes the specific changes to the file itself”, that means, each time when you updating spec files due to changelog, please also add a modhis.</p></li>
 <li><p>Whenever any file is updated in an RPM (layer), please check if the spec/layer version needs updated, methods: <a class="reference external" href="https://jive.windriver.com/docs/DOC-74083">How to check if an RPM version needs to be updated when code check in?</a></p></li>
-<li><p>If a defect needs publish, please add changelog items with defect number, else, please do not add defect number, buy you may still need to add modhis or changelog.</p></li>
+<li><p>If a defect needs to be published, add changelog items with defect number. Otherwise, do not add defect number, but changelog still needs update.</p></li>
 <li><p>For code committed to git, commit messages should always contain a reference to the defect ID, feature ID or user story ID as well, and “git squash” and/or “git rebase” should be used to minimize the number of commits where possible, see: <a class="reference external" href="https://jive.windriver.com/docs/DOC-72793">Vx7 Git Check-in Process</a></p></li>
 <li><p>For .spec files, in order to prevent redundant entries pertaining to “%changelog” (see section 3.2.4.2) related updates, a single modification history entry can be used to summarize the various additions to the “changelog” for a given release. The date for the modification history entry shall be the date of the last addition to the %changelog section, and the trigram shall be of the engineer that made the last addition to the %changelog.</p></li>
 </ul>
@@ -144,6 +145,9 @@
 <ul class="simple">
 <li><p>New entries go at the top, i.e. changelog should grow up (just like the “Modification history” section</p></li>
 </ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="generic-issues">
 <h2><strong>Generic Issues</strong><a class="headerlink" href="#generic-issues" title="Permalink to this headline">¶</a></h2>
@@ -157,6 +161,9 @@
 <p><img alt="image3" src="../../_images/CodeReviewChecklistGuidelines_Image3.jpg" /></p>
 <p><img alt="image4" src="../../_images/CodeReviewChecklistGuidelines_Image4.jpg" /></p>
 <p><img alt="image5" src="../../_images/CodeReviewChecklistGuidelines_Image5.jpg" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="bsp-and-driver">
 <h2><strong>BSP and Driver</strong><a class="headerlink" href="#bsp-and-driver" title="Permalink to this headline">¶</a></h2>
@@ -171,7 +178,7 @@
 <li><p>Example: vxbFdtRsRzn1Rtc, vxbFdtFslImxClk, vxbFdtFslImxEcspi, vxbFdtZynqI2c</p></li>
 </ul>
 </li>
-<li><p>The driver compatible must be “vendor,processor-type” or “vendor,processor-ipname-type”</p>
+<li><p>The driver compatible must align with Linux DTS from vendor or mainline for any new driver or BSP.</p>
 <ul>
 <li><p>Example: “fsl,imx-gpio”, “fsl,p2020-booke-timer”; “xlnx,nwl-pcie”; “snps,designware-gpio”;</p></li>
 </ul>
@@ -183,11 +190,15 @@
 </li>
 <li><p><a class="reference external" href="https://jive.windriver.com/docs/DOC-72547">DTS name</a></p></li>
 </ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="references">
 <h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="http://opengrok.wrs.com/source/xref/vx7-integration/helix/guests/vxworks-7/pkgs_v2/os/psl/freescale/fsl_imx/src/vxbFdtFs">http://opengrok.wrs.com/source/xref/vx7-integration/helix/guests/vxworks-7/pkgs_v2/os/psl/freescale/fsl_imx/src/vxbFdtFs</a>…</p></li>
+<li><p><a class="reference external" href="./WindRiverVxWorksCodingStyleGuide.pdf">Coding Style Guide</a></p></li>
+<li><p><a class="reference external" href="./WindRiverVxWorksCodingRulesGuide.pdf">Coding Rules Guide</a></p></li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -218,6 +229,19 @@ Request ID</strong></p></td>
 Jayaraman</p></td>
 <td><p>Transferred content from Code Review
 Checklist Jive page</p></td>
+</tr>
+<tr class="row-odd"><td><p>08/20/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.2</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Updates based on Shawn’s feedback</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td></td>
@@ -250,7 +274,7 @@ Checklist Jive page</p></td>
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
     </p>
   </div>
 </footer>

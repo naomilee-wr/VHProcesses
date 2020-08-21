@@ -12,9 +12,7 @@ Dealing with VSBL, Spec Files and RPMs
 
 In the course of VxWorks development, engineers will need to manipulate both layer VSBL files and RPM spec files.  These files contain important meta-data that instruct the build and manufacturing systems on how to configure and package code, respectively.  VSBL files are interpreted when manipulating VSBs, while spec files are interpreted during manufacturing.  
 
-The following document provides information and simple tips on dealing with these files to avoid common mistakes done by developers.
-
-(Source: https://jive.windriver.com/docs/DOC-57146)
+This guideline provides information and simple tips on dealing with these files to avoid common mistakes done by developers.
 
 |
 
@@ -63,7 +61,7 @@ When creating a new VSBL or spec file:
 --------------------------------
 
 **Creating New or Renaming RPMs**
-```````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Failing to communicate the RPM name to the Release Operations Team will cause a load build failure on the main line!
   -  The build failure will lead to the following warning: “rpm package is unsorted”
@@ -71,7 +69,7 @@ When creating a new VSBL or spec file:
   -  To ensure your newly name RPM is part of the correct YUM Group, you may access the R1 repository and check the groups.xml under dedicated profiles  (E.g. http://pek-cdftp/r1/vxworks/vxworks-7.0/<SPIN_NAME>/<YUM_GROUP_NAME>/repodata/groups.xml)
 	 
 **Defect Publication Mismatch**
-```````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The spec file Change Log is also used as a means of verifying that the company is publishing the appropriate defects for customer reference.
 
@@ -81,7 +79,7 @@ The spec file Change Log is also used as a means of verifying that the company i
   
 
 **Version mismatches**
-```````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When making changes to a layer's content, you have to remember to upgrade the layer version and the version in the spec file that ships the code.
 
@@ -98,7 +96,7 @@ When making changes to a layer's content, you have to remember to upgrade the la
   - /pkgs/os/hv/hypervisor/hypervisor_ia.spec
   
 **Wrong layer name used in LAYER_REQUIRES or FEATURE_REQUIRES statements**
-```````````````````````````````````````````````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - A common mistake is using the wrong layer name in the layer metadata, for example it would be incorrect to use PPP when you expected to create a dependency on the /pkgs/net/ipnet/linkproto/ppp layer.
    
@@ -122,7 +120,7 @@ When making changes to a layer's content, you have to remember to upgrade the la
   
 
 **Container layer version changes**
-```````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Some layers, IPNET or USB for example, contain no source files and are not really meant to change.  We call these container layers.  In SR0450 these layers (and spec files) were altered such that they installed under a versioned directory name. If you have to change something that these spec files you will have to upgrade every layer under them. This is a bit of a pain but it is not expected to happen very often.
 
@@ -137,7 +135,6 @@ Some layers, IPNET or USB for example, contain no source files and are not reall
 
 `Coding Standard <../../ProcessDocuments/CoreDev/CodingIntBuild/WindRiverVxWorksCodingStandard.pdf>`_
 
-
 |
 
 **Change Log**
@@ -146,7 +143,7 @@ Some layers, IPNET or USB for example, contain no source files and are not reall
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 | **Date**     | **Change Request ID**  | **Version**   | **Change By**           | **Description**                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
-| 06/18/2020   | N/A                    | 0.1           | Naomi Lee               | Transferred content from Dealing with VSBL, Spec Files and RPMs Jive page           |
+| 06/18/2020   | N/A                    | 0.1           | Naomi Lee               | Transferred content from DOC-57146 Jive page                                        |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 |              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+

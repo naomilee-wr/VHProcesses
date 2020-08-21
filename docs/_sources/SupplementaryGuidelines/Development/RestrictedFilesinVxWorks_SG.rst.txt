@@ -7,11 +7,9 @@
 ================================= 
 Restricted Files in VxWorks 7
 =================================
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
 
-**Purpose:** 
-
-(Source:https://jive.windriver.com/docs/DOC-76456)
+|
+|
 
 Restricted files in VxWorks 7 are source code files that may impact binary compatibility for RTPs. Starting with VxWorks 7 SR0620, an RTP executable shall remain binary compatible with future "versions" of the kernel. This capability has been requested via Feature F8963.  See the following document for technical details on VxWorks RTPs and system calls: `VxWorks Real-Time Process (RTP) System Calls and Binary Compatibility <./VxWorksRTP_SystemCallsBinaryCompatibility_SG.html>`__
  
@@ -37,9 +35,10 @@ The Development team needs to Contact and work with the VxWorks Architects via t
 
 In addition, the CI Pipeline will be updated to gate commits that have modified any one of the aforementioned files.
 
+|
  
 **Developer Responsibilities**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 - The Code Collaborator "File Subscription" facility will ensure that the relevant VxWorks Architects are automatically added as a "Reviewer" to any reviews involving one or more of the restricted files outlined above. Ensure at least one of the architects approve the review, and do not change their role to "Observer".
 - Commit locally.  If a restricted file is modified, notify the VxWorks architects using the *vx-architects@list-int.wrs.com* e-mail alias.
@@ -53,8 +52,8 @@ In addition, the CI Pipeline will be updated to gate commits that have modified 
 | **Date**       | **Change       | **Version**    | **Change By**  | **Description**                       |
 |                | Request ID**   |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+
-| 06/18/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from Restricted   |
-|                |                |                | Jayaraman      | Files in VxWorks 7 Jive page          |
+| 06/18/2020     | N/A            | 0.1            | Shree Vidya    | Transferred content from              |
+|                |                |                | Jayaraman      | DOC-76456 Jive page                   |
 +----------------+----------------+----------------+----------------+---------------------------------------+
 |                |                |                |                |                                       |
 +----------------+----------------+----------------+----------------+---------------------------------------+

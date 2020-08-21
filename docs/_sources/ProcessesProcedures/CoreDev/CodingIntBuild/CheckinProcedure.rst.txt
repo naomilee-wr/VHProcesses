@@ -74,21 +74,17 @@ Developer submission of modified/created code to the CM system (e.g., Git) via B
 - Engineering Requirements Management system (e.g., Jira Agile)
 - Configuration Management system (e.g., Git)
 - CI Launcher(e.g., Jenkins)
+
    
 |
 
 **References**
 ---------------
 
-- `Dealing with VSBL, Spec Files and RPMs <../../../SupplementaryGuidelines/Development/VsblSpecFilesRpm_SG.html>`__
 - `VxWorks Pull Request Submission Template <../../../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx>`__
-- Accessing and Modifying VxWorks 7 code using Git   --- The Jive page contains a lot of other Jive link references.  Kitty/Martin to check
 
-  - `Git Cheat Sheet #1 <../../../ProcessDocuments/CoreDev/CodingIntBuild/GitCheatSheet_1.pdf>`__
-  - `Git Cheat Sheet #2 <../../../ProcessDocuments/CoreDev/CodingIntBuild/GitCheatSheet_2.pdf>`__
-  
-- `VxWorks 7 Git Check-in Process <https://jive.windriver.com/docs/DOC-72793>`__
-- `How to Run Coverity for VxWork 7 Before Running CI Launcher <https://jive.windriver.com/docs/DOC-71808>`__
+Note: For additional references, refer to `"Supplementary Guidelines" <../../SupplementaryGuidelinesIndex.html#development>`_ section.
+
 
 |
 

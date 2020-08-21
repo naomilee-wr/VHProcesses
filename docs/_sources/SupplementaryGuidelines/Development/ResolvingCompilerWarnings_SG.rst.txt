@@ -7,11 +7,9 @@
 ===============================
 Resolving Compiler Warnings
 ===============================
-**THIS PAGE IS CURRENTLY SERVING AS A PLACEHOLDER.  IN PROGRESS for updates.**
 
-**Purpose:** As teams develop new Features, they are also responsible for adding new test cases into the overall VxWorks 7 regression test suites.  The following document outlines the process for updating the VxWorks 7 regression test suite.
-
-(Source:
+|
+|
 
 **Introduction**
 ----------------
@@ -23,7 +21,6 @@ Resolving compiler warnings is not just about making the compiler be quiet. It i
 - consider API compatibility and standard API specification
 - chose solution case by case; there is no one-size-fits-all rule
 
- 
 This document is not meant to address all types of warnings. It is meant to provide some guidelines and examples how to go about resolving some of the common ones that are relevant, especially in the context of the increased level of compiler warnings VxWorks 7 SR0610 release. But the guidelines are relevant in much wider scope.
 
 |
