@@ -97,7 +97,7 @@ The Product Manager is responsible for this process.
 **References**
 -----------------
 
-- Refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#requirements>`_ 
+- Refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#requirements>`_ 
 
 |
 

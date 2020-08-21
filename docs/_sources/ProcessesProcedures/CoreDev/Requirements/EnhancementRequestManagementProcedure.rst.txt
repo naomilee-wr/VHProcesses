@@ -108,6 +108,13 @@ The Customer Service Organization (CSO) is responsible for submitting the ER and
 
 |
 
+**References**
+-----------------
+
+- Refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#requirements>`_ 
+
+|
+
 **Change Log**
 --------------
 

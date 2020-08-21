@@ -142,7 +142,7 @@ The Product Architect, Product Manager, and EPM are responsible for executing th
 **References**
 -----------------
 
-- Refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#requirements>`_ 
+- Refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#requirements>`_ 
 
 |
 

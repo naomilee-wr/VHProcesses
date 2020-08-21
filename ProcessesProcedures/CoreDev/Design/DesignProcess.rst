@@ -110,7 +110,7 @@ The Technical Feature Owner and/or scrum team members are responsible for execut
 
 - `Epics in Jira Agile <../../Operations/ProgramManagement/EpicsInJiraAgile.html>`__
 
-Note:  For additional reference, refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html>`_ 
+Note: For additional reference, refer to `<../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html>`_ 
 
 |	   
 

@@ -12,14 +12,14 @@
 |
 
 `Verification Process Flow Diagram <../../_static/CoreDev/Validation/VerificationValidation.jpg>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 |
 
 Policies
 ========== 
 
-- `Verification Policy <./Verification/VerificationPolicy.html>`__
+- `Verification Policy <./Verification/VerificationPolicy.html>`_
 
 - `Defect Fix Verification Policy <../Operations/DefectManagement/DefectFixVerificationPolicy.html>`_
 
@@ -45,6 +45,8 @@ Standards & Guidelines
 - `Uploading Feature Test Results <../../SupplementaryGuidelines/Test/UploadingFeatureTestResults_SG.html>`__
 
   - `Quick Reference: Uploading Manual Test Results to LTAF <../../SupplementaryGuidelines/Test/UploadingManualTestResultsToLTAF_SG.html>`__
+  
+Note: For additional guidelines, refer to `"Supplementary Guidelines" <../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#test>`_ section.
 
 |
 
@@ -75,6 +77,6 @@ Templates
 References
 ==========
  
-- Refer to `"Supplementary Guidelines" <../../SupplementaryGuidelinesIndex.html#test>`_ section.
+- Refer to `"Supplementary Guidelines" <../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#test>`_ section.
 
 |

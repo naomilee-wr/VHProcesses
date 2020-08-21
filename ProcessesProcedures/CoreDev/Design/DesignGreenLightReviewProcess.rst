@@ -85,7 +85,7 @@ The Product Architect, Technical Feature Owner, and Developer is responsible for
 **References**
 -----------------
 
-- Refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html>`_ 
+- Refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html>`_ 
 
 |	   
 

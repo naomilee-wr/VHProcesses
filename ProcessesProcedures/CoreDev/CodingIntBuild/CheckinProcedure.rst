@@ -83,7 +83,7 @@ Developer submission of modified/created code to the CM system (e.g., Git) via B
 
 - `VxWorks Pull Request Submission Template <../../../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx>`__
 
-Note: For additional references, refer to `"Supplementary Guidelines" <../../SupplementaryGuidelinesIndex.html#development>`_ section.
+Note: For additional references, refer to `"Supplementary Guidelines" <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#development>`_ section.
 
 
 |

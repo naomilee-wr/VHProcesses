@@ -106,7 +106,7 @@ The Build & Configuration (B&C) Lead is responsible for the build in the release
 **References**
 --------------- 
 
-- Refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html>`_.
+- Refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html>`_.
    
 |
 

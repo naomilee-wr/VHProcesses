@@ -131,7 +131,7 @@ Related Process Assets/Tools
 References 
 -----------------
 - `Verification Validation Summary Flow Diagram <../../../../../_static/CoreDev/Verification/VerificationValidation.jpg>`__
-- For additional references, refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#Test>`_ 
+- For additional references, refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#test>`_ 
 
 |
 

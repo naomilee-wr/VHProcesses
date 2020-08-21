@@ -99,6 +99,9 @@ Core
 ------------------------
 
 - `Working guide <https://jive.windriver.com/docs/DOC-80308>`__
+- `VxWorks 7 Test Release and Feature test log backup policy <https://jive.windriver.com/docs/DOC-84463>`_
+- `VxWorks test document Jive location <https://jive.windriver.com/community/engineering/operation-system-common-platforms/teams/vxworks/vxworks-test>`__
+- `VxWorks Release <http://pek-vx-doc.wrs.com/release/index.html>`__
 
 .. toctree::
    :maxdepth: 1

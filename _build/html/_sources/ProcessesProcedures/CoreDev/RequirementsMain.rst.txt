@@ -42,14 +42,13 @@ Standards & Guidelines
 - `Technical Feature Lead Owner Cheat Sheet (Jira Agile Tool Guideline) <../Operations/ProgramManagement/TechnicalFeatureOwner_CheatSheet.html>`__
 - `Feature Complete Criteria (Standard) <../../ProcessDocuments/Operations/ProgramManagement/FC_Criteria.xlsx>`__
 
-*Note: Team to identify additional Standards & Guidelines as applicable*
+
+Note: For additional guidance, refer to `"Supplementary Guidelines" <../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#requirements>`_ section.
 
 |
 
 Tools & Templates
 =================
-
-*Note: Team to identify additional Tools & Templates as applicable*
 
 +-------------------------------------+----------------------------------------------------------+----------------------------------------+
 | Tool Name                           | Description                                              | Tool in use                            |
@@ -61,7 +60,7 @@ Tools & Templates
 |                                     |                                                          |                                        |
 +-------------------------------------+----------------------------------------------------------+----------------------------------------+
 
-Templates
+**Templates**
 -------------
 
 - `Feature Template Guideline_Jira Agile <../../ProcessDocuments/CoreDev/Requirements/FeatureTemplateGuideline_JiraAgile.docx>`__
@@ -71,20 +70,9 @@ Templates
 References
 ========== 
 
-*Note: The following are Procedures from Vx7 Jive page.  To be updated and reviewed for applicability*
-
-- `Product Requirements Workflow Diagram <https://jive.windriver.com/docs/DOC-76575>`__
-- `MST to Product Team Product Requirements Processes <https://jive.windriver.com/docs/DOC-71790>`_
 - `Feature Grooming / Workflow <../../SupplementaryGuidelines/FeatureMgmt/FeatureGrooming_Workflow_SG.html>`_
-- `VxWorks Enhancement Review <https://jive.windriver.com/docs/DOC-26090>`_   This is a VxWorks artifact
-- `Requirements Prioritization Process.pptx <https://jive.windriver.com/docs/DOC-71813>`_
-- `Wind River Enhancement Request Process <https://jive.windriver.com/docs/DOC-37616>`_ 
-- `Enhancement Requests using Jira Workflows (version 6.0) <https://jive.windriver.com/docs/DOC-37617>`_
-- `Backlog management in Jira Agile <https://jive.windriver.com/docs/DOC-76366>`_
-- `Epics in Jira Agile <https://jive.windriver.com/docs/DOC-76323>`_
-- `Jira Agile Documentation Index <https://jive.windriver.com/docs/DOC-76381>`_
+- `Backlog Management in Jira Agile <../Operations/ProgramManagement/BacklogManagementInJiraAgile.html>`_
+- `Defects in Jira Agile <../Operations/ProgramManagement/DefectsInJiraAgile.html>`_
+- `Enhancement Requests in Jira Agile <../Operations/ProgramManagement/EnhancementRequestsInJiraAgile.html>`_
 
-*Note: Team to identify additional References as applicable*
-
-|
-
+Note: For additional references, refer to `"Supplementary Guidelines" <../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#requirements>`_ section.

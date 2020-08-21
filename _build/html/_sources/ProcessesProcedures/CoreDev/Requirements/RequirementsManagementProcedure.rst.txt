@@ -121,6 +121,13 @@ The Engineering Manager is responsibile for initiating and the Engineering Progr
 
 |
 
+**References**
+-----------------
+
+- Refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#requirements>`_ 
+
+|
+
 **Change Log**
 --------------
 

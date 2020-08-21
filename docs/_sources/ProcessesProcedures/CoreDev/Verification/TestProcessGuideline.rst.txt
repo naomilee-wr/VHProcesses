@@ -209,17 +209,15 @@ Sprint Test Report
 
 - Test logs will follow company IT back up policy, all test logs will be backed up by IT. 
 - VxWorks 7 new feature and release test logs location: http://pek-cc-pb08l/vxtest/vxtest1/LOG_VX7/
-- VxWorks 7 Test Release and Feature test log backup policy: https://jive.windriver.com/docs/DOC-84463
 
 |
 
-References 
+**References**
 -----------------
 
-- `VxWorks Test Case Meta Data File (test_case.conf) Usage Guideline (recovered version) <./TestCaseMetadatafileUsageGuideline.html>`__
-- `VxWorks test document Jive location <https://jive.windriver.com/community/engineering/operation-system-common-platforms/teams/vxworks/vxworks-test>`__
-- `VxWorks Release <http://pek-vx-doc.wrs.com/release/index.html>`__
-- `VxWorks test suite users guide <https://docs.windriver.com/bundle/vxworks_7_regression_test_suite_users_guide_sr0640/page/age1452734308978.html>`__
+- Refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#test>`_ 
+
+|
 
 
 **Change Log**

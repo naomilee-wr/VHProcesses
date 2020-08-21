@@ -173,10 +173,10 @@ The following sections are reviewed by the Engineering Development Manager in st
    
 |
 
-**References** 
+**References**
 -----------------
 
-- Refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#requirements>`_ 
+- Refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#requirements>`_ 
 
 |
 

@@ -1,7 +1,11 @@
 :orphan:
 
+|
+|
+|
+
 ============================================
-Coding, Integration, and Build Main page
+**Coding, Integration, and Build**
 ============================================
 
 |
@@ -36,7 +40,7 @@ Processes & Procedures
 Standards & Guidelines
 ======================
 
--  `Accessing and Installing a VxWorks Spin <../../SupplementaryGuidelines/Development/Accessing_InstallingVxWSpin_SG.html>`_
+- `Accessing and Installing a VxWorks Spin <../../SupplementaryGuidelines/Development/Accessing_InstallingVxWSpin_SG.html>`_
 
   - `Git Cheat Sheet #1 <../../ProcessDocuments/CoreDev/CodingIntBuild/GitCheatSheet_1.pdf>`__
   - `Git Cheat Sheet #2 <../../ProcessDocuments/CoreDev/CodingIntBuild/GitCheatSheet_2.pdf>`__
@@ -54,7 +58,7 @@ Standards & Guidelines
   - `Writers Review of Engineering Generated Documents <../../SupplementaryGuidelines/Development/WritersReviewofEngGeneratedDocs_SG.html>`__
   - `Code Review Checklist Guidelines <../../SupplementaryGuidelines/Development/CodeReviewChecklistGuidelines_SG.html>`__
   
-    - `Code Review Guideline - Refer to `"Supplementary Guidelines" <../../SupplementaryGuidelinesIndex.html#development>`_ section.
+    - `Code Review Guideline - Refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#development>`_ section.
   
 - `How to Handle Build Issues <../../ProcessDocuments/CoreDev/CodingIntBuild/HowToHandleBuildIssues_Final.docx>`__
 - `Maintaining Coverity "Clean" Code <../../SupplementaryGuidelines/Development/MaintainingCoverityCleanCode_SG.html>`_
@@ -63,10 +67,10 @@ Standards & Guidelines
 - `Submitting code to Release Branch <../../SupplementaryGuidelines/Development/SubmitCodeReleaseBranch_SG.html>`__
 - `Submitting code to Maintenance Branch <../../SupplementaryGuidelines/Development/SubmitCodeMaintenanceBranch_SG.html>`__
 - `Set up Development Environment from Git <../../SupplementaryGuidelines/Development/SetupDevelopmentEnvironmentFromGit_SG.html>`_
-  - VxWorks 7 Git Checkin Guidelines, refer to `"Supplementary Guidelines" <../../SupplementaryGuidelinesIndex.html#development>`_ section.
+  - VxWorks 7 Git Checkin Guidelines, refer to `Supplementary Guidelines <../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#development>`_ section.
 
 
-Note: For additional guidelines, refer to `"Supplementary Guidelines" <../../SupplementaryGuidelinesIndex.html#development>`_ section.
+Note: For additional guidelines, refer to `Supplementary Guidelines <../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#development>`_ section.
 
 |
 
@@ -105,4 +109,4 @@ Related Process Assets
 References 
 =============
 
-Note: For references, refer to `"Supplementary Guidelines" <../../SupplementaryGuidelinesIndex.html#development>`_ section.
+Note: For references, refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#development>`_ section.

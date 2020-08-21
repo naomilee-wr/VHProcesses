@@ -1,4 +1,5 @@
 ﻿:orphan:
+
 |
 |
 |
@@ -242,7 +243,7 @@ The usage of “File Subscriptions” can help domain owners to get involved to 
 - Code Collaborator: http://codereview.wrs.com/ by SmartBear Software as the code review tool
 - `Program Contact Information <../../../ProcessDocuments/GenericPlans/ProgramContactInformation.docx>`_
    
-Note:  For additional guidelines/refereces, refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#development>`_ section.
+Note: For additional guidelines/refereces, refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#development>`_ section.
 
 |
 

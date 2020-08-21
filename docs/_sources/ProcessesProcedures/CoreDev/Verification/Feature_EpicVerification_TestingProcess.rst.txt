@@ -129,7 +129,7 @@ The Technical Feature Owner is responsible for this process.
 -----------------
 
 - `VxWorks 7 Regression Test Suite User Guide_SR3630 <../../../ProcessDocuments/CoreDev/Verification/vxworks_7_regression_test_suite_users_guide_sr0630.pdf>`_ 
-- For additional references, refer to `Supplementary Guidelines <../../SupplementaryGuidelinesIndex.html#Test>`_ 
+- For additional references, refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#test>`_ 
 
 
 |
