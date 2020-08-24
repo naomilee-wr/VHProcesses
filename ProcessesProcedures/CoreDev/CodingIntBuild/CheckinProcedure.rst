@@ -56,7 +56,7 @@ Developer submission of modified/created code to the CM system (e.g., Git) via B
   
    - The testing team performs verification on the release spin according to the `Release Verification (Testing) Process <../Verification/ReleaseVerification_TestingProcess.html>`__
        
-	 - If issues found, the tester raises a defect in the Defect Management system, Jira according to the `Defect Management process <../../Operations/DefectManagement/DefectManagementProcess.html>`__
+     - If issues found, the tester raises a defect in the Defect Management system, Jira according to the `Defect Management process <../../Operations/DefectManagement/DefectManagementProcess.html>`__
 	
 4. To submit fixes into the SR05xx maintenance branch, the Developer submits code into the Maintenance/Sustaining branch according to the Work Instructions in `Submitting Code into the Maintenance Branch <../../../SupplementaryGuidelines/Development/SubmitCodeMaintenanceBranch_SG.html>`__
 

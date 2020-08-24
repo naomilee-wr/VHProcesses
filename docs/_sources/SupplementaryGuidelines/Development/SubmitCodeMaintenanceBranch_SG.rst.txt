@@ -11,13 +11,16 @@ Submitting Code into the SR05xx Maintenance Branch (via Pull Request)
 |
 |
 
+**<<<Check with PM/EPM, if we still need to maintain support for SR05XX>>>**
+
+
 As of SR0600, customers are losing backwards compatibility with the VxWorks product.  To help customers transitions, an SR05xx maintenance branch will be maintained for some time.  
 
 The following process outlines the policies and the steps required to submit fixes into the SR05xx maintenance branch.
 
 Policy for Defect Fixes in SR05xx:
-- We will only fix in the SR05xx stream upon customer demand or in the case of a Security Flaw that we deem important enough to fix in supported streams
-- You must submit defect fixes in both the SR05xx maintenance branch and the vx7-integration branch
+- Only fix in the SR05xx stream upon customer demand or in the case of a Security Flaw that we deem important enough to fix in supported streams
+- Must submit defect fixes in both the SR05xx maintenance branch and the vx7-integration branch
 
 |
 
@@ -25,7 +28,7 @@ Policy for Defect Fixes in SR05xx:
 ---------------------------------------
 - Create a clone of the defect in the SR06xx stream to make sure the fix is carried forward
 
-  Note:  If the fix is not needed in SR06xx (because the functionality has been deprecated), please close the cloned defect as “Won’t Fix” and state that the “Code/Functionality no longer in SR06xx”
+  Note:  If the fix is not needed in SR06xx (because the functionality has been deprecated), close the cloned defect as “Won’t Fix” and state that the “Code/Functionality no longer in SR06xx”
 
 - Provide CSO with a source patch and attach the patch to the SR05xx defect
 
@@ -44,7 +47,7 @@ Policy for Defect Fixes in SR05xx:
 
 - Run one of the following builds:
    -  To build on your branch, no spin is generated: http://vxjenkins.wrs.com:8080/job/vx7_proj_param_launcher/
-   -  To build on your branch, spin is generated: http://vxjenkins.wrs.com:8080/view/vx7%20SR05x%20/job/vx7_spin_launcher/
+   -  To build on your branch, spin is generated: http://vxjenkins2.wrs.com:8080/job/vx7_PR_launcher/
 - Get one reviewer to approve your pull request
 - When you have a successful stash checkmark you can merge your pull request
 
@@ -54,7 +57,6 @@ Policy for Defect Fixes in SR05xx:
 ------------------------
 
 - If you have host side changes please contact the Build & Config Team (vx-osconfig@list-int.wrs.com) to work out the logistics of your fix.
-- There will be a daily build against vx7-SR05x-patches to make sure the branch remains sane.
 - At the moment there is no SR05x based release scheduled so the daily spins will not be pushed to R1 and will not be available for testing
 
 |
@@ -66,6 +68,10 @@ Policy for Defect Fixes in SR05xx:
 | **Date**     | **Change Request ID**  | **Version**   | **Change By**           | **Description**                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 | 05/01/2020   | N/A                    | 0.1           | Naomi Lee               | Transferred content from Submit Code Integration Branch Jive page                   |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+| 08/24/2020   | N/A                    | 0.2           | Shree Vidya Jayaraman   | Updates based on Shawn's feedback                                                   |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+|              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 |              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+

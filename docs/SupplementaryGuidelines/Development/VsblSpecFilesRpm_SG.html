@@ -122,19 +122,10 @@
 <h2><strong>Creating a new VSBL or Spec File</strong><a class="headerlink" href="#creating-a-new-vsbl-or-spec-file" title="Permalink to this headline">¶</a></h2>
 <p>When creating a new VSBL or spec file:</p>
 <ol class="arabic simple">
-<li><p>Start by copying an existing file from elsewhere in install tree.</p>
-<ul class="simple">
-<li><p>The following is a simple example taken from a VxWorks Graphics driver:</p>
-<ul>
-<li><p><a class="reference external" href="http://vxgit.wrs.com/projects/VX7/repos/vxworks/browse/vxworks-7/pkgs/ui/fbdev/fslipu/layer.vsbl">VSBL File</a></p></li>
-<li><p><a class="reference external" href="http://vxgit.wrs.com/projects/VX7/repos/vxworks/browse/vxworks-7/pkgs/ui/fbdev/fslipu/fslipu.spec">Spec File</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><p>Start by copying an existing file from elsewhere in install tree.</p></li>
 <li><p>Contact your PLM to confirm what YUM Group the RPM belongs to.</p>
 <ul class="simple">
-<li><p>Check your associated Rally Feature, in most cases this information should be provided in the description (see picture below).  If it is not, please ensure it is updated either by PLM or TFO.</p></li>
+<li><p>Check your associated Jira Epics, in most cases this information should be provided in the description.  If it is not, please ensure it is updated either by PLM or TFO.</p></li>
 </ul>
 </li>
 <li><p>Ask the Release Operations Team or PLM to assign the new RPM into the appropriate YUM Group in the Delivery+ system.</p></li>
@@ -153,7 +144,7 @@
 <p><strong>NOTE:  Developers should coordinate with their teams and RPM/layer owners to ensure that version numbers are correctly updated</strong></p>
 </li>
 <li><p>When updating a spec file version, you must also provide a new Change Log entry that describes what has changed.</p>
-<p>The guidelines for Change Log entries is not currently published in the VxWorks Coding Standard, but can be referenced <a class="reference external" href="https://jira.wrs.com:8443/projects/VXWCS/issues/VXWCS-21">here</a> (under Internal Description).</p>
+<p>The guidelines for Change Log entries is not currently published in the VxWorks Coding Standard, but can be referenced <a class="reference external" href="https://jira.wrs.com/browse/VXWCS-21">here</a> (under Internal Description).</p>
 </li>
 </ul>
 </dd>
@@ -190,19 +181,26 @@
 </div>
 <div class="section" id="version-mismatches">
 <h3><strong>Version mismatches</strong><a class="headerlink" href="#version-mismatches" title="Permalink to this headline">¶</a></h3>
-<p>When making changes to a layer’s content, you have to remember to upgrade the layer version and the version in the spec file that ships the code.</p>
+<p>When making changes to a layer’s content, remember to upgrade the layer version and the version in the spec file that ships the code.</p>
 <ul class="simple">
-<li><p>If the spec file is in the same directory as the modified layer source and the layer.vsbl, then you just need to upgrade the version numbers in both those files
-- a/layer.vsbl
-- a/xxx.spec</p></li>
-<li><p>If the spec file is in a directory above, then you need to modify not only the layer.vsbl in the directory that you are changing but the layer.vsbl and the spec file in the directory that ships your new code.
-- a/b/layer.vsbl
-- a/layer.vsbl
-- a/xxx.spec</p></li>
-<li><p>If there are multiple spec files in the same directory they all need to have the same version number, (this happens in some areas to ship arch specific code, here is an example from the hypervisor code)
-- /pkgs/os/hv/hypervisor/hypervisor.spec
-- /pkgs/os/hv/hypervisor/hypervisor_arm.spec
-- /pkgs/os/hv/hypervisor/hypervisor_ia.spec</p></li>
+<li><p>If the spec file is in the same directory as the modified layer source and the layer.vsbl, then you just need to upgrade the version numbers in both those files</p>
+<ul>
+<li><p>a/layer.vsbl</p></li>
+<li><p>a/xxx.spec</p></li>
+</ul>
+</li>
+<li><p>If the spec file is in a directory above, then modify not only the layer.vsbl in the directory that are changing but the layer.vsbl and the spec file in the directory that ships the new code.</p>
+<ul>
+<li><p>a/b/layer.vsbl</p></li>
+<li><p>a/layer.vsbl</p></li>
+<li><p>a/xxx.spec</p></li>
+</ul>
+</li>
+<li><p>If there are multiple spec files in the same directory they all need to have the same version number, (this happens in some areas to ship arch specific code, here is an example from the hypervisor code)</p>
+<ul>
+<li><p>The files are available in “pkgs_v2/” folder.  Example: <a class="reference external" href="http://bitbucket.wrs.com/projects/VX7/repos/vxworks/browse/helix/guests/vxworks-7/pkgs_v2/os/hv/hypervisor/hypervisor_arm.spec.disabled?at=refs%2Fheads%2Fvx7-integration">http://bitbucket.wrs.com/projects/VX7/repos/vxworks/browse/helix/guests/vxworks-7/pkgs_v2/os/hv/hypervisor/hypervisor_arm.spec.disabled?at=refs%2Fheads%2Fvx7-integration</a></p></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="wrong-layer-name-used-in-layer-requires-or-feature-requires-statements">
@@ -263,6 +261,18 @@
 <td><p>0.1</p></td>
 <td><p>Naomi Lee</p></td>
 <td><p>Transferred content from DOC-57146 Jive page</p></td>
+</tr>
+<tr class="row-odd"><td><p>08/24/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.2</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updates based on Shawn’s feedback</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td></td>

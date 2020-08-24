@@ -23,14 +23,9 @@ When creating a new VSBL or spec file:
 
 #. Start by copying an existing file from elsewhere in install tree.
 
-   - The following is a simple example taken from a VxWorks Graphics driver:
-
-     - `VSBL File <http://vxgit.wrs.com/projects/VX7/repos/vxworks/browse/vxworks-7/pkgs/ui/fbdev/fslipu/layer.vsbl>`_
-     - `Spec File <http://vxgit.wrs.com/projects/VX7/repos/vxworks/browse/vxworks-7/pkgs/ui/fbdev/fslipu/fslipu.spec>`_
-
 #. Contact your PLM to confirm what YUM Group the RPM belongs to. 
 
-   - Check your associated Rally Feature, in most cases this information should be provided in the description (see picture below).  If it is not, please ensure it is updated either by PLM or TFO.
+   - Check your associated Jira Epics, in most cases this information should be provided in the description.  If it is not, please ensure it is updated either by PLM or TFO.
 
 #. Ask the Release Operations Team or PLM to assign the new RPM into the appropriate YUM Group in the Delivery+ system.
 
@@ -46,7 +41,7 @@ When creating a new VSBL or spec file:
    
    -  When updating a spec file version, you must also provide a new Change Log entry that describes what has changed.
 
-      The guidelines for Change Log entries is not currently published in the VxWorks Coding Standard, but can be referenced `here <https://jira.wrs.com:8443/projects/VXWCS/issues/VXWCS-21>`_ (under Internal Description).
+      The guidelines for Change Log entries is not currently published in the VxWorks Coding Standard, but can be referenced `here <https://jira.wrs.com/browse/VXWCS-21>`_ (under Internal Description).
 
 - Any other type of modification requires a more thorough understanding of the VxWorks Configuration system.  You are strongly encouraged to read the Layers HLD (see link above) and to include a Build & Config representative in your code review.
 
@@ -81,20 +76,24 @@ The spec file Change Log is also used as a means of verifying that the company i
 **Version mismatches**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When making changes to a layer's content, you have to remember to upgrade the layer version and the version in the spec file that ships the code.
+When making changes to a layer's content, remember to upgrade the layer version and the version in the spec file that ships the code.
 
 - If the spec file is in the same directory as the modified layer source and the layer.vsbl, then you just need to upgrade the version numbers in both those files
+
   - a/layer.vsbl
   - a/xxx.spec
-- If the spec file is in a directory above, then you need to modify not only the layer.vsbl in the directory that you are changing but the layer.vsbl and the spec file in the directory that ships your new code.
+  
+- If the spec file is in a directory above, then modify not only the layer.vsbl in the directory that are changing but the layer.vsbl and the spec file in the directory that ships the new code.
+
   - a/b/layer.vsbl
   - a/layer.vsbl
   - a/xxx.spec
-- If there are multiple spec files in the same directory they all need to have the same version number, (this happens in some areas to ship arch specific code, here is an example from the hypervisor code)
-  - /pkgs/os/hv/hypervisor/hypervisor.spec
-  - /pkgs/os/hv/hypervisor/hypervisor_arm.spec
-  - /pkgs/os/hv/hypervisor/hypervisor_ia.spec
   
+- If there are multiple spec files in the same directory they all need to have the same version number, (this happens in some areas to ship arch specific code, here is an example from the hypervisor code)
+
+  - The files are available in "pkgs_v2/" folder.  Example: http://bitbucket.wrs.com/projects/VX7/repos/vxworks/browse/helix/guests/vxworks-7/pkgs_v2/os/hv/hypervisor/hypervisor_arm.spec.disabled?at=refs%2Fheads%2Fvx7-integration
+  
+
 **Wrong layer name used in LAYER_REQUIRES or FEATURE_REQUIRES statements**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -144,6 +143,10 @@ Some layers, IPNET or USB for example, contain no source files and are not reall
 | **Date**     | **Change Request ID**  | **Version**   | **Change By**           | **Description**                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 | 06/18/2020   | N/A                    | 0.1           | Naomi Lee               | Transferred content from DOC-57146 Jive page                                        |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+| 08/24/2020   | N/A                    | 0.2           | Shree Vidya Jayaraman   | Updates based on Shawn's feedback                                                   |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+|              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 |              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+

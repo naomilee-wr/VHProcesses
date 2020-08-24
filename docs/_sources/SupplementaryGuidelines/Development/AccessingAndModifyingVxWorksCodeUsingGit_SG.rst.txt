@@ -26,7 +26,6 @@ Git is the primary tool used to access and submit VxWorks 7 code.  The following
 - `Environment setup for VxWorks 7 in Git: Setup Development Environment from Git <./SetupDevelopmentEnvironmentFromGit_SG.html>`_ 
 - `Virtualization Profile documentation on getting started <https://jive.windriver.com/docs/DOC-74113>`_
 - Security Profile documentation on getting started: `How to get started with the VxWorks 7 security development <https://jive.windriver.com/groups/vxworks-7-security/blog/2017/02/17/getting-started>`_
-- `Viper documentation on getting started (not relevant to VxWorks 7, but contains a lot of great tips for using Git) <http://twiki.wrs.com/PBUeng/ViperDevEnv>`_
 
 |
 
@@ -93,6 +92,8 @@ To create a branch that will allow you to add code to vx7-integration, you must 
 | **Date**     | **Change Request ID**  | **Version**   | **Change By**           | **Description**                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 | 08/03/2020   | N/A                    | 0.1           | Shree Vidya Jayaraman   | Transferred content from Jive page: DOC-57324                                       |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+| 08/24/2020   | N/A                    | 0.2           | Shree Vidya Jayaraman   | Updates based on Shawn's feedback                                                   |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 |              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+

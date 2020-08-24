@@ -124,15 +124,26 @@
 <div class="section" id="steps">
 <h2><strong>Steps</strong><a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p>Submit changes into the ‘vx7-integration’ branch with the .spec file disabled and layer.vsbl file disabled (naming the files xxx.spec.disabled and layer.vsbl.disabled)
-- At this point code is inert and not interacting in any builds</p></li>
-<li><p>When the layer builds correctly and has no layer dependency issues enable the layer.vsbl (rename layer.vsbl.disabled to layer.vsbl)
-- This will enable the layer in git related builds only</p></li>
-<li><p>Enable the .spec file (by renaming xxx.spec.disabled to xxx.spec) with the ‘Group’ and ‘#VX7Group’ elements set to “not-shipped”
-- This allows a test installation of the layer from a spin and would also allow test to start testing the layer as they have access to unshipped RPMs</p></li>
-<li><p>If the RPM Group name and RPM name alrealy exits and that has been vetted with a PdM, try both of the following spin generators with that data set in your private branch:
-- <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_p1_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_p1_launcher/</a>
-- <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_project4_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_project4_launcher/</a></p></li>
+<li><p>Submit changes into the ‘vx7-integration’ branch with the .spec file disabled and layer.vsbl file disabled (naming the files xxx.spec.disabled and layer.vsbl.disabled)</p>
+<ul class="simple">
+<li><p>At this point code is inert and not interacting in any builds</p></li>
+</ul>
+</li>
+<li><p>When the layer builds correctly and has no layer dependency issues enable the layer.vsbl (rename layer.vsbl.disabled to layer.vsbl)</p>
+<ul class="simple">
+<li><p>This will enable the layer in git related builds only</p></li>
+</ul>
+</li>
+<li><p>Enable the .spec file (by renaming xxx.spec.disabled to xxx.spec) with the ‘Group’ and ‘#VX7Group’ elements set to “not-shipped”</p>
+<ul class="simple">
+<li><p>This allows a test installation of the layer from a spin and would also allow test to start testing the layer as they have access to unshipped RPMs</p></li>
+</ul>
+</li>
+<li><p>If the RPM Group name and RPM name alrealy exits and that has been vetted with a PdM, try both of the following spin generators with that data set in your private branch:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://vxjenkins2.wrs.com:8080/job/vx7_PR_launcher/">http://vxjenkins2.wrs.com:8080/job/vx7_PR_launcher/</a></p></li>
+</ul>
+</li>
 <li><p>If both spin generators results in a “green”,  then  enable the .spec file in ‘vx7-integration’ branch (enable in this context means committing the xxx.spec file with the ‘Group’, ‘#VX7Group’, ‘Name’, and ‘#VX7Name’ elements set to the PdM vetted names?).</p></li>
 <li><p>If either one of the above spin generators fails with an error such as “FAILURE in manufacture: Unsorted RPMs found”  then please contact ‘+vx-osconfig’ via e-mail and the team will co-ordinate with manufacturing that all the appropriate steps have been made to support the new RPM in the group that PdM has requested it be in (PdM must be in the loop for name and group assignments).</p></li>
 <li><p>The layer will be enabled with these settings only after both of the test spins above (step 4) have succeeded.</p></li>
@@ -166,6 +177,19 @@ Request ID</strong></p></td>
 Jayaraman</p></td>
 <td><p>Transferred content from Generating
 a new RPM Jive page</p></td>
+</tr>
+<tr class="row-odd"><td><p>08/24/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.2</p></td>
+<td><p>Shree Vidya
+Jayaraman</p></td>
+<td><p>Updates based on Shawn’s feedback</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td></td>

@@ -50,7 +50,7 @@ This process describes how product code is developed.
 |                        | - reviewing the Requirements/Stories and HLDs, if available                   |
 |                        | - writing code according to the coding standards and design from HLD, if      |
 |                        |   available                                                                   |
-|                        | - writing unit test code, and customer facing documentation                   |
+|                        | - writing unit test code, and customer facing documentation , if applicable   |
 +------------------------+-------------------------------------------------------------------------------+
 
 |
@@ -76,7 +76,7 @@ This process describes how product code is developed.
     
    * - 2
      - Develop unit tests
-     - Developers write unit tests to generate code.  See `Development (Unit) Testing Process <./DevUnitTestingProcedure.html>`__.  
+     - Developers write unit tests to generate code, if applicable.  See `Development (Unit) Testing Process <./DevUnitTestingProcedure.html>`__.  
 
    * - 3
      - Test code
@@ -144,6 +144,10 @@ Note: For additional references, refer to `"Supplementary Guidelines" <../../../
 | 07/01/2020   | N/A                    | 0.4           | Shree Vidya Jayaraman   | Update based on Kitty's feedback                                                    |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 | 07/22/2020   | N/A                    | 0.5           | Shree Vidya Jayaraman   | Update based on Kitty's feedback                                                    |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+| 08/24/2020   | N/A                    | 0.6           | Shree Vidya Jayaraman   | Update based on Shawn's feedback                                                    |
++--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
+|              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+
 |              |                        |               |                         |                                                                                     |
 +--------------+------------------------+---------------+-------------------------+-------------------------------------------------------------------------------------+

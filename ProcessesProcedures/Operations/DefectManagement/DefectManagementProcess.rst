@@ -116,9 +116,10 @@ The Bug Board is responsible for reviewing the defect record and deciding on the
 **References**
 ---------------
 
-- `Worldwide Escalation Process <https://jive.windriver.com/docs/DOC-34980>`__
-- `Customer Defects and Escalation Guidelines <https://jive.windriver.com/docs/DOC-63643>`__
-   
+- `Customer Defect and Esscalation Guidelines <../../SupplementaryGuidelines/DefectEscalationEnhReqMgmt/CustomerDefectsAndEscalation_SG.html>`_
+
+Note: For additional references, refer to `Supplementary Guidelines <../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html>`_ section.
+
 |
 
 **Change Log**
@@ -129,7 +130,11 @@ The Bug Board is responsible for reviewing the defect record and deciding on the
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 | 05/08/2020   | N/A                     | 0.1           | Martin Cote             | Initial Draft                                                                                       |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
-| 07/28/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Update based on Doina & Rodger's feedback                                                           |
+| 07/28/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Updates based on Doina & Rodger's feedback                                                          |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 08/24/2020   | N/A                     | 0.3           | Shree Vidya Jayaraman   | Updates based on Shawn's feedback                                                                   |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 |              |                         |               |                         |                                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+

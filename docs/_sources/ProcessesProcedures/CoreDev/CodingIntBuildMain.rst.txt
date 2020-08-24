@@ -26,7 +26,7 @@ Policies
 Processes & Procedures
 ======================
 
-- `Code Development Process <./CodeDevelopmentProcess.html>`__
+- `Code Development Process <./CodingIntBuild/CodeDevelopmentProcess.html>`__
 
   - `Development (Unit) Testing Procedure <./CodingIntBuild/DevUnitTestingProcedure.html>`__
   - `Peer Review Procedure Using Code Collaborator <./CodingIntBuild/PeerReviewProcedure_CodeCollaborator.html>`_

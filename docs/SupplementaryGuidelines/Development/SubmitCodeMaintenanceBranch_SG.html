@@ -114,11 +114,12 @@
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
+<p><strong>&lt;&lt;&lt;Check with PM/EPM, if we still need to maintain support for SR05XX&gt;&gt;&gt;</strong></p>
 <p>As of SR0600, customers are losing backwards compatibility with the VxWorks product.  To help customers transitions, an SR05xx maintenance branch will be maintained for some time.</p>
 <p>The following process outlines the policies and the steps required to submit fixes into the SR05xx maintenance branch.</p>
 <p>Policy for Defect Fixes in SR05xx:
-- We will only fix in the SR05xx stream upon customer demand or in the case of a Security Flaw that we deem important enough to fix in supported streams
-- You must submit defect fixes in both the SR05xx maintenance branch and the vx7-integration branch</p>
+- Only fix in the SR05xx stream upon customer demand or in the case of a Security Flaw that we deem important enough to fix in supported streams
+- Must submit defect fixes in both the SR05xx maintenance branch and the vx7-integration branch</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -126,7 +127,7 @@
 <h2><strong>Create clone of the defect in Jira</strong><a class="headerlink" href="#create-clone-of-the-defect-in-jira" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p>Create a clone of the defect in the SR06xx stream to make sure the fix is carried forward</p>
-<p>Note:  If the fix is not needed in SR06xx (because the functionality has been deprecated), please close the cloned defect as “Won’t Fix” and state that the “Code/Functionality no longer in SR06xx”</p>
+<p>Note:  If the fix is not needed in SR06xx (because the functionality has been deprecated), close the cloned defect as “Won’t Fix” and state that the “Code/Functionality no longer in SR06xx”</p>
 </li>
 <li><p>Provide CSO with a source patch and attach the patch to the SR05xx defect</p></li>
 <li><p>Check the patch into the SR05xx maintenance branch (i.e. vx7-SR05x-patches)</p></li>
@@ -145,7 +146,7 @@
 <li><dl class="simple">
 <dt>Run one of the following builds:</dt><dd><ul class="simple">
 <li><p>To build on your branch, no spin is generated: <a class="reference external" href="http://vxjenkins.wrs.com:8080/job/vx7_proj_param_launcher/">http://vxjenkins.wrs.com:8080/job/vx7_proj_param_launcher/</a></p></li>
-<li><p>To build on your branch, spin is generated: <a class="reference external" href="http://vxjenkins.wrs.com:8080/view/vx7%20SR05x%20/job/vx7_spin_launcher/">http://vxjenkins.wrs.com:8080/view/vx7%20SR05x%20/job/vx7_spin_launcher/</a></p></li>
+<li><p>To build on your branch, spin is generated: <a class="reference external" href="http://vxjenkins2.wrs.com:8080/job/vx7_PR_launcher/">http://vxjenkins2.wrs.com:8080/job/vx7_PR_launcher/</a></p></li>
 </ul>
 </dd>
 </dl>
@@ -161,7 +162,6 @@
 <h2><strong>Additional Notes</strong><a class="headerlink" href="#additional-notes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>If you have host side changes please contact the Build &amp; Config Team (<a class="reference external" href="mailto:vx-osconfig&#37;&#52;&#48;list-int&#46;wrs&#46;com">vx-osconfig<span>&#64;</span>list-int<span>&#46;</span>wrs<span>&#46;</span>com</a>) to work out the logistics of your fix.</p></li>
-<li><p>There will be a daily build against vx7-SR05x-patches to make sure the branch remains sane.</p></li>
 <li><p>At the moment there is no SR05x based release scheduled so the daily spins will not be pushed to R1 and will not be available for testing</p></li>
 </ul>
 <div class="line-block">
@@ -190,6 +190,18 @@
 <td><p>0.1</p></td>
 <td><p>Naomi Lee</p></td>
 <td><p>Transferred content from Submit Code Integration Branch Jive page</p></td>
+</tr>
+<tr class="row-odd"><td><p>08/24/2020</p></td>
+<td><p>N/A</p></td>
+<td><p>0.2</p></td>
+<td><p>Shree Vidya Jayaraman</p></td>
+<td><p>Updates based on Shawn’s feedback</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td></td>

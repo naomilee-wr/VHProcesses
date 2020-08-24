@@ -154,7 +154,7 @@ for completing tasks</p></li>
 </div>
 <div class="section" id="activities">
 <h2><strong>Activities</strong><a class="headerlink" href="#activities" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p>The Architect/Domain Lead is responsible to identify the configurations for the CI pipeline as well as the nightly regression tests.  The Build &amp; Configuration team is responsible for ensuring the configs are part of the CI pipeline checks.</p></li>
 <li><p>Using the CI pipeline (Jenkins) build tool, the Developer submits code into the integration branch according to the Work Instructions in <a class="reference external" href="../../../SupplementaryGuidelines/Development/SubmitCodeIntegrationBranch_SG.html">Submitting Code into the Integration Branch</a></p>
 <ul class="simple">
@@ -166,16 +166,14 @@ for completing tasks</p></li>
 </ul>
 </li>
 <li><p>After the Feature Complete date (code freeze), the Release Branch is created off of the Integration Branch.</p>
-<ul>
+<ul class="simple">
 <li><p>The Developer submits the code according to the Work Instructions in <a class="reference external" href="../../../SupplementaryGuidelines/Development/SubmitCodeReleaseBranch_SG.html">Submitting Code into the Release Branch</a>.  The code is submitted via the <a class="reference external" href="../../../ProcessDocuments/CoreDev/CodingIntBuild/PullRequestChecklistTemplate_v5.xlsx">Pull Request Checklist Template</a></p></li>
 <li><p>Once the code is committed to the regression branch, the continuous build and nightly regression tests are initiated.  See <a class="reference external" href="./ContinuousBuildTestingProcess.html">Continuous Build and Nightly Regression Testing Process</a></p></li>
 <li><p>The release candidate is built according to the <a class="reference external" href="./ReleaseBuildProcess.html">Release Build Process</a> and ready for the Release verification testing.</p></li>
 <li><p>The testing team performs verification on the release spin according to the <a class="reference external" href="../Verification/ReleaseVerification_TestingProcess.html">Release Verification (Testing) Process</a></p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p>If issues found, the tester raises a defect in the Defect Management system, Jira according to the <a class="reference external" href="../../Operations/DefectManagement/DefectManagementProcess.html">Defect Management process</a></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
 </li>
