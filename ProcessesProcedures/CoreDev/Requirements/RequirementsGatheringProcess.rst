@@ -20,9 +20,9 @@ The Product Manager is responsible for this process.
 |**Entry Criteria/Inputs**   | - Customer/Product Requirements from the market segments                  |
 +----------------------------+---------------------------------------------------------------------------+
 |**Exit Criteria/Outputs**   | - Customer/Product Requirements from the market segments are              |
-|                            |   entered in to the Requirements Backlog (e.g., Salesforce)               |
-|                            | - Product Backlog (Features backlog) is created by the Product team       |
-|                            |   in the Engineering Requirement System (e.g., Jira Agile)                |
+|                            |   entered in to the Requirements Backlog (e.g., Aha)                      |
+|                            | - Product Backlog (Features backlog) is created by the Product Manager or |
+|                            |   Engineering team the Engineering Requirement System (e.g., Jira Agile)  |
 +----------------------------+---------------------------------------------------------------------------+
 
 |
@@ -39,7 +39,7 @@ The Product Manager is responsible for this process.
 |                        | Market Segment team is responsible for the Requirements Backlog               |
 |                        | (e.g., Salesforce)                                                            |
 |                        |                                                                               |
-|                        | Product Management team is responsible for the Product Feature Back log       |
+|                        | Product Management team is responsible for the Product Feature Backlog        |
 |                        | (e.g., Jira Agile)                                                            |
 +------------------------+-------------------------------------------------------------------------------+
 | Product Manager        | Responsible for:                                                              |
@@ -67,11 +67,11 @@ The Product Manager is responsible for this process.
 
    * - 1
      - Gather customer/product requirements  
-     - The marketing team documents the customer requirements in to the requirements backlog (e.g., Salesforce) and the Product Management Team enters one or more features/epics for each product requirement in the Requirement Management System (e.g., Jira Agile) according to the `Feature/Epic Template Guideline - Jira Agile <../../../ProcessDocuments/CoreDev/Requirements/FeatureTemplateGuideline_JiraAgile.docx>`__.  This is called the Feature (epic) backlog.  
+     - The marketing team documents the customer requirements in to the requirements backlog (e.g., Aha) and the Product Management Team enters one or more features/epics for each product requirement in the Requirement Management System (e.g., Jira Agile) according to the `Feature/Epic Template Guideline - Jira Agile <../../../ProcessDocuments/CoreDev/Requirements/FeatureTemplateGuideline_JiraAgile.docx>`__.  This is called the Feature (epic) backlog.  
 
    * - 2
      - Review feature backlog
-     - The Product Manager/Owner reviews the feature backlog and other Enhancement Requests (ERs).  ERs entered in the Defect Management System (e.g., Jira) are evaluated by the Key Stakeholders (e.g., Product Manager, Engineering Manager, Technical Feature Owner) as possible requirements.  ERs are entered according to the `Enhancement Requests Management process <./EnhancementRequestManagementProcedure.html>`__
+     - The Product Manager/Owner reviews the feature backlog and other Enhancement Requests (ERs).  ERs entered in the Defect Management System (e.g., Jira) are evaluated by the Key Stakeholders (e.g., Product Manager, Customer Support, Engineering Manager, Technical Feature Owner) as possible requirements.  ERs are entered according to the `Enhancement Requests Management process <./EnhancementRequestManagementProcedure.html>`__
 
        The Product Manager/Owner prioritizes each Epic against all other Epics in the feature backlog and enters the desired release targeted for the Epic.  
        The Product Owner promotes the top priority list of epics for technical analysis/investigation.
@@ -88,7 +88,7 @@ The Product Manager is responsible for this process.
 - `Requirements Process Summary Flow Diagram <../../../_static/CoreDev/Requirements/Requirements.jpg>`__
 - `Enhancement Requests Management Procedure <./EnhancementRequestManagementProcedure.html>`__
 - `Requirements Development Procedure <RequirementsDevelopmentProcedure.html>`__
-- Requirements Backlog (e.g., Salesforce)
+- Requirements Backlog (e.g., Aha)
 - Requirements Management system (e.g., Jira Agile)
 - Defect Management system (e.g., Jira)
    
@@ -110,6 +110,10 @@ The Product Manager is responsible for this process.
 | 05/26/2020   | N/A                     | 0.1           | Shree Vidya Jayaraman   | Initial Draft                                                                                       |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 | 07/24/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Update based on Martin, Kitty and Guillaume's feedback                                              |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 08/24/2020   | N/A                     | 0.3           | Shree Vidya Jayaraman   | Updates based on Kitty's feedback                                                                   |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 |              |                         |               |                         |                                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+

@@ -90,10 +90,10 @@ The procedure describes the development of software requirements from customer r
      - The Product Architect may require a prototype be developed to explore possible implementations of the customer requirements.
  	 
    * - 3
-     - Convert customer requirements to software requirements (i.e., development team stories and tasks)
-     - The Product Architect reviews and refines the customer requirements and also identifies the security related requirements. Security related requirements are marked as TBD <Check with Martin/Kitty/Roger>
+     - Breakdown customer/product requirements to software requirements 
+     - The Product Architect reviews and refines the customer requirements and also identifies the security related requirements. Security related requirements are marked as SDL_REQUIREMENT in the requirement.  **<<Check with Roger>>**
  
-       Customer requirements are converted into software requirements (including security related requirements) into the Requirements Management System as Stories including development, testing and documentation Stories. See `Story Process <../../Operations/ProgramManagement/StoryProcess.html>`__.   
+       The customer/product requirements (including security related requirements) are broken down in to smaller software requirements in the Requirements Management System as Stories including development, testing and documentation Stories. See `Story Process <../../Operations/ProgramManagement/StoryProcess.html>`__.   
 
        Note: The breakdown of requirements also occur iteratively throughout the development lifecycle of the Epic.  This activity may also occur as part of a Scrum Team's regular grooming activities.
    
@@ -105,7 +105,7 @@ The procedure describes the development of software requirements from customer r
 
    * - 5
      - Review requirements
-     - The Product Architect reviews and approves the set of requirements for implementation. See *Tools and Template Instructions* Section below.
+     - The Product Architect reviews and approves the "set of requirements" for implementation. See *Tools and Template Instructions* Section below.
        The software requirements(Epics)are reviewed/approved for implementation:
 
        - to assure Epics and Stories are well formed    
@@ -119,7 +119,7 @@ The procedure describes the development of software requirements from customer r
      - Commit requirements
      - After review of the requirements, the Development Manager agrees that the Epic is ready for development.  The Development Manager identifies Scrum Teams that own the commitment and ensures an adequate staffing plan is available to deliver on the commitment.  The commitment is made in collaboration with the identified Scrum Team and the Technical Feature Owner.  See *Tools and Template Instructions* Section below.
 	   
-       The set of requirements (Epics) is committed for the release it will be completed in.  Any changes (e.g., scope, schedule) to the committed Epics will be managed according to `Requirements Management Procedure <./RequirementsManagementProcedure.html>`__ 
+       The "set of requirements" (Epics) is committed for the release it will be completed in.  Any changes (e.g., scope, schedule) to the committed Epics will be managed according to `Requirements Management Procedure <./RequirementsManagementProcedure.html>`__ 
 	   
        The Scrum team further breaks down the Epics into Stories.  The Technical Feature Owner/Scrum Team follows the `Code Development Process <../CodingIntBuild/CodeDevelopmentProcess.html>`__. 
 	   
@@ -195,6 +195,12 @@ The following sections are reviewed by the Engineering Development Manager in st
 | 07/13/2020   |  N/A                    | 0.4           | Shree Vidya Jayaraman   | Incorporated feedback from working session with Martin, Kitty, Guillaume and Numan                  | 
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 | 07/24/2020   |  N/A                    | 0.5           | Shree Vidya Jayaraman   | Incorporated feedback from Martin, Kitty and Guillaume                                              | 
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 08/24/2020   |  N/A                    | 0.6           | Shree Vidya Jayaraman   | Incorporated feedback based on Kitty's comments                                                     | 
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     | 
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     | 
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 |              |                         |               |                         |                                                                                                     | 
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
