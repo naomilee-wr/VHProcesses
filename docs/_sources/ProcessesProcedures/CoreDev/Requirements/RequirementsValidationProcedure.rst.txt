@@ -142,7 +142,9 @@ The Product Architect, Product Manager, and EPM are responsible for executing th
 **References**
 -----------------
 
-- Refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#requirements>`_ 
+- `Document a Feature/Epic Guidelines <../../../SupplementaryGuidelines/Development/DocumentingAFeature_SG.html>`_
+
+Note:  For additional references, refer to `Supplementary Guidelines <../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html>`_ 
 
 |
 

@@ -28,27 +28,26 @@ Core
 
 |
 
-**Feature Management** 
----------------------------
-
-- `Documenting a Feature/Epic <./DocumentingFeature_Epic.html>`__  
+**Feature/Epic Management**  
+----------------------------
 
 .. toctree::
    :maxdepth: 1
    :glob:
- 
+
    FeatureMgmt/*
-   
-|
 
-**User Story Management** 
-------------------------------------
+|
+   
+   
+**Story Management**  
+----------------------------   
 
 .. toctree::
    :maxdepth: 1
    :glob:
- 
-   UserStoryMgmt/*
+
+   StoryMgmt/*
 
 |
 
@@ -147,7 +146,6 @@ Operations
    :glob:
  
    InfoDev/*
- 
 
 |
 |

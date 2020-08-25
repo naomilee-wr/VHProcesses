@@ -16,8 +16,8 @@ Once a checked-in fix is confirmed to be present on the integration branch, the 
 | **Entry Criteria**                   | -  Code modifications have been      |
 |                                      |    completed and the developer has   |
 |                                      |    tested the fix                    |
-|                                      | -  There is an integration branch to |
-|                                      |    merge to                          |
+|                                      | -  There is a CM branch (integration |
+|                                      |    or release branch) to merge to    |
 |                                      | -  Modifications checked in to the   |
 |                                      |    appropriate branch of the version |
 |                                      |    control system                    |
@@ -34,7 +34,8 @@ Once a checked-in fix is confirmed to be present on the integration branch, the 
 |                                      | -  Code is merged                    |
 +--------------------------------------+--------------------------------------+
 | **Outputs**                          | -  Defect record's *Status* is set   |
-|                                      |    to "RESOLVED"/"FIXED"             |
+|                                      |    to "Status = RESOLVED", Resolution|
+|                                      |     = "FIXED"                        |
 +--------------------------------------+--------------------------------------+
 
 |
@@ -88,6 +89,8 @@ In cases where the system cannot automatically move the fixed record to integrat
 | 05/08/2020   | N/A                     | 0.1           | Martin Cote             | Initial Draft                                                    |
 +--------------+-------------------------+---------------+-------------------------+------------------------------------------------------------------+
 | 08/21/2020   | N/A                     | 0.2           | Shree Vidya Jayaraman   | Fixed the link based on Shawn's feedback                         |
++--------------+-------------------------+---------------+-------------------------+------------------------------------------------------------------+
+| 08/24/2020   | N/A                     | 0.3           | Shree Vidya Jayaraman   | Fixed the link based on Rodger's feedback                        |
 +--------------+-------------------------+---------------+-------------------------+------------------------------------------------------------------+
 |              |                         |               |                         |                                                                  |
 +--------------+-------------------------+---------------+-------------------------+------------------------------------------------------------------+

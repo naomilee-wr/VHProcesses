@@ -14,7 +14,7 @@ Verify that the fix has been properly integrated into either the development tre
 
 Verify that the fix has resolved the defect.  Per the `Defect Fix Verification Policy <../DefectManagement/DefectFixVerificationPolicy.html>`__, verification applies to priority 1 and 2 and customer reported defects.   
 
-The Test Lead is responsible for this procedure.
+The Defect Reporter, or Test Lead is responsible for this procedure.
 
 |
 
@@ -83,6 +83,10 @@ The Test Lead is responsible for this procedure.
 | **Date**     | **Change Request ID**   | **Version**   | **Change By**           | **Description**                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 | 05/08/2020   | N/A                     | 0.1           | Martin Cote             | Initial Draft                                                                                       |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+| 05/08/2020   | N/A                     | 0.2           | Martin Cote             | Update to based on Rodger's feedback                                                                |
++--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
+|              |                         |               |                         |                                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+
 |              |                         |               |                         |                                                                                                     |
 +--------------+-------------------------+---------------+-------------------------+-----------------------------------------------------------------------------------------------------+

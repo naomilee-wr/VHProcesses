@@ -10,22 +10,22 @@ Requirements Development Procedure
 
 |
 
-The procedure describes the development of software requirements from customer requirements (i.e., Epics from Market Segments and Product Management).  The Product Architect is responsible for this process.
+The procedure describes the development of feature requirements (software requirements) from customer requirements (i.e., Epics from Market Segments and Product Management).  The Product Architect is responsible for this process.
 
 |
 
 +----------------------------+---------------------------------------------------------------------------+
 |**Entry Criteria/Inputs**   | - Customer/Product Requirements have been gathered.                       |
-|                            | - Product Backlog (Epic backlog) is created in the Requirement Management |
-|                            |   system (e.g., Jira Agile)                                               |
+|                            | - Product feature backlog is created in the Requirement Management system |
+|                            |   e.g., Jira Agile)                                                       |
 +----------------------------+---------------------------------------------------------------------------+
-|**Exit Criteria/Outputs**   | - Software requirements are identified as Epics(Features)are reviewed     |
+|**Exit Criteria/Outputs**   | - Feature requirements (features/epics) are identified and reviewed       |
 |                            |   (prioritized)in the Requirement Management System (e.g., Jira Agile)    |
 |                            | - Product Architect investigates and captures implementation decisions    |
 |                            |   (if applicable)                                                         |
-|                            | - Software Requirements are ready for development and committed           |
+|                            | - Feature requirements are ready for development and committed            |
 |                            |   for the release                                                         |
-|                            | - Snapshot of the software requirements (Epics) as part of the Plan Of    |
+|                            | - Snapshot of the feature/epic requirements as part of the Plan Of        |
 |                            |   Record (POR) or Plan of Intent (POI) Milestone                          |
 +----------------------------+---------------------------------------------------------------------------+
 
@@ -49,18 +49,18 @@ The procedure describes the development of software requirements from customer r
 +------------------------+-------------------------------------------------------------------------------+
 |Development Manager     | Responsible for:                                                              |
 |                        |                                                                               |
-|                        | - staffing the Epics/Features                                                 |
-|                        | - communicating firm Epic/Feature commitments into the upcoming release       |
-|                        | - communcation intended epic/feature into future releases                     |
+|                        | - staffing the features/epics                                                 |
+|                        | - communicating firm feature/epic commitments into the upcoming release       |
+|                        | - communcation intended feature/epic into future releases                     |
 +------------------------+-------------------------------------------------------------------------------+
 |Scrum Team              | Scrum team includes Technical Feature Owner, Scrum Master, Development        |
 |                        | Engineer, Test Engineer, and Information Development Engineer.                |
 |                        |                                                                               |
 |                        | Responsible for:                                                              |
 |                        |                                                                               |
-|                        | - further breaking down Epics into Stories                                    |
-|                        | - developing and testing Epics/Stories                                        |
-|                        | - reviewing the Epics/Stories to ensure the Definition of Done and Acceptance |
+|                        | - further breaking down features/epics into stories                           |
+|                        | - developing and testing epics/stories                                        |
+|                        | - reviewing the epics/stories to ensure the Definition of Done and Acceptance |
 |                        |   criteria are met                                                            |
 +------------------------+-------------------------------------------------------------------------------+
 
@@ -80,35 +80,35 @@ The procedure describes the development of software requirements from customer r
      - Description
 
    * - 1
-     - Evaluate customer/product requirements (i.e., Epics from market segment and product management)
+     - Evaluate feature requirements  
      - The Product Manager ensures that the product requirements fulfill the `Standard Criteria <./ProductRequirementStandardCriteria.html>`__.   
 	 
-       The Product Architect evaluates customer requirements from market segment and product management.  The evaluation is performed collaboratively with Product Manager to to ensure a mutual understanding of the customer/product requirements.  This may result in further breakdown of Epics into sub-Epics to deal with larger scope items.  
+       The Product Architect evaluates feature requirements from Product Management.  The evaluation is performed collaboratively with Product Manager to ensure a mutual understanding of the customer/product requirements.  This may result in further breakdown of epics into sub-epics to deal with larger scope items.  
 
    * - 2
      - Execute Prototype (if applicable)
      - The Product Architect may require a prototype be developed to explore possible implementations of the customer requirements.
  	 
    * - 3
-     - Breakdown customer/product requirements to software requirements 
-     - The Product Architect reviews and refines the customer requirements and also identifies the security related requirements. Security related requirements are marked as SDL_REQUIREMENT in the requirement.  **<<Check with Roger>>**
+     - Breakdown feature requirements  
+     - The Product Architect reviews and refines the feature requirements and also identifies the security related requirements. Security related requirements are marked as SDL_REQUIREMENT in the requirement.  **<<Check with Roger>>**
  
-       The customer/product requirements (including security related requirements) are broken down in to smaller software requirements in the Requirements Management System as Stories including development, testing and documentation Stories. See `Story Process <../../Operations/ProgramManagement/StoryProcess.html>`__.   
+       The feature requirements (including security related requirements) are broken down into smaller requirements in the Requirements Management System as Stories including development, testing and documentation Stories. See `Story Process <../../Operations/ProgramManagement/StoryProcess.html>`__.   
 
-       Note: The breakdown of requirements also occur iteratively throughout the development lifecycle of the Epic.  This activity may also occur as part of a Scrum Team's regular grooming activities.
+       Note: The breakdown of feature requirements also occur iteratively throughout the development lifecycle of the feature/epic.  This activity may also occur as part of a Scrum Team's regular grooming activities.
    
    * - 4 
      - Trace between requirements
-     - The Product Architect or Scrum Team maintains a traceability between software and customer requirements.  Software requirements are captured as Stories and/or stated broadly in the Epic’s description.
+     - The Product Architect or Scrum Team maintains a traceability between feature/epic and customer requirements.  Feature requirements are captured as Stories and/or stated broadly in the epic's description.
 
-       The Product Architects are responsible to see that traceability between customer requirements and software requirements, and the hierarchy of requirements is maintained. 
+       The Product Architects are responsible to see that traceability between customer requirements and feature requirements, and the hierarchy of requirements is maintained. 
 
    * - 5
      - Review requirements
      - The Product Architect reviews and approves the "set of requirements" for implementation. See *Tools and Template Instructions* Section below.
-       The software requirements(Epics)are reviewed/approved for implementation:
+       The feature requirements are reviewed/approved for implementation:
 
-       - to assure Epics and Stories are well formed    
+       - to assure features/epics and stories are well formed    
        - to assure traceability between software and customer requirements
        - to assure dependencies with other stakeholders have been identified
        - to assure a preliminary estimate (i.e. costing) has been communicated to Key Stakeholders
@@ -117,13 +117,13 @@ The procedure describes the development of software requirements from customer r
 
    * - 6 
      - Commit requirements
-     - After review of the requirements, the Development Manager agrees that the Epic is ready for development.  The Development Manager identifies Scrum Teams that own the commitment and ensures an adequate staffing plan is available to deliver on the commitment.  The commitment is made in collaboration with the identified Scrum Team and the Technical Feature Owner.  See *Tools and Template Instructions* Section below.
+     - After review of the requirements, the Development Manager agrees that the epic is ready for development.  The Development Manager identifies Scrum Teams that own the commitment and ensures an adequate staffing plan is available to deliver on the commitment.  The commitment is made in collaboration with the identified Scrum Team and the Technical Feature Owner.  See *Tools and Template Instructions* Section below.
 	   
-       The "set of requirements" (Epics) is committed for the release it will be completed in.  Any changes (e.g., scope, schedule) to the committed Epics will be managed according to `Requirements Management Procedure <./RequirementsManagementProcedure.html>`__ 
+       The "set of requirements" (features/epics) is committed for the release it will be completed in.  Any changes (e.g., scope, schedule) to the committed Epics will be managed according to `Requirements Management Procedure <./RequirementsManagementProcedure.html>`__ 
 	   
-       The Scrum team further breaks down the Epics into Stories.  The Technical Feature Owner/Scrum Team follows the `Code Development Process <../CodingIntBuild/CodeDevelopmentProcess.html>`__. 
+       The Scrum team further breaks down the epics into stories.  The Technical Feature Owner/Scrum Team follows the `Code Development Process <../CodingIntBuild/CodeDevelopmentProcess.html>`__. 
 	   
-       A snapshot of the requirements (from the Requirements Management System) is created at the start of the release as part of the Plan Of Record (POR) or Plan of Intent (POI) milestone and attached to the Release Documentation Repository (e.g., Jive)
+       A snapshot of the committed "set of requirements" (features/epics) requirements (from the Requirements Management System) is created at the start of the release as part of the Plan Of Record (POR) or Plan of Intent (POI) milestone and attached to the Release Documentation Repository (e.g., Jive)
 
 |
   
