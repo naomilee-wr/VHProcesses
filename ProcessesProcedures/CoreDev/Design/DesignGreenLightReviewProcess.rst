@@ -56,10 +56,10 @@ The Product Architect, Technical Feature Owner, and Developer is responsible for
      - Initiate Green Light review
      - The Developer initiates the review in the Peer Review System (e.g., Code Collaborator).  The minimal required reviewers are:
 	    
-	   -  Author(s)
-	   -  Product Architect
-	   -  Test team member
-	   -  Documentation team member
+       -  Author(s)
+       -  Product Architect
+       -  Test team member
+       -  Documentation team member
 
        Product Management is an optional attendee.
       

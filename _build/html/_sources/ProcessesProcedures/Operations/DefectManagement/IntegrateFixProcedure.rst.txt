@@ -13,29 +13,29 @@ Integrate Defect Fix Procedure
 Once a checked-in fix is confirmed to be present on the integration branch, the defect record is updated. The procedure ensures that integration testing has passed before the defect can be marked "Resolved"/"Fixed".
 
 +--------------------------------------+--------------------------------------+
-| **Entry Criteria**                   | -  Code modifications have been      |
-|                                      |    completed and the developer has   |
-|                                      |    tested the fix                    |
-|                                      | -  There is a CM branch (integration |
-|                                      |    or release branch) to merge to    |
-|                                      | -  Modifications checked in to the   |
-|                                      |    appropriate branch of the version |
-|                                      |    control system                    |
-|                                      | -  The integration build has been    |
-|                                      |    performed                         |
-|                                      | -  The integration tests for the fix |
-|                                      |    have passed                       |
+| **Entry Criteria**                   | - Code modifications have been       |
+|                                      |   completed and the developer has    |
+|                                      |   tested the fix                     |
+|                                      | - There is a CM branch (integration  |
+|                                      |   or release branch) to merge to     |
+|                                      | - Modifications checked in to the    |
+|                                      |   appropriate branch of the version  |
+|                                      |   control system                     |
+|                                      | - The integration build has been     |
+|                                      |   performed                          |
+|                                      | - The integration tests for the fix  |
+|                                      |   have passed                        |
 +--------------------------------------+--------------------------------------+
-| **Inputs**                           | -  The defect record is marked       |
-|                                      |    "CHECKED IN"                      |
+| **Inputs**                           | - The defect record is marked        |
+|                                      |   "CHECKED IN"                       |
 +--------------------------------------+--------------------------------------+
-| **Exit Criteria**                    | -  Integration test results are      |
-|                                      |    captured in the defect record     |
-|                                      | -  Code is merged                    |
+| **Exit Criteria**                    | - Integration test results are       |
+|                                      |   captured in the defect record      |
+|                                      | - Code is merged                     |
 +--------------------------------------+--------------------------------------+
-| **Outputs**                          | -  Defect record's *Status* is set   |
-|                                      |    to "Status = RESOLVED", Resolution|
-|                                      |     = "FIXED"                        |
+| **Outputs**                          | - Defect record's *Status* is set    |
+|                                      |   to "Status = RESOLVED", Resolution |
+|                                      |   = "FIXED"                          |
 +--------------------------------------+--------------------------------------+
 
 |
