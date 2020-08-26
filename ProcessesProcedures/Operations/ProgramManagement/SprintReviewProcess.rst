@@ -61,16 +61,13 @@ This process explains how to prepare for the sprint review meeting and what to d
      - The Scrum Master reviews metrics with the team such as the burndown chart, velocity, defects found and fixed and validated, and test results.
 
        - Analyze sprint burndown 
-
          - The sprint burndown shows for each day, the estimated work remaining in the current sprint. It also shows the cumulative amount of accepted work for each day. The Scrum team analyzes the chart to determine if the scope of work for the current sprint is too large to finish. 
 
        - Analyze velocity chart
-
          - The velocity chart shows all accepted plan estimate units for each of the last ten completed sprints. The Scrum team uses this chart to understand the capacity of the team to be able to predict how much work can be done in future sprints.
 
-       - Analyze Defects
-
-	 - The Scrum team analyzes the trend showing the incoming rate of defects, fix rate and test results. 
+	   - Analyze Defects
+	     - The Scrum team analyzes the trend showing the incoming rate of defects, fix rate and test results. 
 
    * - 2
      - Review each story to determine if Definition of Done and acceptance criteria are met

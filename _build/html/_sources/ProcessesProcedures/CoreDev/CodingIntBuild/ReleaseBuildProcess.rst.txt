@@ -65,7 +65,7 @@ The Build & Configuration (B&C) Lead is responsible for the build in the release
      - Add content to the release branch
      - The Scrum Team - Developer submits code to the release branch according to the `Check in Procedure <./CheckinProcedure.html>`__ (post FC complete). The B&C Lead performs the maintenance of the release branch according to the `Build and Config Release Branch Operations <https://jive.windriver.com/docs/DOC-83617>`__.	 
 
-       Note: This is the stabilization period where mainly defect fixes are committed onto the release branch and no new features are added.
+	   Note: This is the stabilization period where mainly defect fixes are committed onto the release branch and no new features are added.
 
    * - 3
      - Run the spin/build using the launchers (e.g., Jenkins)

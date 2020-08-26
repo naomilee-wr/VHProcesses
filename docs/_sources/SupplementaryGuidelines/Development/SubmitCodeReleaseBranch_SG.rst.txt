@@ -57,7 +57,7 @@ See Submitting Code into the Integration Branch  for the procedure on how to sub
 -------------------------------
 
 - In order for a Pull Request to be merged, it must pass the Submission Pipeline verification. 
-- To start the verification process, go to: http://vxjenkins2.wrs.com:8080/job/CI_Pipe_No_Merge/  and login using your Linux credentials
+- To start the verification process, go to: http://vxjenkins.wrs.com:8080/job/vx7_RI_launcher/  and login using your Linux credentials
 - Select "Build with Parameters" from the left-side menu.  (If the option is not visible, you may have forgotten to log into Jenkins.)
 - Populate the VX7_BRANCH with your branch name and  "TARGET_BRANCH" with the destination branch
 - Click on the "Build" button at the bottom of the form.

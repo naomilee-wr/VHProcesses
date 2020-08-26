@@ -24,6 +24,12 @@ Policies
 - `Defect Fix Verification Policy <./DefectManagement/DefectFixVerificationPolicy.html>`_
 - `Defect Publication Policy <./DefectManagement/DefectPublicationPolicy.html>`_
 
+*Note: The following are Procedures from Vx7 Jive page.  To be updated and reviewed for applicability*
+
+- `Handling Customer Defect Resolution Policy <https://jive.windriver.com/docs/DOC-78676>`_
+- `Handling Customer Escalation Policy <https://jive.windriver.com/docs/DOC-78677>`_
+- `Defect Publication <https://jive.windriver.com/docs/DOC-78678>`_     --- Check if this guidance needs to be added to the above Defect Publication Policy.   
+
 |
 
 Processes & Procedures
@@ -39,6 +45,13 @@ Processes & Procedures
 - `Integrate Defect Fix Procedure <./DefectManagement/IntegrateFixProcedure.html>`_
 - `Verify Defect Fix Procedure <./DefectManagement/VerifyDefectFixProcedure.html>`_
 
+*Note: The following are Procedures from Vx7 Jive page.  To be updated and reviewed for applicability*
+
+- `Reporting, Transferring, Resolving and Verifying Defects <https://jive.windriver.com/docs/DOC-60058>`_
+- `Grooming Defects, Enhancement Requests and Managing CCB <https://jive.windriver.com/docs/DOC-60050>`_
+- `Publishing Defects <https://jive.windriver.com/docs/DOC-59801>`_
+- `Worldwide Escalation Process <https://jive.windriver.com/docs/DOC-34980>`_
+
 |
 
 Standards & Guidelines
@@ -49,9 +62,13 @@ Standards & Guidelines
 - `Customer Defects and Escalations Guidelines <../../SupplementaryGuidelines/DefectEscalationEnhReqMgmt/CustomerDefectsAndEscalation_SG.html>`_
 
 
-*Note: To be updated and reviewed for applicability*
-- `Defect Publication Guidelines <../../ProcessDocuments/Operations/DefectManagement/Vx-7 Defect Publication Guidelines.pptx>`_
+*Note: Team to identify additional Standards & Guidelines as applicable*
+
 - Defect publication standards?
+
+*Note: The following are Procedures from Vx7 Jive page.  To be updated and reviewed for applicability*
+
+- `Defect Publication Guidelines <../../ProcessDocuments/Operations/DefectManagement/Vx-7 Defect Publication Guidelines.pptx>`_
 
 |
 

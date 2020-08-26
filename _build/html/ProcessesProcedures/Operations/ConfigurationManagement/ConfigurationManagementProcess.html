@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuration Management Process &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
 <meta charset='utf-8'>
@@ -41,7 +42,7 @@
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
             
-                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GettingStarted/ByRoles/ByRolesMain.html">Processes by Roles</a></li>
                 <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
                 <li><a href="../../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
             
@@ -174,28 +175,32 @@ permanently archived</p></li>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>Develop and maintain plan for software configuration management</p></td>
 <td><p>The CM Lead develops the program’s SCM plan.  The plan is updated to reflect any major changes.  Key elements in the plan are:</p>
-<ul class="simple">
-<li><p>Roles and responsibilities</p></li>
+<ul>
+<li><dl>
+<dt>Roles and responsibilities</dt><dd><ul class="simple">
 <li><p>Required resources, tools and repositories</p></li>
 <li><p>Identification of Configuration Items (CIs) to be controlled</p></li>
-<li><p>Strategy and methods for creating and releasing baselines, configuration control and configuration status accounting and auditing   <strong>&lt;&lt;need to revisit after Devstar launch&gt;&gt;</strong></p></li>
+<li><p>Strategy and methods for creating and releasing baselines, configuration control and configuration status accounting and auditing &lt;&lt;need to revisit after Devstar launch&gt;&gt;</p></li>
 </ul>
 <p>The SCM plan should be approved by all key stakeholders (e.g., Engineering Management, Product Management, Engineering Program Management, Info Dev, etc)</p>
+</dd>
+</dl>
+</li>
+</ul>
 </td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>Identify program release items for control (Configuration Items)</p></td>
+<td><p>Identify program release items for control</p></td>
 <td><p>The CM Lead, in conjunction with the key stakeholders (e.g., Engineering Manager, EPM, Technical Lead, and Test Lead) identify the CIs that have been documented in the SCM plan. These CIs compose the baselines at given points in the lifecycle.</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
 <td><p>Establish and maintain the CM framework</p></td>
-<td><p>The CM Lead establishes the framework for the CM activities and multiple levels of control, per the SCM plan.</p></td>
+<td><p>The CM Lead establishes the framwork for the CM activities and multiple levels of control, per the SCM plan.</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
 <td><p>Create and release baselines</p></td>
-<td><p>The CM Lead, supported by the Development and Test Managers and teams, establish and maintain baselines at designated points in the lifecycle, per the SCM plan.</p>
-<p>A baseline is a set of CIs that has been reviewed and agreed on, which thereafter serves as the basis for further development and which can be changed only by following the change control process and program change request procedure. Baselines can be internal or external and typically include functional (e.g., committed set of requirements), development (e.g., builds) and release (e.g., product deliveries) baselines.</p>
-<p>The CI description that compose the baselines are updated, placed under control, and communicated.  After their approval, the baselines are communicated to the team using various collaboration mechanisms (e.g., Team email, Jive/SharePoint).</p>
+<td><p>The CM Lead, supported by the Development and Test Managers and teams, establish and maintain baselines at designated points in the lifecycle, per the SCM plan. A baseline is a set of CIs that has been reviewed and agreed on, which thereafter serves as the basis for further development and which can be changed only by following the change control process and program change request procedure. Baselines can be internal or external and typically include functional (e.g., committed set of requirements), development (e.g., builds) and release (e.g., product deliveries) baselines.</p>
+<p>The CI description that compose the baselines are updated, placed under control, and communicated.  After their approval, the baselines are communicated to the team using various collaboration mechanisms (e.g., Team email, Jive/Sharepoint).</p>
 </td>
 </tr>
 <tr class="row-even"><td><p>5</p></td>
@@ -328,7 +333,7 @@ permanently archived</p></li>
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
     </p>
   </div>
 </footer>

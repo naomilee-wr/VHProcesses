@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verify Defect Fix Procedure &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
 <meta charset='utf-8'>
@@ -41,7 +42,7 @@
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
             
-                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GettingStarted/ByRoles/ByRolesMain.html">Processes by Roles</a></li>
                 <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
                 <li><a href="../../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
             
@@ -113,10 +114,9 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Verify that the fix has been properly integrated into the integration or release branch.  The defects must be verified in the release builds.</p>
+<p>Verify that the fix has been properly integrated into either the development tree or the targeted release.  If the product does not currently have release builds (i.e., still in development), it should be verified in the development tree.  If there are release builds, it must be verified in the release build.  Release builds incorporate prior fixes and their verifications, including those in the development tree, due to the iterative nature of the development process.</p>
 <p>Verify that the fix has resolved the defect.  Per the <a class="reference external" href="../DefectManagement/DefectFixVerificationPolicy.html">Defect Fix Verification Policy</a>, verification applies to priority 1 and 2 and customer reported defects.</p>
-<p><strong>&lt;&lt;Discuss the defect verification policy and this procedure with Dev SMEs&gt;&gt;</strong></p>
-<p>The Defect Reporter, or Test Lead is responsible for this procedure.</p>
+<p>The Test Lead is responsible for this procedure.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -129,7 +129,8 @@
 <tr class="row-odd"><td><p><strong>Entry Criteria</strong></p></td>
 <td><ul class="simple">
 <li><p>Fix has been integrated</p></li>
-<li><p>There is a release build to test</p></li>
+<li><p>For release builds, there is a
+release build to test</p></li>
 <li><p>Defect is ready for verification</p></li>
 </ul>
 </td>
@@ -140,25 +141,24 @@
 indicating that fixes are ready
 for verification</p></li>
 <li><p>Updated defect record</p></li>
+<li><p>For release builds, there is a
+release build to test</p></li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Exit Criteria</strong></p></td>
 <td><ul class="simple">
 <li><p>The fix has been verified</p></li>
-<li><p>Defect record is updated with
-verification information</p></li>
+<li><p>The fix has failed verification
+and defect is reopened via the
+<em>Restart</em> button.</p></li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Outputs</strong></p></td>
 <td><ul class="simple">
-<li><p>The fix has passed verification
-and defect is closed via the
-<em>Closed</em> button.</p></li>
-<li><p>The fix has failed verification
-and defect is reopened via the
-<em>Restart</em> button.</p></li>
+<li><p>Defect record is updated with
+verification information</p></li>
 </ul>
 </td>
 </tr>
@@ -171,7 +171,7 @@ and defect is reopened via the
 <h2><strong>Steps</strong><a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><strong>Determine what fixes to verify</strong></p></li>
-<li><p><strong>Obtain the current release build to test</strong></p></li>
+<li><p><strong>Obtain the development tree or current release build to test</strong></p></li>
 <li><p><strong>Review the defect</strong> <em>Description, Internal Description,</em> and <em>Steps to Reproduce</em></p></li>
 <li><p><strong>If there are duplicate defects,</strong> review the <em>Description, Internal Description</em>, and <em>Steps to Reproduce</em> of each duplicate.</p></li>
 <li><p><strong>Follow the</strong> <em>Steps to Reproduce</em> <strong>listed in the defect and any duplicate defects to test the fix.</strong> Duplicate defects may list significantly different descriptions and ways to reproduce a defect.</p></li>
@@ -202,7 +202,7 @@ and defect is reopened via the
 <div class="section" id="references">
 <h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Refer to <a class="reference external" href="../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#requirements">Supplementary Guidelines</a></p></li>
+<li><p>??</p></li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -230,18 +230,6 @@ and defect is reopened via the
 <td><p>0.1</p></td>
 <td><p>Martin Cote</p></td>
 <td><p>Initial Draft</p></td>
-</tr>
-<tr class="row-odd"><td><p>08/25/2020</p></td>
-<td><p>N/A</p></td>
-<td><p>0.2</p></td>
-<td><p>Shree Vidya Jayaraman</p></td>
-<td><p>Update to based on Rodger &amp; Doina’s feedback</p></td>
-</tr>
-<tr class="row-even"><td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td></td>
@@ -274,7 +262,7 @@ and defect is reopened via the
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
     </p>
   </div>
 </footer>

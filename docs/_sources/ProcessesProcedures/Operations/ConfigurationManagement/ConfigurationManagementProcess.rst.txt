@@ -50,27 +50,25 @@ The Configuration Management(CM)/ Build & Configuration Lead is responsible to s
      - The CM Lead develops the program's SCM plan.  The plan is updated to reflect any major changes.  Key elements in the plan are:
 	 
        -  Roles and responsibilities
-       -  Required resources, tools and repositories
-       -  Identification of Configuration Items (CIs) to be controlled
-       -  Strategy and methods for creating and releasing baselines, configuration control and configuration status accounting and auditing   **<<need to revisit after Devstar launch>>**
+	   -  Required resources, tools and repositories
+	   -  Identification of Configuration Items (CIs) to be controlled
+	   -  Strategy and methods for creating and releasing baselines, configuration control and configuration status accounting and auditing <<need to revisit after Devstar launch>>
 	   
-       The SCM plan should be approved by all key stakeholders (e.g., Engineering Management, Product Management, Engineering Program Management, Info Dev, etc)
+	   The SCM plan should be approved by all key stakeholders (e.g., Engineering Management, Product Management, Engineering Program Management, Info Dev, etc)
   
    * - 2
-     - Identify program release items for control (Configuration Items)
+     - Identify program release items for control
      - The CM Lead, in conjunction with the key stakeholders (e.g., Engineering Manager, EPM, Technical Lead, and Test Lead) identify the CIs that have been documented in the SCM plan. These CIs compose the baselines at given points in the lifecycle.
 
    * - 3
      - Establish and maintain the CM framework
-     - The CM Lead establishes the framework for the CM activities and multiple levels of control, per the SCM plan. 
+     - The CM Lead establishes the framwork for the CM activities and multiple levels of control, per the SCM plan. 
 	 
    * - 4
      - Create and release baselines
-     - The CM Lead, supported by the Development and Test Managers and teams, establish and maintain baselines at designated points in the lifecycle, per the SCM plan. 
+     - The CM Lead, supported by the Development and Test Managers and teams, establish and maintain baselines at designated points in the lifecycle, per the SCM plan. A baseline is a set of CIs that has been reviewed and agreed on, which thereafter serves as the basis for further development and which can be changed only by following the change control process and program change request procedure. Baselines can be internal or external and typically include functional (e.g., committed set of requirements), development (e.g., builds) and release (e.g., product deliveries) baselines.
 
-       A baseline is a set of CIs that has been reviewed and agreed on, which thereafter serves as the basis for further development and which can be changed only by following the change control process and program change request procedure. Baselines can be internal or external and typically include functional (e.g., committed set of requirements), development (e.g., builds) and release (e.g., product deliveries) baselines.
-
-       The CI description that compose the baselines are updated, placed under control, and communicated.  After their approval, the baselines are communicated to the team using various collaboration mechanisms (e.g., Team email, Jive/SharePoint).
+       The CI description that compose the baselines are updated, placed under control, and communicated.  After their approval, the baselines are communicated to the team using various collaboration mechanisms (e.g., Team email, Jive/Sharepoint).
 
    * - 5
      - Track and control changes to baselined configuration items

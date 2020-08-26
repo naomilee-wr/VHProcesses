@@ -23,12 +23,12 @@ The purpose of feature verification testing is to verify the new feature require
 
 2. The Feature Test (Verification) Plan shall include:
 
-   - Identification of new tests development, testing tasks, estimates, assignments
-   - Hardware, software tools, and environment required for testing
-   - Test coverage, criteria
-   - Test reports
-   - Trace of features to test cases
-   - Where to archive test results
+  - Identification of new tests development, testing tasks, estimates, assignments
+  - Hardware, software tools, and environment required for testing
+  - Test coverage, criteria
+  - Test reports
+  - Trace of features to test cases
+  - Where to archive test results
 
 3. The Feature Test Plan needs to be reviewed by all key stakeholders (e.g., Test Lead, Development Lead, Product Manager, Architect)
 

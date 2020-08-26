@@ -20,8 +20,8 @@ The Product Manager is responsible for this process.
 |**Entry Criteria/Inputs**   | - Customer/Product Requirements from the market segments                  |
 +----------------------------+---------------------------------------------------------------------------+
 |**Exit Criteria/Outputs**   | - Customer/Product Requirements from the market segments are              |
-|                            |   entered into the Requirements Backlog (e.g., Aha)                       |
-|                            | - Product feature backlog is created by the Product Manager or            |
+|                            |   entered in to the Requirements Backlog (e.g., Aha)                      |
+|                            | - Product Backlog (Features backlog) is created by the Product Manager or |
 |                            |   Engineering team the Engineering Requirement System (e.g., Jira Agile)  |
 +----------------------------+---------------------------------------------------------------------------+
 
@@ -44,7 +44,7 @@ The Product Manager is responsible for this process.
 +------------------------+-------------------------------------------------------------------------------+
 | Product Manager        | Responsible for:                                                              |
 |                        |                                                                               |
-|                        | - entering and managing the Features/Epics in the product/feature backlog     |
+|                        | - entering and managing the Epics/Features in the Product Feature Backlog     |
 |                        | - reviewing and prioritizing the list of features in the backlog              |
 |                        | - promoting the top priority features for technical analysis/investigation    |
 |                        | - entering the desired release targeted for the feature                       |
@@ -67,18 +67,18 @@ The Product Manager is responsible for this process.
 
    * - 1
      - Gather customer/product requirements  
-     - The marketing team documents the customer requirements into the requirements backlog (e.g., Aha) and the Product Management Team enters one or more features/epics for each product requirement in the Requirement Management System (e.g., Jira Agile) according to the `Feature/Epic Template Guideline - Jira Agile <../../../ProcessDocuments/CoreDev/Requirements/FeatureTemplateGuideline_JiraAgile.docx>`__.  This is called the product feature (epic) backlog.  
+     - The marketing team documents the customer requirements in to the requirements backlog (e.g., Aha) and the Product Management Team enters one or more features/epics for each product requirement in the Requirement Management System (e.g., Jira Agile) according to the `Feature/Epic Template Guideline - Jira Agile <../../../ProcessDocuments/CoreDev/Requirements/FeatureTemplateGuideline_JiraAgile.docx>`__.  This is called the Feature (epic) backlog.  
 
    * - 2
      - Review feature backlog
      - The Product Manager/Owner reviews the feature backlog and other Enhancement Requests (ERs).  ERs entered in the Defect Management System (e.g., Jira) are evaluated by the Key Stakeholders (e.g., Product Manager, Customer Support, Engineering Manager, Technical Feature Owner) as possible requirements.  ERs are entered according to the `Enhancement Requests Management process <./EnhancementRequestManagementProcedure.html>`__
 
-       The Product Manager/Owner prioritizes each feature/epic against all other features/epics in the feature backlog and enters the desired release targeted for the feature/pic.  
-       The Product Owner promotes the top priority list of features/epics for technical analysis/investigation.
+       The Product Manager/Owner prioritizes each Epic against all other Epics in the feature backlog and enters the desired release targeted for the Epic.  
+       The Product Owner promotes the top priority list of epics for technical analysis/investigation.
 	 	 
    * - 3
-     - Evaluate feature requirements  (software requirements)
-     - The Product Architect in collaboration with the Scrum Team reviews and refines the feature requirements and identifies the security related requirements according to the `Requirements Development procedure <./RequirementsDevelopmentProcedure.html>`__.   The evaluation is performed collaboratively with Product Manager to ensure alignment.  
+     - Evaluate and convert customer requirements to software requirements (i.e., development team user stories and tasks)
+     - The Product Architect in collaboration with the Scrum Team reviews and refines the customer requirements and identifies the security related requirements according to the `Requirements Development procedure <./RequirementsDevelopmentProcedure.html>`__.   The evaluation is performed collaboratively with Product Manager to ensure alignment.  
 
 |
 

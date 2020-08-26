@@ -25,6 +25,7 @@ Policies
 
 Processes & Procedures
 ======================
+- `Design Process Summary Flow Diagram <../../_static/CoreDev/Design/Design.jpg>`_
 - `Design Process (HLD Development) <./Design/DesignProcess.html>`_
 - `Design Green Light Review Process <./Design/DesignGreenLightReviewProcess.html>`_
 

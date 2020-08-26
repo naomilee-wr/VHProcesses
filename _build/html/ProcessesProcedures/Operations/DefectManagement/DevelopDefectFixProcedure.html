@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Develop Defect Fix Procedure &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
 <meta charset='utf-8'>
@@ -41,7 +42,7 @@
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
             
-                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GettingStarted/ByRoles/ByRolesMain.html">Processes by Roles</a></li>
                 <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
                 <li><a href="../../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
             
@@ -113,47 +114,53 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>When the defect fixer has acknowledged the defect is valid, the defect fix development process begins. The objective of the process is to ensure that the developed fix is correctly tracked in the defect tracking system and checked-in to Configuration Management (CM) system.</p>
+<p>When the defect fixer has acknowledged the defect is valid, the defect fix development process begins. The objective of the process is to ensure that the developed fix is correctly tracked in the defect tracking system and checked-in to Configuration Management system.</p>
 <p>The defect fixer is responsible for this procedure.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 49%" />
-<col style="width: 51%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>Entry Criteria</strong></p></td>
 <td><ul class="simple">
-<li><p>Defects are in “Open” status.</p></li>
+<li><p>Defects are in “Open” <em>Status</em></p></li>
 <li><p>Defect is assigned to defect
-fixer.</p></li>
+fixer</p></li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Inputs</strong></p></td>
 <td><ul class="simple">
-<li><p>Defect records in the Defect
-Management system.</p></li>
+<li><p>Defect records in the defect
+tracking system</p></li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Exit Criteria</strong></p></td>
 <td><ul class="simple">
 <li><p>Modifications checked in to the
-appropriate branch of the CM system.</p></li>
-<li><p>Defect fixer has tested the fix.</p></li>
+appropriate branch of the
+Configuration Management system</p></li>
+<li><p>Defect fixer has tested the fix</p></li>
+<li><p>Defect is in <em>Status</em> “Open”,
+either Priority 1 or 2, and may
+need to be released with the
+product, or to be reviewed by
+the Bug Board</p></li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Outputs</strong></p></td>
 <td><ul class="simple">
-<li><p>Defect has been fixed with State
-set to “Checked In”, and the
-details of the fix recorded.</p></li>
-<li><p>The defect fix ready to be
-integrated.</p></li>
+<li><p>Defect has been fixed with
+<em>Status</em> set to “CHECKED IN”,
+and the details of the fix
+recorded</p></li>
+<li><p>The defect fix</p></li>
 </ul>
 </td>
 </tr>
@@ -181,24 +188,28 @@ integrated.</p></li>
 <li><p><strong>Optionally, consider alternative solutions, select the appropriate one, and estimate the effort.</strong></p>
 <ul class="simple">
 <li><p>If the estimate is unexpectedly large, notify the Component Lead (Domain/Technical/Feature Lead) before moving the defect record to the “In Progress” state.</p></li>
-<li><p>Estimate may be captured in the <em>Estimated Effort</em> field.</p></li>
+<li><p>Edit the defect and record your estimate in the <em>Estimated Effort</em> field</p></li>
 </ul>
 </li>
 <li><p><strong>Develop the fix</strong></p>
 <ul class="simple">
-<li><p>Move status to “In Progress”</p></li>
+<li><p>Move <em>Status</em> to “In Progress” by clicking the “Start Progress” button</p></li>
 <li><p>Correct the defect</p></li>
 <li><p>Unit test the fix</p></li>
 <li><p>Update any related specifications or data affected by the fix</p></li>
 </ul>
 <p>During development of the bug fix, the following change in status may be possible:</p>
 <ul class="simple">
-<li><p>A defect may be re-evaluated by the Developer and Component Lead (Domain/Technical/Feature Lead) if they determine that the commitment to fix cannot be satisfied. In this case, the defect is returned to the Bug Board or defect originator for re-evaluation.</p></li>
+<li><p>A defect may be re-evaluated by the developer and Component Lead (Domain/Technical/Feature Lead) if they determine that the commitment to fix cannot be satisfied. In this case, the defect is returned to the Bug Board or defect originator for re-evaluation.</p></li>
 <li><p>If work on a defect has to be postponed, the defect is set to On Hold to notify Key Stakeholders of the temporary delay in developing the fix.  (For example, developer temporarily reassigned to higher priority defect)</p></li>
 </ul>
 </li>
 <li><p><strong>Review the defect fix according to the</strong> <a class="reference external" href="../../CoreDev/CodingIntBuild/PeerReviewProcedure_CodeCollaborator.html">Code Review</a> <strong>process</strong></p></li>
-<li><p>When the defect is fixed, the state will be moved to “Checked-In”.</p></li>
+<li><p><strong>The</strong> <a class="reference external" href="../../CoreDev/CodingIntBuild/ReleaseBuildProcess.html">Release Build</a> <strong>process will automatically move fixed to the</strong> <em>“checked in”</em> <strong>state</strong></p>
+<ul class="simple">
+<li><p>Include any details regarding the fix.</p></li>
+</ul>
+</li>
 </ol>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -208,8 +219,8 @@ integrated.</p></li>
 <h2><strong>Variations</strong><a class="headerlink" href="#variations" title="Permalink to this headline">¶</a></h2>
 <p><strong>Fixing a defect in an external component</strong></p>
 <ul class="simple">
-<li><p>If the defect is to be resolved in an external component, such as Open Source or other component that is not directly under our control, the defect status is set to “On-hold”</p></li>
-<li><p>The defect is then fixed in the external (non-product) location.</p></li>
+<li><p>If the defect is to be resolved in an external component, such as Open Source or other component that is not directly under our control, the defect status is set to “On-hold” -&gt; “Waiting for Vendor”</p></li>
+<li><p>The defect is then fixed in the external (non-product) location and made available to the team.</p></li>
 <li><p>When that code is integrated, there is no automatic updates to the defect records.</p></li>
 <li><p>When the defect filer/developer/tester identifies that the defect is no longer present, the defect record is manually moved to the “Fixed” resolution and a comment is added indicating why it was moved to fixed.</p></li>
 </ul>
@@ -221,7 +232,7 @@ integrated.</p></li>
 <li><p>If the new component is in a different project, the defect must be “Moved” to the appropriate project:</p>
 <ul>
 <li><p>Select the defect to be moved</p></li>
-<li><p>Click on <em>More -&gt; Move</em></p></li>
+<li><p>Click on <em>More Actions -&gt; Move</em></p></li>
 <li><p>Select the new project and update any other fields as necessary</p></li>
 <li><p>Click on <em>Move</em></p></li>
 </ul>
@@ -266,7 +277,7 @@ integrated.</p></li>
 <div class="section" id="references">
 <h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Refer to <a class="reference external" href="../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></p></li>
+<li><p>??</p></li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -301,11 +312,11 @@ integrated.</p></li>
 <td><p>Shree Vidya Jayaraman</p></td>
 <td><p>Updated the links based on Shawn’s feedback</p></td>
 </tr>
-<tr class="row-even"><td><p>08/25/2020</p></td>
-<td><p>N/A</p></td>
-<td><p>0.3</p></td>
-<td><p>Shree Vidya Jayaraman</p></td>
-<td><p>Updated the links based on Doina and Rodger’s feedback</p></td>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td></td>
@@ -338,7 +349,7 @@ integrated.</p></li>
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
     </p>
   </div>
 </footer>

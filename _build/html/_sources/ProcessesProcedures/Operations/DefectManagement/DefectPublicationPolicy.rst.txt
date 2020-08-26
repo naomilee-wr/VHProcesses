@@ -10,9 +10,7 @@ Defect Publication Policy
 
 |
 
-**<EPMs to discuss this policy with Dev & CSO>**	
-
-									
+<EPMs to discuss this policy with Dev & CSO>											
 #. All defects in released products[1] are to be prepared for publication[2] within 10 days of their acknowledgment[3] or release, whichever occurs later, with the following exceptions:
 
    -  Publication of the defect could reasonably be expected to expose a customer, partner, or Wind River to unnecessary risk. Included under this exception are defects for which publication would:

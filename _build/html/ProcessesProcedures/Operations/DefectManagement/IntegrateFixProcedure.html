@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integrate Defect Fix Procedure &#8212; WR VxWorks and HVP Process Documentation  documentation</title>
     <link rel="stylesheet" href="../../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
 <meta charset='utf-8'>
@@ -41,7 +42,7 @@
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
             
-                <li><a href="../../../../../GettingStarted/ByRoles.html">Processes by Roles (WIP)</a></li>
+                <li><a href="../../.././GettingStarted/ByRoles/ByRolesMain.html">Processes by Roles</a></li>
                 <li><a href="../../.././GenericPlans/GenericIndex.html">Generic Plans and Documents</a></li>
                 <li><a href="../../.././SupplementaryGuidelines/SupplementaryGuidelinesIndex.html">Supplementary Guidelines</a></li>
             
@@ -125,8 +126,8 @@
 <li><p>Code modifications have been
 completed and the developer has
 tested the fix</p></li>
-<li><p>There is a CM branch (integration
-or release branch) to merge to</p></li>
+<li><p>There is an integration branch to
+merge to</p></li>
 <li><p>Modifications checked in to the
 appropriate branch of the version
 control system</p></li>
@@ -155,8 +156,7 @@ captured in the defect record</p></li>
 <tr class="row-even"><td><p><strong>Outputs</strong></p></td>
 <td><ul class="simple">
 <li><p>Defect record’s <em>Status</em> is set
-to “Status = RESOLVED”, Resolution
-= “FIXED”</p></li>
+to “RESOLVED”/”FIXED”</p></li>
 </ul>
 </td>
 </tr>
@@ -167,8 +167,14 @@ to “Status = RESOLVED”, Resolution
 </div>
 <div class="section" id="steps">
 <h2><strong>Steps</strong><a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
-<p>Once the defect has been included in a release build, the Developer will update state to “Resolved” and set the “Fix Version” to the release that was built-in.</p>
-<p>Refer to <a class="reference external" href="../../CoreDev/CodingIntBuild/ReleaseBuildProcess.html">Release Build</a> process.</p>
+<p><strong>The</strong> <a class="reference external" href="../../CoreDev/CodingIntBuild/ReleaseBuildProcess.html">Release Build</a> <strong>process will automatically move fixed records to “Resolved”/”Fixed”.  This will set the “Fix Version” to the one that was built.</strong></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="variations">
+<h2><strong>Variations</strong><a class="headerlink" href="#variations" title="Permalink to this headline">¶</a></h2>
+<p>In cases where the system cannot automatically move the fixed record to integrated, the CM Engineer will identify which fix records have been integrated.  They will manually move the record to “Resolved”/”Fixed” and assigned a Fix Version.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -206,7 +212,7 @@ to “Status = RESOLVED”, Resolution
 <div class="section" id="references">
 <h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Refer to <a class="reference external" href="../../../SupplementaryGuidelines/SupplementaryGuidelinesIndex.html#requirements">Supplementary Guidelines</a></p></li>
+<li><p>??</p></li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -241,19 +247,13 @@ to “Status = RESOLVED”, Resolution
 <td><p>Shree Vidya Jayaraman</p></td>
 <td><p>Fixed the link based on Shawn’s feedback</p></td>
 </tr>
-<tr class="row-even"><td><p>08/25/2020</p></td>
-<td><p>N/A</p></td>
-<td><p>0.3</p></td>
-<td><p>Shree Vidya Jayaraman</p></td>
-<td><p>Fixed the link based on Rodger &amp; Doina’s feedback</p></td>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="row-odd"><td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -284,7 +284,7 @@ to “Status = RESOLVED”, Resolution
     </p>
     <p>
         &copy; Copyright 2020, Wind River Systems, Inc..<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
     </p>
   </div>
 </footer>
