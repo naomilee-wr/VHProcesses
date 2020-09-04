@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Vx7 QMS documentation build configuration file, created by
-# sphinx-quickstart on Sat May 12 19:34:31 2018.
+# sphinx-quickstart on Sat May 12 19:34:31 2018.  
 
 #
 # This file is execfile()d with the current directory set to its
@@ -113,7 +113,7 @@ html_logo = '_static/WIND-Logo-Red-Screen-Md.png'
 #     and configured the title by editing the globaltoc template (see explanation above, in the templates_path comment)
 #   - Search box: appears below the TOc, and can be configured by editing css attributes.
 
-html_sidebars = {'**': [],}
+# html_sidebars = {'**': [],}
 
 #html_sidebars = {
 #    '**': [
@@ -136,11 +136,9 @@ html_theme_options = {
     #    (name, "http://example.com", True) # arbitrary absolute url
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
-    'navbar_links': [
-        ("Processes by Roles", "./GettingStarted/ByRoles/ByRolesMain.html", 1),
-        ("Generic Plans and Documents", "./GenericPlans/GenericIndex.html", 1),
-        ("Supplementary Guidelines", "./SupplementaryGuidelines/SupplementaryGuidelinesIndex.html", 1),        
-    ],
+    # 'navbar_links': [
+     
+    # ],
 
     # Render the next and previous page links in navbar. (Default: true)
     'navbar_sidebarrel': True,
@@ -162,7 +160,7 @@ html_theme_options = {
     # will break.
     #
     # Values: "true" (default) or "false"
-    'globaltoc_includehidden': "true",
+    'globaltoc_includehidden': "false",
 
     # HTML navbar class (Default: "navbar") to attach to <div> element.
     # For black navbar, do "navbar navbar-inverse"

@@ -5,100 +5,16 @@
 |
 |
 
-**VxWorks 7 and Helix Virtualization Profile (HVP) Process Definitions** (August 2020 Layout) 
+**VxWorks 7 and Helix Virtualization Profile (HVP) Process Definitions**  
 ==============================================================================================
 
-This is the top level of the VxWorks 7 and Helix Virtualization Profile (HVP) Process Definitions in place.
+.. note::
 
-.. maxdepth = 1 means the Table of Contents will only links to the separate pages of the documentation.
-   Increasing this number will result in deeper links to subtitles etc.
-
-|
-
- 
-**Processes:** 
-+++++++++++++++++
-
-Core Processes:
------------------
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   ProcessesProcedures/CoreDev/LifecycleMain.rst
+   This page is no longer active.  
    
-   ProcessesProcedures/CoreDev/RequirementsMain.rst
+   Please go to the the `SVN repo <http://ala-cm.wrs.com/svn/prod_rel_docs/VxHvpDoc/_build/html/index.html>`_ instead. 
    
-   ProcessesProcedures/CoreDev/DesignMain.rst
-
-   ProcessesProcedures/CoreDev/CodingIntBuildMain.rst
-   
-   ProcessesProcedures/CoreDev/VerificationMain.rst
-
-   ProcessesProcedures/CoreDev/ValidationMain.rst 
+   Please contact Naomi Lee for any questions.
 
 
-Operations Processes:
-------------------------------
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
-  
-   ProcessesProcedures/Operations/ProgramManagementMain.rst
-   
-   ProcessesProcedures/Operations/DefectManagementMain.rst  
-
-   ProcessesProcedures/Operations/ConfigurationManagementMain.rst
-   
-   ProcessesProcedures/Operations/SWQualityAssuranceMain.rst
-   
-   ProcessesProcedures/Operations/MeasurementMain.rst
-   
-   ProcessesProcedures/Operations/TrainingMain.rst
-   
-   ProcessesProcedures/Operations/InformationDevelopmentMain.rst    
- 
-.. 
-   NL <Aug 2020>: commented out until Supporting processes are in use.  To uncomment, remove ".." and restore indentations & carriage returns. 
-   Supporting Processes:
-   -----------------------
-   .. toctree::
-      :maxdepth: 1
-      :glob:   
-   ProcessesProcedures/Supporting/MaintenanceMain.rst   
-   ProcessesProcedures/Supporting/SupplierManagementMain.rst
-
-.. 
-   NL <Aug 2020>: commented out until Continuous Improvement processes are in use.  To uncomment, remove ".." and restore indentations & carriage returns.    
-   Continuous Improvement Processes:
-   ----------------------------------
-   .. toctree::
-      :maxdepth: 1
-      :glob:   
-   ProcessesProcedures/ContinuousImprovement/CAPAMain.rst 
-   ProcessesProcedures/ContinuousImprovement/ContinuousImprovementMain.rst   
-   ProcessesProcedures/ContinuousImprovement/QMSMaintenanceMain.rst
-   
-**Other:** 
-+++++++++++
-
-- `Generic Plans and Documents <./GenericPlans/GenericIndex.html>`__
-
-- `Supplementary Guidelines <./SupplementaryGuidelines/SupplementaryGuidelinesIndex.html>`__
-
--  `Process Documentation Site Getting Started Guide (WIP) <./GettingStarted/GettingStarted.html>`__
-  
-**References:** 
-+++++++++++++++++
-
-- TBD
- 
-
-**Search** 
-+++++++++++
-* :ref:`search`
-
-
-This documentation was last updated on |today|.
